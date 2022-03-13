@@ -7,7 +7,7 @@ Footer Styles
 }
 
 .footer-left {
-    background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+    background: linear-gradient(145deg, $theme-color-2 0%, $theme-color-3 100%);
     padding: 120px 120px;
     position: relative;
     z-index: 2;
@@ -32,7 +32,7 @@ Footer Styles
         height: 100%;
         left: 0;
         top: 0;
-        background-image: url("/assets/images/pattern-1.png");
+        background-image: url("/assets/images/pattern-4.png");
         content: "";
         z-index: 1;
         opacity: 0.5;

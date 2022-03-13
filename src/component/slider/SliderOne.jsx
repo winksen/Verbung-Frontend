@@ -11,7 +11,8 @@ class SliderOne extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner">
-                                <h1 className="title theme-gradient">SCALE <br />NOW. </h1>
+                                <h1 className="title theme-gradient">SCALE NOW. </h1><br />
+                                <h4>Verbung is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis volutpat nulla, vel tincidunt justo aliquet ut. Proin in sapien a mi feugiat auctor. Donec sagittis ante nec sapien luctus, at dapibus diam cursus. </h4>
                             </div>
                         </div>
                     </div>

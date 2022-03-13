@@ -9,18 +9,21 @@ const PortfolioList = [
         image: 'image-1',
         category: 'Visual Identity, Stationairy',
         type: 'Brand',
+        link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
         title: 'A2S Junior Entreprise'
     },
     {
         image: 'image-2',
         category: 'Visual Identity',
         type: 'Event',
+        link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         title: 'INPT Olympics XI'
     },
     {
         image: 'image-3',
         category: 'Visual Identity, Social Media',
         type: 'Brand',
+        link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
         title: 'PantoFit'
     },
     {
@@ -71,13 +74,13 @@ class Portfolio extends Component{
                                     <div className="content">
                                         <div className="inner">
                                             <p>{value.type} • {value.category}</p>
-                                            <h4 className="title"><a href="/portfolio-details">{value.title}</a></h4>
+                                            <h4 className="title">{value.title}</h4>
                                             <div className="portfolio-button">
-                                                <a className="rn-btn" href="/portfolio-details">View on BEHANCE</a>
+                                                <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">View on BEHANCE</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <Link className="link-overlay" to={`/portfolio-details${index}`}></Link>
+                                    <Link className="link-overlay"></Link>
                                 </div>
                             ))}
                         </Slider>

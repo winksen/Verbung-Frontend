@@ -19,7 +19,7 @@ class Footer extends Component{
                                 <div className="footer-left">
                                     <div className="inner">
                                         <span>Ready To Do This</span>
-                                        <h2>Let's get <br /> to work</h2>
+                                        <h2>Work <br /> with US</h2>
                                         <a className="rn-button-style--2" href="/contact">
                                             <span>Contact Us</span>
                                         </a>
@@ -63,7 +63,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                                <p>Copyright © 2022 VERBUNG. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>
