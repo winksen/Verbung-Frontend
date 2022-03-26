@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "http://trydo.rainbowit.net",
   "basename": "/",
+  "engines" : { 
+    "npm" : "14.17.0",
+    "node" : "7.20.5"
+  },
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",

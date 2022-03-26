@@ -49,17 +49,15 @@ const PortfolioList = [
 class Portfolio extends Component{
     render(){
         let title = 'Our Work',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.';
+        description = 'We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.';
         return(
             <React.Fragment>
                 <div className="active-darkless portfolio-wrapper ptb--120">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6">
-                                <div className="section-title">
-                                    <h2>{title}</h2>
-                                    <p>{description}</p>
-                                </div>
+                            <div className="section-title">
+                                <h2>{title}</h2>
+                                <p align="justify">{description}</p>
                             </div>
                         </div>
                     </div>

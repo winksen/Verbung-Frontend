@@ -27,17 +27,17 @@ const ServiceList = [
 class ServiceTwo extends Component{
     render(){
         let title = 'Services',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.';
+        description = 'We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.';
         return(
             <React.Fragment>
                 <div className="row">
                     <div className="col-lg-4 col-12">
                         <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
                             <h2 className="title">{title}</h2>
-                            <p>{description}</p>
-                            <div className="service-btn">
+                            <p align="justify">{description}</p>
+                            {/* <div className="service-btn">
                                 <a className="btn-transparent rn-btn-dark" href="/service"><span className="text">Request Custom Service</span></a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-lg-8 col-12 mt_md--50">
@@ -51,7 +51,7 @@ class ServiceTwo extends Component{
                                             </div>
                                             <div className="content">
                                                 <h3 className="title">{val.title}</h3>
-                                                <p>{val.description}</p>
+                                                <p align="justify">{val.description}</p>
                                             </div>
                                         </div>
                                     </a>
