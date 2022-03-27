@@ -4,8 +4,9 @@ import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
 let data = [
     {
         images: '01',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
+        title: 'INPT Olympics XI',
+        designation: 'Event • Visual Identity',
+        link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         socialNetwork: [
             {
                 icon: <FaFacebookF />,
@@ -23,8 +24,9 @@ let data = [
     },
     {
         images: '02',
-        title: 'Fatima Asrafi',
-        designation: 'Front-end Engineer',
+        title: 'A2S Junior Entreprise',
+        designation: 'Brand • Visual Identity, Stationary',
+        link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
         socialNetwork: [
             {
                 icon: <FaFacebookF />,
@@ -38,8 +40,9 @@ let data = [
     },
     {
         images: '03',
-        title: 'John Dou',
-        designation: 'Sr. Graphic Designer',
+        title: 'PantoFit',
+        designation: 'Brand • Visual Identity, UI/UX',
+        link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
         socialNetwork: [
             {
                 icon: <FaFacebookF />,

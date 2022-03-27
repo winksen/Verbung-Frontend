@@ -1,8 +1,8 @@
 {
-  "name": "trydo",
+  "name": "verbung",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://trydo.rainbowit.net",
+  "homepage": "http://www.verbung.net",
   "basename": "/",
   "engines" : { 
     "node" : "14.17.0",

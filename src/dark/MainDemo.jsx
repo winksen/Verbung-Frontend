@@ -13,6 +13,8 @@ import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
+import Team from "../blocks/Team";
+
 
 class MainDemo extends Component{
     render(){
@@ -41,13 +43,18 @@ class MainDemo extends Component{
                    </div>
                 </div>
                 {/* End Service Area  */}
+                
+                <div>
+                    <Team/>
+                </div>
+                
 
                 {/* Start Portfolio Area */}
-                <div className="portfolio-area bg_color--1">
+                {/* <div className="portfolio-area bg_color--1">
                     <div className="portfolio-sacousel-inner mb--55">
                         <Portfolio />
                     </div>
-                </div>
+                </div> */}
                 {/* End Portfolio Area */}
 
                 {/* Start CounterUp Area */}

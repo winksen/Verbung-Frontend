@@ -10,7 +10,7 @@ const SocialShare = [
 
 const FooterTwo = () => {
     return (
-        <div className="footer-style-2 ptb--30 bg_image bg_image--1" data-black-overlay="6">
+        <div className="active-dark footer-style-2 ptb--30" data-black-overlay="6">
             <div className="wrapper plr--50 plr_sm--20">
                 <div className="row align-items-center justify-content-between">
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -34,7 +34,7 @@ const FooterTwo = () => {
                     <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                         <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
                             <div className="text">
-                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                <p>Copyright © 2022 VERBUNG®. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

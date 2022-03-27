@@ -8,11 +8,14 @@ const TeamOne = (props) => {
                 <div className={`${props.column}`} key={i}>
                     <div className={`team ${props.teamStyle}`}>
                         <div className="thumbnail">
-                            <img src={`/assets/images/team/team-${value.images}.jpg`} alt="Blog Images"/>
+                            <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Blog Images"/>
                         </div>
                         <div className="content">
                             <h4 className="title">{value.title}</h4>
                             <p className="designation">{value.designation}</p>
+                            <div className="portfolio-button">
+                                <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">View on BEHANCE</a>
+                            </div>
                         </div>
                         <ul className="social-icon" >
                             {value.socialNetwork.map((social, index) =>

@@ -12,27 +12,27 @@ import Footer from "../component/footer/Footer";
 const Team = () => {
     return (
         <>
-            <PageHelmet pageTitle='Team' />
+            {/* <PageHelmet pageTitle='Team' /> */}
             {/* Start Header Area  */}
-            <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+            {/* <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" /> */}
             {/* End Header Area  */}
 
             {/* Start Breadcrump Area */}
-            <Breadcrumb title={'Team'}   />
+            {/* <Breadcrumb title={'Team'}   /> */}
             {/* End Breadcrump Area */}
 
             {/* Start Page Wrapper  */}
             <main className="page-wrapper">
 
                 {/* Start Team Area  */}
-                <div className="rn-team-wrapper ptb--120 bg_color--1">
-                    <div className="rn-team-area">
+                <div className="rn-team-wrapper  bg_color--1">
+                    <div className="active-darkless ptb--120 rn-team-area">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center mb--30">
-                                        <h2>Our Skilled Team</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p>
+                                        <h2>Our Work</h2>
+                                        <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ const Team = () => {
                 {/* End Team Area  */}
 
                 {/* Start Team Area  */}
-                <div className="rn-team-wrapper ptb--120 bg_color--5">
+                {/* <div className="rn-team-wrapper ptb--120 bg_color--5">
                     <div className="rn-team-area">
                         <div className="container">
                             <div className="row">
@@ -57,11 +57,11 @@ const Team = () => {
                             <TeamTwo column="col-lg-3" teamStyle="" item="4" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* End Team Area  */}
 
                 {/* Start Team Area  */}
-                <div className="rn-team-wrapper ptb--120 bg_color--1">
+                {/* <div className="rn-team-wrapper ptb--120 bg_color--1">
                     <div className="rn-team-area">
                         <div className="container">
                             <div className="row">
@@ -75,7 +75,7 @@ const Team = () => {
                             <TeamOne column="col-lg-3" teamStyle="team-style--bottom" item="8" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* End Team Area  */}
 
 
@@ -86,15 +86,15 @@ const Team = () => {
             
 
              {/* Start Back To Top */}
-             <div className="backto-top">
+             {/* <div className="backto-top">
                 <ScrollToTop showUnder={160}>
                     <FiChevronUp />
                 </ScrollToTop>
-            </div>
+            </div> */}
             {/* End Back To Top */}
             
             {/* Start Footer Area  */}
-            <Footer />
+            {/* <Footer /> */}
             {/* End Footer Area  */}
 
         </>
