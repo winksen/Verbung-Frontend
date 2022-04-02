@@ -13,7 +13,7 @@ import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
-import Team from "../blocks/Team";
+import Clients from "../blocks/Team";
 
 
 class MainDemo extends Component{
@@ -25,7 +25,7 @@ class MainDemo extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Slider Area   */}
-                <div className="slider-wrapper">
+                <div className="slider-wrapper gradient-animated">
                     <SliderOne />
                 </div>
                 {/* End Slider Area   */}
@@ -45,7 +45,7 @@ class MainDemo extends Component{
                 {/* End Service Area  */}
                 
                 <div>
-                    <Team/>
+                    <Clients />
                 </div>
                 
 

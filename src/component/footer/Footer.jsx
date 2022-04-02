@@ -13,7 +13,7 @@ class Footer extends Component{
         return(
             <React.Fragment>
                 <footer className="footer-area">
-                    <div className="footer-wrapper">
+                    <div className="footer-wrapper active-darkless">
                         <div className="row align-items-end row--0">
                             <div className="col-lg-6">
                                 <div className="footer-left">
@@ -46,8 +46,8 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>Say Hello</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="mailto:admin@example.com">admin@example.com</a></li>
-                                                    <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                                    <li><a href="mailto:contact@verbung.net">contact@verbung.net</a></li>
+                                                    {/* <li><a href="mailto:hr@example.com">hr@example.com</a></li> */}
                                                 </ul>
 
                                                 <div className="social-share-inner">
@@ -63,7 +63,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2022 VERBUNG. All Rights Reserved.</p>
+                                                <p>Copyright © 2022 VERBUNG®. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -19,7 +19,7 @@ const TeamOne = (props) => {
                         </div>
                         <ul className="social-icon" >
                             {value.socialNetwork.map((social, index) =>
-                                <li key={index}><a href={`${social.url}`}>{social.icon}</a></li>
+                                <li key={index}><a href={`${social.url}`} target="_blank" rel="noreferrer noopener">{social.icon}</a></li>
                             )}
                         </ul>
                     </div>

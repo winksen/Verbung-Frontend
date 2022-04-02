@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
+import { FaPaintBrush } from "react-icons/md";
 
 const ServiceList = [
     {
@@ -8,17 +9,17 @@ const ServiceList = [
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
-        icon: <FiLayers />,
+        icon: <FiMaximize />,
         title: 'Visual Identity',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
-        icon: <FiUsers />,
+        icon: <FiMonitor />,
         title: 'Web & Mobile',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
-        icon: <FiMonitor />,
+        icon: <FiUsers />,
         title: 'Press Relation',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     }

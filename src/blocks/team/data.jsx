@@ -1,5 +1,7 @@
 import React from "react";
-import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
+import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+
 
 let data = [
     {
@@ -9,16 +11,8 @@ let data = [
         link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         socialNetwork: [
             {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
                 icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
+                url: 'https://www.linkedin.com/company/olympiades-inpt'
             },
         ]
     },
@@ -30,11 +24,15 @@ let data = [
         socialNetwork: [
             {
                 icon: <FaFacebookF />,
-                url: '#'
+                url: 'http://facebook.com/A2S.JE'
             },
             {
                 icon: <FaLinkedinIn />,
-                url: '#'
+                url: 'http://linkedin.com/in/a2sinpt/'
+            },
+            {
+                icon: <RiInstagramFill />,
+                url: 'http://instagram.com/a2s_junior_entreprise'
             },
         ]
     },
@@ -46,22 +44,22 @@ let data = [
         socialNetwork: [
             {
                 icon: <FaFacebookF />,
-                url: '#'
+                url: 'https://facebook.com/pantofit1'
             },
             {
                 icon: <FaLinkedinIn />,
-                url: '#'
+                url: 'https://linkedin.com/company/pantofit/'
             },
             {
-                icon: <FaTwitter />,
-                url: '#'
+                icon: <FaGlobe />,
+                url: 'https://www.pantofit.com/'
             },
         ]
     },
     {
-        images: '06',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
+        images: '04',
+        title: 'DetaFour',
+        designation: 'Brand • UI/UX, Web, Digital Marketing',
         socialNetwork: [
             {
                 icon: <FaFacebookF />,

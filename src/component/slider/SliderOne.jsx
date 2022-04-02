@@ -17,9 +17,9 @@ class SliderOne extends Component {
                         </div>
                     </div>
                     {/* Start Service Area */}
-                    <div className="service-wrapper service-white">
+                    {/* <div className="service-wrapper service-white">
                         <ServiceOne />
-                    </div>
+                    </div> */}
                     {/* End Service Area */}
                 </div>
             </div> 
