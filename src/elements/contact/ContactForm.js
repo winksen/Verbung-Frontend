@@ -34,9 +34,9 @@ function ContactForm({props}) {
     }, 5000);
 
     return (
-        <form action="" onSubmit={sendEmail}>
-            <div className="rn-form-group">
-                <input 
+        <form className='contact-form--1' action="" onSubmit={sendEmail}>
+            <div className="rnform-group">
+                <input className='textInputField'
                 type="text"
                 name="fullname"
                 placeholder="Your Name"
@@ -45,7 +45,7 @@ function ContactForm({props}) {
             </div>
 
             <div className="rn-form-group">
-                <input 
+                <input className='textInputField'
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -54,7 +54,7 @@ function ContactForm({props}) {
             </div>
 
             <div className="rn-form-group">
-                <input 
+                <input className='textInputField'
                 type="text"
                 name="phone"
                 placeholder="Phone Number"
@@ -63,7 +63,7 @@ function ContactForm({props}) {
             </div>
 
             <div className="rn-form-group">
-                <input 
+                <input className='textInputField'
                 type="text"
                 name="subject"
                 placeholder="Subject"
@@ -72,7 +72,7 @@ function ContactForm({props}) {
             </div>
             
             <div className="rn-form-group">
-                <textarea 
+                <textarea className='textInputField'
                 name="message"
                 placeholder="Your Message"
                 required

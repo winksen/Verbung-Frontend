@@ -12,13 +12,13 @@ class ContactTwo extends Component {
                                 <h2 className="title">Contact Us.</h2>
                                 <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate aperiam neque.</p>
                             </div>
-                            <div className="form-wrapper">
+                            <div className="form-wrapper contact-form--1">
                                 <ContactForm />
                             </div>
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
                             <div className="thumbnail mb_md--30 mb_sm--30">
-                                <img src="/assets/images/about/about-6.jpg" alt="trydo"/>
+                                <img src="/assets/images/about/phone.jpg" alt="Phone"/>
                             </div>
                         </div>
                     </div>

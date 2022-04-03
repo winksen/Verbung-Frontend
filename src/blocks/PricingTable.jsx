@@ -8,7 +8,7 @@ import Footer from "../component/footer/Footer";
 
 const PricingTable = () => {
     return (
-        <>
+        <div className='active-dark'>
             <PageHelmet pageTitle='Pricing Table' />
 
             {/* Start Header Area  */}
@@ -128,7 +128,7 @@ const PricingTable = () => {
             {/* Start Footer Area  */}
             <Footer />
             {/* End Footer Area  */}
-        </>
+        </div>
         
     )
 }

@@ -12,7 +12,7 @@ class SliderOne extends Component {
                         <div className="col-lg-12">
                             <div className="inner">
                                 <h1 className="title theme-gradient">S C A L E &nbsp;&nbsp;N O W. </h1><br />
-                                <h4 align="justify">Verbung provides digital marketing services for businesses of all sizes with an opportunity to market their brand 24/7 at a low cost.</h4>
+                                {/* <h4 align="justify">Verbung provides digital marketing services for businesses of all sizes with an opportunity to market their brand 24/7 at a low cost.</h4> */}
                             </div>
                         </div>
                     </div>
