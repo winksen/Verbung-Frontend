@@ -143,24 +143,6 @@ Common Css
     font-family: $body-font;
 }
 
-.textInputField {
-    font-family: $body-font;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-  
-.textInputField:focus{
-    outline: none !important;
-    border:1px solid red;
-    // box-shadow: 0 0 10px #719ECE;
-  }
-
 %headingFont {
     font-family: $heading-font;
 }

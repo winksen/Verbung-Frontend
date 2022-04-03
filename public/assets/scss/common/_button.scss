@@ -45,7 +45,7 @@ button {
         position: relative;
         z-index: 2;
         // font-family: Montserrat;
-        color: $theme-color;
+        color: $border-color;
         letter-spacing: 0.2px;
         @extend %transition;
         text-transform: uppercase;
