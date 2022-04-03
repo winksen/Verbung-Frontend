@@ -16,25 +16,27 @@ const PricingTable = () => {
             {/* End Header Area  */}
             
             {/* Start Breadcrump Area */}
-            <Breadcrumb title={'Pricing Table'}   />
+            {/* <Breadcrumb title={'Pricing Table'}   /> */}
             {/* End Breadcrump Area */}
 
             {/* Start Page Wrapper  */}
-            <main className="page-wrapper">
+            <br /><br /><br /><br />
+            <main className="page-wrapper active-darkless">
                 {/* Start Pricing Tbale Area  */}
                 <div className="rn-pricing-table-area ptb--120 bg_color--5">
                     <div className="container">
                         <div className="row">
 
                             {/* Start PRicing Table Area  */}
-                            <div className="col-lg-4 col-md-6 col-12">
+                            <div className="col-lg-3 col-md-6 col-12">
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Free</h4>
+                                            <h4 className="title">Pack Digital Marketing</h4>
                                             <div className="pricing">
-                                                <span className="price">29</span>
-                                                <span className="subtitle">USD Per Month</span>
+                                                <span className="subtitle">from</span>
+                                                <span className="price">290</span>
+                                                <span className="subtitle">MAD</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -55,7 +57,94 @@ const PricingTable = () => {
                             {/* End PRicing Table Area  */}
 
                             {/* Start PRicing Table Area  */}
-                            <div className="col-lg-4 col-md-6 col-12">
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <div className="rn-pricing">
+                                    <div className="pricing-table-inner">
+                                        <div className="pricing-header">
+                                            <h4 className="title">Pack Visual Identity</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">from</span>
+                                                <span className="price">290</span>
+                                                <span className="subtitle">MAD</span>
+                                            </div>
+                                        </div>
+                                        <div className="pricing-body">
+                                            <ul className="list-style--1">
+                                                <li><FiCheck /> 5 PPC Campaigns</li>
+                                                <li><FiCheck /> Digital Marketing</li>
+                                                <li><FiCheck /> Marketing Agency</li>
+                                                <li><FiCheck /> Seo Friendly</li>
+                                                <li><FiCheck /> UI/UX designs</li>
+                                            </ul>
+                                        </div>
+                                        <div className="pricing-footer">
+                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End PRicing Table Area  */}
+
+                            {/* Start PRicing Table Area  */}
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <div className="rn-pricing">
+                                    <div className="pricing-table-inner">
+                                        <div className="pricing-header">
+                                            <h4 className="title">Pack Web &amp; Mobile</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">from</span>
+                                                <span className="price">290</span>
+                                                <span className="subtitle">MAD</span>
+                                            </div>
+                                        </div>
+                                        <div className="pricing-body">
+                                            <ul className="list-style--1">
+                                                <li><FiCheck /> 5 PPC Campaigns</li>
+                                                <li><FiCheck /> Digital Marketing</li>
+                                                <li><FiCheck /> Marketing Agency</li>
+                                                <li><FiCheck /> Seo Friendly</li>
+                                                <li><FiCheck /> UI/UX designs</li>
+                                            </ul>
+                                        </div>
+                                        <div className="pricing-footer">
+                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End PRicing Table Area  */}
+
+                            {/* Start PRicing Table Area  */}
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <div className="rn-pricing">
+                                    <div className="pricing-table-inner">
+                                        <div className="pricing-header">
+                                            <h4 className="title">Pack Press Relation</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">from</span>
+                                                <span className="price">290</span>
+                                                <span className="subtitle">MAD</span>
+                                            </div>
+                                        </div>
+                                        <div className="pricing-body">
+                                            <ul className="list-style--1">
+                                                <li><FiCheck /> 5 PPC Campaigns</li>
+                                                <li><FiCheck /> Digital Marketing</li>
+                                                <li><FiCheck /> Marketing Agency</li>
+                                                <li><FiCheck /> Seo Friendly</li>
+                                                <li><FiCheck /> UI/UX designs</li>
+                                            </ul>
+                                        </div>
+                                        <div className="pricing-footer">
+                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End PRicing Table Area  */}
+                            
+                            {/* Start PRicing Table Area  */}
+                            {/* <div className="col-lg-4 col-md-6 col-12">
                                 <div className="rn-pricing active">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
@@ -79,37 +168,8 @@ const PricingTable = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* End PRicing Table Area  */}
-
-                            {/* Start PRicing Table Area  */}
-                            <div className="col-lg-4 col-md-6 col-12">
-                                <div className="rn-pricing">
-                                    <div className="pricing-table-inner">
-                                        <div className="pricing-header">
-                                            <h4 className="title">Advanced</h4>
-                                            <div className="pricing">
-                                                <span className="price">29</span>
-                                                <span className="subtitle">USD Per Month</span>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="list-style--1">
-                                                <li><FiCheck /> 5 PPC Campaigns</li>
-                                                <li><FiCheck /> Digital Marketing</li>
-                                                <li><FiCheck /> Marketing Agency</li>
-                                                <li><FiCheck /> Seo Friendly</li>
-                                                <li><FiCheck /> UI/UX designs</li>
-                                            </ul>
-                                        </div>
-                                        <div className="pricing-footer">
-                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End PRicing Table Area  */}
-                            
                         </div>
                     </div>
                 </div>

@@ -108,7 +108,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/contact-form`} component={ContactForm}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/google-map`} component={GoogleMap}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/>*/}
-                        <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/pricing`} component={PricingTable}/>
 
 
                         
