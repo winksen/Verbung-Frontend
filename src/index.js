@@ -1,7 +1,6 @@
 // React Required
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import LogRocket from 'logrocket';
 
 // Create Import File
 import './index.scss';
@@ -59,8 +58,6 @@ import Columns from "./blocks/Columns";
 import PricingTable from "./blocks/PricingTable";
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-
-LogRocket.init('jyrs1t/verbung');
 class Root extends Component{
     render(){
         return(

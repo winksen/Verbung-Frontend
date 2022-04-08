@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 
 const Result = () => {
     return (
-        <p className="success-message">Your Message has been successfully sent. I will contact you soon.</p>
+        <p className="success-message">Your Message has been successfully sent. We will contact you soon.</p>
     )
 }
 function ContactForm({props}) {
@@ -13,10 +13,10 @@ function ContactForm({props}) {
         e.preventDefault();
         emailjs
         .sendForm(
-            'service_p4x3hv8', 
-            'template_jgfr42f', 
+            'service_o9an4x4',
+            'template_r8wkhsp', 
             e.target, 
-            'user_jrfTH2e0Ely35ZCVFdT9S'
+            'kvWfZqb0L2Py660lw'
         )
         .then((result) => {
             console.log(result.text);
@@ -34,7 +34,7 @@ function ContactForm({props}) {
     }, 5000);
 
     return (
-        <form className='contact-form--1' action="" onSubmit={sendEmail}>
+        <form className='contact-form--1' onSubmit={sendEmail}>
             <div className="rnform-group">
                 <input className='textInputField'
                 type="text"
