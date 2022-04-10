@@ -1,27 +1,26 @@
 import React, { Component } from "react";
 import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
-import { FaPaintBrush } from "react-icons/md";
 
 const ServiceList = [
     {
         icon: <FiCast />,
         title: 'Digital Marketing',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'We build ROI centric campaigns that will take your business to the next level.'
     },
     {
         icon: <FiMaximize />,
         title: 'Visual Identity',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Good graphic design has the ability to connect with your audience and reach your business goals.'
     },
     {
         icon: <FiMonitor />,
         title: 'Web & Mobile',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.'
     },
     {
         icon: <FiUsers />,
         title: 'Press Relation',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'The best way to get your news in front of the journalists who matter.'
     }
 ]
 
