@@ -49,7 +49,6 @@
             p {
                 opacity: 0.75;
                 font-weight: 300;
-                font-size: 10px;
             }
         }
     }
@@ -87,10 +86,10 @@
             visibility: hidden;
             @extend %transition;
             border-radius: 10px;
-            @media #{$large-mobile} {
-                opacity: 1;
-                visibility: visible;
-            }
+            // @media #{$large-mobile} {
+            //     opacity: 1;
+            //     visibility: visible;
+            // }
         }
         .icon {
             font-size: 54px;
@@ -102,9 +101,9 @@
             @media #{$md-layout} {
                 margin-bottom: 11px;
             }
-            @media #{$large-mobile} {
-                color: #ffffff;
-            }
+            // @media #{$large-mobile} {
+            //     color: #ffffff;
+            // }
            svg {
                 stroke-width: 1 !important;
            }
@@ -124,23 +123,25 @@
                     @media #{$md-layout} {
                         margin-bottom: 8px;
                     }
-                    @media #{$large-mobile} {
-                        color: #ffffff;
-                    }
+                    // @media #{$large-mobile} {
+                    //     color: #ffffff;
+                    // }
                     a {
-                        color: inherit;
-                        @media #{$large-mobile} {
-                            color: #ffffff;
-                        }
+                        // color: inherit;
+                        // @media #{$large-mobile} {
+                        //     color: #ffffff;
+                        // }
                     }
                 }
             }
             p {
+                // display: none;
+                font-size: 15px;
                 @extend %transition;
                 color: rgba(29,29,36,0.75);
-                @media #{$large-mobile} {
-                    color: #ffffff;
-                }
+                // @media #{$large-mobile} {
+                //     color: #ffffff;
+                // }
 
             }
         }
@@ -162,7 +163,9 @@
                     }
                 }
                 p{
-                    @extend %textwhite;  
+                    display: block;
+                    @extend %textwhite;
+                    font-size: 15px;  
                 }
             }
         }
@@ -204,9 +207,6 @@
         p {
             font-size: 15px;
             line-height: 24px;
-        }
-        a {
-
         }
     }
 }

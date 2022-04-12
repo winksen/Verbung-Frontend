@@ -4,8 +4,6 @@ import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp } from "react-icon
 import ScrollToTop from 'react-scroll-up';
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import Tooltip from "../blocks/Tooltip";
-import { Link } from 'react-router-dom';
 
 
 const ServiceListDM = [
@@ -219,6 +217,7 @@ class Service extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
+                                    <FiCast/>
                                     <h2>Digital Marketing</h2>
                                     <p>We partner with clients to build ROI centric campaigns through a variety of digital marketing services that will take your business to the next level.</p>
                                 </div>
@@ -226,7 +225,7 @@ class Service extends Component{
                         </div>
                         <div className="row service-one-wrapper">
                             {ServiceListDM.map( (val , i) => (
-                                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
+                                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" key={i}>
                                     <a className="text-center" href="/service-details">
                                         <div className="service service__style--2">
                                             <div className="icon">
