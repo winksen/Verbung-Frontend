@@ -58,6 +58,7 @@
     "react": "^16.14.0",
     "react-accessible-accordion": "^3.3.5",
     "react-animate-on-scroll": "^2.1.5",
+    "react-animated-bg": "^1.2.2",
     "react-app-polyfill": "^1.0.6",
     "react-bootstrap": "^1.6.4",
     "react-countup": "^4.4.0",
