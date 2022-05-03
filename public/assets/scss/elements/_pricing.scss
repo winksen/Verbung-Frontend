@@ -26,7 +26,10 @@
         left: -2px;
     }
     .pricing-table-inner{
-        padding: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
         .pricing-header {
             margin-bottom: 30px;
             padding-bottom: 30px;
@@ -35,13 +38,14 @@
             h4 {
                 &.title {
                     margin-bottom: 30px;
+                    font-size: x-large;
                 }
             }
             .pricing {
                 span {
                     display: block;
                     &.price {
-                        font-size: 100px;
+                        font-size: 65px;
                         color: #4CBD94;
                         line-height: 1;
                     }

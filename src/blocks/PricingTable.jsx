@@ -32,20 +32,25 @@ const PricingTable = () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Pack Digital Marketing</h4>
                                             <div className="pricing">
-                                                <span className="subtitle">from</span>
-                                                <span className="price">290</span>
-                                                <span className="subtitle">MAD</span>
+                                                <span className="subtitle">PACK</span>
+                                            </div>
+                                            <h4 className="title">Digital Marketing</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">•</span>
+                                                <span className="subtitle">Starting from</span>
+                                                <span className="price">22,000</span>
+                                                <span className="subtitle">MAD/TTC</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck /> 5 PPC Campaigns</li>
-                                                <li><FiCheck /> Digital Marketing</li>
-                                                <li><FiCheck /> Marketing Agency</li>
-                                                <li><FiCheck /> Seo Friendly</li>
-                                                <li><FiCheck /> UI/UX designs</li>
+                                                <li><FiCheck />Community Management</li>
+                                                <li><FiCheck />SEO &amp; SEA</li>
+                                                <li><FiCheck />Email Marketing</li>
+                                                <li><FiCheck />Influencers Campaign</li>
+                                                <li><FiCheck />Marketing Strategic Advice</li>
+                                                <li><FiCheck />Marketing Plan</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -61,20 +66,25 @@ const PricingTable = () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Pack Visual Identity</h4>
                                             <div className="pricing">
-                                                <span className="subtitle">from</span>
-                                                <span className="price">290</span>
-                                                <span className="subtitle">MAD</span>
+                                                <span className="subtitle">PACK</span>
+                                            </div>
+                                            <h4 className="title">Visual Identity</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">•</span>
+                                                <span className="subtitle">Starting from</span>
+                                                <span className="price">*** ***</span>
+                                                <span className="subtitle">MAD/TTC</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck /> 5 PPC Campaigns</li>
-                                                <li><FiCheck /> Digital Marketing</li>
-                                                <li><FiCheck /> Marketing Agency</li>
-                                                <li><FiCheck /> Seo Friendly</li>
-                                                <li><FiCheck /> UI/UX designs</li>
+                                                <li><FiCheck />Logo Design</li>
+                                                <li><FiCheck />Graphic Charter Setup</li>
+                                                <li><FiCheck />Typography &amp; Colors</li>
+                                                <li><FiCheck />Stationairy</li>
+                                                <li><FiCheck />Social Media Assets</li>
+                                                <li><FiCheck />Email Signature</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -90,20 +100,25 @@ const PricingTable = () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Pack Web &amp; Mobile</h4>
                                             <div className="pricing">
-                                                <span className="subtitle">from</span>
-                                                <span className="price">290</span>
-                                                <span className="subtitle">MAD</span>
+                                                <span className="subtitle">PACK</span>
+                                            </div>
+                                            <h4 className="title">Web &amp; Mobile</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">•</span>
+                                                <span className="subtitle">Starting from</span>
+                                                <span className="price">125,000</span>
+                                                <span className="subtitle">MAD/TTC</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck /> 5 PPC Campaigns</li>
-                                                <li><FiCheck /> Digital Marketing</li>
-                                                <li><FiCheck /> Marketing Agency</li>
-                                                <li><FiCheck /> Seo Friendly</li>
-                                                <li><FiCheck /> UI/UX designs</li>
+                                                <li><FiCheck />Custom UI Design</li>
+                                                <li><FiCheck />UX Enhancement</li>
+                                                <li><FiCheck />Development &amp; Coding</li>
+                                                <li><FiCheck />Administration Console</li>
+                                                <li><FiCheck />Publishing/Deployment</li>
+                                                <li><FiCheck />Domain Name Reservation</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -119,19 +134,24 @@ const PricingTable = () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Pack Press Relation</h4>
                                             <div className="pricing">
-                                                <span className="subtitle">from</span>
-                                                <span className="price">290</span>
-                                                <span className="subtitle">MAD</span>
+                                                <span className="subtitle">PACK</span>
+                                            </div>
+                                            <h4 className="title">Press Relation</h4>
+                                            <div className="pricing">
+                                                <span className="subtitle">•</span>
+                                                <span className="subtitle">starting from</span>
+                                                <span className="price">35,000</span>
+                                                <span className="subtitle">MAD/TTC</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck /> 5 PPC Campaigns</li>
-                                                <li><FiCheck /> Digital Marketing</li>
-                                                <li><FiCheck /> Marketing Agency</li>
-                                                <li><FiCheck /> Seo Friendly</li>
+                                                <li><FiCheck />PR Strategic Advice</li>
+                                                <li><FiCheck />PR Action Plans</li>
+                                                <li><FiCheck />Press Releases &amp; Books</li>
+                                                <li><FiCheck />Contact with Media</li>
+                                                <li><FiCheck />Conferences, Interviews</li>
                                                 <li><FiCheck /> UI/UX designs</li>
                                             </ul>
                                         </div>
