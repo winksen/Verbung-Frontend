@@ -10,15 +10,27 @@ on:
     branches: [ main ]
 
 jobs:
+  web-deploy:
+      name: Deploy
+      runs-on: ubuntu-latest
+      steps:
+      - name: Get latest code
+        uses: actions/checkout@v2
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /public_html/
+
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [ 14.17.0 ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -28,4 +40,3 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run start
-    - run: npm test
