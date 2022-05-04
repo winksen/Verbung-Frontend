@@ -1,11 +1,13 @@
 import React from 'react'
 import data from "./data";
+
 const TeamOne = (props) => {
     const itemSlice = data.slice(0 , props.item)
     return (
         <div className="row">
             {itemSlice.map((value , i ) => (
                 <div className={`${props.column}`} key={i}>
+                    
                     <div className={`team ${props.teamStyle}`}>
                         <div className="thumbnail">
                             <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Blog Images"/>

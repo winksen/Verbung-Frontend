@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ScrollToTop from 'react-scroll-up';
-import { FiChevronUp } from "react-icons/fi";
+import Scrollspy from 'react-scrollspy';
+
+import { FiChevronUp, FiX, FiMenu } from "react-icons/fi";
 
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
@@ -18,34 +20,108 @@ import Clients from "../blocks/Team";
 
 
 class MainDemo extends Component{
+    constructor(props) {
+        super(props);
+        this.menuTrigger = this.menuTrigger.bind(this);
+        this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
+        this.stickyHeader = this.stickyHeader.bind(this);
+
+       //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
+        window.addEventListener('load', function() {
+            console.log('All assets are loaded');
+        })
+    }
+    menuTrigger() {
+        document.querySelector('.header-wrapper').classList.toggle('menu-open')
+    }
+    CLoseMenuTrigger() {
+        document.querySelector('.header-wrapper').classList.remove('menu-open')
+    }
+    stickyHeader () {}
     render(){
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            if (value > 50) {
+                document.querySelector('.header--fixed').classList.add('sticky')
+            }else{
+                document.querySelector('.header--fixed').classList.remove('sticky')
+            }
+        });
+
+        var elements = document.querySelectorAll('.has-droupdown > a');
+        for(var i in elements) {
+            if(elements.hasOwnProperty(i)) {
+                elements[i].onclick = function() {
+                    this.parentElement.querySelector('.submenu').classList.toggle("active");
+                    this.classList.toggle("open");
+                }
+            }
+        }
         const PostList = BlogContent.slice(0 , 3);
         return(
             <div className="active-dark"> 
                 <Helmet pageTitle="Verbung" />
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                {/* <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" /> */}
+
+                {/* Start Header Area  */}
+                <header className="header-area formobile-menu header--fixed default-color">
+                    <div className="header-wrapper" id="header-wrapper">
+                        <div className="header-left">
+                            <div className="logo">
+                                <a href="/">
+                                    <img className="logo-1" src="/assets/images/logo/logo.png" alt="Logo Images"/>
+                                    <img className="logo-2" src="/assets/images/logo/logo.png" alt="Logo Images"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="header-right">
+                            <nav className="mainmenunav d-lg-block">
+                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#work">Work</a></li>
+                                </Scrollspy>
+                            </nav>
+                            <div className="header-btn">
+                                <a className="rn-btn" href="/pricing">
+                                    <span>PRICING</span>
+                                </a>
+                            </div>
+                            {/* Start Humberger Menu  */}
+                            <div className="humberger-menu d-block d-lg-none pl--20">
+                                <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
+                            </div>
+                            {/* End Humberger Menu  */}
+                            <div className="close-menu d-block d-lg-none">
+                                <span onClick={this.CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                {/* End Header Area  */}
 
                 {/* Start Slider Area   */}
-                <div className="slider-wrapper gradient-animated">
+                <div className="slider-wrapper gradient-animated" id="home">
                     <SliderOne />
                 </div>
                 {/* End Slider Area   */}
 
                 {/* Start About Area */}
-                <div className="about-area about-position-top bg_color--1">
+                <div className="about-area about-position-top bg_color--1" id="about">
                     <About />
                 </div>
                 {/* End About Area */}
 
                 {/* Start Service Area  */}
-                <div className="service-area ptb--80  bg_image bg_image--3">
+                <div className="service-area ptb--80  bg_image bg_image--3" id="services">
                    <div className="container">
                         <ServiceTwo />
                    </div>
                 </div>
                 {/* End Service Area  */}
                 
-                <div>
+                <div id="work">
                     <Clients />
                 </div>
                 
