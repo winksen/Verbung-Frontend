@@ -212,7 +212,7 @@ class Service extends Component{
 
                 {/* Start Service Area */}
                 <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--5">
+                <div className="service-area ptb--120 bg_color--5" id="DM">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -245,7 +245,7 @@ class Service extends Component{
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area ptb--120 bg_color--1">
+                <div className="service-area ptb--120 bg_color--1" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -277,7 +277,7 @@ class Service extends Component{
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area ptb--120 bg_color--5">
+                <div className="service-area ptb--120 bg_color--5" id="WM">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -309,7 +309,7 @@ class Service extends Component{
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area ptb--120 bg_color--1">
+                <div className="service-area ptb--120 bg_color--1" id="PR">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">

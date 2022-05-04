@@ -76,7 +76,7 @@ class MainDemo extends Component{
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
+                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" >
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#services">Services</a></li>

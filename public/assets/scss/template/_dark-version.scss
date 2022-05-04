@@ -100,7 +100,17 @@
         border-color: $theme-color;
     }
     .header-area.header--fixed.sticky {
-        background: #191919;
+        background: transparent;
+        top: 0;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: rgba(255, 255, 255, 0.384);
+        padding-bottom: 10px;
+        padding-top: 15px;
     }
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
         color: #ffffff;

@@ -64,29 +64,17 @@ class Header extends Component{
                             <ul className="mainmenu">
                                 <li className="has-droupdown"><Link to="/">Home</Link>
                                     <ul className="submenu">
-                                        <li><Link to="/main-demo">Main Demo</Link></li>
-                                        <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
-                                        <li><Link to="/creative-agency">Creative Agency</Link></li>
-                                        <li><Link to="/creative-landing">Creative One Page</Link></li>
-                                        <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
-                                        <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
-                                        <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
-                                        <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
-                                        <li><Link to="/digital-agency">Digital Agency</Link></li>
-                                        <li><Link to="/startup">Startup</Link></li>
-                                        <li><Link to="/paralax">Paralax</Link></li>
-                                        <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
-                                        <li><Link to="/business">Business</Link></li>
-                                        <li><Link to="/home-particles">Home Particles</Link></li>
-                                        <li><Link to="/studio-agency">Studio Agency</Link></li>
-                                        <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
-                                        <li><Link to="/interactive-agency">Interactive Agency</Link></li>
+                                        <li><Link to="/#about">About</Link></li>
+                                        <li><Link to="/#services">Services</Link></li>
+                                        <li><Link to="/#work">Work</Link></li>
                                     </ul>
                                 </li>
-                                <li className="has-droupdown"><Link to="/service" >Service</Link>
+                                <li className="has-droupdown"><Link to="/services" >Services</Link>
                                     <ul className="submenu">
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/service-details">Service Details</Link></li>
+                                        <li><Link to="/services#DM">Digital Marketing</Link></li>
+                                        <li><Link to="/services#VI">Visual Identity</Link></li>
+                                        <li><Link to="/services#WM">Web &amp; Mobile</Link></li>
+                                        <li><Link to="/services#PR">Press Relation</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link to="/about" >About</Link></li>
