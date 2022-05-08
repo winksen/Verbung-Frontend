@@ -45,12 +45,12 @@ const PricingTable = () => {
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck />Community Management</li>
+                                                <li><FiCheck />Social Media Management</li>
                                                 <li><FiCheck />SEO &amp; SEA</li>
                                                 <li><FiCheck />Email Marketing</li>
                                                 <li><FiCheck />Influencers Campaign</li>
                                                 <li><FiCheck />Marketing Strategic Advice</li>
-                                                <li><FiCheck />Marketing Plan</li>
+                                                <li><FiCheck />Online Market Research</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -73,18 +73,18 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 <span className="subtitle">Starting from</span>
-                                                <span className="price">*** ***</span>
+                                                <span className="price">50,000</span>
                                                 <span className="subtitle">MAD/TTC</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
                                                 <li><FiCheck />Logo Design</li>
-                                                <li><FiCheck />Graphic Charter Setup</li>
-                                                <li><FiCheck />Typography &amp; Colors</li>
-                                                <li><FiCheck />Stationairy</li>
-                                                <li><FiCheck />Social Media Assets</li>
-                                                <li><FiCheck />Email Signature</li>
+                                                <li><FiCheck />Graphic Charter</li>
+                                                <li><FiCheck />Stationairy Design</li>
+                                                <li><FiCheck />Social Media Design</li>
+                                                <li><FiCheck />Email Signature Design</li>
+                                                <li><FiCheck />Motion Design</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -113,12 +113,12 @@ const PricingTable = () => {
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck />Custom UI Design</li>
+                                                <li><FiCheck />UI Design</li>
                                                 <li><FiCheck />UX Enhancement</li>
                                                 <li><FiCheck />Development &amp; Coding</li>
-                                                <li><FiCheck />Administration Console</li>
-                                                <li><FiCheck />Publishing/Deployment</li>
-                                                <li><FiCheck />Domain Name Reservation</li>
+                                                <li><FiCheck />SEO optimization</li>
+                                                <li><FiCheck />Publishing &amp; Deployment</li>
+                                                <li><FiCheck />Professional Email</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -147,12 +147,12 @@ const PricingTable = () => {
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
-                                                <li><FiCheck />PR Strategic Advice</li>
                                                 <li><FiCheck />PR Action Plans</li>
-                                                <li><FiCheck />Press Releases &amp; Books</li>
-                                                <li><FiCheck />Contact with Media</li>
-                                                <li><FiCheck />Conferences, Interviews</li>
-                                                <li><FiCheck /> UI/UX designs</li>
+                                                <li><FiCheck />Zriting Press Releases</li>
+                                                <li><FiCheck />Event Planning</li>
+                                                <li><FiCheck />Scripting &amp; Filming</li>
+                                                <li><FiCheck />Video Editing</li>
+                                                <li><FiCheck />Narration, Dubbing &amp; Voice-over</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">

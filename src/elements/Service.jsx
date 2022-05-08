@@ -130,6 +130,11 @@ const ServiceListVI = [
         title: 'Social Media',
         description: 'Love it or hate it, social media is here to stay. We work across all social platforms and can offer one off set ups, ongoing management or support you in how to best engage customers. We work with content scheduling platforms and offer content planning.'
     },
+    {
+        icon: <FiMonitor />,
+        title: 'Motion Graphics',
+        description: 'Our motion graphics services make it easy for you to create immersive visual experiences embedded in captivating storytelling videos.'
+    },
 ];
 
 const ServiceListWM = [
