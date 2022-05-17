@@ -4,7 +4,7 @@ import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "rea
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung-113352380852357'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/verbung'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbungofficial/'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/verbung'},
     {Social: <FaYoutube /> , link: 'https://www.youtube.com/channel/UCang3Nx-Z01oWYAa-EE3qfw'},
 ]
