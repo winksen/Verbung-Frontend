@@ -77,9 +77,9 @@ class Header extends Component{
                                         <li><Link to="/services#PR">Press Relation</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to="/about" >About</Link></li>
+                                {/* <li><Link to="/about" >About</Link></li> */}
 
-                                <li className="has-droupdown"><Link to="#pages" >Pages</Link>
+                                {/* <li className="has-droupdown"><Link to="#pages" >Pages</Link>
                                     <ul className="submenu">
                                         <li><Link to="/blog">Blog List</Link></li>
                                         <li><Link to="/blog-details">Blog Details</Link></li>
@@ -89,8 +89,8 @@ class Header extends Component{
                                         <li><Link to="/portfolio-details">Portfolio Details</Link></li>
                                         <li><Link to="/404">404</Link></li>
                                     </ul>
-                                </li>
-                                <li className="has-droupdown"><Link to="#" >Blocks</Link>
+                                </li> */}
+                                {/* <li className="has-droupdown"><Link to="#" >Blocks</Link>
                                     <ul className="submenu">
                                         <li><Link to="/portfolio">Portfolio</Link></li>
                                         <li><Link to="/team">Team</Link></li>
@@ -106,7 +106,7 @@ class Header extends Component{
                                         <li><Link to="/columns">Columns</Link></li>
                                         <li><Link to="/pricing-table">Pricing Table</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li><Link to="/contact" >Contact</Link></li>
                             </ul>
                         </nav>

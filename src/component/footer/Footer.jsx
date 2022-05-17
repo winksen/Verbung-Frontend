@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung-113352380852357'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/verbung'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
-    {Social: <FaYoutube /> , link: 'https:/youtube.com/'},
+    {Social: <FaTwitter /> , link: 'https://twitter.com/verbung'},
+    {Social: <FaYoutube /> , link: 'https://www.youtube.com/channel/UCang3Nx-Z01oWYAa-EE3qfw'},
 ]
 
 class Footer extends Component{
@@ -54,7 +54,7 @@ class Footer extends Component{
                                                 <div className="social-share-inner">
                                                     <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
                                                         {SocialShare.map((val , i) => (
-                                                            <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
+                                                            <li key={i}><a href={`${val.link}`} target="_blank" rel="noreferrer noopener">{val.Social}</a></li>
                                                         ))}
                                                     </ul>
                                                 </div> 

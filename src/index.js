@@ -65,8 +65,8 @@ class Root extends Component{
                 <PageScrollTop>
                     <Switch>
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/startup`} component={Startup}/>
