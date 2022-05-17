@@ -148,7 +148,7 @@ const PricingTable = () => {
                                         <div className="pricing-body">
                                             <ul className="list-style--1">
                                                 <li><FiCheck />PR Action Plans</li>
-                                                <li><FiCheck />Zriting Press Releases</li>
+                                                <li><FiCheck />Writing Press Releases</li>
                                                 <li><FiCheck />Event Planning</li>
                                                 <li><FiCheck />Scripting &amp; Filming</li>
                                                 <li><FiCheck />Video Editing</li>
