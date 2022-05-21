@@ -17,6 +17,7 @@ import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
 import Clients from "../blocks/Team";
+import Particles from "react-tsparticles";
 
 
 class MainDemo extends Component{

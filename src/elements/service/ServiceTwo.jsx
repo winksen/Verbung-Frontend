@@ -6,21 +6,25 @@ const ServiceList = [
     {
         icon: <FiCast />,
         title: 'Digital Marketing',
+        link: '/digitalmarketing',
         description: 'We build ROI centric campaigns that will take your business to the next level.'
     },
     {
         icon: <FiMaximize />,
         title: 'Visual Identity',
+        link: '/visualidentity',
         description: 'Good graphic design has the ability to connect with your audience and reach your business goals.'
     },
     {
         icon: <FiMonitor />,
         title: 'Web & Mobile',
+        link: '/webmobile',
         description: 'Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.'
     },
     {
         icon: <FiUsers />,
         title: 'Press Relation',
+        link: '/pressrelation',
         description: 'The best way to get your news in front of the journalists who matter.'
     }
 ]
@@ -46,7 +50,7 @@ class ServiceTwo extends Component{
                         <div className="row service-one-wrapper">
                             {ServiceList.map( (val , i) => (
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
-                                    <a href="/services">
+                                    <a href={`/services${val.link}`}>
                                         <div className="service service__style--2">
                                             <div className="icon">
                                                 {val.icon}

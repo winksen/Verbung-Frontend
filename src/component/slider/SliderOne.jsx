@@ -2,47 +2,115 @@ import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
 import AnimatedBg from "react-animated-bg";
 import ServiceOne from "../../elements/service/ServiceOne";
+import Particles from "react-tsparticles";
+
 
 class SliderOne extends Component {
   render() {
-    let illustration = <img src="/assets/images/illustration/home2.png" alt="Home Illustration" />;
     return (
-        <AnimatedBg className="slider-activation section-styles" colors={["black", "#001E21", "#022726"]}
-        duration={0.5}
-        delay={4} // it will wait 4 seconds before next transition starts
-        timingFunction="ease-out">
+        <div>
             {/* Start Single Slide */}
-            <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1" data-black-overlay="6">
-                <div className="container position-relative">
+            <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1 ptb--120 with-particles">
+                <div className="frame-layout__particles">
+                    <Particles className="particle"  
+                        options={{
+                            style:{
+                                position: "absolute"
+                            },
+                            fpsLimit: 100,
+                            interactivity: {
+                            detectsOn: "canvas",
+                            events: {
+                                onClick: {
+                                enable: false,
+                                mode: "push",
+                                },
+                                onHover: {
+                                enable: true,
+                                mode: "repulse",
+                                },
+                                resize: true,
+                            },
+                            modes: {
+                                bubble: {
+                                    distance: 100,
+                                    duration: 2,
+                                    opacity: 0.8,
+                                    size: 10,
+                                    color: "#ccc",
+                                },
+                                push: {
+                                quantity: 4,
+                                },
+                                repulse: {
+                                    distance: 100,
+                                    duration: 0.4,
+                                    color: "#aaa",
+                                },
+                            },
+                            },
+                            particles: {
+                            color: {
+                                value: "#09493E",
+                            },
+                            links: {
+                                color: "#09493E",
+                                distance: 150,
+                                enable: true,
+                                opacity: 0.5,
+                                width: 1,
+                            },
+                            collisions: {
+                                enable: true,
+                            },
+                            move: {
+                                direction: "none",
+                                enable: true,
+                                outMode: "bounce",
+                                random: false,
+                                speed: 6,
+                                straight: false,
+                            
+                            },
+                            number: {
+                                density: {
+                                    enable: true,
+                                    value_area: 2000,
+                                },
+                                value: 80,
+                            },
+                            opacity: {
+                                value: 0.5,
+                            },
+                            shape: {
+                                type: "circle",
+                            },
+                            size: {
+                                random: true,
+                                value: 5,
+                            },
+                            },
+                            detectRetina: true,
+                        }}
+                    />
+                </div>
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner">
-                                <div className="header-left">
-                                    {/* <div className="logo">
-                                        <a href="/">
-                                            {illustration}
-                                        </a>
-                                    </div> */}
-                                </div>
-                                <Fade bottom cascade>
-                                    <div>
-                                        <h1 className="title theme-gradient">SCALE NOW.</h1><br />
-                                        <h4 className="title theme-gradient">with Verbung</h4>
-                                    </div>
-                                </Fade>
-                                {/* <h4 align="justify">Verbung provides digital marketing services for businesses of all sizes with an opportunity to market their brand 24/7 at a low cost.</h4> */}
+                            <Fade bottom cascade>
+                            <div>
+                                <h1 className="title">SCALE NOW.</h1><br />
+                                <h4 className="title theme-gradient">with Verbung</h4>
+                            </div>
+                            </Fade>
                             </div>
                         </div>
                     </div>
-                    {/* Start Service Area */}
-                    {/* <div className="service-wrapper service-white">
-                        <ServiceOne />
-                    </div> */}
-                    {/* End Service Area */}
                 </div>
-            </div> 
+            </div>
             {/* End Single Slide */}
-        </AnimatedBg>
+        </div>
     );
   }
 }

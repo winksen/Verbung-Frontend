@@ -33,6 +33,10 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 // Element Layout
 import Service from "./elements/Service";
+import ServiceDM from "./elements/ServiceDM";
+import ServiceVI from "./elements/ServiceVI";
+import ServiceWM from "./elements/ServiceWM";
+import ServicePR from "./elements/ServicePR";
 import ServiceDetails from "./elements/ServiceDetails";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
@@ -65,10 +69,10 @@ class Root extends Component{
                 <PageScrollTop>
                     <Switch>
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/startup`} component={Startup}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/paralax`} component={Paralax}/>
 
@@ -90,7 +94,10 @@ class Root extends Component{
 
                         {/* Element Layot */}
                         <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/services`} component={Service}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/digitalmarketing`} component={ServiceDM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/visualidentity`} component={ServiceVI}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/webmobile`} component={ServiceWM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/pressrelation`} component={ServicePR}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
