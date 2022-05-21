@@ -4,40 +4,7 @@ import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp, FiMaximize } from
 import ScrollToTop from 'react-scroll-up';
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-
-
-const ServiceListWM = [
-    {
-        icon: <FiMonitor />,
-        title: 'Website Strategy',
-        description: 'When visitors hit your site there is only a matter of seconds to engage them. A web strategy is about crafting a solution that is usable and accessible and exudes the right look and feel. The strategy will contain the scope of work, direct the content creation process and provide tactical direction for the developers.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'UI Design',
-        description: 'The purpose of any interface is to help the user accomplish their goal. Our UI designers put themselves in the user’s mindset, predict what they will expect and then make the design that reflects these insights. They design each screen to ensure that the UI visually communicates the path that a UX designer has developed.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'UX Design',
-        description: 'UX design is about having a complete understanding of the user. Our UX designers will conduct user research, review user types and conduct performance and usability testing to design the most effective journey. We ensure that the navigation of your website is completely intuitive so the user can get to their end destination easily.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'Mobile-first Design',
-        description: 'Mobile-first or responsive design means that a website responds to the user’s device or platform by reformatting itself fluidly. This makes the website usable and accessible on the device that’s accessing it. Everything VI develops online is built with mobile-use in mind.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'Tracking & Analysis',
-        description: 'Our web analytics help you to measure, collect, analyze and report your web data for purposes of understanding and optimizing your website. Web analytics can be used as a tool for business and market research, and to assess and improve the effectiveness of a website.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'Search Engine Optimisation (SEO)',
-        description: 'A beautiful and functional website is a great tool, but if your potential customers are not able to find you with their search terms, you’ll be left behind. Vi uses industry recognised tools and processes to review, optimize and ultimately improve or maintain rankings.'
-    },
-];
+import ServicesWM from "./services/ServicesWM";
 
 class ServiceWM extends Component{
     render(){
@@ -47,12 +14,8 @@ class ServiceWM extends Component{
                 <PageHelmet pageTitle='Services' />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
-                {/* Start Breadcrump Area */}
-                {/* <Breadcrumb title={'Service'}   /> */}
-                {/* End Breadcrump Area */}
-
                 {/* Start Service Area */}
-                <div></div>
+                <br /><br /><br /><br />
                 <div className="service-area ptb--120 bg_color--5" id="WM">
                     <div className="container">
                         <div className="row">
@@ -60,29 +23,77 @@ class ServiceWM extends Component{
                                 <div className="section-title text-center mb--30">
                                     <h2>Web &amp; Mobile</h2>
                                     <p>Your website is the first place that your customers will look to find out about your business and the services or products you provide. It is, in essence, your first impression and your sales tool.</p>
+                                    <br />
+                                    <h3 className="title theme-gradient">•</h3>
                                 </div>
                             </div>
                         </div>
-                        <div className="row service-one-wrapper">
-                            {ServiceListWM.map( (val , i) => (
-                                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                                    <a className="text-center">
-                                        <div className="service service__style--2">
-                                            <div className="icon">
-                                                {val.icon}
-                                            </div>
-                                            <div className="content">
-                                                <h3 className="title">{val.title}</h3>
-                                                <p>{val.description}</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            ))}
+                        <div className="rn-testimonial-area bg_color--5">
+                            <div className="container">
+                                <br />
+                                <ServicesWM />
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* End Service Area */}
+
+                {/* Start Other Service Area */}
+                <br /><br /><br /><br />
+                <div className="service-area ptb--120 bg_color--1" id="VI">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center mb--30">
+                                    <h2>Other Services</h2>
+                                    <p>Check out our other services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row service-one-wrapper">
+                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <a className="text-center" href="/services/digitalmarketing">
+                                    <div className="service service__style--2">
+                                        <div className="icon">
+                                            <FiCast />
+                                        </div>
+                                        <div className="content">
+                                            <h3 className="title">Digital Marketing</h3>
+                                            <p>We build ROI centric campaigns that will take your business to the next level.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <a className="text-center" href="/services/visualidentity">
+                                    <div className="service service__style--2">
+                                        <div className="icon">
+                                            <FiMaximize />
+                                        </div>
+                                        <div className="content">
+                                            <h3 className="title">Visual Identity</h3>
+                                            <p>Good graphic design has the ability to connect with your audience and reach your business goals.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <a className="text-center" href="/services/pressrelation">
+                                    <div className="service service__style--2">
+                                        <div className="icon">
+                                            <FiUsers />
+                                        </div>
+                                        <div className="content">
+                                            <h3 className="title">Press Relation</h3>
+                                            <p>The best way to get your news in front of the journalists who matter.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Other Service Area */}
 
                 {/* Start Back To Top */}
                 <div className="backto-top">

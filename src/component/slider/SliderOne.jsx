@@ -44,7 +44,7 @@ class SliderOne extends Component {
                                 },
                                 repulse: {
                                     distance: 100,
-                                    duration: 0.4,
+                                    duration: 0.2,
                                     color: "#aaa",
                                 },
                             },

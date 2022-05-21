@@ -71,13 +71,13 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/creative-agency`} component={CreativeAgency}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/startup`} component={Startup}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/paralax`} component={Paralax}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/digital-agency`} component={DigitalAgency}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/creative-agency`} component={CreativeAgency}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/personal-portfolio`} component={PersonalPortfolio}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/studio-agency`} component={StudioAgency}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/business`} component={Business}/>

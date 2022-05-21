@@ -27,7 +27,7 @@ Testimonial Styles
     transition: filter .3s cubic-bezier(0.82,0,0.12,1) .1s,transform .6s cubic-bezier(0.82,0,0.12,1),opacity .4s cubic-bezier(0.82,0,0.12,1) .2s;
     transition: filter .3s cubic-bezier(0.82,0,0.12,1) .1s,transform .6s cubic-bezier(0.82,0,0.12,1),opacity .4s cubic-bezier(0.82,0,0.12,1) .2s,-webkit-filter .3s cubic-bezier(0.82,0,0.12,1) .1s,-webkit-transform .6s cubic-bezier(0.82,0,0.12,1);
     .inner {
-        padding-bottom: 62px;
+        //padding-bottom: 62px;
         @media #{$sm-layout} {
             padding-bottom: 20px;
         }
@@ -107,7 +107,7 @@ Testimonial Styles
         }
         h6 {
             font-size: 18px;
-            line-height: 50px;
+            line-height: 30px;
             color: #8c8c8c;
             font-weight: 300;
             @media #{$sm-layout} {
@@ -116,7 +116,7 @@ Testimonial Styles
             }
             span{
                 color: #18181b;
-                text-transform: uppercase;
+                // text-transform: uppercase;
             }
         }
     }
