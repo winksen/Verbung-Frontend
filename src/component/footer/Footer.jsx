@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung-113352380852357'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/verbung'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbungofficial/'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbung/'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/verbung'},
     {Social: <FaYoutube /> , link: 'https://www.youtube.com/channel/UCang3Nx-Z01oWYAa-EE3qfw'},
 ]
@@ -33,7 +33,7 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12">
                                             <div className="footer-link">
-                                                <h4>Quick Link</h4>
+                                                <h4 className="textUpper">Quick Link</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="/pricing">Pricing</a></li>
                                                     <li><a href="/about">About</a></li>
@@ -45,7 +45,7 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                                             <div className="footer-link">
-                                                <h4>Say Hello</h4>
+                                                <h4 className="textUpper">Say Hello</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="mailto:contact@verbung.net">contact@verbung.net</a></li>
                                                     {/* <li><a href="mailto:hr@example.com">hr@example.com</a></li> */}

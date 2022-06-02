@@ -9,7 +9,7 @@ class ContactTwo extends Component {
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <h2 className="title">Contact Us.</h2>
+                                <h2 className="title textUpper">Contact Us.</h2>
                                 <p className="description">Give us a call, visit, or email to let us know how we can help grow your business!</p>
                             </div>
                             <div className="form-wrapper contact-form--1">

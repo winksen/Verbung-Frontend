@@ -11,7 +11,7 @@ class ServiceVI extends Component{
         return(
             <div className="active-dark">
                 <React.Fragment>
-                <PageHelmet pageTitle='Services' />
+                <PageHelmet pageTitle="VERBUNG // Services" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Service Area */}
@@ -21,7 +21,7 @@ class ServiceVI extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Visual Identity</h2>
+                                    <h2 className="textUpper">Visual Identity</h2>
                                     <p>Good graphic design can make the difference to any business, as it has the ability to connect with your audience and reach your business goals.</p>
                                     <br />
                                     <h3 className="title theme-gradient">•</h3>
@@ -45,7 +45,7 @@ class ServiceVI extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Other Services</h2>
+                                    <h2 className="textUpper">Other Services</h2>
                                     <p>Check out our other services</p>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ class ServiceVI extends Component{
                                             <FiCast />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Digital Marketing</h3>
+                                            <h3 className="title textUpper">Digital Marketing</h3>
                                             <p>We build ROI centric campaigns that will take your business to the next level.</p>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ class ServiceVI extends Component{
                                             <FiMonitor />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Web &amp; Mobile</h3>
+                                            <h3 className="title textUpper">Web &amp; Mobile</h3>
                                             <p>Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.</p>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@ class ServiceVI extends Component{
                                             <FiUsers />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Press Relation</h3>
+                                            <h3 className="title textUpper">Press Relation</h3>
                                             <p>The best way to get your news in front of the journalists who matter.</p>
                                         </div>
                                     </div>

@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import AnimatedBg from "react-animated-bg";
 import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 
 class SliderOne extends Component {
@@ -104,7 +104,7 @@ class SliderOne extends Component {
                             <div className="inner">                            
                             <Fade bottom cascade>
                                 <div>
-                                    <h1 className="title">SCALE NOW.</h1><br />
+                                    <h1 className="title oswald">SCALE NOW.</h1><br />
                                     <h4 className="title theme-gradient">with Verbung</h4>
                                 </div>
                             </Fade>

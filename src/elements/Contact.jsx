@@ -24,7 +24,7 @@ class Contact extends Component{
         return(
             <div className="active-dark"> 
                 <React.Fragment>
-                    <PageHelmet pageTitle='Contact' />
+                    <PageHelmet pageTitle="VERBUNG // Contact" />
 
                     <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
@@ -34,7 +34,7 @@ class Contact extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="rn-page-title text-center pt--100">
-                                        <h2 className="title theme-gradient">Contact US</h2>
+                                        <h2 className="title theme-gradient textUpper">Contact US</h2>
                                         <p>Give us a call, visit, or email to let us know how we can help grow your business!</p>
                                     </div>
                                 </div>

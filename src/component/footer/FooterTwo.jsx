@@ -2,9 +2,9 @@ import React from 'react';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung-113352380852357'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/verbung'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbungofficial/'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbung/'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/verbung'},
     {Social: <FaYoutube /> , link: 'https://www.youtube.com/channel/UCang3Nx-Z01oWYAa-EE3qfw'},
 ]

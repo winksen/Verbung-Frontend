@@ -9,7 +9,7 @@ import Footer from "../component/footer/Footer";
 const PricingTable = () => {
     return (
         <div className='active-dark'>
-            <PageHelmet pageTitle='Pricing Table' />
+            <PageHelmet pageTitle="VERBUNG // Pricing" />
 
             {/* Start Header Area  */}
             <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
@@ -35,7 +35,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title">Digital Marketing</h4>
+                                            <h4 className="title textUpper">Digital Marketing</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 <span className="subtitle">Starting from</span>
@@ -69,7 +69,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title">Visual Identity</h4>
+                                            <h4 className="title textUpper">Visual Identity</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 <span className="subtitle">Starting from</span>
@@ -103,7 +103,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title">Web &amp; Mobile</h4>
+                                            <h4 className="title textUpper">Web &amp; Mobile</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 <span className="subtitle">Starting from</span>
@@ -137,7 +137,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title">Press Relation</h4>
+                                            <h4 className="title textUpper">Press Relation</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 <span className="subtitle">starting from</span>

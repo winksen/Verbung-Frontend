@@ -11,7 +11,7 @@ class ServiceDM extends Component{
         return(
             <div className="active-dark">
                 <React.Fragment>
-                <PageHelmet pageTitle='Services' />
+                <PageHelmet pageTitle="VERBUNG // Services" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Service Area */}
@@ -21,7 +21,7 @@ class ServiceDM extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Digital Marketing</h2>
+                                    <h2 className="textUpper">Digital Marketing</h2>
                                     <p>We partner with clients to build ROI centric campaigns through a variety of digital marketing services that will take your business to the next level.</p>
                                     <br />
                                     <h3 className="title theme-gradient">•</h3>
@@ -45,7 +45,7 @@ class ServiceDM extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Other Services</h2>
+                                    <h2 className="textUpper">Other Services</h2>
                                     <p>Check out our other services</p>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ class ServiceDM extends Component{
                                             <FiMaximize />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Visual Identity</h3>
+                                            <h3 className="title textUpper">Visual Identity</h3>
                                             <p>Good graphic design has the ability to connect with your audience and reach your business goals.</p>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ class ServiceDM extends Component{
                                             <FiMonitor />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Web &amp; Mobile</h3>
+                                            <h3 className="title textUpper">Web &amp; Mobile</h3>
                                             <p>Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.</p>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@ class ServiceDM extends Component{
                                             <FiUsers />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title">Press Relation</h3>
+                                            <h3 className="title textUpper">Press Relation</h3>
                                             <p>The best way to get your news in front of the journalists who matter.</p>
                                         </div>
                                     </div>

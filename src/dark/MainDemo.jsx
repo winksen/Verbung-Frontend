@@ -194,7 +194,7 @@ class InteriorLanding extends Component{
         }
         return(
             <div className="active-dark">
-                <Helmet pageTitle="Verbung | SCALE NOW" />
+                <Helmet pageTitle="VERBUNG // Scale Now" />
 
                 {/* Start Header Area  */}
                 <header className="header-area formobile-menu header--fixed default-color">
@@ -260,7 +260,7 @@ class InteriorLanding extends Component{
                         <div className="row">
                         <div className="col-lg-12">
                             <div className="section-title text-center mb--30">
-                                    <h2>Our Work</h2>
+                                    <h2 className="textUpper">Our Work</h2>
                                     <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
                                 </div>
                             </div>
