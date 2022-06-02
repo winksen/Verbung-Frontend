@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import AnimatedBg from "react-animated-bg";
 import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
+import Spline from '@splinetool/react-spline';
 
 
 class SliderOne extends Component {
@@ -11,6 +12,9 @@ class SliderOne extends Component {
         <div>
             {/* Start Single Slide */}
             <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1 ptb--120 with-particles">
+                <div className="frame-layout__particles">
+                    {/* <iframe src='https://my.spline.design/interactivespherescopy-4cd4e20c173ad3def941ff82a9c1ea6d/' frameborder='0' width='100%' height='100%'></iframe> */}
+                </div>
                 <div className="frame-layout__particles">
                     <Particles className="particle"  
                         options={{
@@ -97,12 +101,12 @@ class SliderOne extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="inner">
+                            <div className="inner">                            
                             <Fade bottom cascade>
-                            <div>
-                                <h1 className="title">SCALE NOW.</h1><br />
-                                <h4 className="title theme-gradient">with Verbung</h4>
-                            </div>
+                                <div>
+                                    <h1 className="title">SCALE NOW.</h1><br />
+                                    <h4 className="title theme-gradient">with Verbung</h4>
+                                </div>
                             </Fade>
                             </div>
                         </div>

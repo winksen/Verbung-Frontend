@@ -1,26 +1,160 @@
-import React, { Component } from "react";
-import ScrollToTop from 'react-scroll-up';
+import React, { Component , Fragment } from "react";
 import Scrollspy from 'react-scrollspy';
-
-import { FiChevronUp, FiX, FiMenu } from "react-icons/fi";
-
-import Header from "../component/header/Header";
-import Footer from "../component/footer/Footer";
-
-import SliderOne from "../component/slider/SliderOne";
-import ServiceTwo from "../elements/service/ServiceTwo";
-import CounterOne from "../elements/counters/CounterOne";
+import ScrollToTop from 'react-scroll-up';
+import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
+import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import CounterOne from "../elements/counters/CounterTwo";
 import Testimonial from "../elements/Testimonial";
+import ServiceTwo from "../elements/service/ServiceTwo";
+import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
-import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
-import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import Footer from "../component/footer/Footer";
 import Helmet from "../component/common/Helmet";
-import Clients from "../blocks/Team";
-import Particles from "react-tsparticles";
+import TeamOne from "../blocks/team/TeamOne";
+import Slider from "react-slick";
+import { slickDot , portfolioSlick2 } from "../page-demo/script";
 
 
-class MainDemo extends Component{
+const SlideList = [
+    {
+        textPosition: 'text-center',
+        category: '',
+        title: 'SCALE NOW.',
+        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
+        buttonText: 'Contact Us',
+        buttonLink: '/contact'
+    }
+]
+
+const PortfolioList2 = [
+    {
+        images: '01',
+        title: 'INPT Olympics XI',
+        designation: 'Event • Visual Identity',
+        link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaLinkedinIn />,
+                url: 'https://www.linkedin.com/company/olympiades-inpt'
+            },
+        ]
+    },
+    {
+        images: '02',
+        title: 'A2S Junior Entreprise',
+        designation: 'Brand • Visual Identity, Stationary',
+        link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaFacebookF />,
+                url: 'http://facebook.com/A2S.JE'
+            },
+            {
+                icon: <FaLinkedinIn />,
+                url: 'http://linkedin.com/in/a2sinpt/'
+            },
+            {
+                icon: <RiInstagramFill />,
+                url: 'http://instagram.com/a2s_junior_entreprise'
+            },
+        ]
+    },
+    {
+        images: '03',
+        title: 'PantoFit',
+        designation: 'Brand • Visual Identity, UI/UX',
+        link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaFacebookF />,
+                url: 'https://facebook.com/pantofit1'
+            },
+            {
+                icon: <FaLinkedinIn />,
+                url: 'https://linkedin.com/company/pantofit/'
+            },
+            {
+                icon: <FaGlobe />,
+                url: 'https://www.pantofit.com/'
+            },
+        ]
+    },
+    {
+        images: '01',
+        title: 'INPT Olympics XI',
+        designation: 'Event • Visual Identity',
+        link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaLinkedinIn />,
+                url: 'https://www.linkedin.com/company/olympiades-inpt'
+            },
+        ]
+    },
+    {
+        images: '02',
+        title: 'A2S Junior Entreprise',
+        designation: 'Brand • Visual Identity, Stationary',
+        link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaFacebookF />,
+                url: 'http://facebook.com/A2S.JE'
+            },
+            {
+                icon: <FaLinkedinIn />,
+                url: 'http://linkedin.com/in/a2sinpt/'
+            },
+            {
+                icon: <RiInstagramFill />,
+                url: 'http://instagram.com/a2s_junior_entreprise'
+            },
+        ]
+    },
+    {
+        images: '03',
+        title: 'PantoFit',
+        designation: 'Brand • Visual Identity, UI/UX',
+        link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
+        socialNetwork: [
+            {
+                icon: <FaFacebookF />,
+                url: 'https://facebook.com/pantofit1'
+            },
+            {
+                icon: <FaLinkedinIn />,
+                url: 'https://linkedin.com/company/pantofit/'
+            },
+            {
+                icon: <FaGlobe />,
+                url: 'https://www.pantofit.com/'
+            },
+        ]
+    },
+]
+
+
+const ServiceListOne = [
+    {
+        icon: "icon-01.png",
+        title: 'Interior Design',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+    },
+    {
+        icon: "icon-02.png",
+        title: 'Landcape Design',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+    },
+    {
+        icon: "icon-03.png",
+        title: 'Home Interior',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+    },
+    
+]
+
+class InteriorLanding extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -58,11 +192,9 @@ class MainDemo extends Component{
                 }
             }
         }
-        const PostList = BlogContent.slice(0 , 3);
         return(
-            <div className="active-dark"> 
-                <Helmet pageTitle="Verbung" />
-                {/* <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" /> */}
+            <div className="active-dark">
+                <Helmet pageTitle="Verbung | SCALE NOW" />
 
                 {/* Start Header Area  */}
                 <header className="header-area formobile-menu header--fixed default-color">
@@ -70,14 +202,14 @@ class MainDemo extends Component{
                         <div className="header-left">
                             <div className="logo">
                                 <a href="/">
-                                    <img className="logo-1" src="/assets/images/logo/logo.png" alt="Logo Images"/>
-                                    <img className="logo-2" src="/assets/images/logo/logo.png" alt="Logo Images"/>
+                                    <img className="logo-1" src="/assets/images/logo/logo.png" alt="Verbung"/>
+                                    <img className="logo-2" src="/assets/images/logo/logoFull.png" alt="Logo Images"/>
                                 </a>
                             </div>
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" >
+                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#services">Services</a></li>
@@ -122,93 +254,67 @@ class MainDemo extends Component{
                 </div>
                 {/* End Service Area  */}
                 
-                <div id="work">
-                    <Clients />
-                </div>
-                
-
                 {/* Start Portfolio Area */}
-                {/* <div className="portfolio-area bg_color--1">
-                    <div className="portfolio-sacousel-inner mb--55">
-                        <Portfolio />
-                    </div>
-                </div> */}
-                {/* End Portfolio Area */}
-
-                {/* Start CounterUp Area */}
-                {/* <div className="rn-counterup-area pt--25 pb--110 bg_color--1">
+                <div className="portfolio-area ptb--120 bg_color--1" id="work">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
+                        <div className="col-lg-12">
+                            <div className="section-title text-center mb--30">
+                                    <h2>Our Work</h2>
+                                    <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
                                 </div>
                             </div>
                         </div>
-                        <CounterOne />
                     </div>
-                </div> */}
-                {/* End CounterUp Area */}
-
-                {/* Start Testimonial Area */}
-                {/* <div className="rn-testimonial-area bg_color--5 ptb--120">
-                    <div className="container">
-                        <Testimonial />
-                    </div>
-                </div> */}
-                {/* End Testimonial Area */}
-
-                {/* Start Blog Area */}
-                {/* <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
-                    <div className="container">
-                        <div className="row align-items-end">
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div className="section-title text-left">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div className="blog-btn text-left text-lg-right mt_sm--10 mt_md--10">
-                                    <a className="btn-transparent rn-btn-dark" href="/blog"><span className="text">View All News</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row mt--60 mt_sm--40">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-12" key={i}>
-                                    <div className="blog blog-style--1">
-                                        <div className="thumbnail">
-                                            <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </a>
-                                        </div>
-                                        <div className="content">
-                                            <p className="blogtype">{value.category}</p>
-                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
-                                            <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                    <div className="wrapper portfolio-sacousel-inner mb--55">
+                        <div className="portfolio-slick-activation mt--30 mt_sm--30">
+                            <Slider {...portfolioSlick2}>
+                                {PortfolioList2.map((value , index) => (
+                                    // <div className="portfolio portfolio-interior-design" key={index}>
+                                    //     <div className="thumbnail-inner">
+                                    //         <div className={`thumbnail ${value.image}`}></div>
+                                    //         <div className={`bg-blr-image ${value.image}`}></div>
+                                    //     </div>
+                                    //     <div className="content">
+                                    //         <div className="inner">
+                                    //             <p>{value.category}</p>
+                                    //             <h4><a href="/portfolio-details">{value.title}</a></h4>
+                                    //             <div className="portfolio-button">
+                                    //                 <a className="rn-btn" href="/portfolio-details">Case Study</a>
+                                    //             </div>
+                                    //         </div>
+                                    //     </div>
+                                    // </div>
+                                    <div className="" key={index}>
+                                        <div className={`team`}>
+                                            <div className="thumbnail">
+                                                <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Project"/>
                                             </div>
+                                            <div className="content">
+                                                <h4 className="title">{value.title}</h4>
+                                                <p className="designation">{value.designation}</p>
+                                                <div className="portfolio-button">
+                                                    <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">View on BEHANCE</a>
+                                                </div>
+                                            </div>
+                                            <ul className="social-icon" >
+                                                {value.socialNetwork.map((social, index) =>
+                                                    <li key={index}><a href={`${social.url}`} target="_blank" rel="noreferrer noopener">{social.icon}</a></li>
+                                                )}
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
-                        </div>    
-                    </div>    
-                </div> */}
-                {/* End Blog Area */}
-
-                {/* Start Brand Area */}
-                {/* <div className="rn-brand-area brand-separation pb--120">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <BrandTwo />
-                            </div>
+                                ))}
+                            </Slider>
                         </div>
                     </div>
-                </div> */}
-                {/* End Brand Area */}
+                </div>
+                {/* End Portfolio Area */}
+
+                {/* Start Footer Style  */}
+                 <Footer />
+                {/* End Footer Style  */}
+
                 {/* Start Back To Top */}
                 <div className="backto-top">
                     <ScrollToTop showUnder={160}>
@@ -216,11 +322,9 @@ class MainDemo extends Component{
                     </ScrollToTop>
                 </div>
                 {/* End Back To Top */}
-                
-                <Footer />
-                
             </div>
         )
     }
 }
-export default MainDemo;
+
+export default InteriorLanding;

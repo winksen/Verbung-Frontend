@@ -74,42 +74,42 @@ class Testimonial extends Component{
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-1.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/1.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-2.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/2.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-3.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/3.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-4.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/4.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-5.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/5.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/client/testimonial-6.jpg" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/6.jpg" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>

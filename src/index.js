@@ -29,6 +29,7 @@ import InteractiveAgency from './home/InteractiveAgency';
 
 // Dark Home Layout 
 import DarkMainDemo from './dark/MainDemo';
+import DarkMainDemoOld from './dark/MainDemoOld';
 import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 // Element Layout
@@ -68,6 +69,7 @@ class Root extends Component{
             <BrowserRouter basename={'/'}>
                 <PageScrollTop>
                     <Switch>
+                        <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>

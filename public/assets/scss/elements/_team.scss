@@ -3,10 +3,14 @@
 ----------------------*/
 
 .team {
-    margin-top: 30px;
+    // margin-top: 30px;
     overflow: hidden;
     border-radius: 6px;
     position: relative;
+    &:hover{
+        box-shadow: rgba(38, 199, 151, 0.4) 5px 5px, rgba(38, 199, 151, 0.3) 10px 10px, rgba(38, 199, 151, 0.2) 15px 15px, rgba(38, 199, 151, 0.1) 20px 20px, rgba(38, 199, 151, 0.05) 25px 25px;
+        @extend %transition;
+    }
     .thumbnail {
         display: block;
         position: relative;
@@ -16,7 +20,7 @@
             @extend %transition;
         }
         &::after {
-            background: linear-gradient(to bottom, #1c9d79 0, #001f20 100%);
+            background: linear-gradient(to bottom, #000000 0, #000000 100%);
             position: absolute;
             left: 0;
             right: 0;

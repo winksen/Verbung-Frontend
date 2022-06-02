@@ -54,7 +54,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="#pricing">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Purchase Now</a>
                                         </div>
                                     </div>
                                 </div>
