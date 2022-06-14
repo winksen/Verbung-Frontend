@@ -29,6 +29,7 @@ import InteractiveAgency from './home/InteractiveAgency';
 
 // Dark Home Layout 
 import DarkMainDemo from './dark/MainDemo';
+import LightMainDemo from './dark/LightMainDemo';
 import DarkMainDemoOld from './dark/MainDemoOld';
 import DarkPortfolioLanding from './dark/PortfolioLanding';
 
@@ -71,7 +72,9 @@ class Root extends Component{
                     <Switch>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/> */}
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/dark-portfolio-landing`} component={DarkPortfolioLanding}/> */}
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/creative-agency`} component={CreativeAgency}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
@@ -87,7 +90,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/portfolio-landing`} component={PortfolioLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/creative-landing`} component={CreativeLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/home-particles`} component={HomeParticles}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/dark-portfolio-landing`} component={DarkPortfolioLanding}/>
+                        
                         <Route exact path={`${process.env.PUBLIC_URL}/designer-portfolio`} component={DesignerPortfolio}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/creative-portfolio`} component={CreativePortfolio}/>
                         

@@ -121,17 +121,17 @@
         border-color: $theme-color;
     }
     .bg_image--25 {
-        background-color: #101010;
-        background-image: url(/assets/images/bg/bg-image-28.jpg) !important;
+        // background-color: #101010;
+        background-image: url(/assets/images/bg/bg-image-25.jpg) !important;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .backto-top>div {
-        background-color: #000;
+        background-color: #fff;
     }
     .backto-top svg {
-        color: #fff;
+        color: #000;
     }
     .contact-form--1 input,
     .contact-form--1 textarea {

@@ -193,7 +193,7 @@ class InteriorLanding extends Component{
             }
         }
         return(
-            <div className="active-dark">
+            <div className="active-light">
                 <Helmet pageTitle="VERBUNG // Scale Now" />
 
                 {/* Start Header Area  */}
@@ -238,7 +238,7 @@ class InteriorLanding extends Component{
                 <div className="slider-wrapper gradient-animated" id="home">
                     <SliderOne />
                 </div>
-                {/* End Slider Area   */} 
+                {/* End Slider Area   */}
 
                 {/* Start About Area */}
                 <div className="about-area about-position-top bg_color--1" id="about">
