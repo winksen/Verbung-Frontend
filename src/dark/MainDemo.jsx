@@ -2,7 +2,7 @@ import React, { Component , Fragment } from "react";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
-import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe } from "react-icons/fa";
+import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import CounterOne from "../elements/counters/CounterTwo";
 import Testimonial from "../elements/Testimonial";
@@ -30,8 +30,9 @@ const SlideList = [
 const PortfolioList2 = [
     {
         images: '01',
-        title: 'INPT Olympics XI',
+        title: 'INPT OLYMPICS XI',
         designation: 'Event • Visual Identity',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         socialNetwork: [
             {
@@ -42,8 +43,9 @@ const PortfolioList2 = [
     },
     {
         images: '02',
-        title: 'A2S Junior Entreprise',
+        title: 'A2S JUNIOR ENTREPRISE',
         designation: 'Brand • Visual Identity, Stationary',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
         socialNetwork: [
             {
@@ -62,8 +64,9 @@ const PortfolioList2 = [
     },
     {
         images: '03',
-        title: 'PantoFit',
+        title: 'PANTOFIT',
         designation: 'Brand • Visual Identity, UI/UX',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
         socialNetwork: [
             {
@@ -81,9 +84,65 @@ const PortfolioList2 = [
         ]
     },
     {
+        images: '04',
+        title: 'DETAFOUR',
+        designation: 'Brand • UI/UX, Website',
+        view: 'View Wesbite',
+        notif: 'Project on Behance coming soon!',
+        link: 'https://www.detafour.com',
+        socialNetwork: [
+            {
+                icon: <FaYoutube />,
+                url: 'https://www.youtube.com/channel/UCk0_9-y_I8IdrNUMrF5oekA'
+            },
+            {
+                icon: <FaFacebookF />,
+                url: 'https://www.facebook.com/detafour'
+            },
+            {
+                icon: <RiInstagramFill />,
+                url: 'https://www.instagram.com/m55economie/'
+            },
+            {
+                icon: <FaTwitter />,
+                url: 'https://mobile.twitter.com/detafour_ar'
+            },
+        ]
+    },
+    {
+        images: '05',
+        title: 'CORAIL',
+        designation: 'Brand • Visual Identity, UI/UX, Website',
+        view: 'View Wesbite',
+        link: 'https://corail.co.ma',
+        socialNetwork: [
+            {
+                icon: <FaFacebookF />,
+                url: 'https://www.facebook.com/getCorail'
+            },
+            {
+                icon: <RiInstagramFill />,
+                url: 'https://www.instagram.com/corail/'
+            },
+            {
+                icon: <FaTwitter />,
+                url: 'https://twitter.com/corail_bank'
+            },
+            {
+                icon: <FaYoutube />,
+                url: 'https://www.youtube.com/channel/UC0t8rqO4uq-6sYO8NMa5JOw'
+            },
+            {
+                icon: <FaLinkedinIn />,
+                url: 'https://www.linkedin.com/company/corail/'
+            },
+        ]
+    },
+    {
         images: '01',
-        title: 'INPT Olympics XI',
+        title: 'INPT OLYMPICS XI',
         designation: 'Event • Visual Identity',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         socialNetwork: [
             {
@@ -94,8 +153,9 @@ const PortfolioList2 = [
     },
     {
         images: '02',
-        title: 'A2S Junior Entreprise',
+        title: 'A2S JUNIOR ENTREPRISE',
         designation: 'Brand • Visual Identity, Stationary',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
         socialNetwork: [
             {
@@ -114,8 +174,9 @@ const PortfolioList2 = [
     },
     {
         images: '03',
-        title: 'PantoFit',
+        title: 'PANTOFIT',
         designation: 'Brand • Visual Identity, UI/UX',
+        view: 'View On Behance',
         link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
         socialNetwork: [
             {
@@ -293,8 +354,9 @@ class InteriorLanding extends Component{
                                             <div className="content">
                                                 <h4 className="title">{value.title}</h4>
                                                 <p className="designation">{value.designation}</p>
+                                                {/* <p className="designation">{value.notif}</p>  */}
                                                 <div className="portfolio-button">
-                                                    <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">View on BEHANCE</a>
+                                                    <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{value.view}</a>
                                                 </div>
                                             </div>
                                             <ul className="social-icon" >
