@@ -26,7 +26,7 @@ class SliderOne extends Component {
                 <div className="slider-wrapper">
                     {/* Start Single Slide */}
                     {SlideList.map((value , index) => (
-                        <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1 ptb--120 with-particles bg_image bg_image--25" key={index}>
+                        <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center ptb--120 with-particles bg_image" key={index}>
                             <div className="frame-layout__particles">
                                 <Particles className="particle"  
                                     options={{

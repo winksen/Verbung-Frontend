@@ -235,6 +235,38 @@ class InteriorLanding extends Component{
     }
     stickyHeader () {}
     render(){
+        const setDark = () => {
+            localStorage.setItem("theme", "dark");
+            document.documentElement.setAttribute("data-theme", "dark");
+          };
+          
+          const setLight = () => {
+            localStorage.setItem("theme", "light");
+            document.documentElement.setAttribute("data-theme", "light");
+          };
+          
+          const storedTheme = localStorage.getItem("theme");
+          
+          const prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          
+          const defaultDark =
+            storedTheme === "dark" || (storedTheme === null && prefersDark);
+          
+          if (defaultDark) {
+            setDark();
+          }
+          
+          const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
+            if (e.target.checked) {
+              setDark();
+            } else {
+              setLight();
+            }
+          };
+
+
         window.addEventListener('scroll', function() {
             var value = window.scrollY;
             if (value > 50) {
@@ -275,8 +307,15 @@ class InteriorLanding extends Component{
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#services">Services</a></li>
                                     <li><a href="#work">Work</a></li>
+                                    <li></li>
                                 </Scrollspy>
                             </nav>
+                            <div>
+                                <input id="chck" type="checkbox" onChange={toggleTheme} defaultChecked={defaultDark}/>
+                                <label for="chck" class="check-trail">
+                                    <span class="check-handler"></span>
+                                </label>
+                            </div>
                             <div className="header-btn">
                                 <a className="rn-btn" href="/pricing">
                                     <span>PRICING</span>
@@ -308,7 +347,7 @@ class InteriorLanding extends Component{
                 {/* End About Area */}
 
                 {/* Start Service Area  */}
-                <div className="service-area ptb--80  bg_image bg_image--3" id="services">
+                <div className="service-area ptb--80 bg_image bg_image--3" id="services">
                    <div className="container">
                         <ServiceTwo />
                    </div>
