@@ -72,7 +72,7 @@ class Root extends Component{
                     <Switch>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/> */}
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/dark-portfolio-landing`} component={DarkPortfolioLanding}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
@@ -104,11 +104,13 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/services/visualidentity`} component={ServiceVI}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/services/webmobile`} component={ServiceWM}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/services/pressrelation`} component={ServicePR}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/> */}
+                        
+                         */}
 
                         {/* Blocks Elements  */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/>

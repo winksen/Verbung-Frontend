@@ -1,34 +1,34 @@
 const BlogContent = [
     {
         images: '01',
-        title: ' Getting tickets to the big show',
-        category: 'Development'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
     {
         images: '02',
-        title: 'A big ticket gone to be an interesting ',
-        category: 'Management'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
 
     {
         images: '03',
-        title: 'The Home of the Future Could Bebes',
-        category: 'Design'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
     {
         images: '04',
-        title: ' Getting tickets to the big show',
-        category: 'Development'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
     {
         images: '01',
-        title: 'A big ticket gone to be an interesting ',
-        category: 'Management'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
     {
         images: '02',
-        title: 'The Home of the Future Could Bebes',
-        category: 'Design'
+        title: 'WEB DESIGN CRUCIAL MISTAKES EACH COMPANY SHOULD AVOID',
+        category: 'Marketing'
     },
 ]
 

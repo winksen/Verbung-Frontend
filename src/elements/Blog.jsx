@@ -11,26 +11,36 @@ import Footer from "../component/footer/Footer";
 class Blog extends Component{
     render(){
         return(
+            <div className="active-dark">
             <React.Fragment>
-                <PageHelmet pageTitle='Blog' />
+                <PageHelmet pageTitle='VERBUNG // Blog' />
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 {/* Start Breadcrump Area */}
-                <Breadcrumb title={'Blog List'}   />
-                {/* End Breadcrump Area */}
+                <div className="rn-page-title-area pt--120 pb--190"  data-black-overlay="6">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="rn-page-title text-center pt--100">
+                                        <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
+                                        <p>Blog description here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End Breadcrump Area */}
 
 
                 {/* Start Blog Area */}
                 <div className="rn-blog-area ptb--120 bg_color--1">
                     <div className="container">
                         <BlogList />
-                        <div className="row mt--20">
+                        {/* <div className="row mt--20">
                             <div className="col-lg-12">
-                                {/* Start Pagination Area */}
                                 <Pagination />
-                                {/* End Pagination Area */}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 {/* End Blog Area */}
@@ -46,6 +56,7 @@ class Blog extends Component{
                 <Footer /> 
 
             </React.Fragment>
+            </div>
         )
     }
 }

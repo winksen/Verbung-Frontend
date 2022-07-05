@@ -21,6 +21,7 @@ class BlogDetails extends Component{
     }
     render(){
         return(
+            <div className="active-dark">
             <React.Fragment>
                 <PageHelmet pageTitle='Blog Details' />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
@@ -155,6 +156,7 @@ class BlogDetails extends Component{
                 <Footer /> 
 
             </React.Fragment>
+            </div>
         )
     }
 }

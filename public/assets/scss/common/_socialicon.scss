@@ -1,5 +1,21 @@
 /* Social icon Styles  */
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+    --icon-color: rgba(0, 30, 33, 0.50);
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+    --icon-color: rgba(198, 201, 216, 0.75);
+}
+
 ul {
     &.social-share {
         padding: 0;
@@ -13,7 +29,7 @@ ul {
                 height: 40px;
                 border: 2px solid rgba(198, 201, 216, 0.75);
                 line-height: 35px;
-                color: rgba(198, 201, 216, 0.75);
+                color: var(--icon-color);
                 border-radius: 100%;
                 text-align: center;
                 font-size: 14px;
@@ -23,7 +39,7 @@ ul {
                 a {
                     background: $theme-color;
                     border-color: $theme-color;
-                    color: #ffffff;
+                    color: #4CBD94;
                     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
                     transform: translateY(-3px);
                 }
