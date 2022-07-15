@@ -118,12 +118,12 @@ class SliderOne extends Component {
                                                 
                                             </h1>
                                             <h2 className="title">
-                                                <TextLoop>
+                                                <TextLoop mask={true} delay={100}>
                                                     <span className="theme-gradient">in Creativity</span>
                                                     <span className="theme-gradient">in Marketing</span>
                                                     <span className="theme-gradient">in Visibility</span>
                                                     <span className="theme-gradient">in Communication</span>
-                                                </TextLoop>{" "}
+                                                </TextLoop>
                                             </h2>
                                         </div>
                                     </div>

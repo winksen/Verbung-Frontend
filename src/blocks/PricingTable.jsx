@@ -16,14 +16,24 @@ const PricingTable = () => {
             {/* End Header Area  */}
             
             {/* Start Breadcrump Area */}
-            {/* <Breadcrumb title={'Pricing Table'}   /> */}
-            {/* End Breadcrump Area */}
+            <div className="rn-page-title-area pt--120 pb--190 active-darkless"  data-black-overlay="6">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="rn-page-title text-center pt--100">
+                                        <h2 className="title theme-gradient textUpper">Pricing</h2><br />
+                                        {/* <img src="/assets/images/illustrations/cart.png" alt="" /> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End Breadcrump Area */}
 
             {/* Start Page Wrapper  */}
-            <br /><br /><br /><br />
-            <main className="page-wrapper active-darkless">
+            <div className="page-wrapper active-darkless">
                 {/* Start Pricing Tbale Area  */}
-                <div className="rn-pricing-table-area ptb--120 bg_color--5">
+                <div className="rn-pricing-table-area">
                     <div className="container">
                         <div className="row">
 
@@ -194,7 +204,8 @@ const PricingTable = () => {
                     </div>
                 </div>
                 {/* End Pricing Tbale Area  */}
-            </main>
+                <br /><br />
+            </div>
             {/* End Page Wrapper  */}
 
             {/* Start Back To Top */}

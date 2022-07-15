@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
+import {FaTwitter, FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/Verbung'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/verbung'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/verbung/'},
+    {Social: <RiInstagramFill /> , link: 'https://www.instagram.com/verbung/'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/verbung'},
     {Social: <FaYoutube /> , link: 'https://www.youtube.com/channel/UCang3Nx-Z01oWYAa-EE3qfw'},
 ]

@@ -378,7 +378,7 @@ class InteriorLanding extends Component{
                         </div>
                     </div>
                     <div className="wrapper portfolio-sacousel-inner mb--55">
-                        <div className="portfolio-slick-activation mt--30 mt_sm--30">
+                        <div className="mt--30 mt_sm--30">
                             <Slider {...portfolioSlick2}>
                                 {PortfolioList2.map((value , index) => (
                                     // <div className="portfolio portfolio-interior-design" key={index}>
