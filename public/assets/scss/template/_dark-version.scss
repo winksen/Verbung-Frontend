@@ -104,8 +104,8 @@
     }
     .portfolio-sacousel-inner .slick-dots li button::after,
     .rn-slick-dot .slick-dots li button::after {
-        background: #ffffff;
-        box-shadow: inset 0 0 0 5px #ffffff;
+        //background: #ffffff;
+        box-shadow: inset 0 0 0 5px var(--font-color);;
     }
     .creative-service-wrapper .row.creative-service .service.service__style--2 {
         background: #191919;
