@@ -34,7 +34,7 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12">
                                             <div className="footer-link">
-                                                <h4 className="textUpper">Quick Link</h4>
+                                                <h4 className="textUpper">Quick Links</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="/pricing">Pricing</a></li>
                                                     <li><a href="/about">About</a></li>
@@ -46,7 +46,7 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                                             <div className="footer-link">
-                                                <h4 className="textUpper">Say Hello</h4>
+                                                <h4 className="textUpper">Reach Out</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="mailto:contact@verbung.net">contact@verbung.net</a></li>
                                                     {/* <li><a href="mailto:hr@example.com">hr@example.com</a></li> */}

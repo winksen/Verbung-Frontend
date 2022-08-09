@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
-import AnimatedBg from "react-animated-bg";
 import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
-// import Spline from '@splinetool/react-spline';
 
 const SlideList = [
     {
@@ -28,7 +26,7 @@ class SliderOne extends Component {
                     {SlideList.map((value , index) => (
                         <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center ptb--120 with-particles bg_image" key={index}>
                             <div className="frame-layout__particles">
-                                <Particles className="particle"  
+                                <Particles className="particle"
                                     options={{
                                         style:{
                                             position: "absolute"
