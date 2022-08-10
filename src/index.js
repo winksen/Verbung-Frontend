@@ -72,7 +72,7 @@ class Root extends Component{
                     <Switch>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/> */}
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/home-particles`} component={HomeParticles}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/home-particles`} component={HomeParticles}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/dark-portfolio-landing`} component={DarkPortfolioLanding}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
