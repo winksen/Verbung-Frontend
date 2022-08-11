@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 
 // Create Import File
 import './index.scss';
-
 import PageScrollTop from './component/PageScrollTop';
 
 // Home layout
@@ -105,8 +104,8 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/services/visualidentity`} component={ServiceVI}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/services/webmobile`} component={ServiceWM}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/services/pressrelation`} component={ServicePR}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
@@ -130,7 +129,6 @@ class Root extends Component{
 
                         
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/backend/public`}/> */}
                         <Route component={error404}/>
 
                     </Switch>
