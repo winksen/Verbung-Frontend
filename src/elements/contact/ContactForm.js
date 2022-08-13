@@ -1,12 +1,12 @@
-import React , {useState} from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
+// import emailjs from 'emailjs-com';
 import axios from 'axios';
 
-const Result = () => {
-    return (
-        <p className="success-message">Your Message has been successfully sent. We will contact you soon.</p>
-    )
-}
+// const Result = () => {
+//     return (
+//         <p className="success-message">Your Message has been successfully sent. We will contact you soon.</p>
+//     )
+// }
 function ContactForm({props}) {
     const [formValue, setformValue] = React.useState({
         fullname: '',
@@ -33,6 +33,7 @@ function ContactForm({props}) {
             data: messageFormData,
             headers: { "Content-Type": "multipart/form-data" },
           });
+          console.log(response);
         } catch(error) {
           console.log(error)
         }

@@ -1,5 +1,5 @@
 import React, { Component ,Fragment } from "react";
-import BlogContent from "./BlogContent";
+// import BlogContent from "./BlogContent";
 import axios from "axios";
 
 const api = axios.create({

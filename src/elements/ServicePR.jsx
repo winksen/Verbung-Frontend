@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp, FiMaximize } from "react-icons/fi";
+import { FiCast , FiMonitor ,FiChevronUp, FiMaximize } from "react-icons/fi";
 import ScrollToTop from 'react-scroll-up';
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";

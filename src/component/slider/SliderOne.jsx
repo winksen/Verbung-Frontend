@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
-import ServiceOne from "../../elements/service/ServiceOne";
+// import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
 
 const SlideList = [
