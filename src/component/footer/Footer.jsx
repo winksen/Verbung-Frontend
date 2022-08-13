@@ -39,6 +39,7 @@ class Footer extends Component{
                                                     <li><a href="/pricing">Pricing</a></li>
                                                     <li><a href="/about">About</a></li>
                                                     <li><a href="/contact">Let's Talk</a></li>
+                                                    <li><a href="/blogs">Blog</a></li>
                                                 </ul>
                                             </div>
                                         </div>
