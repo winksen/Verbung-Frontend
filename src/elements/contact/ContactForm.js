@@ -29,7 +29,8 @@ function ContactForm({props}) {
           // make axios post request
           const response = await axios({
             method: "post",
-            url: "http://127.0.0.1:8000/api/messages",
+            // url: "http://127.0.0.1:8000/api/messages",
+            url: "https://api.verbung.net/public/api/messages",
             data: messageFormData,
             headers: { "Content-Type": "multipart/form-data" },
           });
