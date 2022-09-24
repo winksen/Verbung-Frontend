@@ -328,8 +328,8 @@ class InteriorLanding extends Component{
                                 </Scrollspy>
                             </nav>
                             <div className="header-btn">
-                                <a className="rn-btn" href="/pricing">
-                                    <span>PRICING</span>
+                                <a className="rn-btn title" href="/pricing">
+                                    <span className="title">PRICING</span>
                                 </a>
                             </div>
                             {/* Start Humberger Menu  */}
@@ -369,8 +369,8 @@ class InteriorLanding extends Component{
                 <div className="portfolio-area ptb--120 bg_color--1" id="work">
                     <div className="container">
                         <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-title text-center mb--30">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center mb--30">
                                     <h2 className="textUpper">Our Work</h2>
                                     <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
                                 </div>

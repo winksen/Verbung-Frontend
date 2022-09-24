@@ -19,9 +19,10 @@ BLog Details Styles
 .blog-single-page-title {
     position: relative;
     h2 {
-        font-weight: 700;
+        font-weight: 900;
         line-height: 90px;
         font-size: 72px;
+        font-family: $sohne-font;
         @media #{$sm-layout} {
             line-height: 62px;
             font-size: 40px;

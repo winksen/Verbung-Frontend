@@ -79,7 +79,7 @@ class BlogDetails extends Component{
                                         <p align="justify">{this.state.blogs.para1}</p>
                                         {/* Image 1 */}
                                         <div className="thumbnail">
-                                            <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.jpg`} alt="Blog Images"/>
+                                            <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
                                         </div>
                                         {/* Para 2 */}
                                         <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
@@ -116,7 +116,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para5}</p>
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
-                                                <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.jpg`} alt="Blog Images"/>
+                                                <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
