@@ -2,11 +2,25 @@
     Color Darker Version  
 ----------------------------*/
 .active-darkless {
-    background: #022726;
+    background: var(--backgroundLess-color);
+}
+
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
 }
 
 .active-dark {
-    background: #001e21;
+    background: var(--background-color);
     [data-overlay="6"]:before,
     [data-black-overlay="6"]:before,
     [data-white-overlay="6"]:before {
@@ -19,6 +33,10 @@
     }
     .service-white .service__style--1 .content h4.title{
         color: #ffffff;
+    }
+
+    .dark-mode-switch {
+        padding-top: 10px;
     }
 
     .textInputField {
@@ -34,17 +52,17 @@
     }
     .bg_color--1 ,
     .brand-separation {
-        background: #022726;
+        background: var(--backgroundLess-color);
     }
     .bg_color--5,
     .footer-right {
-        background: #001e21
+        background: var(--background-color)
     }
     ul.brand-style-2 img {
         filter: invert(1);
     }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        color: #ffffff;
+        color: var(--font-color);
     }
     a.btn-transparent {
         color: #ffffff; 
@@ -58,7 +76,7 @@
     .slide.slider-style-3 .inner>span ,
     .single-tab-content ul li a ,
     .single-tab-content ul li {
-       color: rgba(198, 201, 216, 0.75)
+       color: var(--second-font-color)
     }
 
     ul.tab-style--1 li::before {
@@ -86,8 +104,8 @@
     }
     .portfolio-sacousel-inner .slick-dots li button::after,
     .rn-slick-dot .slick-dots li button::after {
-        background: #ffffff;
-        box-shadow: inset 0 0 0 5px #ffffff;
+        //background: #ffffff;
+        box-shadow: inset 0 0 0 5px var(--font-color);;
     }
     .creative-service-wrapper .row.creative-service .service.service__style--2 {
         background: #191919;
@@ -100,28 +118,38 @@
         border-color: $theme-color;
     }
     .header-area.header--fixed.sticky {
-        background: #191919;
+        background: var(--background-color);
+        top: 0;
+        // -webkit-backdrop-filter: blur(10px);
+        // backdrop-filter: blur(8px);
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: rgba(255, 255, 255, 0.384);
+        padding-bottom: 10px;
+        padding-top: 15px;
     }
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
-        color: #ffffff;
-        border-color: #ffffff;
+        color: var(--font-color);
+        border-color: var(--font-color);
     }
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn:hover{
         color: #ffffff;
         border-color: $theme-color;
     }
     .bg_image--25 {
-        background-color: #101010;
-        background-image: url(/assets/images/bg/bg-image-28.jpg) !important;
+        // background-color: #101010;
+        background-image: var(--background-image);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .backto-top>div {
-        background-color: #000;
+        background-color: #fff;
     }
     .backto-top svg {
-        color: #fff;
+        color: #000;
     }
     .contact-form--1 input,
     .contact-form--1 textarea {
@@ -129,10 +157,11 @@
     }
 
     .sticky-nav {
+        background-color: var(--background-color);
         position: fixed;
         top: 0;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(8px);
+        // -webkit-backdrop-filter: blur(10px);
+        // backdrop-filter: blur(8px);
         border-style: solid;
         border-top: 0;
         border-left: 0;

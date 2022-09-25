@@ -2,12 +2,27 @@
 BLog Details Styles 
 ------------------------*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .blog-single-page-title {
     position: relative;
     h2 {
-        font-weight: 700;
+        font-weight: 900;
         line-height: 90px;
         font-size: 72px;
+        font-family: $sohne-font;
         @media #{$sm-layout} {
             line-height: 62px;
             font-size: 40px;
@@ -23,7 +38,7 @@ BLog Details Styles
             bottom: -135px;
             li {
                 font-size: 16px;
-                color: #c6c9d8;
+                color: var(--font-color);
                 margin: 0 15px;
                 margin-bottom: 13px;
                 @media #{$sm-layout} {
@@ -53,7 +68,7 @@ BLog Details Styles
             p {
                 font-size: 18px;
                 line-height: 30px;
-                color: rgba(29, 29, 36, 0.75);
+                color: var(--second-font-color);
                 margin-bottom: 40px;
                 @media #{$sm-layout} {
                     margin-bottom: 20px;

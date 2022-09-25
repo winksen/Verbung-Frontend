@@ -2,6 +2,20 @@
 Footer Styles 
 ----------------------*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .footer-wrapper {
     position: relative;
 }
@@ -71,7 +85,7 @@ Footer Styles
             color: #ffffff;
             font-size: 75px;
             font-weight: 900;
-            font-family: 'Montserrat', sans-serif;
+            //font-family: 'Montserrat', sans-serif;
             line-height: 90px;
             
             @media #{$lg-layout} {
@@ -128,7 +142,7 @@ Footer Styles
     }
     .footer-link {
         h4 {
-            color: #c6c9d8;
+            color: var(--font-color);
             font-weight: 500;
             margin-bottom: 30px;
             opacity: 0.75;
@@ -143,7 +157,7 @@ Footer Styles
                 list-style: none;
                 li {
                     a {
-                        color: #c6c9d8;
+                        color: var(--second-font-color);
                         font-size: 16px;
                         @extend %transition;
                         opacity: 0.75;

@@ -2,6 +2,20 @@
 Mainmenu Area 
 =====================*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .mainmenunav {
     ul {
         &.mainmenu {
@@ -14,7 +28,7 @@ Mainmenu Area
                 position: relative;
                 > a {
                     @extend %transition;
-                    color: #c6c9d8;
+                    color: var(--font-color);
                     font-size: 16px;
                     font-weight: 500;
                     padding: 20px 0;
@@ -52,7 +66,7 @@ Mainmenu Area
                             &:hover {
                                 a {
                                     color: $theme-color;
-                                    background: rgba(249, 0, 77, 0.07);
+                                    background: rgba(58, 192, 152, 0.2);
                                 }
                             }
                         }

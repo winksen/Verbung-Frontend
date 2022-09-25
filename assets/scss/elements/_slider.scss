@@ -45,32 +45,64 @@ Slider Default Style
         }
         h1 {
             &.title {
-                font-size: 125px;
+                font-size: 170px;
                 font-weight: 900;
                 text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $sohne-font;
                 font-weight: 900;
                 line-height: 130px;
                 @media #{$laptop-device} {
-                    font-size: 100px;
+                    font-size: 140px;
                     line-height: 112px;
                 }
                 @media #{$lg-layout} {
-                    font-size: 90px;
+                    font-size: 100px;
                     line-height: 103px;
                 }
                 @media #{$md-layout} {
-                    font-size: 70px;
+                    font-size: 80px;
                     line-height: 82px;
                     margin-bottom: 0;
                 }
                 @media #{$sm-layout} {
-                    font-size: 50px;
+                    font-size: 60px;
                     line-height: 70px;
                     margin-bottom: 0;
                 }
                 @media #{$large-mobile} {
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        h2 {
+            &.title {
+                font-size: 60px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: $sohne-font;
+                line-height: 130px;
+                @media #{$laptop-device} {
+                    font-size: 60px;
+                    line-height: 112px;
+                }
+                @media #{$lg-layout} {
+                    font-size: 50px;
+                    line-height: 103px;
+                }
+                @media #{$md-layout} {
                     font-size: 40px;
+                    line-height: 82px;
+                    margin-bottom: 0;
+                }
+                @media #{$sm-layout} {
+                    font-size: 30px;
+                    line-height: 70px;
+                    margin-bottom: 0;
+                }
+                @media #{$large-mobile} {
+                    font-size: 20px;
                     line-height: 50px;
                     margin-bottom: 20px;
                 }
@@ -291,7 +323,7 @@ Slider Default Style
                     color: #1f1f25;
                     font-size: 75px;
                     font-weight: 900;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: 'Oswald', sans-serif;
                     line-height: 90px;
                     text-transform: inherit;
                     width: 70%;
@@ -412,19 +444,19 @@ Personal Portfolio
                 h1{
                     &.title{
                         @media #{$sm-layout} {
-                            font-size: 32px;
+                            font-size: 50px;
                             line-height: 49px;
                         }
                         @media #{$md-layout} {
-                            font-size: 53px;
+                            font-size: 75px;
                             line-height: 70px;
                         }
                         @media #{$lg-layout} {
-                            font-size: 58px;
+                            font-size: 100px;
                             line-height: 75px;
                         }
                         @media #{$laptop-device} {
-                            font-size: 54px;
+                            font-size: 120px;
                             line-height: 68px;
                         }
                     }
@@ -844,7 +876,7 @@ Custom Animation
 ----------------------*/
 
 .box-model .service-wrapper {
-    background-image: url(/assets/images/bg/bg-image-1.jpg);
+    background-image: url(/assets/images/bg/BG.png);
     padding: 10px 50px;
     border-radius: 6px;
     position: relative;
