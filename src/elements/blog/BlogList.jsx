@@ -3,8 +3,8 @@ import React, { Component ,Fragment } from "react";
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: `http://127.0.0.1:8000/api/posts`
-    // baseURL: `https://api.verbung.net/public/api/posts`
+    //baseURL: `http://127.0.0.1:8000/api/posts`
+    baseURL: `https://api.verbung.net/public/api/posts`
 })
 class BLogList extends Component{
     constructor () {
