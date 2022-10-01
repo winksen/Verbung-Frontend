@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import TextLoop from "react-text-loop";
 // import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
+import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
+import { RandomReveal } from 'react-random-reveal'
 
 const SlideList = [
     {
@@ -112,15 +114,47 @@ class SliderOne extends Component {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
-                                            <h1 className="title oswald">SCALE NOW.<br/>
-                                                
+                                            <h1 className="title oswald">SCALE NOW.<br/>  
                                             </h1>
                                             <h2 className="title">
-                                                <TextLoop mask={true} delay={100}>
-                                                    <span className="theme-gradient">in Creativity</span>
-                                                    <span className="theme-gradient">in Marketing</span>
-                                                    <span className="theme-gradient">in Visibility</span>
-                                                    <span className="theme-gradient">in Communication</span>
+                                                <TextLoop mask={true} delay={150}>
+                                                    {/* <RandomReveal/> */}
+                                                    <span className="theme-gradient">
+                                                        <RandomReveal
+                                                        isPlaying
+                                                        duration={1}
+                                                        revealDuration={3}
+                                                        characters="in Creativity"
+                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                        />
+                                                    </span>
+                                                    <span className="theme-gradient">
+                                                        <RandomReveal
+                                                        isPlaying
+                                                        duration={1}
+                                                        revealDuration={3}
+                                                        characters="in Marketing"
+                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                        />
+                                                    </span>
+                                                    <span className="theme-gradient">
+                                                        <RandomReveal
+                                                        isPlaying
+                                                        duration={1}
+                                                        revealDuration={3}
+                                                        characters="in Visibility"
+                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                        />
+                                                    </span>
+                                                    <span className="theme-gradient">
+                                                        <RandomReveal
+                                                        isPlaying
+                                                        duration={1}
+                                                        revealDuration={3}
+                                                        characters="in Communication"
+                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                        />
+                                                    </span>
                                                 </TextLoop>
                                             </h2>
                                         </div>

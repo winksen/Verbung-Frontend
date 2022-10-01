@@ -112,16 +112,17 @@
             h3 {
                 &.title {
                     margin-bottom: 19px;
-                    font-weight: 500;
+                    font-weight: 700;
+                    font-size: 30px;
                     @extend %transition;
                     @media #{$laptop-device} {
-                        font-size: 19px;
+                        font-size: 30px;
                     }
                     @media #{$sm-layout} {
                         font-size: 20px;
                     }
                     @media #{$md-layout} {
-                        margin-bottom: 8px;
+                        margin-bottom: 15px;
                     }
                     // @media #{$large-mobile} {
                     //     color: #ffffff;

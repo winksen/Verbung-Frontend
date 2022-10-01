@@ -1,144 +1,128 @@
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Dreiviertelfett.woff2') format('woff2'),
-        url('SohneSchmal-Dreiviertelfett.woff') format('woff');
+    src: url('SohneSchmal-Extrafett.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-ExtraleichtKursiv.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-Buch.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-Dreiviertelfett.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Kraftig.woff2') format('woff2'),
-        url('SohneSchmal-Kraftig.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-ExtrafettKursiv.woff2') format('woff2'),
-        url('SohneSchmal-ExtrafettKursiv.woff') format('woff');
+    src: url('SohneSchmal-ExtrafettKursiv.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-FettKursiv.woff2') format('woff2'),
-        url('SohneSchmal-FettKursiv.woff') format('woff');
+    src: url('SohneSchmal-Fett.ttf') format('truetype');
     font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Extraleicht.woff2') format('woff2'),
-        url('SohneSchmal-Extraleicht.woff') format('woff');
-    font-weight: 300;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-DreiviertelfettKurs.woff2') format('woff2'),
-        url('SohneSchmal-DreiviertelfettKurs.woff') format('woff');
+    src: url('SohneSchmal-DreiviertelfettKurs.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-HalbfettKursiv.woff2') format('woff2'),
-        url('SohneSchmal-HalbfettKursiv.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-ExtraleichtKursiv.woff2') format('woff2'),
-        url('SohneSchmal-ExtraleichtKursiv.woff') format('woff');
+    src: url('SohneSchmal-Extraleicht.ttf') format('truetype');
     font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Buch.woff2') format('woff2'),
-        url('SohneSchmal-Buch.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Fett.woff2') format('woff2'),
-        url('SohneSchmal-Fett.woff') format('woff');
+    src: url('SohneSchmal-BuchKursiv.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-Kraftig.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-FettKursiv.ttf') format('truetype');
     font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-BuchKursiv.woff2') format('woff2'),
-        url('SohneSchmal-BuchKursiv.woff') format('woff');
-    font-weight: normal;
     font-style: italic;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Halbfett.woff2') format('woff2'),
-        url('SohneSchmal-Halbfett.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Extrafett.woff2') format('woff2'),
-        url('SohneSchmal-Extrafett.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-Leicht.woff2') format('woff2'),
-        url('SohneSchmal-Leicht.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-LeichtKursiv.woff2') format('woff2'),
-        url('SohneSchmal-LeichtKursiv.woff') format('woff');
+    src: url('SohneSchmal-LeichtKursiv.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Sohne Schmal';
-    src: url('SohneSchmal-KraftigKursiv.woff2') format('woff2'),
-        url('SohneSchmal-KraftigKursiv.woff') format('woff');
+    src: url('SohneSchmal-HalbfettKursiv.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-Leicht.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-Halbfett.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url('SohneSchmal-KraftigKursiv.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
-    font-display: swap;
+    font-display: block;
 }
 

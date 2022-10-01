@@ -48,9 +48,9 @@ const PricingTable = () => {
                                             <h4 className="title textUpper">Digital Marketing</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
-                                                <span className="subtitle">Starting from</span>
+                                                {/* <span className="subtitle">Starting from</span>
                                                 <span className="price">22,000</span>
-                                                <span className="subtitle">MAD/TTC</span>
+                                                <span className="subtitle">MAD/TTC</span> */}
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -64,7 +64,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
                                         </div>
                                     </div>
                                 </div>
@@ -82,9 +82,9 @@ const PricingTable = () => {
                                             <h4 className="title textUpper">Visual Identity</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
-                                                <span className="subtitle">Starting from</span>
+                                                {/* <span className="subtitle">Starting from</span>
                                                 <span className="price">50,000</span>
-                                                <span className="subtitle">MAD/TTC</span>
+                                                <span className="subtitle">MAD/TTC</span> */}
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -98,7 +98,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,9 +116,9 @@ const PricingTable = () => {
                                             <h4 className="title textUpper">Web &amp; Mobile</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
-                                                <span className="subtitle">Starting from</span>
+                                                {/* <span className="subtitle">Starting from</span>
                                                 <span className="price">125,000</span>
-                                                <span className="subtitle">MAD/TTC</span>
+                                                <span className="subtitle">MAD/TTC</span> */}
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -132,7 +132,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
                                         </div>
                                     </div>
                                 </div>
@@ -150,9 +150,9 @@ const PricingTable = () => {
                                             <h4 className="title textUpper">Press Relation</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
-                                                <span className="subtitle">starting from</span>
+                                                {/* <span className="subtitle">starting from</span>
                                                 <span className="price">35,000</span>
-                                                <span className="subtitle">MAD/TTC</span>
+                                                <span className="subtitle">MAD/TTC</span> */}
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -166,7 +166,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Purchase Now</a>
+                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
                                         </div>
                                     </div>
                                 </div>
