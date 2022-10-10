@@ -4,12 +4,12 @@ import axios from "axios";
 // import { useParams } from 'react-router';
 import PageHelmet from "../component/common/Helmet";
 import ModalVideo from 'react-modal-video';
-import { FiClock , FiUser } from "react-icons/fi";
+import { FiClock , FiUser, FiEdit } from "react-icons/fi";
 // import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
-import Footer from "../component/footer/Footer";
+import Footer from "../component/footer/FooterTwo";
 
 
 const api = axios.create({
@@ -56,7 +56,8 @@ class BlogDetails extends Component{
                                     <br />
                                     <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2>                                    
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
-                                        <li><FiClock />{moment(this.state.blogs.created_at).fromNow()}</li>
+                                        <li><FiClock />Created: {moment(this.state.blogs.created_at).fromNow()}</li>
+                                        <li><FiEdit />Updated: {moment(this.state.blogs.updated_at).fromNow()}</li>
                                         <li><FiUser />{this.state.blogs.writer}</li>
                                         {/* <li><FiMessageCircle />15 Comments</li>
                                         <li><FiHeart />Like</li> */}
@@ -75,24 +76,38 @@ class BlogDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="inner-wrapper">
                                     <div className="inner">
+                                        {/* CatchPhrase 1 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch1}</h3>
+                                        <br />
                                         {/* Para 1 */}
                                         <p align="justify">{this.state.blogs.para1}</p>
+                                        {/* CatchPhrase 2 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch2}</h3>
+                                        <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
                                             <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
                                         </div>
+                                        <br /><br />
+                                        {/* CatchPhrase 3 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch3}</h3>
                                         {/* Para 2 */}
                                         <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
-                                        {/* Block Quote */}
-                                        {/* <blockquote className="rn-blog-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</blockquote> */}
+                                        {/* CatchPhrase 4 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch4}</h3>
+                                        <br />
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
+                                                {/* Image 2 */}
                                                 <img className="w-100" src={`/assets/images/blog/blog-single-0${this.state.blogs.imageid2}.png`} alt="BLog Images"/>
                                                 <span>{this.state.blogs.image_source}</span>
                                             </div>
                                             <div className="content">
                                                 {/* Para 3 */}
                                                 <p align="justify">{this.state.blogs.para3}</p>
+                                                {/* CatchPhrase 5 */}
+                                                <h3 className="oswald textUpper">{this.state.blogs.catch5}</h3>
+                                                <br />
                                                 <p align="justify">{this.state.blogs.para4}</p>
                                                 {/* <h4 className="title">Ordered &amp; Unordered Lists.</h4>
                                                 <ul className="list-style">
@@ -112,8 +127,24 @@ class BlogDetails extends Component{
                                             </div>
                                         </div>
 
+                                        {/* CatchPhrase 6 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch6}</h3>
                                         {/* Para 4 */}
-                                        <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para5}</p>
+                                        <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
+                                        {/* Image 3 */}
+                                        <div className="thumbnail">
+                                            <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
+                                        </div>
+                                        <br /><br />
+                                        {/* Para 5 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para5}</p>
+                                        <br /><br />
+                                        {/* CatchPhrase 7 */}
+                                        <h3 className="oswald textUpper">{this.state.blogs.catch7}</h3>
+                                        <br />
+                                        {/* Para 6 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
+                                        <br /><br />
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
                                                 <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
@@ -121,10 +152,10 @@ class BlogDetails extends Component{
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
                                         </div>
-                                        {/* Para 5 */}
+                                        {/* Para 7 */}
                                         <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
-                                        <br />
-                                        <p><FiClock /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
+                                        <br /><br /><br /><br /><br />
+                                        <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
                                     </div>
                                 </div>
                             </div>
