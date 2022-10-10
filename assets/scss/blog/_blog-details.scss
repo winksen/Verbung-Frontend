@@ -22,7 +22,7 @@ BLog Details Styles
         font-weight: 900;
         line-height: 90px;
         font-size: 72px;
-        font-family: $anton-font;
+        font-family: $oswald-font;
         @media #{$sm-layout} {
             line-height: 62px;
             font-size: 40px;
@@ -64,6 +64,9 @@ BLog Details Styles
             }
             @media #{$sm-layout} {
                 padding: 0 10px;
+            }
+            h3 {
+                font-family: $oswald-font;
             }
             p {
                 font-size: 18px;
