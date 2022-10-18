@@ -13,8 +13,8 @@ import Footer from "../component/footer/FooterTwo";
 
 
 const api = axios.create({
-    baseURL: `http://127.0.0.1:8000/api/posts`
-    //baseURL: `https://api.verbung.net/public/api/posts`
+    //baseURL: `http://127.0.0.1:8000/api/posts`
+    baseURL: `https://api.verbung.net/public/api/posts`
 })
 class BlogDetails extends Component{
     constructor (props) {
@@ -86,7 +86,7 @@ class BlogDetails extends Component{
                                         <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
-                                            <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
+                                            <img className="w-100" src={`${this.baseURL}/public/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
@@ -100,7 +100,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
                                                 
-                                                <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image2}`} onError={(event) => event.target.style.display = 'none'}/>
+                                                <img className="w-100" src={`${this.baseURL}/public/${this.state.blogs.image2}`} onError={(event) => event.target.style.display = 'none'}/>
                                                 <span>{this.state.blogs.image_source}</span>
                                             </div>
                                             <div className="content">
@@ -134,7 +134,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
-                                            <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image3}`} onError={(event) => event.target.style.display = 'none'}/>
+                                            <img className="w-100" src={`${this.baseURL}/public/${this.state.blogs.image3}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* Para 5 */}
@@ -148,7 +148,7 @@ class BlogDetails extends Component{
                                         <br /><br />
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
-                                                <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
+                                                <img className="w-100" src={`${this.baseURL}/public/${this.state.blogs.image4}`} onError={(event) => event.target.style.display = 'none'}/>
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            
