@@ -13,8 +13,8 @@ import Footer from "../component/footer/FooterTwo";
 
 
 const api = axios.create({
-    //baseURL: `http://127.0.0.1:8000/api/posts`
-    baseURL: `https://api.verbung.net/public/api/posts`
+    baseURL: `http://127.0.0.1:8000/api/posts`
+    //baseURL: `https://api.verbung.net/public/api/posts`
 })
 class BlogDetails extends Component{
     constructor (props) {
@@ -86,7 +86,7 @@ class BlogDetails extends Component{
                                         <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
-                                            <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
+                                            <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
@@ -99,7 +99,8 @@ class BlogDetails extends Component{
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
-                                                <img className="w-100" src={`/assets/images/blog/blog-single-0${this.state.blogs.imageid2}.png`} alt="BLog Images"/>
+                                                
+                                                <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image2}`} onError={(event) => event.target.style.display = 'none'}/>
                                                 <span>{this.state.blogs.image_source}</span>
                                             </div>
                                             <div className="content">
@@ -133,7 +134,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
-                                            <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
+                                            <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image3}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* Para 5 */}
@@ -147,10 +148,10 @@ class BlogDetails extends Component{
                                         <br /><br />
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
-                                                <img src={`/assets/images/blog/bl-big-0${this.state.blogs.imageid1}.png`} alt="Blog Images"/>
+                                                <img className="w-100" src={`http://127.0.0.1:8000/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
-                                            <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
+                                            <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            
                                         </div>
                                         {/* Para 7 */}
                                         <p align="justify" className="mb--0">{this.state.blogs.para6}</p>

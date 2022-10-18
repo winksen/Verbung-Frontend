@@ -17,19 +17,19 @@ class Blog extends Component{
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190"  data-black-overlay="6">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="rn-page-title text-center pt--100">
-                                        <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
-                                        <p>Blog description here</p>
-                                    </div>
+                <div className="rn-page-title-area pt--120 pb--60"  data-black-overlay="6">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="rn-page-title text-center pt--100">
+                                    <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
+                                    <p>Blog description here</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* End Breadcrump Area */}
+                </div>
+                {/* End Breadcrump Area */}
 
 
                 {/* Start Blog Area */}

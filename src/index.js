@@ -38,7 +38,7 @@ import DarkMainDemo from './dark/MainDemo';
 
 // import Service from "./elements/Service";
 // import ServiceDetails from "./elements/ServiceDetails";
-// import About from "./elements/About";
+import About from "./elements/About";
 // import PortfolioDetails from "./elements/PortfolioDetails";
 import ServiceDM from "./elements/ServiceDM";
 import ServiceVI from "./elements/ServiceVI";
@@ -110,8 +110,8 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
                         
                          */}
 
