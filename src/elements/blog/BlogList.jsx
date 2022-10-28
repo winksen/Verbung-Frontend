@@ -2,6 +2,8 @@ import React, { Component ,Fragment } from "react";
 // import BlogContent from "./BlogContent";
 import axios from "axios";
 
+const queryUrl = 'https://api.verbung.net/public'
+
 const api = axios.create({
     //baseURL: `http://127.0.0.1:8000/api/posts`
     baseURL: `https://api.verbung.net/public/api/posts`
@@ -26,7 +28,7 @@ class BLogList extends Component{
                             <div className="blog blog-style--1">
                                 <div className="thumbnail">
                                     <a href={`/blogs/${blog.id}`}>
-                                        <img className="w-100" src={`${this.baseURL}/public/${blog.image5}`} alt="BLog Images"/>
+                                        <img className="w-100" src={`${queryUrl}/${blog.image5}`} alt="BLog Images"/>
                                         {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                                     </a>
                                 </div>
