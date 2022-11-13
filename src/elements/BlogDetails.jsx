@@ -54,7 +54,6 @@ class BlogDetails extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="blog-single-page-title text-center pt--100">
-                                    <img className="bg_image" src={`${queryUrl}/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
                                     <br />
                                     <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2>                                    
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
