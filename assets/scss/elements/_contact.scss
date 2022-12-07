@@ -1,5 +1,32 @@
 // Contact Styles 
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--font-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+:root {
+    --font-color: #001e21;
+    --border-color: rgba(62, 66, 66, 0.25);
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --border-color: rgba(216, 216, 216, 0.25);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .contact-form--1 {
     label {
         display: block;
@@ -10,14 +37,14 @@
         display: block;
         width: 100%;
         padding: 0 20px;
-        border: 2px solid rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--border-color);
         border-radius: 5px;
         transition: all 0.3s ease;
         height: 50px;
         line-height: 46px;
         margin-bottom: 20px;
         outline: none;
-        color: #1f1f25;
+        color: var(--font-color);
         font-size: 15px;
         letter-spacing: 0.1px;
         &:focus {
@@ -120,8 +147,14 @@ textarea {
 }
 
 .success-message {
-    color: green;
-    font-size: 14px;
+    color: #4CBD94;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #C85250;
+    font-size: 18px;
     margin-top: 20px;
 }
 

@@ -2,6 +2,20 @@
     Breadcrump Area 
 ======================*/
 
+:root {
+    --font-color: #001e21;
+    --border-color: rgba(62, 66, 66, 0.25);
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --border-color: rgba(216, 216, 216, 0.25);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 @media (min-width: 1200px){
     .container {
         max-width: 1260px;
@@ -74,7 +88,7 @@
     p {
         font-size: 22px;
         line-height: 27px;
-        color: #c6c9d8;
+        color: var(--font-color);
     }
 }
 
