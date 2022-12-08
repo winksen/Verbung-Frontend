@@ -15,6 +15,7 @@ select:-webkit-autofill:focus {
 
 :root {
     --font-color: #001e21;
+    --second-font-color: #022726;
     --border-color: rgba(62, 66, 66, 0.25);
     --background-color: #eee;
     --backgroundLess-color: #ddd;
@@ -22,6 +23,7 @@ select:-webkit-autofill:focus {
   
 [data-theme="dark"] {
     --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
     --border-color: rgba(216, 216, 216, 0.25);
     --background-color: #001e21;
     --backgroundLess-color: #022726;
@@ -63,11 +65,11 @@ select:-webkit-autofill:focus {
 
 .rn-address {
     margin-top: 30px;
-    border: 1px solid #ebebeb;
+    // border: 1px solid #ebebeb;
     padding: 40px;
     border-radius: 10px;
     padding-top: 54px;
-    background: #fff;
+    background: var(--backgroundLess-color);
     padding-bottom: 50px;
     .icon {
         border: 1px solid #ebebeb;
@@ -87,14 +89,14 @@ select:-webkit-autofill:focus {
     .inner {
         h4 {
             &.title {
-                font-size: 18px;
+                font-size: 25px;
                 font-weight: 700;
             }
         }
         p {
             font-size: 18px;
             margin-bottom: 0;
-            color: rgba(29, 29, 36, 0.75);
+            color: var(--second-font-color);
             @media #{$lg-layout} {
                 font-size: 16px;
             }
@@ -119,7 +121,7 @@ select:-webkit-autofill:focus {
                 }
             }
             a {
-                color: rgba(29, 29, 36, 0.75);
+                color: var(--second-font-color);
                 @extend %transition;
                 &:hover {
                     color: $theme-color;

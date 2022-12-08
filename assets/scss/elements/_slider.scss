@@ -28,11 +28,11 @@
 }
 
 .slider-fixed--height {
-    min-height: 1080px;
+    min-height: 300px;
     width: 100%;
     
     @media #{$laptop-device} {
-        min-height: 900px;
+        min-height: 300px;
     }
     @media #{$sm-layout} {
         min-height: auto;
@@ -93,26 +93,26 @@ Slider Default Style
         }
         h2 {
             &.title {
-                font-size: 60px;
+                font-size: 40px;
                 font-weight: 700;
                 text-transform: uppercase;
                 font-family: $sohne-font;
                 line-height: 130px;
                 @media #{$laptop-device} {
-                    font-size: 60px;
+                    font-size: 40px;
                     line-height: 112px;
                 }
                 @media #{$lg-layout} {
-                    font-size: 50px;
+                    font-size: 30px;
                     line-height: 103px;
                 }
                 @media #{$md-layout} {
-                    font-size: 40px;
+                    font-size: 25px;
                     line-height: 82px;
                     margin-bottom: 0;
                 }
                 @media #{$sm-layout} {
-                    font-size: 30px;
+                    font-size: 20px;
                     line-height: 70px;
                     margin-bottom: 0;
                 }
@@ -887,7 +887,7 @@ Custom Animation
 
 .image-about {
     content: var(--image-id);
-    filter: drop-shadow(0 25px 65px rgba(0,0,0,.20));
+    // filter: drop-shadow(0 25px 65px rgba(0,0,0,.20));
 }
 
 /*---------------------
