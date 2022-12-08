@@ -46,7 +46,7 @@ class ServiceTwo extends Component{
                         </div>
                     </div>
                     <div className="col-lg-8 col-12 mt_md--50">
-                        <Fade bottom cascade>
+                        {/* <Fade bottom cascade> */}
                         <div className="row service-one-wrapper">
                             {ServiceList.map( (val , i) => (
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
@@ -66,7 +66,7 @@ class ServiceTwo extends Component{
                                 </div>
                             ))}
                         </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                 </div>
             </React.Fragment>

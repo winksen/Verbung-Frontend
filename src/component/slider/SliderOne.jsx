@@ -26,7 +26,7 @@ class SliderOne extends Component {
                 <div className="slider-wrapper">
                     {/* Start Single Slide */}
                     {SlideList.map((value , index) => (
-                        <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center ptb--120 with-particles bg_image" key={index}>
+                        <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center ptb--60 with-particles bg_image" key={index}>
                             <div className="frame-layout__particles">
                                 <Particles className="particle"
                                     options={{
@@ -112,11 +112,11 @@ class SliderOne extends Component {
                             </div>
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-12">
+                                    <div className="col-lg-6">
                                         <div className={`inner ${value.textPosition}`}>
                                             <h1 className="title oswald">SCALE NOW.<br/>  
                                             </h1>
-                                            <h2 className="title">
+                                            <h2 className="">
                                                 <TextLoop mask={true} delay={150}>
                                                     {/* <RandomReveal/> */}
                                                     <span className="theme-gradient">
@@ -124,7 +124,7 @@ class SliderOne extends Component {
                                                         isPlaying
                                                         duration={1}
                                                         revealDuration={3}
-                                                        characters="in Creativity"
+                                                        characters="In Creativity"
                                                         onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                         />
                                                     </span>
@@ -133,7 +133,7 @@ class SliderOne extends Component {
                                                         isPlaying
                                                         duration={1}
                                                         revealDuration={3}
-                                                        characters="in Marketing"
+                                                        characters="In Marketing"
                                                         onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                         />
                                                     </span>
@@ -142,7 +142,7 @@ class SliderOne extends Component {
                                                         isPlaying
                                                         duration={1}
                                                         revealDuration={3}
-                                                        characters="in Visibility"
+                                                        characters="In Visibility"
                                                         onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                         />
                                                     </span>
@@ -151,13 +151,20 @@ class SliderOne extends Component {
                                                         isPlaying
                                                         duration={1}
                                                         revealDuration={3}
-                                                        characters="in Communication"
+                                                        characters="In Communication"
                                                         onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                         />
                                                     </span>
                                                 </TextLoop>
                                             </h2>
                                         </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        {/* <div className={`inner ${value.textPosition}`}>
+                                            <div className="">
+                                                <img className="" src="/assets/images/about/illustr.png" alt="About Images"/>
+                                            </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

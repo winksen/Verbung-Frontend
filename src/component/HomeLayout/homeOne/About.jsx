@@ -8,26 +8,28 @@ class About extends Component{
         descriptionPartTwo = "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.";
         return(
             <React.Fragment>
-                <div className="active-darkless about-wrapper pb--120">
+                <div className="active-darkless about-wrapper pb--60">
                     <div className="container">
                         <div className="row row--35 align-items-center">
 
-                            <div className="col-lg-5 col-md-12">
-                                <div className="thumbnail image-about">
-                                    <img className="w-100" alt="About Images"/>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-7 col-md-12">
+                            <div className="col-lg-6 col-md-12">
                                 <div className="about-inner inner">
                                     <div className="section-title">
-                                        <h2 className="title textUpper">{title}</h2>
+                                        <h3 className="title textUpper">{title}</h3>
                                         <p className="description" align="justify">{description}</p><br /><br />
                                         <h3 className="title textUpper">{titlePartTwo}</h3>
                                         <p className="description" align="justify">{descriptionPartTwo}</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="col-lg-6 col-md-12">
+                                <div className="thumbnail image-about">
+                                    <img className="w-100" alt="About Images"/>
+                                </div>
+                            </div>
+
+                            
                         </div>
                     </div>
                 </div>
