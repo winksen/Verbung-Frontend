@@ -202,7 +202,7 @@ const INITIAL = {
                 id="name"
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Full Name"
                 value={data.name}
                 onChange={handleChange}
                 required
@@ -214,7 +214,7 @@ const INITIAL = {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Email"
                 value={data.email}
                 onChange={handleChange}
                 required

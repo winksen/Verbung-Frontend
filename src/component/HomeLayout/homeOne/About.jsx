@@ -14,7 +14,7 @@ class About extends Component{
 
                             <div className="col-lg-5 col-md-12">
                                 <div className="thumbnail image-about">
-                                    <img className="w-100" alt="About Images" loading="lazy"/>
+                                    <img className="w-100" alt="About Images"/>
                                 </div>
                             </div>
 
