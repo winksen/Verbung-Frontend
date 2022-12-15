@@ -2,6 +2,19 @@
 Testimonial Styles 
 ------------------------------*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
 
 .react-tabs__tab-panel{
     &.react-tabs__tab-panel--selected {
@@ -16,6 +29,7 @@ Testimonial Styles
     }
 }
 .rn-testimonial-content {
+    color: var(--second-font-color);
     -webkit-filter: blur(30px);
     filter: blur(30px);
     opacity: 0;
@@ -36,8 +50,9 @@ Testimonial Styles
         }
         p {
             font-size: 36px;
+            // font-family: $heading-font;
             line-height: 58px;
-            color: #18181b;
+            // color: white;
             font-weight: 500;
             padding: 0 9%;
             margin-bottom: 0;
