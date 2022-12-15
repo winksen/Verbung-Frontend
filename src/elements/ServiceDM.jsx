@@ -16,21 +16,20 @@ class ServiceDM extends Component{
 
                 {/* Start Service Area */}
                 <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--5" id="VI">
+                <div className="service-area pt--120 pb--60 bg_color--5" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <div className="section-title text-center mb--30">
-                                    <h2 className="textUpper">Digital Marketing</h2>
+                                <div className="section-title text-center">
+                                    <h1 className="textUpper">Digital Marketing</h1>
                                     <p>We partner with clients to build ROI centric campaigns through a variety of digital marketing services that will take your business to the next level.</p>
-                                    <br />
+                                    <p>Services Details Below</p>
                                     <h3 className="title theme-gradient">•</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="rn-testimonial-area bg_color--5">
                             <div className="container">
-                                <br />
                                 <ServicesDM />
                             </div>
                         </div>
@@ -39,8 +38,7 @@ class ServiceDM extends Component{
                 {/* End Service Area */}
 
                 {/* Start Other Service Area */}
-                <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--1" id="VI">
+                <div className="service-area ptb--60 bg_color--1" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -52,7 +50,7 @@ class ServiceDM extends Component{
                         </div>
                         <div className="row service-one-wrapper">
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/visualidentity">
+                                <a className="text-center" href="/visualidentity">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiMaximize />
@@ -65,7 +63,7 @@ class ServiceDM extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/webmobile">
+                                <a className="text-center" href="/webmobile">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiMonitor />
@@ -78,7 +76,7 @@ class ServiceDM extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/pressrelation">
+                                <a className="text-center" href="/pressrelation">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiUsers />

@@ -16,21 +16,20 @@ class ServiceWM extends Component{
 
                 {/* Start Service Area */}
                 <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--5" id="WM">
+                <div className="service-area pt--120 pb--60 bg_color--5" id="WM">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <div className="section-title text-center mb--30">
+                                <div className="section-title text-center">
                                     <h2 className="textUpper">Web &amp; Mobile</h2>
                                     <p>Your website is the first place that your customers will look to find out about your business and the services or products you provide. It is, in essence, your first impression and your sales tool.</p>
-                                    <br />
+                                    <p>Services Details Below</p>
                                     <h3 className="title theme-gradient">•</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="rn-testimonial-area bg_color--5">
                             <div className="container">
-                                <br />
                                 <ServicesWM />
                             </div>
                         </div>
@@ -39,8 +38,7 @@ class ServiceWM extends Component{
                 {/* End Service Area */}
 
                 {/* Start Other Service Area */}
-                <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--1" id="VI">
+                <div className="service-area ptb--60 bg_color--1" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -52,7 +50,7 @@ class ServiceWM extends Component{
                         </div>
                         <div className="row service-one-wrapper">
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/digitalmarketing">
+                                <a className="text-center" href="/digitalmarketing">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiCast />
@@ -65,7 +63,7 @@ class ServiceWM extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/visualidentity">
+                                <a className="text-center" href="/visualidentity">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiMaximize />
@@ -78,7 +76,7 @@ class ServiceWM extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/pressrelation">
+                                <a className="text-center" href="/pressrelation">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiUsers />

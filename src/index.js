@@ -103,14 +103,17 @@ class Root extends Component{
 
                         {/* Element Layot */}
                         <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/services/digitalmarketing`} component={ServiceDM}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/services/visualidentity`} component={ServiceVI}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/services/webmobile`} component={ServiceWM}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/services/pressrelation`} component={ServicePR}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/digitalmarketing`} component={ServiceDM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/visualidentity`} component={ServiceVI}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/webmobile`} component={ServiceWM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/pressrelation`} component={ServicePR}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs_:id`} component={BlogDetails}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
-                        <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
+
+                        {/* TO BE CONF LATER */}
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/> */}
+                        
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
                         
                          */}

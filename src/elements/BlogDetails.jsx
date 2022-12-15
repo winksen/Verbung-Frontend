@@ -78,12 +78,12 @@ class BlogDetails extends Component{
                                 <div className="inner-wrapper">
                                     <div className="inner">
                                         {/* CatchPhrase 1 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch1}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch1}</h3>
                                         <br />
                                         {/* Para 1 */}
                                         <p align="justify">{this.state.blogs.para1}</p>
                                         {/* CatchPhrase 2 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch2}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch2}</h3>
                                         <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
@@ -91,11 +91,11 @@ class BlogDetails extends Component{
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch3}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch3}</h3>
                                         {/* Para 2 */}
                                         <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
                                         {/* CatchPhrase 4 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch4}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch4}</h3>
                                         <br />
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
@@ -108,7 +108,7 @@ class BlogDetails extends Component{
                                                 {/* Para 3 */}
                                                 <p align="justify">{this.state.blogs.para3}</p>
                                                 {/* CatchPhrase 5 */}
-                                                <h3 className="oswald textUpper">{this.state.blogs.catch5}</h3>
+                                                <h3 className="textUpper">{this.state.blogs.catch5}</h3>
                                                 <br />
                                                 <p align="justify">{this.state.blogs.para4}</p>
                                                 {/* <h4 className="title">Ordered &amp; Unordered Lists.</h4>
@@ -130,7 +130,7 @@ class BlogDetails extends Component{
                                         </div>
 
                                         {/* CatchPhrase 6 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch6}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch6}</h3>
                                         {/* Para 4 */}
                                         <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
                                         {/* Image 3 */}
@@ -142,7 +142,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mb--0">{this.state.blogs.para5}</p>
                                         <br /><br />
                                         {/* CatchPhrase 7 */}
-                                        <h3 className="oswald textUpper">{this.state.blogs.catch7}</h3>
+                                        <h3 className="textUpper">{this.state.blogs.catch7}</h3>
                                         <br />
                                         {/* Para 6 */}
                                         <p align="justify" className="mb--0">{this.state.blogs.para6}</p>

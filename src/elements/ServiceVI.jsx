@@ -16,21 +16,20 @@ class ServiceVI extends Component{
 
                 {/* Start Service Area */}
                 <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--5" id="VI">
+                <div className="service-area pt--120 pb--60 bg_color--5" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <div className="section-title text-center mb--30">
+                                <div className="section-title text-center">
                                     <h2 className="textUpper">Visual Identity</h2>
                                     <p>Good graphic design can make the difference to any business, as it has the ability to connect with your audience and reach your business goals.</p>
-                                    <br />
+                                    <p>Services Details Below</p>
                                     <h3 className="title theme-gradient">•</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="rn-testimonial-area bg_color--5">
                             <div className="container">
-                                <br />
                                 <ServicesVI />
                             </div>
                         </div>
@@ -39,8 +38,7 @@ class ServiceVI extends Component{
                 {/* End Service Area */}
 
                 {/* Start Other Service Area */}
-                <br /><br /><br /><br />
-                <div className="service-area ptb--120 bg_color--1" id="VI">
+                <div className="service-area ptb--60 bg_color--1" id="VI">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -52,7 +50,7 @@ class ServiceVI extends Component{
                         </div>
                         <div className="row service-one-wrapper">
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/digitalmarketing">
+                                <a className="text-center" href="/digitalmarketing">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiCast />
@@ -65,7 +63,7 @@ class ServiceVI extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/webmobile">
+                                <a className="text-center" href="/webmobile">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiMonitor />
@@ -78,7 +76,7 @@ class ServiceVI extends Component{
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/services/pressrelation">
+                                <a className="text-center" href="/pressrelation">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiUsers />
