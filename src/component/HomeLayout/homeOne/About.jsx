@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LazyImage from "../../LazyLoader";
 
 class About extends Component{
     render(){
@@ -25,7 +26,7 @@ class About extends Component{
 
                             <div className="col-lg-6 col-md-12">
                                 <div className="thumbnail image-about">
-                                    <img className="w-100" alt="About Images"/>
+                                    <LazyImage className="w-100" alt="About Images"/>
                                 </div>
                             </div>
 
