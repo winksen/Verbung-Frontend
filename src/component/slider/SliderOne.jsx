@@ -116,47 +116,45 @@ class SliderOne extends Component {
                                         <div className={`inner ${value.textPosition}`}>
                                             <h1 className="title oswald">SCALE NOW.<br/>  
                                             </h1>
-                                            <h2 className="">
-                                                <TextLoop mask={true} delay={150}>
-                                                    {/* <RandomReveal/> */}
-                                                    <span className="theme-gradient">
-                                                        <RandomReveal
-                                                        isPlaying
-                                                        duration={1}
-                                                        revealDuration={3}
-                                                        characters="In Creativity"
-                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
-                                                        />
-                                                    </span>
-                                                    <span className="theme-gradient">
-                                                        <RandomReveal
-                                                        isPlaying
-                                                        duration={1}
-                                                        revealDuration={3}
-                                                        characters="In Marketing"
-                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
-                                                        />
-                                                    </span>
-                                                    <span className="theme-gradient">
-                                                        <RandomReveal
-                                                        isPlaying
-                                                        duration={1}
-                                                        revealDuration={3}
-                                                        characters="In Visibility"
-                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
-                                                        />
-                                                    </span>
-                                                    <span className="theme-gradient">
-                                                        <RandomReveal
-                                                        isPlaying
-                                                        duration={1}
-                                                        revealDuration={3}
-                                                        characters="In Communication"
-                                                        onComplete={() => ({ shouldRepeat: true, delay: 3 })}
-                                                        />
-                                                    </span>
-                                                </TextLoop>
-                                            </h2>
+                                            <TextLoop mask={true} delay={150}>
+                                                {/* <RandomReveal/> */}
+                                                <h3 className="theme-gradient">
+                                                    <RandomReveal
+                                                    isPlaying
+                                                    duration={1}
+                                                    revealDuration={3}
+                                                    characters="In Creativity"
+                                                    onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                    />
+                                                </h3>
+                                                <h3 className="theme-gradient">
+                                                    <RandomReveal
+                                                    isPlaying
+                                                    duration={1}
+                                                    revealDuration={3}
+                                                    characters="In Marketing"
+                                                    onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                    />
+                                                </h3>
+                                                <h3 className="theme-gradient">
+                                                    <RandomReveal
+                                                    isPlaying
+                                                    duration={1}
+                                                    revealDuration={3}
+                                                    characters="In Visibility"
+                                                    onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                    />
+                                                </h3>
+                                                <h3 className="theme-gradient">
+                                                    <RandomReveal
+                                                    isPlaying
+                                                    duration={1}
+                                                    revealDuration={3}
+                                                    characters="In Communication"
+                                                    onComplete={() => ({ shouldRepeat: true, delay: 3 })}
+                                                    />
+                                                </h3>
+                                            </TextLoop>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">

@@ -48,6 +48,7 @@ class BlogDetails extends Component{
                 <PageHelmet pageTitle='VERBUNG // Blogs' />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 
+                
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image" data-black-overlay="7">
                     <div className="container">
