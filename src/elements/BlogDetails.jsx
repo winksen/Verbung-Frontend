@@ -4,7 +4,7 @@ import axios from "axios";
 // import { useParams } from 'react-router';
 import PageHelmet from "../component/common/Helmet";
 import ModalVideo from 'react-modal-video';
-import { FiClock , FiUser, FiEdit } from "react-icons/fi";
+import { FiClock , FiUser, FiEdit, FiArrowLeft, FiArrowRight } from "react-icons/fi";
 // import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
@@ -50,11 +50,27 @@ class BlogDetails extends Component{
                 
                 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image" data-black-overlay="7">
+                <div className="rn-page-title-area pt--120 pb--90 bg_image" data-black-overlay="7">
                     <div className="container">
                         <div className="row">
+                            <div className="col-lg-6">
+                                <div className="header-btn pt--100">
+                                    <a className="rn-btn" href="/blogs">
+                                        <span><FiArrowLeft /> Return to Blogs</span>
+                                    </a>
+                                </div>
+                            </div>
+                            {/* <div className="col-lg-4">
+                            </div>
+                            <div className="col-lg-2">
+                                <div className="header-btn pt--100">
+                                    <a className="rn-btn" href={`/blogs_${this.state.blogs.id}`}>
+                                        <span>Next Blog <FiArrowRight /></span>
+                                    </a>
+                                </div>
+                            </div> */}
                             <div className="col-lg-12">
-                                <div className="blog-single-page-title text-center pt--100">
+                                <div className="blog-single-page-title text-center ">
                                     <br />
                                     <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2>                                    
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
@@ -72,7 +88,7 @@ class BlogDetails extends Component{
                 {/* End Breadcrump Area */}
 
                 {/* Start Blog Details */}
-                <div className="rn-blog-details pt--110 pb--70 bg_color--1">
+                <div className="rn-blog-details pt--90 pb--70 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">

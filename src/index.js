@@ -38,8 +38,8 @@ import DarkMainDemo from './dark/MainDemo';
 
 // import Service from "./elements/Service";
 // import ServiceDetails from "./elements/ServiceDetails";
-import About from "./elements/About";
-// import PortfolioDetails from "./elements/PortfolioDetails";
+// import About from "./elements/About";
+import PortfolioDetails from "./elements/PortfolioDetails";
 import ServiceDM from "./elements/ServiceDM";
 import ServiceVI from "./elements/ServiceVI";
 import ServiceWM from "./elements/ServiceWM";
@@ -114,9 +114,9 @@ class Root extends Component{
                         {/* TO BE CONF LATER */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/> */}
                         
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/> */}
                         
-                         */}
+                        
 
                         {/* Blocks Elements  */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/>

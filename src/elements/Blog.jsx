@@ -23,7 +23,7 @@ class Blog extends Component{
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
                                     <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
-                                    <p>Blog description here</p>
+                                    <p>Find our most recent blog articles below.</p>
                                 </div>
                             </div>
                         </div>
