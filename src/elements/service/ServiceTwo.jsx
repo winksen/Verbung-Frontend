@@ -1,6 +1,10 @@
+// USED IMPORTS
 import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
+
 import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
+
+// UNUSED IMPORTS
 
 const ServiceList = [
     {
@@ -73,4 +77,5 @@ class ServiceTwo extends Component{
         )
     }
 }
+
 export default ServiceTwo;

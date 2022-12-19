@@ -1,5 +1,9 @@
+// USED IMPORTS
 import React, { Component } from "react";
+
 import LazyImage from "../../LazyLoader";
+
+// UNUSED IMPORTS
 
 class About extends Component{
     render(){
@@ -23,14 +27,11 @@ class About extends Component{
                                     </div>
                                 </div>
                             </div>
-
                             <div className="col-lg-6 col-md-12">
                                 <div className="thumbnail image-about">
                                     <LazyImage className="w-100" alt="About Images"/>
                                 </div>
-                            </div>
-
-                            
+                            </div>        
                         </div>
                     </div>
                 </div>
@@ -38,4 +39,5 @@ class About extends Component{
         )
     }
 }
+
 export default About;

@@ -1,10 +1,13 @@
+// USED IMPORTS
 import React, { Component } from "react";
-// import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
-// import ServiceOne from "../../elements/service/ServiceOne";
 import Particles from "react-tsparticles";
-import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
-import { RandomReveal } from 'react-random-reveal'
+import { RandomReveal } from 'react-random-reveal';
+
+// UNUSED IMPORTS
+// import Fade from 'react-reveal/Fade';
+// import ServiceOne from "../../elements/service/ServiceOne";
+// import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
 
 const SlideList = [
     {
@@ -157,13 +160,7 @@ class SliderOne extends Component {
                                             </TextLoop>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6">
-                                        {/* <div className={`inner ${value.textPosition}`}>
-                                            <div className="">
-                                                <img className="" src="/assets/images/about/illustr.png" alt="About Images"/>
-                                            </div>
-                                        </div> */}
-                                    </div>
+                                    <div className="col-lg-6"></div>
                                 </div>
                             </div>
                         </div>
@@ -176,4 +173,5 @@ class SliderOne extends Component {
     );
   }
 }
+
 export default SliderOne;

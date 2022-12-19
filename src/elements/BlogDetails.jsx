@@ -1,15 +1,21 @@
+// USED IMPORTS
 import React, { Component } from "react";
-import moment from 'moment';
-import axios from "axios";
-// import { useParams } from 'react-router';
-import PageHelmet from "../component/common/Helmet";
 import ModalVideo from 'react-modal-video';
-import { FiClock , FiUser, FiEdit, FiArrowLeft, FiArrowRight } from "react-icons/fi";
-// import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-up';
+
+import { FiClock , FiUser, FiEdit, FiArrowLeft } from "react-icons/fi";
 import { FiChevronUp } from "react-icons/fi";
+
+import PageHelmet from "../component/common/Helmet";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/FooterTwo";
+
+import moment from 'moment';
+import axios from "axios";
+
+// UNUSED IMPORTS
+// import { Link } from 'react-router-dom';
+// import { useParams } from 'react-router';
 
 const queryUrl = 'https://api.verbung.net/public'
 
@@ -104,7 +110,7 @@ class BlogDetails extends Component{
                                         <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
-                                            <img className="w-100" src={`${queryUrl}/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
+                                            <img className="w-100" alt="" src={`${queryUrl}/${this.state.blogs.image}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
@@ -117,8 +123,7 @@ class BlogDetails extends Component{
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
-                                                
-                                                <img className="w-100" src={`${queryUrl}/${this.state.blogs.image2}`} onError={(event) => event.target.style.display = 'none'}/>
+                                                <img className="w-100" alt="" src={`${queryUrl}/${this.state.blogs.image2}`} onError={(event) => event.target.style.display = 'none'}/>
                                                 <span>{this.state.blogs.image_source}</span>
                                             </div>
                                             <div className="content">
@@ -152,7 +157,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
-                                            <img className="w-100" src={`${queryUrl}/${this.state.blogs.image3}`} onError={(event) => event.target.style.display = 'none'}/>
+                                            <img className="w-100" alt="" src={`${queryUrl}/${this.state.blogs.image3}`} onError={(event) => event.target.style.display = 'none'}/>
                                         </div>
                                         <br /><br />
                                         {/* Para 5 */}
@@ -166,7 +171,7 @@ class BlogDetails extends Component{
                                         <br /><br />
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
-                                                <img className="w-100" src={`${queryUrl}/${this.state.blogs.image4}`} onError={(event) => event.target.style.display = 'none'}/>
+                                                <img className="w-100" alt="" src={`${queryUrl}/${this.state.blogs.image4}`} onError={(event) => event.target.style.display = 'none'}/>
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            

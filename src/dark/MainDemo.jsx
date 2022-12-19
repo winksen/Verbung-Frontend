@@ -1,38 +1,30 @@
+// USED IMPORTS
 import React, { Component } from "react";
+import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
+import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-// import CounterOne from "../elements/counters/CounterTwo";
-// import Testimonial from "../elements/Testimonial";
-import ServiceTwo from "../elements/service/ServiceTwo";
+
 import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
 import Footer from "../component/footer/Footer";
 import Helmet from "../component/common/Helmet";
-// import TeamOne from "../blocks/team/TeamOne";
-import Slider from "react-slick";
+import ServiceTwo from "../elements/service/ServiceTwo";
 import { portfolioSlick2 } from "../page-demo/script";
 
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+
+// UNUSED IMPORTS
+// import CounterOne from "../elements/counters/CounterTwo";
+// import Testimonial from "../elements/Testimonial";
+// import TeamOne from "../blocks/team/TeamOne";
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
-
-
-// const SlideList = [
-//     {
-//         textPosition: 'text-center',
-//         category: '',
-//         title: 'SCALE NOW.',
-//         description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-//         buttonText: 'Contact Us',
-//         buttonLink: '/contact'
-//     }
-// ]
 
 const PortfolioList2 = [
     {
@@ -159,25 +151,6 @@ const PortfolioList2 = [
         ]
     },
 ]
-
-// const ServiceListOne = [
-//     {
-//         icon: "icon-01.png",
-//         title: 'Interior Design',
-//         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-//     },
-//     {
-//         icon: "icon-02.png",
-//         title: 'Landcape Design',
-//         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-//     },
-//     {
-//         icon: "icon-03.png",
-//         title: 'Home Interior',
-//         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-//     },
-    
-// ]
 
 class InteriorLanding extends Component{
     constructor(props) {
@@ -381,21 +354,6 @@ class InteriorLanding extends Component{
                         <div className="mt--30 mt_sm--30">
                             <Slider {...portfolioSlick2}>
                                 {PortfolioList2.map((value , index) => (
-                                    // <div className="portfolio portfolio-interior-design" key={index}>
-                                    //     <div className="thumbnail-inner">
-                                    //         <div className={`thumbnail ${value.image}`}></div>
-                                    //         <div className={`bg-blr-image ${value.image}`}></div>
-                                    //     </div>
-                                    //     <div className="content">
-                                    //         <div className="inner">
-                                    //             <p>{value.category}</p>
-                                    //             <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                    //             <div className="portfolio-button">
-                                    //                 <a className="rn-btn" href="/portfolio-details">Case Study</a>
-                                    //             </div>
-                                    //         </div>
-                                    //     </div>
-                                    // </div>
                                     <div className="" key={index}>
                                         <div className={`team`}>
                                             <div className="thumbnail">
