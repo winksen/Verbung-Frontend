@@ -2,6 +2,20 @@
     About Area 
 ======================*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .rn-finding-us-area {
     .inner {
         position: relative;
@@ -34,7 +48,7 @@
         }
         .content-wrapper {
             .content {
-                background: #272527;
+                background: var(--background-color);
                 padding: 120px 100px;
                 position: relative;
                 z-index: 2;
@@ -71,7 +85,7 @@
                 }
                 p {
                     font-size: 18px;
-                    color: #ffffff;
+                    color: var(--font-color);
                     font-weight: 300;
                     margin-bottom: 41px;
                     padding-right: 10%;

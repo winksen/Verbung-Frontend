@@ -1,6 +1,21 @@
 /*===================
 Button Area 
 ====================*/
+
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 a {
     &.btn-transparent{
         color: #1f1f25;
@@ -56,10 +71,11 @@ button {
             background: $theme-color;
         }
         &.btn-white {
-            border: 2px solid #ffffff;
-            color: #ffffff;
+            border: 2px solid $theme-color;
+            color: var(--font-color);
             &:hover {
                 border-color: $theme-color;
+                color: #ffffff;
             }
         }
     }
