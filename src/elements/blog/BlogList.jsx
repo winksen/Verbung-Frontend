@@ -1,7 +1,8 @@
 import React, { Component ,Fragment } from "react";
 // import BlogContent from "./BlogContent";
 import axios from "axios";
-import LazyImage from "../../component/LazyLoader";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const queryUrl = 'https://api.verbung.net/public'
 
@@ -29,7 +30,7 @@ class BLogList extends Component{
                             <div className="blog blog-style--1">
                                 <div className="thumbnail">
                                     <a href={`/blogs_${blog.id}`}>
-                                        <LazyImage className="w-100" src={`${queryUrl}/${blog.image5}`} alt="BLog Images"/>
+                                        <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${blog.image5}`} />
                                         {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                                     </a>
                                 </div>
