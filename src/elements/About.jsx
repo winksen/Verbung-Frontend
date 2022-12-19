@@ -26,19 +26,25 @@ class About extends Component{
                 <div className="rn-about-area ptb--120 bg_color--1">
                     <div className="rn-about-wrapper pt--100">
                         <div className="container">
-                            <div className="row row--35 align-items-center">
-                                <div className="col-lg-5 col-md-12">
+                            <div className="row row--35 ">
+                                {/* <div className="col-lg-5 col-md-12">
                                     <div className="thumbnail image-about">
                                         <img className="w-100" alt="About Images"/>
                                     </div>
-                                </div>
-                                <div className="col-lg-7">
+                                </div> */}
+                                <div className="col-lg-6">
                                     <div className="about-inner inner">
                                         <div className="section-title">
                                             <h2 className="title textUpper">{title}</h2>
-                                            <p className="description">{description}</p><br /><br />
-                                            <h3 className="title textUpper">Who we are</h3>
-                                            <p>We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.</p>
+                                            <p className="description">{description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="about-inner inner">
+                                        <div className="section-title">
+                                            <h2 className="title textUpper">Who are we</h2>
+                                            <p className="description">We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +55,7 @@ class About extends Component{
                 {/* End About Area  */}
 
                  {/* Start CounterUp Area */}
-                 <div className="rn-counterup-area pb--120 bg_color--1">
+                 {/* <div className="rn-counterup-area pb--120 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -60,7 +66,7 @@ class About extends Component{
                         </div>
                         <CounterOne />
                     </div>
-                </div>
+                </div> */}
                 {/* End CounterUp Area */}
 
                 {/* Start Finding Us Area  */}
@@ -69,8 +75,8 @@ class About extends Component{
                         <div className="content-wrapper">
                             <div className="content">
                                 <h4 className="theme-gradient textUpper">Find Our Work Now</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that.</p>
-                                <a className="rn-btn btn-white" href="/pricing">Get Started</a>
+                                <p>We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.</p>
+                                <a className="rn-btn btn-white" href="/pricing">See Pricing</a>
                             </div>
                         </div>
                         <div className="thumbnail">
