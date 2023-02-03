@@ -42,6 +42,14 @@
     .textInputField {
         font-family: $body-font;
     }
+
+    .loader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
     
     .bg_image--3,
     .bg_image--1 ,

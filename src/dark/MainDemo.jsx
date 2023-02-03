@@ -1,5 +1,5 @@
 // USED IMPORTS
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
@@ -18,6 +18,10 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+
+import BeatLoader from "react-spinners/BeatLoader";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // UNUSED IMPORTS
 // import CounterOne from "../elements/counters/CounterTwo";
@@ -152,26 +156,35 @@ const PortfolioList2 = [
     },
 ]
 
-class InteriorLanding extends Component{
-    constructor(props) {
-        super(props);
-        this.menuTrigger = this.menuTrigger.bind(this);
-        this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-        this.stickyHeader = this.stickyHeader.bind(this);
 
-       //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-        window.addEventListener('load', function() {
-            console.log('All assets are loaded');
-        })
-    }
-    menuTrigger() {
+function InteriorLanding(props){
+    // constructor(props) {
+    //     super(props);
+    //     this.menuTrigger = this.menuTrigger.bind(this);
+    //     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
+    //     this.stickyHeader = this.stickyHeader.bind(this);
+
+    //    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
+    //     window.addEventListener('load', function() {
+    //         console.log('All assets are loaded');
+    //     })
+    // }
+    const menuTrigger = () => {
         document.querySelector('.header-wrapper').classList.toggle('menu-open')
     }
-    CLoseMenuTrigger() {
+    const CLoseMenuTrigger = () => {
         document.querySelector('.header-wrapper').classList.remove('menu-open')
     }
-    stickyHeader () {}
-    render(){
+    const stickyHeader = () => {}
+
+        const [loading, setLoading] = useState(false);
+        useEffect(() => {
+            setLoading(true);
+            setTimeout(() => {
+                setLoading(false);
+            }, 1000)
+        }, []);
+
         const setDark = () => {
             localStorage.setItem("theme", "dark");
             document.documentElement.setAttribute("data-theme", "dark");
@@ -183,13 +196,8 @@ class InteriorLanding extends Component{
           };
           
           const storedTheme = localStorage.getItem("theme");
-          
-          const prefersDark =
-            window.matchMedia &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches;
-          
-          const defaultDark =
-            storedTheme === "dark" || (storedTheme === null && prefersDark);
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const defaultDark =storedTheme === "dark" || (storedTheme === null && prefersDark);
           
           if (defaultDark) {
             setDark();
@@ -272,129 +280,142 @@ class InteriorLanding extends Component{
         }
         return(
             <div className="active-dark">
-                <Helmet pageTitle="VERBUNG // Scale Now" />
+                {
+                    loading ?
+                    ( <div className="loader">
+                        <BeatLoader  color="#4CBD94" loading={loading} size={30} aria-label="Loading Spinner" data-testid="loader"/>
+                    </div> )
+                    :
+                    (
+                    <div className="active-dark">
+                    <Helmet pageTitle="VERBUNG // Scale Now" />
 
-                {/* Start Header Area  */}
-                <header className="header-area formobile-menu header--fixed default-color">
-                    <div className="header-wrapper" id="header-wrapper">
-                        <div className="header-left">
-                            <div className="logo">
-                                <a href="/">
-                                    <img className="logo-1" src="/assets/images/logo/logo.png" alt="Verbung"/>
-                                    <img className="logo-2" src="/assets/images/logo/logoFull.png" alt="Logo Images"/>
-                                </a>
+                    {/* Start Header Area  */}
+                    <header className="header-area formobile-menu header--fixed default-color">
+                        <div className="header-wrapper" id="header-wrapper">
+                            <div className="header-left">
+                                <div className="logo">
+                                    <a href="/">
+                                        <img className="logo-1" src="/assets/images/logo/logo.png" alt="Verbung"/>
+                                        <img className="logo-2" src="/assets/images/logo/logoFull.png" alt="Logo Images"/>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="header-right">
-                            <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
-                                    <li><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#work">Work</a></li>
-                                    <li></li>
-                                    <li className="dark-mode-switch">
-                                        <FormGroup>
-                                            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
-                                        </FormGroup>
-                                    </li>
-                                </Scrollspy>
-                            </nav>
-                            <div className="header-btn">
-                                <a className="rn-btn title" href="/pricing">
-                                    <span className="title">PRICING</span>
-                                </a>
-                            </div>
-                            {/* Start Humberger Menu  */}
-                            <div className="humberger-menu d-block d-lg-none pl--20">
-                                <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
-                            </div>
-                            {/* End Humberger Menu  */}
-                            <div className="close-menu d-block d-lg-none">
-                                <span onClick={this.CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                {/* End Header Area  */}
-
-                {/* Start Slider Area   */}
-                <div className="slider-wrapper gradient-animated" id="home">
-                    <SliderOne />
-                </div>
-                {/* End Slider Area   */} 
-
-                {/* Start About Area */}
-                <div className="about-area about-position-top bg_color--1" id="about">
-                    <About />
-                </div>
-                {/* End About Area */}
-
-                {/* Start Service Area  */}
-                <div className="service-area ptb--80 bg_image bg_image--3" id="services">
-                   <div className="container">
-                        <ServiceTwo />
-                   </div>
-                </div>
-                {/* End Service Area  */}
-                
-                {/* Start Portfolio Area */}
-                <div className="portfolio-area ptb--120 bg_color--1" id="work">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center mb--30">
-                                    <h2 className="textUpper">Our Work</h2>
-                                    <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
+                            <div className="header-right">
+                                <nav className="mainmenunav d-lg-block">
+                                    <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="#work">Work</a></li>
+                                        <li></li>
+                                        <li className="dark-mode-switch">
+                                            <FormGroup>
+                                                <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
+                                            </FormGroup>
+                                        </li>
+                                    </Scrollspy>
+                                </nav>
+                                <div className="header-btn">
+                                    <a className="rn-btn title" href="/pricing">
+                                        <span className="title">PRICING</span>
+                                    </a>
+                                </div>
+                                {/* Start Humberger Menu  */}
+                                <div className="humberger-menu d-block d-lg-none pl--20">
+                                    <span onClick={menuTrigger} className="menutrigger text-white"><FiMenu /></span>
+                                </div>
+                                {/* End Humberger Menu  */}
+                                <div className="close-menu d-block d-lg-none">
+                                    <span onClick={CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
                                 </div>
                             </div>
                         </div>
+                    </header>
+                    {/* End Header Area  */}
+
+                    {/* Start Slider Area   */}
+                    <div className="slider-wrapper gradient-animated" id="home">
+                        <SliderOne />
                     </div>
-                    <div className="wrapper portfolio-sacousel-inner mb--55">
-                        <div className="mt--30 mt_sm--30">
-                            <Slider {...portfolioSlick2}>
-                                {PortfolioList2.map((value , index) => (
-                                    <div className="" key={index}>
-                                        <div className={`team`}>
-                                            <div className="thumbnail">
-                                                <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Project"/>
-                                            </div>
-                                            <div className="content">
-                                                <h4 className="title">{value.title}</h4>
-                                                <p className="designation">{value.designation}</p>
-                                                {/* <p className="designation">{value.notif}</p>  */}
-                                                <div className="portfolio-button">
-                                                    <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{value.view}</a>
-                                                </div>
-                                            </div>
-                                            <ul className="social-icon" >
-                                                {value.socialNetwork.map((social, index) =>
-                                                    <li key={index}><a href={`${social.url}`} target="_blank" rel="noreferrer noopener">{social.icon}</a></li>
-                                                )}
-                                            </ul>
-                                        </div>
+                    {/* End Slider Area   */} 
+
+                    {/* Start About Area */}
+                    <div className="about-area about-position-top bg_color--1" id="about">
+                        <About />
+                    </div>
+                    {/* End About Area */}
+
+                    {/* Start Service Area  */}
+                    <div className="service-area ptb--80 bg_image bg_image--3" id="services">
+                    <div className="container">
+                            <ServiceTwo />
+                    </div>
+                    </div>
+                    {/* End Service Area  */}
+                    
+                    {/* Start Portfolio Area */}
+                    <div className="portfolio-area ptb--120 bg_color--1" id="work">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="section-title text-center mb--30">
+                                        <h2 className="textUpper">Our Work</h2>
+                                        <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
                                     </div>
-                                ))}
-                            </Slider>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="wrapper portfolio-sacousel-inner mb--55">
+                            <div className="mt--30 mt_sm--30">
+                                <Slider {...portfolioSlick2}>
+                                    {PortfolioList2.map((value , index) => (
+                                        <div className="" key={index}>
+                                            <div className={`team`}>
+                                                <div className="thumbnail">
+                                                    {/* <LazyLoadImage alt="Project" effect="blur" src={`/assets/images/projects/project-${value.images}.jpg`}/> */}
+                                                    <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Project"/>
+                                                </div>
+                                                <div className="content">
+                                                    <h4 className="title">{value.title}</h4>
+                                                    <p className="designation">{value.designation}</p>
+                                                    {/* <p className="designation">{value.notif}</p>  */}
+                                                    <div className="portfolio-button">
+                                                        <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{value.view}</a>
+                                                    </div>
+                                                </div>
+                                                <ul className="social-icon" >
+                                                    {value.socialNetwork.map((social, index) =>
+                                                        <li key={index}><a href={`${social.url}`} target="_blank" rel="noreferrer noopener">{social.icon}</a></li>
+                                                    )}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </Slider>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {/* End Portfolio Area */}
+                    {/* End Portfolio Area */}
 
-                {/* Start Footer Style  */}
-                 <Footer />
-                {/* End Footer Style  */}
+                    {/* Start Footer Style  */}
+                    <Footer />
+                    {/* End Footer Style  */}
 
-                {/* Start Back To Top */}
-                <div className="backto-top">
-                    <ScrollToTop showUnder={160}>
-                        <FiChevronUp />
-                    </ScrollToTop>
-                </div>
-                {/* End Back To Top */}
+                    {/* Start Back To Top */}
+                    <div className="backto-top">
+                        <ScrollToTop showUnder={160}>
+                            <FiChevronUp />
+                        </ScrollToTop>
+                    </div>
+                    {/* End Back To Top */}
+                    </div>
+                    )
+                }
             </div>
+
         )
-    }
+    
 }
 
 export default InteriorLanding;
