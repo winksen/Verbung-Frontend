@@ -3,6 +3,7 @@ import React, { Component, useState, useEffect } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
+import Fade from 'react-reveal/Fade';
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
@@ -20,8 +21,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 
 import BeatLoader from "react-spinners/BeatLoader";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // UNUSED IMPORTS
 // import CounterOne from "../elements/counters/CounterTwo";
@@ -182,8 +181,47 @@ function InteriorLanding(props){
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);
-            }, 1000)
+            }, 2000)
         }, []);
+        // const [playAnimation, setPlayAnimation] = useState(false);
+        // useEffect(() => {
+        //     const onPageLoad = () => {
+        //         setLoading(true);
+        //     };
+            // document.onreadystatechange = () => {
+            //     setLoading(document.readyState === "complete");
+            // }
+        //     if (document.readyState == 'complete') {
+        //         setLoading(false);
+        //         console.log("here1");
+        //     }
+        //     else {
+        //         console.log("here2");
+        //         window.addEventListener('load', onPageLoad);
+        //         return () => window.removeEventListener('load', onPageLoad);
+                
+        //     }
+        // }, []);
+        // useEffect(() => {
+        //     // Here you can access your API to get the Network state instead on document ready
+        //     console.log(document.readyState == 'complete');
+        //     setLoading(document.readyState == 'complete');
+        //   }, [])
+
+        // useEffect(() => {
+        //     const onPageLoad = () => {
+        //       setPlayAnimation(true);
+        //     };
+        
+        //     // Check if the page has already loaded
+        //     if (document.readyState === 'complete') {
+        //         setPlayAnimation(false);
+        //     } else {
+        //       window.addEventListener('load', onPageLoad);
+        //       // Remove the event listener when component unmounts
+        //       return () => window.removeEventListener('load', onPageLoad);
+        //     }
+        //   }, []);
 
         const setDark = () => {
             localStorage.setItem("theme", "dark");
@@ -283,7 +321,9 @@ function InteriorLanding(props){
                 {
                     loading ?
                     ( <div className="loader">
-                        <BeatLoader  color="#4CBD94" loading={loading} size={30} aria-label="Loading Spinner" data-testid="loader"/>
+                        <Fade top opposite when={loading}>
+                            <BeatLoader  color="#4CBD94" loading={loading} margin={10} size={30} aria-label="Loading Spinner" data-testid="loader"/>
+                        </Fade>
                     </div> )
                     :
                     (
