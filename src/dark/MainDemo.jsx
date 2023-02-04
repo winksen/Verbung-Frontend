@@ -389,7 +389,7 @@ function InteriorLanding(props){
                     {/* Start Service Area  */}
                     <div className="service-area ptb--80 bg_image bg_image--3" id="services">
                     <div className="container">
-                            <ServiceTwo />
+                        <ServiceTwo />
                     </div>
                     </div>
                     {/* End Service Area  */}

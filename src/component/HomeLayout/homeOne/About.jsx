@@ -27,7 +27,9 @@ class About extends Component{
                                     </div>
                                 </div>
                             </div>
+                            <br />
                             <div className="col-lg-6 col-md-12">
+                                <br />
                                 <div className="thumbnail image-about">
                                     <LazyImage className="w-100" alt="About Images"/>
                                 </div>
