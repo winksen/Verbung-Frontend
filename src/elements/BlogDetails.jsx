@@ -181,7 +181,7 @@ class BlogDetails extends Component{
                                             <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            
                                         </div>
                                         {/* Para 7 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
+                                        <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
                                         <br /><br /><br /><br /><br />
                                         <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
                                     </div>
