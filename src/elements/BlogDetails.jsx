@@ -19,12 +19,12 @@ import axios from "axios";
 // import { Link } from 'react-router-dom';
 // import { useParams } from 'react-router';
 
-const queryUrl = 'https://api.verbung.net/public'
-// const queryUrl = 'http://127.0.0.1:8000'
+// const queryUrl = 'https://api.verbung.net/public'
+const queryUrl = 'http://127.0.0.1:8000'
 
 const api = axios.create({
-    // baseURL: `http://127.0.0.1:8000/api/posts`
-    baseURL: `https://api.verbung.net/public/api/posts`
+    baseURL: `http://127.0.0.1:8000/api/posts`
+    // baseURL: `https://api.verbung.net/public/api/posts`
 })
 class BlogDetails extends Component{
     constructor (props) {
@@ -115,12 +115,15 @@ class BlogDetails extends Component{
                                         <div className="thumbnail">
                                             {/* <LazyLoadImage alt="" height={image.height} src={image.src} width={image.width} /> */}
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <span>{this.state.blogs.image_source1}</span>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
                                         <h3 className="textUpper">{this.state.blogs.catch3}</h3>
                                         {/* Para 2 */}
                                         <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
+                                        {/* Link 1 */}
+                                        <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link1} target="_blank" rel="noreferrer noopener">{this.state.blogs.link1}</a></p>
                                         {/* CatchPhrase 4 */}
                                         <h3 className="textUpper">{this.state.blogs.catch4}</h3>
                                         <br />
@@ -128,7 +131,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
                                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span>{this.state.blogs.image_source}</span>
+                                                <span>{this.state.blogs.image_source2}</span>
                                             </div>
                                             <div className="content">
                                                 {/* Para 3 */}
@@ -136,52 +139,91 @@ class BlogDetails extends Component{
                                                 {/* CatchPhrase 5 */}
                                                 <h3 className="textUpper">{this.state.blogs.catch5}</h3>
                                                 <br />
+                                                {/* Para 4 */}
                                                 <p align="justify">{this.state.blogs.para4}</p>
-                                                {/* <h4 className="title">Ordered &amp; Unordered Lists.</h4>
+                                                {/* Link 2 */}
+                                                <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
+                                                {/* List Title 1 */}
+                                                <h3 className="textUpper">{this.state.blogs.list1}</h3>
                                                 <ul className="list-style">
-                                                    <li>Yet this above sewed flirted opened ouch</li>
-                                                    <li>Goldfinch realistic sporadic ingenuous</li>
-                                                    <li>Abominable this abidin far successfully then like piquan</li>
-                                                    <li>Risus commodo viverra</li>
-                                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                                    <li>{this.state.blogs.item1}</li>
+                                                    <li>{this.state.blogs.item2}</li>
+                                                    <li>{this.state.blogs.item3}</li>
+                                                    <li>{this.state.blogs.item4}</li>
+                                                    <li>{this.state.blogs.item5}</li>
+                                                    <li>{this.state.blogs.item6}</li>
+                                                    <li>{this.state.blogs.item7}</li>
+                                                    <li>{this.state.blogs.item8}</li>
+                                                    <li>{this.state.blogs.item9}</li>
+                                                    <li>{this.state.blogs.item10}</li>
                                                 </ul>
-                                                <h4 className="title">Ordered &amp; Unordered Lists.</h4>
-                                                <ul className="list-style">
-                                                    <li>Yet this above sewed flirted opened ouch</li>
-                                                    <li>Goldfinch realistic sporadic ingenuous</li>
-                                                    <li>Abominable this abidin far successfully then like piquan</li>
-                                                    <li>Risus commodo viverra</li>
-                                                </ul> */}
                                             </div>
                                         </div>
 
                                         {/* CatchPhrase 6 */}
                                         <h3 className="textUpper">{this.state.blogs.catch6}</h3>
-                                        {/* Para 4 */}
-                                        <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para4}</p>
+                                        {/* Para 5 */}
+                                        <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para5}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
-                                        <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <span>{this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
-                                        {/* Para 5 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para5}</p>
-                                        <br /><br />
+                                        {/* Para 6 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
+                                        {/* Link 3 */}
+                                        <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link3} target="_blank" rel="noreferrer noopener">{this.state.blogs.link3}</a></p>
                                         {/* CatchPhrase 7 */}
                                         <h3 className="textUpper">{this.state.blogs.catch7}</h3>
                                         <br />
-                                        {/* Para 6 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
+                                        {/* Para 7 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
                                         <br /><br />
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            {/* Image 4 */}
+                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} />
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            
                                         </div>
-                                        {/* Para 7 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
+                                        {/* Para 8 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para8}</p>
+                                        <br /><br />
+                                        <div className="blog-single-list-wrapper d-flex flex-wrap">            
+                                            <div className="content-special">
+                                                {/* Para 9 */}
+                                                <p align="justify">{this.state.blogs.para9}</p>
+                                                {/* Link 4 */}
+                                                <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link4} target="_blank" rel="noreferrer noopener">{this.state.blogs.link4}</a></p>
+                                                {/* CatchPhrase 8 */}
+                                                <h3 className="textUpper">{this.state.blogs.catch8}</h3>
+                                                <br />
+                                                {/* Para 10 */}
+                                                <p align="justify">{this.state.blogs.para10}</p>
+                                                {/* List Title 2 */}
+                                                <h3 className="textUpper">{this.state.blogs.list2}</h3>
+                                                <ul className="list-style">
+                                                    <li>{this.state.blogs.item11}</li>
+                                                    <li>{this.state.blogs.item12}</li>
+                                                    <li>{this.state.blogs.item13}</li>
+                                                    <li>{this.state.blogs.item14}</li>
+                                                    <li>{this.state.blogs.item15}</li>
+                                                    <li>{this.state.blogs.item16}</li>
+                                                    <li>{this.state.blogs.item17}</li>
+                                                    <li>{this.state.blogs.item18}</li>
+                                                    <li>{this.state.blogs.item19}</li>
+                                                    <li>{this.state.blogs.item20}</li>
+                                                </ul>
+                                            </div>
+                                            <div className="thumbnail">
+                                                {/* Image 5 */}
+                                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                                <span>{this.state.blogs.image_source5}</span>
+                                            </div>
+                                        </div>
+
                                         <br /><br /><br /><br /><br />
                                         <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
                                     </div>

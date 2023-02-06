@@ -77,6 +77,12 @@ BLog Details Styles
                     margin-bottom: 20px;
                 }
             }
+            .bold {
+                font-weight: bold;
+            }
+            .linkHov:hover {
+                color: $theme-color;
+            }
             .thumbnail {
                 margin: 0 -110px;
                 @media #{$sm-layout} {
@@ -193,12 +199,31 @@ BLog Details Styles
             }
             .content {
                 width: 45%;
-
                 @media #{$sm-layout} {
                     width: 100%;
                 }
                 @media #{$md-layout} {
                     width: 100%;
+                }
+                ul {
+                   &.list-style {
+                       margin-bottom: 50px;
+                        @media #{$sm-layout} {
+                            margin-bottom: 25px;
+                        }
+                   } 
+                }
+            }
+            .content-special {
+                width: 45%;
+                padding-right: 25px;
+                @media #{$sm-layout} {
+                    width: 100%;
+                    padding-right: 0;
+                }
+                @media #{$md-layout} {
+                    width: 100%;
+                    padding-right: 0;
                 }
                 ul {
                    &.list-style {
