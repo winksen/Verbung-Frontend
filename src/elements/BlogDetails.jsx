@@ -19,12 +19,12 @@ import axios from "axios";
 // import { Link } from 'react-router-dom';
 // import { useParams } from 'react-router';
 
-// const queryUrl = 'https://api.verbung.net/public'
-const queryUrl = 'http://127.0.0.1:8000'
+const queryUrl = 'https://api.verbung.net/public'
+// const queryUrl = 'http://127.0.0.1:8000'
 
 const api = axios.create({
-    baseURL: `http://127.0.0.1:8000/api/posts`
-    // baseURL: `https://api.verbung.net/public/api/posts`
+    // baseURL: `http://127.0.0.1:8000/api/posts`
+    baseURL: `https://api.verbung.net/public/api/posts`
 })
 class BlogDetails extends Component{
     constructor (props) {
@@ -115,7 +115,7 @@ class BlogDetails extends Component{
                                         <div className="thumbnail">
                                             {/* <LazyLoadImage alt="" height={image.height} src={image.src} width={image.width} /> */}
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
-                                            <span>{this.state.blogs.image_source1}</span>
+                                            <span>Image source: {this.state.blogs.image_source1}</span>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
@@ -131,7 +131,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
                                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span>{this.state.blogs.image_source2}</span>
+                                                <span>Image source: {this.state.blogs.image_source2}</span>
                                             </div>
                                             <div className="content">
                                                 {/* Para 3 */}
@@ -167,7 +167,7 @@ class BlogDetails extends Component{
                                         {/* Image 3 */}
                                         <div className="thumbnail">
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
-                                            <span>{this.state.blogs.image_source3}</span>
+                                            <span>Image source: {this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
                                         {/* Para 6 */}
@@ -220,7 +220,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 5 */}
                                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span>{this.state.blogs.image_source5}</span>
+                                                <span>Image source: {this.state.blogs.image_source5}</span>
                                             </div>
                                         </div>
 

@@ -94,6 +94,19 @@ BLog Details Styles
                 img {
                     width: 100%;
                 }
+                span {
+                    color: var(--second-font-color);
+                    font-size: 14px;
+                    display: block;
+                    text-align: left;
+                    padding-top: 10px;
+                    padding-left: 110px;
+                    @media #{$sm-layout} {
+                        font-size: 13px;
+                        padding-left: 0;
+                        margin-bottom: 23px;
+                    }
+                }
             }
             .rn-blog-quote {
                 font-size: 24px;
@@ -174,7 +187,7 @@ BLog Details Styles
                     width: 100%;
                 }
                 span {
-                    color: rgba(29, 29, 36, 0.75);
+                    color: var(--second-font-color);
                     font-size: 14px;
                     display: block;
                     text-align: left;
