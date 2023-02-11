@@ -115,7 +115,7 @@ class BlogDetails extends Component{
                                         <div className="thumbnail">
                                             {/* <LazyLoadImage alt="" height={image.height} src={image.src} width={image.width} /> */}
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
-                                            <span>Image source: {this.state.blogs.image_source1}</span>
+                                            <span hidden={null == this.state.blogs.image || null == this.state.blogs.image_source1}>Image source: {this.state.blogs.image_source1}</span>
                                         </div>
                                         <br /><br />
                                         {/* CatchPhrase 3 */}
@@ -123,7 +123,7 @@ class BlogDetails extends Component{
                                         {/* Para 2 */}
                                         <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
                                         {/* Link 1 */}
-                                        <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link1} target="_blank" rel="noreferrer noopener">{this.state.blogs.link1}</a></p>
+                                        <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link1}>• Link: <a className="linkHov" href={this.state.blogs.link1} target="_blank" rel="noreferrer noopener">{this.state.blogs.link1}</a></p>
                                         {/* CatchPhrase 4 */}
                                         <h3 className="textUpper">{this.state.blogs.catch4}</h3>
                                         <br />
@@ -131,7 +131,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
                                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span>Image source: {this.state.blogs.image_source2}</span>
+                                                <span hidden={null == this.state.blogs.image2 || null == this.state.blogs.image_source2} >Image source: {this.state.blogs.image_source2}</span>
                                             </div>
                                             <div className="content">
                                                 {/* Para 3 */}
@@ -142,7 +142,7 @@ class BlogDetails extends Component{
                                                 {/* Para 4 */}
                                                 <p align="justify">{this.state.blogs.para4}</p>
                                                 {/* Link 2 */}
-                                                <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
+                                                <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link2}>• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
                                                 {/* List Title 1 */}
                                                 <h3 className="textUpper">{this.state.blogs.list1}</h3>
                                                 <ul className="list-style">
@@ -167,13 +167,13 @@ class BlogDetails extends Component{
                                         {/* Image 3 */}
                                         <div className="thumbnail">
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
-                                            <span>Image source: {this.state.blogs.image_source3}</span>
+                                            <span hidden={null == this.state.blogs.image3 || null == this.state.blogs.image_source3}>Image source: {this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
                                         {/* Para 6 */}
                                         <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
                                         {/* Link 3 */}
-                                        <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link3} target="_blank" rel="noreferrer noopener">{this.state.blogs.link3}</a></p>
+                                        <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link3}>• Link: <a className="linkHov" href={this.state.blogs.link3} target="_blank" rel="noreferrer noopener">{this.state.blogs.link3}</a></p>
                                         {/* CatchPhrase 7 */}
                                         <h3 className="textUpper">{this.state.blogs.catch7}</h3>
                                         <br />
@@ -183,10 +183,13 @@ class BlogDetails extends Component{
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
                                             {/* Image 4 */}
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} />
+                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
-                                            <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>                                            
+                                            <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
+                                            <div className="thumbnail">
+                                                <span hidden={null == this.state.blogs.image4 || null == this.state.blogs.image_source4}>Video Image source: {this.state.blogs.image_source4}</span>
+                                            </div>                             
                                         </div>
                                         {/* Para 8 */}
                                         <p align="justify" className="mb--0">{this.state.blogs.para8}</p>
@@ -196,7 +199,7 @@ class BlogDetails extends Component{
                                                 {/* Para 9 */}
                                                 <p align="justify">{this.state.blogs.para9}</p>
                                                 {/* Link 4 */}
-                                                <p align="justify" className="mt--40 bold">• Link: <a className="linkHov" href={this.state.blogs.link4} target="_blank" rel="noreferrer noopener">{this.state.blogs.link4}</a></p>
+                                                <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link4}>• Link: <a className="linkHov" href={this.state.blogs.link4} target="_blank" rel="noreferrer noopener">{this.state.blogs.link4}</a></p>
                                                 {/* CatchPhrase 8 */}
                                                 <h3 className="textUpper">{this.state.blogs.catch8}</h3>
                                                 <br />
@@ -220,7 +223,7 @@ class BlogDetails extends Component{
                                             <div className="thumbnail">
                                                 {/* Image 5 */}
                                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span>Image source: {this.state.blogs.image_source5}</span>
+                                                <span hidden={null == this.state.blogs.image5}>Image source: {this.state.blogs.image_source5}</span>
                                             </div>
                                         </div>
 
