@@ -19,12 +19,13 @@ import axios from "axios";
 // import { Link } from 'react-router-dom';
 // import { useParams } from 'react-router';
 
-const queryUrl = 'https://api.verbung.net/public'
 // const queryUrl = 'http://127.0.0.1:8000'
+const queryUrl = 'https://api.verbung.net/public'
 
 const api = axios.create({
-    // baseURL: `http://127.0.0.1:8000/api/posts`
-    baseURL: `https://api.verbung.net/public/api/posts`
+    // baseURL: `http://127.0.0.1:8000/api/posts`,
+    baseURL: `https://api.verbung.net/public/api/posts`,
+    headers: {'Authorization': 'Bearer 4|R1n3CynEIhlbVpk40qQAQWrdUrm1aRmeajIUuYqt'}
 })
 class BlogDetails extends Component{
     constructor (props) {
@@ -145,7 +146,7 @@ class BlogDetails extends Component{
                                                 <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link2}>• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
                                                 {/* List Title 1 */}
                                                 <h3 className="textUpper">{this.state.blogs.list1}</h3>
-                                                <ul className="list-style">
+                                                <ul className="list-style" hidden={null == this.state.blogs.item1}>
                                                     <li>{this.state.blogs.item1}</li>
                                                     <li>{this.state.blogs.item2}</li>
                                                     <li>{this.state.blogs.item3}</li>
@@ -207,7 +208,7 @@ class BlogDetails extends Component{
                                                 <p align="justify">{this.state.blogs.para10}</p>
                                                 {/* List Title 2 */}
                                                 <h3 className="textUpper">{this.state.blogs.list2}</h3>
-                                                <ul className="list-style">
+                                                <ul className="list-style" hidden={null == this.state.blogs.item11}>
                                                     <li>{this.state.blogs.item11}</li>
                                                     <li>{this.state.blogs.item12}</li>
                                                     <li>{this.state.blogs.item13}</li>
