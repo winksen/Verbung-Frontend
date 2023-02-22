@@ -10,7 +10,8 @@ const queryUrl = 'https://api.verbung.net/public'
 const api = axios.create({
     // baseURL: `http://127.0.0.1:8000/api/posts`,
     baseURL: `https://api.verbung.net/public/api/posts`,
-    headers: {'Authorization': 'Bearer 4|R1n3CynEIhlbVpk40qQAQWrdUrm1aRmeajIUuYqt'}
+    // headers: {'Authorization': 'Bearer 6|cw2y9UXcXbpvOqOmMNzovoeKc9CjPHKbsBV5SZbG'},
+    headers: {'Authorization': 'Bearer 1|06dU0czWzMQGks9x4zhcULs1i9QvQd0AOgoUZIsb'},
 })
 class BLogList extends Component{
     constructor () {

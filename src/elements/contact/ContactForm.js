@@ -153,7 +153,7 @@ const Result = () => {
 
 const Error = () => {
     return (
-        <p className="error-message">An Error occured, please try again later</p>
+        <p className="error-message">An Error occured, please try again later, or contact us at contact@verbung.net</p>
     )
 }
 
@@ -166,7 +166,10 @@ const INITIAL = {
   }
   
   const MessageForm = () => {
+    // const url = "http://127.0.0.1:8000/api/messages"
     const url = "https://api.verbung.net/public/api/messages"
+    // const token = "6|cw2y9UXcXbpvOqOmMNzovoeKc9CjPHKbsBV5SZbG"
+    const token = "1|06dU0czWzMQGks9x4zhcULs1i9QvQd0AOgoUZIsb"
     const [data, setData] = useState(INITIAL);
     const [message, setMessage] = useState(null);
     const [result, showResult ] = useState(false);
@@ -176,7 +179,9 @@ const INITIAL = {
   
       setMessage(null);
   
-      axios.post(url, data)
+      // REPLACE WITH DYNAMIC TOKEN LATER
+      // axios.post(url, data, { headers: { 'Authorization': `Basic ${token}` } })
+      axios.post(url, data, { headers: { 'Authorization': `Bearer ${token}` } })
         .then(res => {
           setData(res.data);
           setMessage(res.message);
