@@ -26,7 +26,7 @@ const api = axios.create({
     // baseURL: `http://127.0.0.1:8000/api/posts`,
     baseURL: `https://api.verbung.net/public/api/posts`,
     // headers: {'Authorization': 'Bearer 6|cw2y9UXcXbpvOqOmMNzovoeKc9CjPHKbsBV5SZbG'},
-    headers: {'Authorization': 'Bearer 1|06dU0czWzMQGks9x4zhcULs1i9QvQd0AOgoUZIsb'},
+    headers: {'Authorization': 'Bearer 2|yoChOCvvNAhecb4gQEIZ0oUx1qfQ3JBC7xAW20r4'},
 })
 class BlogDetails extends Component{
     constructor (props) {
