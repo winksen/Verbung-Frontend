@@ -176,13 +176,16 @@ function InteriorLanding(props){
     }
     const stickyHeader = () => {}
 
-        const [loading, setLoading] = useState(false);
-        useEffect(() => {
-            setLoading(true);
-            setTimeout(() => {
-                setLoading(false);
-            }, 2000)
-        }, []);
+        const [loading, setLoading] = useState(true);
+        window.onload = () => {
+            setLoading(false);
+          };
+        // useEffect(() => {
+        //     setLoading(true);
+        //     setTimeout(() => {
+        //         setLoading(false);
+        //     }, 2000)
+        // }, []);
         // const [playAnimation, setPlayAnimation] = useState(false);
         // useEffect(() => {
         //     const onPageLoad = () => {
@@ -321,9 +324,7 @@ function InteriorLanding(props){
                 {
                     loading ?
                     ( <div className="loader">
-                        <Fade top opposite when={loading}>
-                            <BeatLoader  color="#4CBD94" loading={loading} margin={10} size={30} aria-label="Loading Spinner" data-testid="loader"/>
-                        </Fade>
+                        <BeatLoader  color="#4CBD94" loading={loading} margin={10} size={30} aria-label="Loading Spinner" data-testid="loader"/>
                     </div> )
                     :
                     (
