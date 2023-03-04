@@ -22,7 +22,7 @@ import dotenv from 'dotenv';
 
 // dotenv.config();
 const queryUrl = process.env.REACT_APP_QUERY_URL
-const baseURL = process.env.REACT_APP_BASE_URL
+const baseURL = process.env.REACT_APP_BASE_URL_POSTS
 const bearer = `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`
 
 const api = axios.create({

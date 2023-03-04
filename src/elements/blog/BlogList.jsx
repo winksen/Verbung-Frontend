@@ -1,5 +1,4 @@
-import React, { Component ,Fragment } from "react";
-// import BlogContent from "./BlogContent";
+import React, { Component, Fragment } from "react";
 import axios from "axios";
 import dotenv from 'dotenv';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -7,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // dotenv.config();
 const queryUrl = process.env.REACT_APP_QUERY_URL
-const baseURL = process.env.REACT_APP_BASE_URL
+const baseURL = process.env.REACT_APP_BASE_URL_POSTS
 const bearer = `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`
 
 const api = axios.create({
