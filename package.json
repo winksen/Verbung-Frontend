@@ -34,6 +34,7 @@
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "^1.7.0",
     "file-loader": "3.0.1",
+    "fs": "0.0.1-security",
     "fs-extra": "7.0.1",
     "google-map-react": "^1.1.7",
     "html-webpack-plugin": "4.0.0-beta.5",
@@ -47,6 +48,8 @@
     "moment": "^2.29.4",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
     "pnp-webpack-plugin": "1.2.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
@@ -73,6 +76,7 @@
     "react-random-reveal": "^2.0.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.3.0",
+    "react-scripts": "^5.0.1",
     "react-scroll-up": "^1.3.7",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.24.0",
@@ -98,7 +102,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js --env=env",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -168,5 +172,10 @@
   },
   "devDependencies": {
     "terser-webpack-plugin": "^1.4.5"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
