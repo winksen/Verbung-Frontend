@@ -166,10 +166,8 @@ const INITIAL = {
   }
   
   const MessageForm = () => {
-    // const url = "http://127.0.0.1:8000/api/messages"
-    const url = "https://api.verbung.net/public/api/messages"
-    // const token = "6|cw2y9UXcXbpvOqOmMNzovoeKc9CjPHKbsBV5SZbG"
-    const token = "2|yoChOCvvNAhecb4gQEIZ0oUx1qfQ3JBC7xAW20r4"
+    const url = process.env.REACT_APP_BASE_URL_MESSAGES
+    const token = process.env.REACT_APP_BEARER_TOKEN
     const [data, setData] = useState(INITIAL);
     const [message, setMessage] = useState(null);
     const [result, showResult ] = useState(false);
