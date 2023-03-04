@@ -7,3 +7,6 @@
 /package.json
 /README.md
 /build
+/.env
+/.env.dev
+/.env.prod
