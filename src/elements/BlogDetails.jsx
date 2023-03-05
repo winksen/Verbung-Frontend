@@ -120,7 +120,7 @@ class BlogDetails extends Component{
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
-                                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                                <LazyLoadImage hidden={null == this.state.blogs.image2} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
                                                 <span hidden={null == this.state.blogs.image2 || null == this.state.blogs.image_source2} >Image source: {this.state.blogs.image_source2}</span>
                                             </div>
                                             <div className="content">
@@ -152,7 +152,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mb--0">{this.state.blogs.para3}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <LazyLoadImage hidden={null == this.state.blogs.image3} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             <span hidden={null == this.state.blogs.image3 || null == this.state.blogs.image_source3}>Image source: {this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
@@ -183,7 +183,7 @@ class BlogDetails extends Component{
                                             </div>
                                             <div className="thumbnail">
                                                 {/* Image 4 */}
-                                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                                <LazyLoadImage hidden={null == this.state.blogs.image4} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
                                                 <span hidden={null == this.state.blogs.image4}>Image source: {this.state.blogs.image_source4}</span>
                                             </div>
                                         </div>
@@ -197,7 +197,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mb--0">{this.state.blogs.para5}</p>
                                         {/* Image 5 */}
                                         <div className="thumbnail">
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <LazyLoadImage hidden={null == this.state.blogs.image5} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             <span hidden={null == this.state.blogs.image5 || null == this.state.blogs.image_source5}>Image source: {this.state.blogs.image_source5}</span>
                                         </div>
                                         <br /><br />
@@ -209,13 +209,12 @@ class BlogDetails extends Component{
                                         <p className="bold subtitle textUpper">{this.state.blogs.sub6}</p>
                                         {/* Para 6 */}
                                         <p align="justify">{this.state.blogs.para6}</p>
-                                        <hr className="line"/>
 
-                                        <h3 className="textUpper">Watch on YouTube</h3>
+                                        <h3 className="textUpper" hidden={null == this.state.blogs.videoid}>Watch on YouTube</h3>
                                         <div className="video-wrapper position-relative mb--40">
                                             <div className="thumbnail">
                                             {/* Image 6 // VIDEO */}
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image6}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <LazyLoadImage hidden={null == this.state.blogs.image6} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image6}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
                                             <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
@@ -244,6 +243,14 @@ class BlogDetails extends Component{
                                         {/* Para 10 */}
                                         <p align="justify">{this.state.blogs.para10}</p>
                                         <hr className="line"/>
+
+
+                                        <h3 className="textUpper" hidden={null == this.state.blogs.link1}>Links</h3>
+                                        {/* Link 1 */}
+                                        <p align="justify" className="mb--0 bold" hidden={null == this.state.blogs.link1}>• Link: <a className="linkHov" href={this.state.blogs.link1} target="_blank" rel="noreferrer noopener">{this.state.blogs.link1}</a></p>
+                                        <p align="justify" className="mb--0 bold" hidden={null == this.state.blogs.link2}>• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
+                                        <p align="justify" className="mb--0 bold" hidden={null == this.state.blogs.link3}>• Link: <a className="linkHov" href={this.state.blogs.link3} target="_blank" rel="noreferrer noopener">{this.state.blogs.link3}</a></p>
+                                        <p align="justify" className="mb--0 bold" hidden={null == this.state.blogs.link4}>• Link: <a className="linkHov" href={this.state.blogs.link4} target="_blank" rel="noreferrer noopener">{this.state.blogs.link4}</a></p>
                                         
 
                                         <br /><br /><br /><br /><br />
