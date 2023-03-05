@@ -14,11 +14,11 @@ import Footer from "../component/footer/FooterTwo";
 
 import moment from 'moment';
 import axios from "axios";
-import dotenv from 'dotenv';
 
 // UNUSED IMPORTS
 // import { Link } from 'react-router-dom';
 // import { useParams } from 'react-router';
+// import dotenv from 'dotenv';
 
 // dotenv.config();
 const queryUrl = process.env.REACT_APP_QUERY_URL
@@ -45,14 +45,6 @@ class BlogDetails extends Component{
     openModal () {
         this.setState({isOpen: true})
     }
-    // getBlog = () => {
-    //     axios.get('http://127.0.0.1:8000/api/posts/1')
-    //     .then(res => {
-    //         console.log(res.data.id)
-    //     }).catch(err => {
-    //         console.log(err)
-    //     })
-    // }
     render(){
         return(
             <div className="active-dark">
@@ -106,30 +98,25 @@ class BlogDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="inner-wrapper">
                                     <div className="inner">
-                                        {/* CatchPhrase 1 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch1}</h3>
-                                        <br />
-                                        {/* Para 1 */}
-                                        <p align="justify">{this.state.blogs.para1}</p>
-                                        {/* CatchPhrase 2 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch2}</h3>
-                                        <br />
                                         {/* Image 1 */}
                                         <div className="thumbnail">
-                                            {/* <LazyLoadImage alt="" height={image.height} src={image.src} width={image.width} /> */}
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <LazyLoadImage hidden={null == this.state.blogs.image} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             <span hidden={null == this.state.blogs.image || null == this.state.blogs.image_source1}>Image source: {this.state.blogs.image_source1}</span>
                                         </div>
                                         <br /><br />
-                                        {/* CatchPhrase 3 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch3}</h3>
-                                        {/* Para 2 */}
-                                        <p align="justify" className="mt--40">{this.state.blogs.para2}</p>
-                                        {/* Link 1 */}
-                                        <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link1}>• Link: <a className="linkHov" href={this.state.blogs.link1} target="_blank" rel="noreferrer noopener">{this.state.blogs.link1}</a></p>
-                                        {/* CatchPhrase 4 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch4}</h3>
-                                        <br />
+
+                                        {/* Title 1 */}
+                                        <h3 className="textUpper">{this.state.blogs.title1}</h3>
+                                        {/* Subtitle 1 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub1}</p>
+                                        {/* Para 1 */}
+                                        <p align="justify">{this.state.blogs.para1}</p>
+                                        <hr className="line"/>
+
+                                        {/* Title 2 */}
+                                        <h3 className="textUpper">{this.state.blogs.title2}</h3>
+                                        {/* Subtitle 2 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub2}</p>
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">
                                             <div className="thumbnail">
                                                 {/* Image 2 */}
@@ -137,17 +124,10 @@ class BlogDetails extends Component{
                                                 <span hidden={null == this.state.blogs.image2 || null == this.state.blogs.image_source2} >Image source: {this.state.blogs.image_source2}</span>
                                             </div>
                                             <div className="content">
-                                                {/* Para 3 */}
-                                                <p align="justify">{this.state.blogs.para3}</p>
-                                                {/* CatchPhrase 5 */}
-                                                <h3 className="textUpper">{this.state.blogs.catch5}</h3>
-                                                <br />
-                                                {/* Para 4 */}
-                                                <p align="justify">{this.state.blogs.para4}</p>
-                                                {/* Link 2 */}
-                                                <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link2}>• Link: <a className="linkHov" href={this.state.blogs.link2} target="_blank" rel="noreferrer noopener">{this.state.blogs.link2}</a></p>
+                                                {/* Para 2 */}
+                                                <p align="justify">{this.state.blogs.para2}</p>
                                                 {/* List Title 1 */}
-                                                <h3 className="textUpper">{this.state.blogs.list1}</h3>
+                                                <p className="bold subtitle textUpper">{this.state.blogs.list1}</p>
                                                 <ul className="list-style" hidden={null == this.state.blogs.item1}>
                                                     <li>{this.state.blogs.item1}</li>
                                                     <li>{this.state.blogs.item2}</li>
@@ -162,54 +142,32 @@ class BlogDetails extends Component{
                                                 </ul>
                                             </div>
                                         </div>
+                                        <hr className="line"/>
 
-                                        {/* CatchPhrase 6 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch6}</h3>
-                                        {/* Para 5 */}
-                                        <p align="justify" className="mt--25 mt_sm--5">{this.state.blogs.para5}</p>
+                                        {/* Title 3 */}
+                                        <h3 className="textUpper">{this.state.blogs.title3}</h3>
+                                        {/* Subtitle 3 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub3}</p>
+                                        {/* Para 3 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para3}</p>
                                         {/* Image 3 */}
                                         <div className="thumbnail">
                                             <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image3}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
                                             <span hidden={null == this.state.blogs.image3 || null == this.state.blogs.image_source3}>Image source: {this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
-                                        {/* Para 6 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para6}</p>
-                                        {/* Link 3 */}
-                                        <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link3}>• Link: <a className="linkHov" href={this.state.blogs.link3} target="_blank" rel="noreferrer noopener">{this.state.blogs.link3}</a></p>
-                                        {/* CatchPhrase 7 */}
-                                        <h3 className="textUpper">{this.state.blogs.catch7}</h3>
-                                        <br />
-                                        {/* Para 7 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
-                                        <br /><br />
-                                        <div className="video-wrapper position-relative mb--40">
-                                            <div className="thumbnail">
-                                            {/* Image 4 */}
-                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
-                                            </div>
-                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
-                                            <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
-                                            <div className="thumbnail">
-                                                <span hidden={null == this.state.blogs.image4 || null == this.state.blogs.image_source4}>Video Image source: {this.state.blogs.image_source4}</span>
-                                            </div>                             
-                                        </div>
-                                        {/* Para 8 */}
-                                        <p align="justify" className="mb--0">{this.state.blogs.para8}</p>
-                                        <br /><br />
+                                        <hr className="line"/>
+
+                                        {/* Title 4 */}
+                                        <h3 className="textUpper">{this.state.blogs.title4}</h3>
+                                        {/* Subtitle 4 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub4}</p>
                                         <div className="blog-single-list-wrapper d-flex flex-wrap">            
                                             <div className="content-special">
-                                                {/* Para 9 */}
-                                                <p align="justify">{this.state.blogs.para9}</p>
-                                                {/* Link 4 */}
-                                                <p align="justify" className="mt--40 bold" hidden={null == this.state.blogs.link4}>• Link: <a className="linkHov" href={this.state.blogs.link4} target="_blank" rel="noreferrer noopener">{this.state.blogs.link4}</a></p>
-                                                {/* CatchPhrase 8 */}
-                                                <h3 className="textUpper">{this.state.blogs.catch8}</h3>
-                                                <br />
-                                                {/* Para 10 */}
-                                                <p align="justify">{this.state.blogs.para10}</p>
+                                                {/* Para 4 */}
+                                                <p align="justify">{this.state.blogs.para4}</p>
                                                 {/* List Title 2 */}
-                                                <h3 className="textUpper">{this.state.blogs.list2}</h3>
+                                                <p className="bold subtitle textUpper">{this.state.blogs.list2}</p>
                                                 <ul className="list-style" hidden={null == this.state.blogs.item11}>
                                                     <li>{this.state.blogs.item11}</li>
                                                     <li>{this.state.blogs.item12}</li>
@@ -224,11 +182,69 @@ class BlogDetails extends Component{
                                                 </ul>
                                             </div>
                                             <div className="thumbnail">
-                                                {/* Image 5 */}
-                                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span hidden={null == this.state.blogs.image5}>Image source: {this.state.blogs.image_source5}</span>
+                                                {/* Image 4 */}
+                                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                                <span hidden={null == this.state.blogs.image4}>Image source: {this.state.blogs.image_source4}</span>
                                             </div>
                                         </div>
+                                        <hr className="line"/>
+
+                                        {/* Title 5 */}
+                                        <h3 className="textUpper">{this.state.blogs.title5}</h3>
+                                        {/* Subtitle 5 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub5}</p>
+                                        {/* Para 5 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para5}</p>
+                                        {/* Image 5 */}
+                                        <div className="thumbnail">
+                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image5}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            <span hidden={null == this.state.blogs.image5 || null == this.state.blogs.image_source5}>Image source: {this.state.blogs.image_source5}</span>
+                                        </div>
+                                        <br /><br />
+                                        <hr className="line"/>
+
+                                        {/* Title 6 */}
+                                        <h3 className="textUpper">{this.state.blogs.title6}</h3>
+                                        {/* Subtitle 6 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub6}</p>
+                                        {/* Para 6 */}
+                                        <p align="justify">{this.state.blogs.para6}</p>
+                                        <hr className="line"/>
+
+                                        <h3 className="textUpper">Watch on YouTube</h3>
+                                        <div className="video-wrapper position-relative mb--40">
+                                            <div className="thumbnail">
+                                            {/* Image 6 // VIDEO */}
+                                            <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image6}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
+                                            </div>
+                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.blogs.videoid} onClose={() => this.setState({isOpen: false})} />
+                                            <button style={ this.state.blogs.videoid != null ? { display:'block'} : {display : 'none'}} className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
+                                            <div className="thumbnail">
+                                                <span hidden={null == this.state.blogs.image6 || null == this.state.blogs.image_source6}>Video Image source: {this.state.blogs.image_source6}</span>
+                                            </div>                             
+                                        </div>
+                                        <hr className="line"/>
+
+                                        {/* Title 7 */}
+                                        <h3 className="textUpper">{this.state.blogs.title7}</h3>
+                                        {/* Subtitle 7 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub7}</p>
+                                        {/* Para 7 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
+                                        {/* Para 8 */}
+                                        <p align="justify">{this.state.blogs.para8}</p>
+                                        <hr className="line"/>
+
+                                        {/* Title 8 */}
+                                        <h3 className="textUpper">{this.state.blogs.title8}</h3>
+                                        {/* Subtitle 8 */}
+                                        <p className="bold subtitle textUpper">{this.state.blogs.sub8}</p>
+                                        {/* Para 9 */}
+                                        <p align="justify" className="mb--0">{this.state.blogs.para9}</p>
+                                        {/* Para 10 */}
+                                        <p align="justify">{this.state.blogs.para10}</p>
+                                        <hr className="line"/>
+                                        
 
                                         <br /><br /><br /><br /><br />
                                         <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>

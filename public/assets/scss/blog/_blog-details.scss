@@ -73,12 +73,26 @@ BLog Details Styles
                 line-height: 30px;
                 color: var(--second-font-color);
                 margin-bottom: 40px;
+                white-space: pre-wrap;
                 @media #{$sm-layout} {
                     margin-bottom: 20px;
                 }
             }
+            .line {
+                border-bottom: 2px solid $theme-color;
+                margin-top: 5px;
+                margin-bottom: 40px;
+                width: 100%;
+                opacity: 50%;
+            }
             .bold {
                 font-weight: bold;
+            }
+            .subtitle {
+                font-family: $oswald-font;
+                font-weight: bolder;
+                font-size: 20px;
+                margin-bottom: 10px;
             }
             .linkHov:hover {
                 color: $theme-color;
@@ -100,7 +114,8 @@ BLog Details Styles
                     display: block;
                     text-align: left;
                     padding-top: 10px;
-                    padding-left: 110px;
+                    // padding-left: 110px;
+                    // padding-right: 110px;
                     @media #{$sm-layout} {
                         font-size: 13px;
                         padding-left: 0;
