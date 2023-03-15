@@ -55,9 +55,6 @@ const INITIAL = {
   
     return (
           <form className="contact-form--1" onSubmit={handleSubmit}>
-  
-            
-            
             <div className="rn-form-group">
                 <input className='textInputField'
                 id="name"
