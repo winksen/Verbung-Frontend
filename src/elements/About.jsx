@@ -80,7 +80,7 @@ class About extends Component{
                             <div className="content">
                                 <h4 className="theme-gradient textUpper">Find Our Work Now</h4>
                                 <p>We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.</p>
-                                <a className="rn-btn btn-white" href="/pricing">See Pricing</a>
+                                <a className="rn-btn btn-white" href="/packs">See Packs</a>
                             </div>
                         </div>
                         <div className="thumbnail">

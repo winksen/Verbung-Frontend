@@ -50,9 +50,6 @@ class BLogList extends Component{
           this.fetchData();
         });
     }
-    // changePage = ({ selected }) => {
-    //     setPageNumber(selected);
-    // }
 
     render() {
         const { blogs, pageCount } = this.state;
@@ -81,17 +78,19 @@ class BLogList extends Component{
              <Fragment>
                  <div className="row">
                     {displayData}
-                    <ReactPaginate
-                        previousLabel={"« Previous"}
-                        nextLabel={"Next »"}
-                        pageCount={pageCount}
-                        onPageChange={this.handlePageChange}
-                        containerClassName={"pagination"}
-                        previousLinkClassName={"previous-page"}
-                        nextLinkClassName={"next-page"}
-                        disabledClassName={"pagination-disabled"}
-                        activeClassName={"pagination-active"}
-                    />
+                    <div className="col-12">
+                        <ReactPaginate
+                            previousLabel={"« Previous"}
+                            nextLabel={"Next »"}
+                            pageCount={pageCount}
+                            onPageChange={this.handlePageChange}
+                            containerClassName={"pagination"}
+                            previousLinkClassName={"previous-page"}
+                            nextLinkClassName={"next-page"}
+                            disabledClassName={"pagination-disabled"}
+                            activeClassName={"pagination-active"}
+                        />
+                    </div>
                  </div>
              </Fragment>
         );

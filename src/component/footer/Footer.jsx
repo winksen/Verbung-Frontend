@@ -70,7 +70,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2022 VERBUNG®. All Rights Reserved.</p>
+                                                <p>Copyright © 2023 VERBUNG®. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>
