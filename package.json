@@ -72,6 +72,7 @@
     "react-lazyload": "^3.2.0",
     "react-loading": "^2.0.3",
     "react-modal-video": "^1.2.8",
+    "react-paginate": "^8.1.4",
     "react-parallax": "^3.3.0",
     "react-random-reveal": "^2.0.0",
     "react-reveal": "^1.2.2",
