@@ -9,7 +9,7 @@ import Footer from "../component/footer/Footer";
 const PricingTable = () => {
     return (
         <div className='active-dark'>
-            <PageHelmet pageTitle="VERBUNG // Pricing" />
+            <PageHelmet pageTitle="VERBUNG // Packs" />
 
             {/* Start Header Area  */}
             <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
@@ -21,7 +21,7 @@ const PricingTable = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="rn-page-title text-center pt--100">
-                                        <h2 className="title theme-gradient textUpper">Pricing</h2><br />
+                                        <h2 className="title theme-gradient textUpper">Our Packs</h2><br />
                                         {/* <img src="/assets/images/illustrations/cart.png" alt="" /> */}
                                     </div>
                                 </div>

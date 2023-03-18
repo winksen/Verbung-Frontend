@@ -70,7 +70,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={DarkMainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/pricing`} component={PricingTable}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/packs`} component={PricingTable}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/digitalmarketing`} component={ServiceDM}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/visualidentity`} component={ServiceVI}/>

@@ -359,8 +359,8 @@ function InteriorLanding(props){
                                     </Scrollspy>
                                 </nav>
                                 <div className="header-btn">
-                                    <a className="rn-btn title" href="/pricing">
-                                        <span className="title">PRICING</span>
+                                    <a className="rn-btn title" href="/packs">
+                                        <span className="title">PACKS</span>
                                     </a>
                                 </div>
                                 {/* Start Humberger Menu  */}

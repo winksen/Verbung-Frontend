@@ -202,8 +202,8 @@ class Header extends Component{
                             </ul>
                         </nav>
                         <div className="header-btn">
-                            <a className="rn-btn" href="/pricing">
-                                <span>Pricing</span>
+                            <a className="rn-btn" href="/packs">
+                                <span>PACKS</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}
