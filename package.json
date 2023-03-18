@@ -80,6 +80,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll-up": "^1.3.7",
     "react-scrollspy": "^3.4.3",
+    "react-shimmer-effects": "^1.0.2",
     "react-slick": "^0.24.0",
     "react-spinners": "^0.13.8",
     "react-tabs": "^3.2.3",

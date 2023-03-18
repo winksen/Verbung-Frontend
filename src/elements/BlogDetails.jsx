@@ -2,6 +2,16 @@
 import React, { Component } from "react";
 import ModalVideo from 'react-modal-video';
 import ScrollToTop from 'react-scroll-up';
+import {
+    ShimmerButton,
+    ShimmerTitle,
+    ShimmerText,
+    ShimmerCircularImage,
+    ShimmerThumbnail,
+    ShimmerBadge,
+    ShimmerTableCol,
+    ShimmerTableRow,
+  } from "react-shimmer-effects";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -34,12 +44,16 @@ class BlogDetails extends Component{
         super(props)
         this.state = {
           isOpen: false,
+          loading: true,
           blogs: []
         }
         this.openModal = this.openModal.bind(this)
         api.get(`/${props.match.params.id}`).then(res => {
             console.log(res.data)
-            this.setState({ blogs: res.data})
+            this.setState({
+                loading: false,
+                blogs: res.data
+            })
         })
     }
     openModal () {
@@ -73,10 +87,14 @@ class BlogDetails extends Component{
                                     </a>
                                 </div>
                             </div> */}
+
+                           
+
                             <div className="col-lg-12">
                                 <div className="blog-single-page-title text-center ">
                                     <br />
-                                    <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2>                                    
+                                    <ShimmerTitle line={3} className="darkModeShimmer" />
+                                    {this.state.loading ? ( <ShimmerTitle line={3} className="darkModeShimmer" /> ) : ( <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2> )}
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
                                         <li><FiClock />Created: {moment(this.state.blogs.created_at).fromNow()}</li>
                                         <li><FiEdit />Updated: {moment(this.state.blogs.updated_at).fromNow()}</li>
@@ -104,9 +122,11 @@ class BlogDetails extends Component{
                                             <span hidden={null == this.state.blogs.image || null == this.state.blogs.image_source1}>Image source: {this.state.blogs.image_source1}</span>
                                         </div>
                                         <br /><br />
+                                        
 
+                                        <ShimmerTitle className="darkModeShimmerPlus" />
                                         {/* Title 1 */}
-                                        <h3 className="textUpper">{this.state.blogs.title1}</h3>
+                                        {this.state.loading ? ( <ShimmerTitle className="darkModeShimmerPlus" /> ) : ( <h3 className="textUpper">{this.state.blogs.title1}</h3> )}
                                         {/* Subtitle 1 */}
                                         <p className="bold subtitle textUpper">{this.state.blogs.sub1}</p>
                                         {/* Para 1 */}
