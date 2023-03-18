@@ -1,9 +1,9 @@
 // USED IMPORTS
-import React, { Component, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
-import Fade from 'react-reveal/Fade';
+
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
@@ -28,6 +28,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 // import TeamOne from "../blocks/team/TeamOne";
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
+// import Fade from 'react-reveal/Fade';
 
 const PortfolioList2 = [
     {
@@ -174,7 +175,7 @@ function InteriorLanding(props){
     const CLoseMenuTrigger = () => {
         document.querySelector('.header-wrapper').classList.remove('menu-open')
     }
-    const stickyHeader = () => {}
+    // const stickyHeader = () => {}
 
         const [loading, setLoading] = useState(true);
         window.onload = () => {

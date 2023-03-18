@@ -84,7 +84,7 @@ class BLogList extends Component{
                     <ReactPaginate
                         previousLabel={"« Previous"}
                         nextLabel={"Next »"}
-                        pageCount={this.state.pageCount}
+                        pageCount={pageCount}
                         onPageChange={this.handlePageChange}
                         containerClassName={"pagination"}
                         previousLinkClassName={"previous-page"}

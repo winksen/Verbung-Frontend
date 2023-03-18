@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 // import Breadcrumb from "../elements/common/Breadcrumb";
-import Pagination from "../elements/common/Pagination";
+// import Pagination from "../elements/common/Pagination";
 import BlogList from "../elements/blog/BlogList";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
