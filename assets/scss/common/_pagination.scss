@@ -2,6 +2,94 @@
     Pagination Styles 
 =======================*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
+
+.previous-page a,
+.next-page a {
+    font-weight: bold;
+}
+
+.pagination-disabled a {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination{
+    @extend %liststyle;
+    .pagination-active {
+        a{
+            background: $theme-color;
+            color: #fff !important;
+        }
+    }
+    li {
+        display: inline-block;
+        padding: 5px;
+        
+        a{
+            padding: 0 10px;
+            display: block;
+            text-align: center;
+            line-height: 38px;
+            min-width: 42px;
+            height: 42px;
+            background: var(--background-color);
+            color: var(--second-font-color) !important;
+            position: relative;
+            z-index: 2;
+            font-weight: 600;
+            border-radius: 6px;
+
+            &::before {
+                // @extend %theme-gradient;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                @extend %transition;
+            }
+            &:hover {
+                color: #ffffff !important;
+                &::before {
+                    color: #ffffff;
+                    background: $theme-color;
+                    border-radius: 6px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        &.active{
+            a {
+                color: #ffffff;
+                border-color: $theme-color;
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+}
+}
+
 .rn-pagination{
     ul{
         &.page-list{

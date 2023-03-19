@@ -60,7 +60,7 @@ button {
         position: relative;
         z-index: 2;
         // font-family: Montserrat;
-        color: $border-color;
+        color: var(--font-color);
         letter-spacing: 0.2px;
         @extend %transition;
         text-transform: uppercase;

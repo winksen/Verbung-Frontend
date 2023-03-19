@@ -7,6 +7,7 @@ BLog Details Styles
     --second-font-color: #022726;
     --background-color: #eee;
     --backgroundLess-color: #ddd;
+    --shimmer-color: #CFDAD6;
 }
   
 [data-theme="dark"] {
@@ -14,6 +15,29 @@ BLog Details Styles
     --second-font-color: rgba(216, 216, 216, 0.75);
     --background-color: #001e21;
     --backgroundLess-color: #022726;
+    --shimmer-color: #093631;
+}
+
+.darkModeShimmer {
+    .shimmer {
+        background: linear-gradient(to right, var(--backgroundLess-color) 8%, var(--background-color) 18%, var(--backgroundLess-color) 33%);
+        background-size: 1000px 100%;
+        animation: shimmer 2.2s linear infinite forwards;
+    }
+}
+
+.darkModeShimmerPlus {
+    .shimmer {
+        background: linear-gradient(to right, var(--background-color) 8%, var(--backgroundLess-color) 18%, var(--background-color) 33%);
+        background-size: 1000px 100%;
+        animation: shimmer 2.2s linear infinite forwards;
+    }
+}
+
+.shimmerPlus {
+    background: linear-gradient(to right, var(--background-color) 8%, var(--backgroundLess-color) 18%, var(--background-color) 33%);
+    background-size: 1000px 100%;
+    animation: shimmer 2.2s linear infinite forwards;
 }
 
 .blog-single-page-title {
@@ -66,7 +90,8 @@ BLog Details Styles
                 padding: 0 10px;
             }
             h3 {
-                font-family: $oswald-font;
+                font-weight: 700;
+                font-size: 30px;
             }
             p {
                 font-size: 18px;
@@ -90,9 +115,10 @@ BLog Details Styles
             }
             .subtitle {
                 font-family: $oswald-font;
-                font-weight: bolder;
+                font-weight: 300;
                 font-size: 20px;
                 margin-bottom: 10px;
+                color: var(--font-color) !important;
             }
             .linkHov:hover {
                 color: $theme-color;
