@@ -78,7 +78,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/pressrelation`} component={ServicePR}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blogs_:id`} component={BlogDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
                         
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
 

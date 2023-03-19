@@ -90,7 +90,8 @@ BLog Details Styles
                 padding: 0 10px;
             }
             h3 {
-                font-family: $oswald-font;
+                font-weight: 700;
+                font-size: 30px;
             }
             p {
                 font-size: 18px;
@@ -114,9 +115,10 @@ BLog Details Styles
             }
             .subtitle {
                 font-family: $oswald-font;
-                font-weight: bolder;
+                font-weight: 300;
                 font-size: 20px;
                 margin-bottom: 10px;
+                color: var(--font-color) !important;
             }
             .linkHov:hover {
                 color: $theme-color;
