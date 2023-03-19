@@ -93,7 +93,6 @@ class BlogDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="blog-single-page-title text-center ">
                                     <br />
-                                    <ShimmerTitle line={3} className="darkModeShimmer" />
                                     {this.state.loading ? ( <ShimmerTitle line={3} className="darkModeShimmer" /> ) : ( <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2> )}
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
                                         <li><FiClock />Created: {moment(this.state.blogs.created_at).fromNow()}</li>
@@ -116,6 +115,22 @@ class BlogDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="inner-wrapper">
                                     <div className="inner">
+                                    {this.state.loading ? (
+                                    <div>
+                                        <ShimmerTitle className="darkModeShimmerPlus" />
+                                        <ShimmerText className="darkModeShimmerPlus"/>
+
+                                        <ShimmerTitle className="darkModeShimmerPlus" />
+                                        <div className="darkModeShimmerPlus" >
+                                            <ShimmerThumbnail height={500} rounded />
+                                        </div>
+
+                                        <ShimmerTitle className="darkModeShimmerPlus" />
+                                        <ShimmerText className="darkModeShimmerPlus"/>
+                                        <ShimmerText className="darkModeShimmerPlus"/>
+                                    </div>
+                                    ) : (
+                                    <div>
                                         {/* Image 1 */}
                                         <div className="thumbnail">
                                             <LazyLoadImage hidden={null == this.state.blogs.image} className="w-100" alt="" effect="blur" src={`${queryUrl}/${this.state.blogs.image}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-1-default.png"; }} />
@@ -123,13 +138,12 @@ class BlogDetails extends Component{
                                         </div>
                                         <br /><br />
                                         
-
-                                        <ShimmerTitle className="darkModeShimmerPlus" />
                                         {/* Title 1 */}
-                                        {this.state.loading ? ( <ShimmerTitle className="darkModeShimmerPlus" /> ) : ( <h3 className="textUpper">{this.state.blogs.title1}</h3> )}
+                                        <h3 className="textUpper">{this.state.blogs.title1}</h3>
                                         {/* Subtitle 1 */}
                                         <p className="bold subtitle textUpper">{this.state.blogs.sub1}</p>
                                         {/* Para 1 */}
+                                        
                                         <p align="justify">{this.state.blogs.para1}</p>
                                         <hr className="line"/>
 
@@ -275,6 +289,8 @@ class BlogDetails extends Component{
 
                                         <br /><br /><br /><br /><br />
                                         <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
+                                    </div>
+                                    )}
                                     </div>
                                 </div>
                             </div>
