@@ -59,7 +59,7 @@ class BLogList extends Component{
                     <div className="blog blog-style--1">
                         <div className="thumbnail">
                             <a href={`/blogs/${blog.id}`}>
-                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${blog.image6}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-thumbnail-default.png"; }} />
+                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-thumbnail-default.png"; }} />
                                 {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                             </a>
                         </div>
