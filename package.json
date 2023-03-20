@@ -21,6 +21,7 @@
     "bootstrap": "^4.6.1",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "compression-webpack-plugin": "^10.0.0",
     "css-loader": "2.1.1",
     "dotenv": "^6.2.0",
     "dotenv-expand": "4.2.0",
@@ -104,7 +105,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js --env=env",
+    "build": "node scripts/build.js && react-compress --env=env",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -173,6 +174,7 @@
     ]
   },
   "devDependencies": {
+    "react-compress": "^3.6.4",
     "terser-webpack-plugin": "^1.4.5"
   },
   "browser": {
