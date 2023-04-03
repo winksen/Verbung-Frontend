@@ -57,18 +57,19 @@ class BLogList extends Component{
             return (
                 <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
                     <div className="blog blog-style--1">
-                        <div className="thumbnail">
+                        <div className="">
                             <a href={`/blogs/${blog.id}`}>
                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-thumbnail-default.png"; }} />
                                 {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                             </a>
-                        </div>
-                        <div className="content">
-                            <p className="blogtype">{blog.category}</p>
-                            <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
-                            <div className="blog-btn">
-                                <a className="rn-btn text-white" href={`/blogs/${blog.id}`}>Read More</a>
+                            <div className="content">
+                                <div className="blog-btn">
+                                    <a className="rn-btn text-white" >{blog.category}</a>
+                                </div>
                             </div>
+                        </div>
+                        <div className="content-text">
+                            <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>
                     </div>
                 </div>

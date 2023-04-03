@@ -2,6 +2,22 @@
 Blog Styles 
 =====================*/
 
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+    --shimmer-color: #CFDAD6;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+    --shimmer-color: #093631;
+}
+
 .blog-style--1 {
     position: relative;
     margin-bottom: 40px;
@@ -13,11 +29,8 @@ Blog Styles
             display: block;
             position: relative;
             z-index: 1;
-            img{
-                @extend %transition;
-            }
             &::after {
-                background: linear-gradient(to bottom, #4CBD94 0, #09493E 100%);
+                // background: linear-gradient(to bottom, #4CBD94 0, #09493E 100%);
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -26,7 +39,6 @@ Blog Styles
                 content: "";
                 z-index: 1;
                 opacity: 0;
-                @extend %transition;
                 @media #{$large-mobile} {
                     opacity: 0.85;
                     top: 0;
@@ -35,13 +47,24 @@ Blog Styles
             }
         }
     }
+    .content-text {
+        a{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            color: var(--font-color);
+        }
+        padding-top: 10px;
+    }
+    .content-text:hover {
+        color: $theme-color;
+    }
     .content{
         position: absolute;
-        bottom: -92px;
+        bottom: 180px;
         width: 100%;
-        padding: 50px 35px;
+        padding: 0px 35px;
         z-index: 3;
-        @extend %transition;
         @media #{$large-mobile} {
             bottom: 0;
         }
@@ -57,7 +80,6 @@ Blog Styles
             width: 100%;
             height: 100%;
             opacity: 1;
-            @extend %transition;
             z-index: -1;
             @media #{$large-mobile} {
                 opacity: 0;
@@ -78,33 +100,18 @@ Blog Styles
                     font-size: 24px;
                     font-weight: 500;
                     line-height: 36px;
-                    @extend %transition;
                 }
             }
         }
-        .blog-btn {
-            @extend %transition;
-            margin-top: 35px;
-            transition: 0.7s;
-            opacity: 0;
-            visibility: hidden;
-            
-            @media #{$large-mobile} {
-                margin-top: 22px;
-            }
-            @media #{$large-mobile} {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+
     }
     &:hover {
         .content {
-            bottom: 0;
             &::before{
                 opacity: 0;
             }
         }
+        
         .thumbnail {
             a {
                 img{

@@ -59,12 +59,12 @@ class ServiceTwo extends Component{
                                             <div className="icon">
                                                 {val.icon}
                                             </div>
-                                            <Fade bottom cascade>
+                                            {/* <Fade bottom cascade> */}
                                                 <div className="content">
                                                     <h3 className="title textUpper">{val.title}</h3>
                                                     <p align="justify">{val.description}</p>
                                                 </div>
-                                            </Fade>
+                                            {/* </Fade> */}
                                         </div>
                                     </a>
                                 </div>
