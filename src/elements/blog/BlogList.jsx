@@ -4,6 +4,7 @@ import axios from "axios";
 // import dotenv from 'dotenv';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 // dotenv.config();
 const queryUrl = process.env.REACT_APP_QUERY_URL
@@ -19,6 +20,7 @@ class BLogList extends Component{
         super()
         this.state = {
             blogs: [],
+            loading: true,
             pageCount: 0,
             pageNumber: 1,
             itemsPerPage: 6,
@@ -37,6 +39,7 @@ class BLogList extends Component{
             console.log(res.data.data)
             console.log(this.state.pageNumber)
             this.setState({
+                loading: false,
                 blogs: res.data.data,
                 pageNumber: res.data.current_page,
                 pageCount: res.data.last_page,
@@ -62,11 +65,11 @@ class BLogList extends Component{
                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}/${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-thumbnail-default.png"; }} />
                                 {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                             </a>
-                            <div className="content">
+                            {/* <div className="content">
                                 <div className="blog-btn">
                                     <a className="rn-btn text-white" >{blog.category}</a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="content-text">
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
@@ -76,6 +79,12 @@ class BLogList extends Component{
             );
         });
         return (
+            <div>
+            {this.state.loading ? (
+                <div className="darkModeShimmerGallery">
+                    <ShimmerSimpleGallery card imageHeight={300} caption className="darkModeShimmerGallery" />
+                </div>
+            ) : (
              <Fragment>
                  <div className="row">
                     {displayData}
@@ -94,6 +103,8 @@ class BLogList extends Component{
                     </div>
                  </div>
              </Fragment>
+             )}
+             </div>
         );
     }
 }

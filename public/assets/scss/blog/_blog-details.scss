@@ -25,6 +25,17 @@ BLog Details Styles
         animation: shimmer 2.2s linear infinite forwards;
     }
 }
+.darkModeShimmerGallery {
+    background-color: var(--background-color);
+    .shimmer {
+        background: linear-gradient(to right, var(--backgroundLess-color) 8%, var(--background-color) 18%, var(--backgroundLess-color) 33%);
+        background-size: 1000px 100%;
+        animation: shimmer 2.2s linear infinite forwards;
+    }
+    .shimmer-card {
+        background-color: var(--background-color);
+    }
+}
 
 .darkModeShimmerPlus {
     .shimmer {
