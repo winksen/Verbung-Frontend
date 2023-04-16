@@ -1,8 +1,11 @@
 // USED IMPORTS
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
+
+import i18n from "i18next";
+import { useTranslation, initReactI18next, Trans } from "react-i18next";
 
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
@@ -29,6 +32,33 @@ import BeatLoader from "react-spinners/BeatLoader";
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
 // import Fade from 'react-reveal/Fade';
+
+const translationsEn = {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    work: "Work",
+    changed_plural: "You have changed the language {{count}} times",
+  };
+  
+const translationsFr = {
+    home: "Accueil",
+    about: "À Propos",
+    services: "Services",
+    work: "Travail",
+};
+  
+i18n
+.use(initReactI18next) // passes i18n down to react-i18next
+.init({
+    resources: {
+    en: { translation: translationsEn },
+    fr: { translation: translationsFr },
+    },
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: { escapeValue: false },
+});
 
 const PortfolioList2 = [
     {
@@ -169,6 +199,11 @@ function InteriorLanding(props){
     //         console.log('All assets are loaded');
     //     })
     // }
+    const { t } = useTranslation();
+    const onChange = (event) => {
+        i18n.changeLanguage(event.target.value);
+    };
+
     const menuTrigger = () => {
         document.querySelector('.header-wrapper').classList.toggle('menu-open')
     }
@@ -346,10 +381,10 @@ function InteriorLanding(props){
                             <div className="header-right">
                                 <nav className="mainmenunav d-lg-block">
                                     <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
-                                        <li><a href="#home">Home</a></li>
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#work">Work</a></li>
+                                        <li><a href="#home">{t("home")}</a></li>
+                                        <li><a href="#about">{t("about")}</a></li>
+                                        <li><a href="#services">{t("services")}</a></li>
+                                        <li><a href="#work">{t("work")}</a></li>
                                         <li></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
@@ -362,6 +397,12 @@ function InteriorLanding(props){
                                     <a className="rn-btn title" href="/packs">
                                         <span className="title">PACKS</span>
                                     </a>
+                                </div>
+                                <div className="header-btn">
+                                <select name="language" onChange={onChange}>
+                                    <option value="en">English</option>
+                                    <option value="fr">Français</option>
+                                </select>
                                 </div>
                                 {/* Start Humberger Menu  */}
                                 <div className="humberger-menu d-block d-lg-none pl--20">
@@ -378,7 +419,7 @@ function InteriorLanding(props){
 
                     {/* Start Slider Area   */}
                     <div className="slider-wrapper gradient-animated" id="home">
-                        <SliderOne />
+                        <SliderOne parentFunction={t}/>
                     </div>
                     {/* End Slider Area   */} 
 
