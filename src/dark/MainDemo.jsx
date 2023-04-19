@@ -38,7 +38,7 @@ const translationsEn = {
     about: "About",
     services: "Services",
     work: "Work",
-    changed_plural: "You have changed the language {{count}} times",
+    blog: "Blog",
   };
   
 const translationsFr = {
@@ -46,6 +46,7 @@ const translationsFr = {
     about: "À Propos",
     services: "Services",
     work: "Travail",
+    blog: "Blog",
 };
   
 i18n
@@ -380,11 +381,12 @@ function InteriorLanding(props){
                             </div>
                             <div className="header-right">
                                 <nav className="mainmenunav d-lg-block">
-                                    <Scrollspy className="mainmenu" items={['home','about','services','work']} currentClassName="is-current" offset={-200}>
+                                    <Scrollspy className="mainmenu" items={['home','about','services','work','blog']} currentClassName="is-current" offset={-200}>
                                         <li><a href="#home">{t("home")}</a></li>
                                         <li><a href="#about">{t("about")}</a></li>
                                         <li><a href="#services">{t("services")}</a></li>
                                         <li><a href="#work">{t("work")}</a></li>
+                                        <li><a href="/blogs">{t("blog")}</a></li>
                                         <li></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>

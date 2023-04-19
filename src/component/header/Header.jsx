@@ -193,6 +193,7 @@ class Header extends Component{
                                     </ul>
                                 </li> */}
                                 <li><Link to="/contact" >Contact</Link></li>
+                                <li><Link to="/blogs" >Blog</Link></li>
                                 <li></li>
                                 <li className="dark-mode-switch">
                                     <FormGroup>
