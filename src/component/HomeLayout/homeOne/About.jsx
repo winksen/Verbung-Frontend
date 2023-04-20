@@ -7,10 +7,6 @@ import LazyImage from "../../LazyLoader";
 
 function About(props){
         const { t } = useTranslation();
-        let title = 'About',
-        titlePartTwo = 'Who Are We',
-        description = 'At Verbung, we work hard to understand your business and digital goals, so we can develop creative, results-driven strategies to help you achieve them at all times. You know your brand better than anyone, so our experts listen carefully to your needs and take a tailored approach to better understand what convinces your target audience.',
-        descriptionPartTwo = "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.";
         return(
             <React.Fragment>
                 <div className="active-darkless about-wrapper pb--60">

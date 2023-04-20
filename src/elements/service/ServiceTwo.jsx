@@ -1,7 +1,7 @@
 // USED IMPORTS
 import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
-
+import { useTranslation } from 'react-i18next';
 import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
 
 // UNUSED IMPORTS
@@ -9,41 +9,39 @@ import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
 const ServiceList = [
     {
         icon: <FiCast />,
-        title: 'Digital Marketing',
+        title: 'digitalmarketing',
         link: '/digitalmarketing',
-        description: 'We build ROI centric campaigns that will take your business to the next level.'
+        description: 'digitalmarketing_description'
     },
     {
         icon: <FiMaximize />,
-        title: 'Visual Identity',
+        title: 'visualidentity',
         link: '/visualidentity',
-        description: 'Good graphic design has the ability to connect with your audience and reach your business goals.'
+        description: 'visualidentity_description'
     },
     {
         icon: <FiMonitor />,
-        title: 'Web & Mobile',
+        title: 'webmobile',
         link: '/webmobile',
-        description: 'Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.'
+        description: 'webmobile_description'
     },
     {
         icon: <FiUsers />,
-        title: 'Press Relation',
+        title: 'pressrelation',
         link: '/pressrelation',
-        description: 'The best way to get your news in front of the journalists who matter.'
+        description: 'pressrelation_description'
     }
 ]
 
-class ServiceTwo extends Component{
-    render(){
-        let title = 'Services',
-        description = 'We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.';
+function ServiceTwo(props){
+        const { t } = useTranslation();
         return(
             <React.Fragment>
                 <div className="row">
                     <div className="col-lg-4 col-12">
                         <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
-                            <h2 className="title textUpper">{title}</h2>
-                            <p align="justify">{description}</p>
+                            <h2 className="title textUpper">Services</h2>
+                            <p align="justify">{t("services_description")}</p>
                             {/* <div className="service-btn">
                                 <a className="btn-transparent rn-btn-dark" href="/service"><span className="text">Request Custom Service</span></a>
                             </div> */}
@@ -61,8 +59,8 @@ class ServiceTwo extends Component{
                                             </div>
                                             {/* <Fade bottom cascade> */}
                                                 <div className="content">
-                                                    <h3 className="title textUpper">{val.title}</h3>
-                                                    <p align="justify">{val.description}</p>
+                                                    <h3 className="title textUpper">{t(val.title)}</h3>
+                                                    <p align="justify">{t(val.description)}</p>
                                                 </div>
                                             {/* </Fade> */}
                                         </div>
@@ -75,7 +73,6 @@ class ServiceTwo extends Component{
                 </div>
             </React.Fragment>
         )
-    }
 }
 
 export default ServiceTwo;

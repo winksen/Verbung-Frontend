@@ -36,9 +36,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 const translationsEn = {
     home: "Home",
     about: "About",
-    services: "Services",
     work: "Work",
-    blog: "Blog",
     our_work_title: "Our Work",
     our_work_description: "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
     behance: "View on Behance",
@@ -52,16 +50,21 @@ const translationsEn = {
     about_description: "At Verbung, we work hard to understand your business and digital goals, so we can develop creative, results-driven strategies to help you achieve them at all times. You know your brand better than anyone, so our experts listen carefully to your needs and take a tailored approach to better understand what convinces your target audience.",
     about_whoAreWe: "Who Are We",
     about_description2: "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.",
-
-
+    services_description: "We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.",
+    digitalmarketing: "Digital Marketing",
+    digitalmarketing_description: "We build ROI centric campaigns that will take your business to the next level.",
+    visualidentity: "Visual Identity",
+    visualidentity_description: "Good graphic design has the ability to connect with your audience and reach your business goals.",
+    webmobile: "Web and Mobile",
+    webmobile_description: "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
+    pressrelation: "Press Relation",
+    pressrelation_description: "The best way to get your news in front of the journalists who matter.",
   };
   
 const translationsFr = {
     home: "Accueil",
     about: "A Propos",
-    services: "Services",
     work: "Travail",
-    blog: "Blog",
     our_work_title: "Notre Travail",
     our_work_description: "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
     behance: "Voir sur Behance",
@@ -75,7 +78,15 @@ const translationsFr = {
     about_description: "Chez Verbung, nous travaillons dur pour comprendre vos objectifs commerciaux et numériques, afin de développer des stratégies créatives et axées sur les résultats pour vous aider à les atteindre à tout moment. Vous connaissez votre marque mieux que quiconque, c'est pourquoi nos experts écoutent attentivement vos besoins et adoptent une approche sur mesure pour mieux comprendre ce qui convainc votre public cible.",
     about_whoAreWe: "Qui Sommes-Nous",
     about_description2: "Nous sommes plus qu'une agence de communication classique ; nous sommes une agence de créatifs et de stratèges avec des esprits brillants qui travaillent main dans la main avec chaque client pour atteindre leurs objectifs commerciaux numériques.",
-    
+    services_description: "Nous proposons des services couvrant l'ensemble du marketing mix à un large éventail de clients dans des environnements B2C et B2B.",
+    digitalmarketing: "Marketing Digital",
+    digitalmarketing_description: "Nous créons des campagnes axées sur le retour sur investissement qui permettront à votre entreprise de passer à la vitesse supérieure.",
+    visualidentity: "Identite Visuelle",
+    visualidentity_description: "Une bonne conception graphique permet d'établir un lien avec votre public et d'atteindre vos objectifs commerciaux.",
+    webmobile: "Web et Mobile",
+    webmobile_description: "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
+    pressrelation: "Relation Presse",
+    pressrelation_description: "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
 };
   
 i18n.use(initReactI18next).init({
@@ -411,9 +422,9 @@ function MainDemo(props){
                                     <Scrollspy className="mainmenu" items={['home','about','services','work','blog']} currentClassName="is-current" offset={-200}>
                                         <li><a href="#home">{t("home")}</a></li>
                                         <li><a href="#about">{t("about")}</a></li>
-                                        <li><a href="#services">{t("services")}</a></li>
+                                        <li><a href="#services">Services</a></li>
                                         <li><a href="#work">{t("work")}</a></li>
-                                        <li><a href="/blogs">{t("blog")}</a></li>
+                                        <li><a href="/blogs">Blog</a></li>
                                         <li></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
@@ -461,9 +472,9 @@ function MainDemo(props){
 
                     {/* Start Service Area  */}
                     <div className="service-area ptb--80 bg_image bg_image--3" id="services">
-                    <div className="container">
-                        <ServiceTwo />
-                    </div>
+                        <div className="container">
+                            <ServiceTwo />
+                        </div>
                     </div>
                     {/* End Service Area  */}
                     
