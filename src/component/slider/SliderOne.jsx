@@ -1,5 +1,6 @@
 // USED IMPORTS
 import React, { Component } from "react";
+import { useTranslation } from 'react-i18next';
 import TextLoop from "react-text-loop";
 import Particles from "react-tsparticles";
 import { RandomReveal } from 'react-random-reveal';
@@ -19,8 +20,8 @@ const SlideList = [
     }
 ]
 
-class SliderOne extends Component {
-  render() {
+function SliderOne(props){
+    const { t } = useTranslation();
     return (
         <div>
             {/* Start Single Slide */}
@@ -117,46 +118,53 @@ class SliderOne extends Component {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className={`inner ${value.textPosition}`}>
-                                            <h1 className="title oswald">SCALE NOW.<br/>  
+                                            <h1 className="title oswald">SCALE NOW.<br/>
                                             </h1>
-                                            <TextLoop mask={true} delay={150}>
+                                            {/* <h3 className="theme-gradient body-font">
+                                                    IN CREATIVITY
+                                            </h3> */}
+                                            <TextLoop mask={true} delay={100} interval={1500}>
                                                 {/* <RandomReveal/> */}
-                                                <h3 className="theme-gradient">
+                                                <h3 className="theme-gradient body-font">{t("inCreativity")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("inMarketing")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("inVisibility")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("inCommunication")}</h3>
+                                                {/* <h3 className="theme-gradient body-font">
                                                     <RandomReveal
                                                     isPlaying
                                                     duration={1}
                                                     revealDuration={3}
-                                                    characters="In Creativity"
+                                                    characters={t("inCreativity")}
                                                     onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                     />
                                                 </h3>
-                                                <h3 className="theme-gradient">
+                                                <h3 className="theme-gradient body-font">
                                                     <RandomReveal
                                                     isPlaying
                                                     duration={1}
                                                     revealDuration={3}
-                                                    characters="In Marketing"
+                                                    characters={t("inMarketing")}
                                                     onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                     />
                                                 </h3>
-                                                <h3 className="theme-gradient">
+                                                <h3 className="theme-gradient body-font">
                                                     <RandomReveal
                                                     isPlaying
                                                     duration={1}
                                                     revealDuration={3}
-                                                    characters="In Visibility"
+                                                    characters={t("inVisibility")}
                                                     onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                     />
                                                 </h3>
-                                                <h3 className="theme-gradient">
+                                                <h3 className="theme-gradient body-font">
                                                     <RandomReveal
                                                     isPlaying
                                                     duration={1}
                                                     revealDuration={3}
-                                                    characters="In Communication"
+                                                    characters={t("inCommunication")}
                                                     onComplete={() => ({ shouldRepeat: true, delay: 3 })}
                                                     />
-                                                </h3>
+                                                </h3> */}
                                             </TextLoop>
                                         </div>
                                     </div>
@@ -171,7 +179,6 @@ class SliderOne extends Component {
             {/* End Slider Area   */}
         </div>
     );
-  }
 }
 
 export default SliderOne;

@@ -39,19 +39,46 @@ const translationsEn = {
     services: "Services",
     work: "Work",
     blog: "Blog",
+    our_work_title: "Our Work",
+    our_work_description: "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
+    behance: "View on Behance",
+    website: "View Website",
+    pressbook: "View PressBook",
+    scaleNow: "SCALE NOW.",
+    inCreativity: "In Creativity",
+    inMarketing: "In Marketing",
+    inVisibility: "In Visibility",
+    inCommunication: "In Communication",
+    about_description: "At Verbung, we work hard to understand your business and digital goals, so we can develop creative, results-driven strategies to help you achieve them at all times. You know your brand better than anyone, so our experts listen carefully to your needs and take a tailored approach to better understand what convinces your target audience.",
+    about_whoAreWe: "Who Are We",
+    about_description2: "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.",
+
+
   };
   
 const translationsFr = {
     home: "Accueil",
-    about: "À Propos",
+    about: "A Propos",
     services: "Services",
     work: "Travail",
     blog: "Blog",
+    our_work_title: "Notre Travail",
+    our_work_description: "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
+    behance: "Voir sur Behance",
+    website: "Voir Site Web",
+    pressbook: "Voir Livre de Presse",
+    scaleNow: "ECHELER MAINTENANT.",
+    inCreativity: "En Créativité",
+    inMarketing: "En Marketing",
+    inVisibility: "En Visibilité",
+    inCommunication: "En Communication",
+    about_description: "Chez Verbung, nous travaillons dur pour comprendre vos objectifs commerciaux et numériques, afin de développer des stratégies créatives et axées sur les résultats pour vous aider à les atteindre à tout moment. Vous connaissez votre marque mieux que quiconque, c'est pourquoi nos experts écoutent attentivement vos besoins et adoptent une approche sur mesure pour mieux comprendre ce qui convainc votre public cible.",
+    about_whoAreWe: "Qui Sommes-Nous",
+    about_description2: "Nous sommes plus qu'une agence de communication classique ; nous sommes une agence de créatifs et de stratèges avec des esprits brillants qui travaillent main dans la main avec chaque client pour atteindre leurs objectifs commerciaux numériques.",
+    
 };
   
-i18n
-.use(initReactI18next) // passes i18n down to react-i18next
-.init({
+i18n.use(initReactI18next).init({
     resources: {
     en: { translation: translationsEn },
     fr: { translation: translationsFr },
@@ -66,7 +93,7 @@ const PortfolioList2 = [
         images: '01',
         title: 'INPT OLYMPICS XI',
         designation: 'Event • Visual Identity',
-        view: 'View On Behance',
+        view: 'behance',
         link: 'https://www.behance.net/gallery/112073013/INPT-Olympics-Visual-Identity',
         socialNetwork: [
             {
@@ -79,7 +106,7 @@ const PortfolioList2 = [
         images: '02',
         title: 'A2S JUNIOR ENTREPRISE',
         designation: 'Brand • Visual Identity, Stationary',
-        view: 'View On Behance',
+        view: 'behance',
         link: 'https://www.behance.net/gallery/104515389/A2S-Visual-Identity',
         socialNetwork: [
             {
@@ -100,7 +127,7 @@ const PortfolioList2 = [
         images: '03',
         title: 'PANTOFIT',
         designation: 'Brand • Visual Identity, UI/UX',
-        view: 'View On Behance',
+        view: 'behance',
         link: 'https://www.behance.net/gallery/120757181/PantoFit-Visual-Identity',
         socialNetwork: [
             {
@@ -121,7 +148,7 @@ const PortfolioList2 = [
         images: '04',
         title: 'DETAFOUR',
         designation: 'Brand • UI/UX, Website',
-        view: 'View Wesbite',
+        view: 'website',
         notif: 'Project on Behance coming soon!',
         link: 'https://www.detafour.com',
         socialNetwork: [
@@ -147,7 +174,7 @@ const PortfolioList2 = [
         images: '05',
         title: 'CORAIL',
         designation: 'Brand • Visual Identity, UI/UX, Website',
-        view: 'View Wesbite',
+        view: 'website',
         link: 'https://corail.co.ma',
         socialNetwork: [
             {
@@ -176,7 +203,7 @@ const PortfolioList2 = [
         images: '06',
         title: 'DIGITAL JOB FAIR',
         designation: 'Event • Press Relation',
-        view: 'View PressBook',
+        view: 'pressbook',
         link: 'https://drive.google.com/file/d/1KYdSUhvhZk4SmT97uRaO2l37hD4FMT1o/view?usp=sharing',
         socialNetwork: [
             {
@@ -188,7 +215,7 @@ const PortfolioList2 = [
 ]
 
 
-function InteriorLanding(props){
+function MainDemo(props){
     // constructor(props) {
     //     super(props);
     //     this.menuTrigger = this.menuTrigger.bind(this);
@@ -393,6 +420,12 @@ function InteriorLanding(props){
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
                                             </FormGroup>
                                         </li>
+                                        <div className="header-btn">
+                                            <select className="rn-btn title" name="language" onChange={onChange}>
+                                                <option value="en">English</option>
+                                                <option value="fr">Français</option>
+                                            </select>
+                                        </div>
                                     </Scrollspy>
                                 </nav>
                                 <div className="header-btn">
@@ -400,12 +433,7 @@ function InteriorLanding(props){
                                         <span className="title">PACKS</span>
                                     </a>
                                 </div>
-                                <div className="header-btn">
-                                <select name="language" onChange={onChange}>
-                                    <option value="en">English</option>
-                                    <option value="fr">Français</option>
-                                </select>
-                                </div>
+                                
                                 {/* Start Humberger Menu  */}
                                 <div className="humberger-menu d-block d-lg-none pl--20">
                                     <span onClick={menuTrigger} className="menutrigger text-white"><FiMenu /></span>
@@ -445,8 +473,8 @@ function InteriorLanding(props){
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center mb--30">
-                                        <h2 className="textUpper">Our Work</h2>
-                                        <p>We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.</p>
+                                        <h2 className="textUpper">{t("our_work_title")}</h2>
+                                        <p>{t("our_work_description")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -466,7 +494,7 @@ function InteriorLanding(props){
                                                     <p className="designation">{value.designation}</p>
                                                     {/* <p className="designation">{value.notif}</p>  */}
                                                     <div className="portfolio-button">
-                                                        <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{value.view}</a>
+                                                        <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{t(value.view)}</a>
                                                     </div>
                                                 </div>
                                                 <ul className="social-icon" >
@@ -503,4 +531,4 @@ function InteriorLanding(props){
     
 }
 
-export default InteriorLanding;
+export default MainDemo;
