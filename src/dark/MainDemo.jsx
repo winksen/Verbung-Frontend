@@ -22,6 +22,10 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import BeatLoader from "react-spinners/BeatLoader";
 
@@ -432,10 +436,18 @@ function MainDemo(props){
                                             </FormGroup>
                                         </li>
                                         <div className="header-btn">
-                                            <select className="rn-btn title" name="language" onChange={onChange}>
+                                            {/* <select className="rn-btn title" name="language" onChange={onChange}>
                                                 <option value="en">English</option>
                                                 <option value="fr">Français</option>
-                                            </select>
+                                            </select> */}
+                                            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                                                <InputLabel id="demo-select-small-label">Age</InputLabel>
+                                                <Select labelId="demo-simple-select-standard-label" id="demo-simple-select-standard" onChange={onChange} label="Language">
+                                                    <MenuItem value="en">English</MenuItem>
+                                                    <MenuItem value="fr">French</MenuItem>
+                                                    <MenuItem value="ar">Arabic</MenuItem>
+                                                </Select>
+                                            </FormControl>
                                         </div>
                                     </Scrollspy>
                                 </nav>
