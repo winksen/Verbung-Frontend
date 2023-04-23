@@ -537,7 +537,7 @@ function MainDemo(props){
                                                     <p className="designation">{value.designation}</p>
                                                     {/* <p className="designation">{value.notif}</p>  */}
                                                     <div className="portfolio-button">
-                                                        <a className="rn-btn" href={value.link} target="_blank" rel="noreferrer noopener">{t(value.view)}</a>
+                                                        <a className="rn-btn btn-work" href={value.link} target="_blank" rel="noreferrer noopener">{t(value.view)}</a>
                                                     </div>
                                                 </div>
                                                 <ul className="social-icon" >
