@@ -3,6 +3,7 @@ import React, { useState, Suspense } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
+import ReactCountryFlag from "react-country-flag";
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next, Trans } from "react-i18next";
@@ -63,6 +64,15 @@ const translationsEn = {
     webmobile_description: "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
     pressrelation: "Press Relation",
     pressrelation_description: "The best way to get your news in front of the journalists who matter.",
+    language: "Language",
+    en: "English",
+    fr: "French",
+    ready: "Ready for a new Adventure?",
+    work_with_us: "WORK <br/> WITH US",
+    contact_us: "Contact Us",
+    quicklinks: "Quick Links",
+    lets_talk: "Let's Talk",
+    reach_out: "Reach Out",
   };
   
 const translationsFr = {
@@ -91,6 +101,15 @@ const translationsFr = {
     webmobile_description: "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
     pressrelation: "Relation Presse",
     pressrelation_description: "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
+    language: "Langue",
+    en: "Anglais",
+    fr: "Français",
+    ready: "Prêts pour une nouvelle aventure ?",
+    work_with_us: "TRAVAILLER <br/> AVEC NOUS",
+    contact_us: "Contactez-Nous",
+    quicklinks: "Liens Rapides",
+    lets_talk: "Discutons-En",
+    reach_out: "Nous Joindre",
 };
   
 i18n.use(initReactI18next).init({
@@ -435,22 +454,23 @@ function MainDemo(props){
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
                                             </FormGroup>
                                         </li>
-                                        <div className="header-btn">
-                                            {/* <select className="rn-btn title" name="language" onChange={onChange}>
-                                                <option value="en">English</option>
-                                                <option value="fr">Français</option>
-                                            </select> */}
-                                            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                                                <InputLabel id="demo-select-small-label">Age</InputLabel>
-                                                <Select labelId="demo-simple-select-standard-label" id="demo-simple-select-standard" onChange={onChange} label="Language">
-                                                    <MenuItem value="en">English</MenuItem>
-                                                    <MenuItem value="fr">French</MenuItem>
-                                                    <MenuItem value="ar">Arabic</MenuItem>
-                                                </Select>
-                                            </FormControl>
-                                        </div>
+                                        <li><a>
+                                            <select className="rn-select title" name="language" onChange={onChange}>
+                                                <option value="en">{t("en")}</option>
+                                                <option value="fr">{t("fr")}</option>
+                                            </select>
+                                            {/* <ReactCountryFlag countryCode="US" svg /> */}
+                                        </a></li>
                                     </Scrollspy>
                                 </nav>
+                                {/* <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                                    <InputLabel id="language">{t("language")}</InputLabel>
+                                    <Select labelId="language" id="language" onChange={onChange} label="Language">
+                                        <MenuItem value="en">{t("en")}</MenuItem>
+                                        <MenuItem value="fr">{t("fr")}</MenuItem>
+                                    </Select>
+                                </FormControl> */}
+                                
                                 <div className="header-btn">
                                     <a className="rn-btn title" href="/packs">
                                         <span className="title">PACKS</span>
