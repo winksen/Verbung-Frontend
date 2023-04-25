@@ -1,11 +1,14 @@
 // USED IMPORTS
-import React, { useState, Suspense } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
 import ReactCountryFlag from "react-country-flag";
 
 import i18n from "i18next";
+import './i18next';
+import { loadLanguageFromLocalStorage } from './LanguageHelper';
+import { changeLanguage  } from './LanguageHelper';
 import { useTranslation, initReactI18next, Trans } from "react-i18next";
 
 import { RiInstagramFill } from "react-icons/ri";
@@ -112,15 +115,15 @@ const translationsFr = {
     reach_out: "Nous Joindre",
 };
   
-i18n.use(initReactI18next).init({
-    resources: {
-    en: { translation: translationsEn },
-    fr: { translation: translationsFr },
-    },
-    lng: "en",
-    fallbackLng: "en",
-    interpolation: { escapeValue: false },
-});
+// i18n.use(initReactI18next).init({
+//     resources: {
+//     en: { translation: translationsEn },
+//     fr: { translation: translationsFr },
+//     },
+//     lng: "en",
+//     fallbackLng: "en",
+//     interpolation: { escapeValue: false },
+// });
 
 const PortfolioList2 = [
     {
@@ -262,9 +265,15 @@ function MainDemo(props){
     //     })
     // }
     const { t } = useTranslation();
-    const onChange = (event) => {
-        i18n.changeLanguage(event.target.value);
+    // const onChange = (event) => {
+    //     i18n.changeLanguage(event.target.value);
+    // };
+    const handleLanguageChange = (event) => {
+        changeLanguage(event.target.value);
     };
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
 
     const menuTrigger = () => {
         document.querySelector('.header-wrapper').classList.toggle('menu-open')
@@ -455,7 +464,7 @@ function MainDemo(props){
                                             </FormGroup>
                                         </li>
                                         <li><a>
-                                            <select className="rn-select title" name="language" onChange={onChange}>
+                                            <select className="rn-select title" name="language" onChange={handleLanguageChange}>
                                                 <option value="en">{t("en")}</option>
                                                 <option value="fr">{t("fr")}</option>
                                             </select>

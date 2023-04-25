@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { FiX , FiMenu } from "react-icons/fi";
+import { changeLanguage } from '../../dark/LanguageHelper';
+import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
@@ -10,16 +12,17 @@ import Switch from '@mui/material/Switch';
 // import Typography from '@mui/material/Typography';
 
 
+
 class Header extends Component{
-    constructor(props) {
-        super(props);
-        this.menuTrigger = this.menuTrigger.bind(this);
-        this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-       //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-        window.addEventListener('load', function() {
-            console.log('All assets are loaded')
-        })
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.menuTrigger = this.menuTrigger.bind(this);
+    //     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
+    //    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
+    //     window.addEventListener('load', function() {
+    //         console.log('All assets are loaded')
+    //     })
+    // }
 
 
     menuTrigger() {
@@ -133,6 +136,9 @@ class Header extends Component{
             },
           }));
 
+          const handleLanguageChange = (event) => {
+            changeLanguage(event.target.value);
+          };
         
         return(
             <header className={`sticky-nav header-area formobile-menu header--transparent ${color}`}>
@@ -199,6 +205,13 @@ class Header extends Component{
                                     <FormGroup>
                                         <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
                                     </FormGroup>
+                                </li>
+                                <li>
+                                    <select onChange={handleLanguageChange}>
+                                        <option value="en">English</option>
+                                        <option value="fr">Francais</option>
+                                        {/* Add other languages as needed */}
+                                    </select>
                                 </li>
                             </ul>
                         </nav>
