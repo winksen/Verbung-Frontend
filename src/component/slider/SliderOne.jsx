@@ -125,10 +125,10 @@ function SliderOne(props){
                                             </h3> */}
                                             <TextLoop mask={true} delay={100} interval={1500}>
                                                 {/* <RandomReveal/> */}
-                                                <h3 className="theme-gradient body-font">{t("inCreativity")}</h3>
-                                                <h3 className="theme-gradient body-font">{t("inMarketing")}</h3>
-                                                <h3 className="theme-gradient body-font">{t("inVisibility")}</h3>
-                                                <h3 className="theme-gradient body-font">{t("inCommunication")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("in_creativity")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("in_marketing")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("in_visibility")}</h3>
+                                                <h3 className="theme-gradient body-font">{t("in_communication")}</h3>
                                                 {/* <h3 className="theme-gradient body-font">
                                                     <RandomReveal
                                                     isPlaying

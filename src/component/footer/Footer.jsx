@@ -38,7 +38,7 @@ function Footer(props){
                                     {/* Start Single Widget  */}
                                     <div className="col-lg-6 col-sm-6 col-12">
                                         <div className="footer-link">
-                                            <h4 className="textUpper">{t("quicklinks")}</h4>
+                                            <h4 className="textUpper">{t("quick_links")}</h4>
                                             <ul className="ft-link">
                                                 <li><a href="/packs">Packs</a></li>
                                                 <li><a href="/about">{t("about")}</a></li>
@@ -70,7 +70,7 @@ function Footer(props){
 
                                     <div className="col-lg-12">
                                         <div className="copyright-text">
-                                            <p>Copyright © 2023 VERBUNG®. All Rights Reserved.</p>
+                                            <p>{t("copy_right")}</p>
                                         </div>
                                     </div>
                                 </div>

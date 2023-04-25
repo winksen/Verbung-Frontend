@@ -269,10 +269,17 @@ function MainDemo(props){
     //     i18n.changeLanguage(event.target.value);
     // };
     const handleLanguageChange = (event) => {
-        changeLanguage(event.target.value);
+        const newLanguage = event.target.value;
+        changeLanguage(newLanguage);
+        setSelectedLanguage(newLanguage);
     };
+    const [selectedLanguage, setSelectedLanguage] = useState('en');
+
     useEffect(() => {
-        loadLanguageFromLocalStorage();
+        const savedLanguage = loadLanguageFromLocalStorage();
+        if (savedLanguage) {
+        setSelectedLanguage(savedLanguage);
+        }
     }, []);
 
     const menuTrigger = () => {
@@ -464,7 +471,7 @@ function MainDemo(props){
                                             </FormGroup>
                                         </li>
                                         <li><a>
-                                            <select className="rn-select title" name="language" onChange={handleLanguageChange}>
+                                            <select className="rn-select title" name="language" value={selectedLanguage} onChange={handleLanguageChange}>
                                                 <option value="en">{t("en")}</option>
                                                 <option value="fr">{t("fr")}</option>
                                             </select>

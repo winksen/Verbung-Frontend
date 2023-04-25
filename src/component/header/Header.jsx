@@ -1,5 +1,6 @@
 import React, { Component, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 import { FiX , FiMenu } from "react-icons/fi";
 import { changeLanguage } from '../../dark/LanguageHelper';
 import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
@@ -24,6 +25,26 @@ class Header extends Component{
     //     })
     // }
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          selectedLanguage: 'en',
+        };
+      }
+    
+      componentDidMount() {
+        const savedLanguage = loadLanguageFromLocalStorage();
+        if (savedLanguage) {
+          this.setState({ selectedLanguage: savedLanguage });
+        }
+      }
+    
+      handleLanguageChange = (event) => {
+        const newLanguage = event.target.value;
+        changeLanguage(newLanguage);
+        this.setState({ selectedLanguage: newLanguage });
+      };
+
 
     menuTrigger() {
         document.querySelector('.header-wrapper').classList.toggle('menu-open')
@@ -35,6 +56,7 @@ class Header extends Component{
 
 
     render(){
+        const { t } = this.props;
         var elements = document.querySelectorAll('.has-droupdown > a');
         for(var i in elements) {
             if(elements.hasOwnProperty(i)) {
@@ -136,9 +158,7 @@ class Header extends Component{
             },
           }));
 
-          const handleLanguageChange = (event) => {
-            changeLanguage(event.target.value);
-          };
+          const { selectedLanguage } = this.state;
         
         return(
             <header className={`sticky-nav header-area formobile-menu header--transparent ${color}`}>
@@ -207,9 +227,9 @@ class Header extends Component{
                                     </FormGroup>
                                 </li>
                                 <li>
-                                    <select onChange={handleLanguageChange}>
-                                        <option value="en">English</option>
-                                        <option value="fr">Francais</option>
+                                    <select value={selectedLanguage} onChange={this.handleLanguageChange}>
+                                        <option value="en">{t("en")}</option>
+                                        <option value="fr">{t("fr")}</option>
                                         {/* Add other languages as needed */}
                                     </select>
                                 </li>
@@ -234,4 +254,4 @@ class Header extends Component{
         )
     }
 }
-export default Header;
+export default withTranslation()(Header);

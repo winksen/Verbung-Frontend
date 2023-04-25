@@ -1,20 +1,21 @@
 {
+    "language": "Language",
+    "en": "English",
+    "fr": "French",
+
     "home": "Home",
     "about": "About",
     "work": "Work",
-    "our_work_title": "Our Work",
-    "our_work_description": "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
-    "behance": "View on Behance",
-    "website": "View Website",
-    "pressbook": "View PressBook",
-    "scaleNow": "SCALE NOW.",
-    "inCreativity": "In Creativity",
-    "inMarketing": "In Marketing",
-    "inVisibility": "In Visibility",
-    "inCommunication": "In Communication",
+
+    "in_creativity": "In Creativity",
+    "in_marketing": "In Marketing",
+    "in_visibility": "In Visibility",
+    "in_communication": "In Communication",
+
     "about_description": "At Verbung, we work hard to understand your business and digital goals, so we can develop creative, results-driven strategies to help you achieve them at all times. You know your brand better than anyone, so our experts listen carefully to your needs and take a tailored approach to better understand what convinces your target audience.",
-    "about_whoAreWe": "Who Are We",
+    "about_who_are_we": "Who Are We",
     "about_description2": "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.",
+
     "services_description": "We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.",
     "digitalmarketing": "Digital Marketing",
     "digitalmarketing_description": "We build ROI centric campaigns that will take your business to the next level.",
@@ -24,13 +25,18 @@
     "webmobile_description": "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
     "pressrelation": "Press Relation",
     "pressrelation_description": "The best way to get your news in front of the journalists who matter.",
-    "language": "Language",
-    "en": "English",
-    "fr": "French",
+
+    "our_work_title": "Our Work",
+    "our_work_description": "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
+    "behance": "View on Behance",
+    "website": "View Website",
+    "pressbook": "View PressBook",
+
     "ready": "Ready for a new Adventure?",
     "work_with_us": "WORK <br/> WITH US",
     "contact_us": "Contact Us",
-    "quicklinks": "Quick Links",
+    "quick_links": "Quick Links",
     "lets_talk": "Let's Talk",
-    "reach_out": "Reach Out"
+    "reach_out": "Reach Out",
+    "copy_right": "Copyright © 2023 VERBUNG®. All Rights Reserved."
 }

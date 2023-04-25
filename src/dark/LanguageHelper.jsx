@@ -10,11 +10,13 @@ export function changeLanguage(lang) {
 }
 
 export function loadLanguageFromLocalStorage() {
-  // Retrieve the language preference from local storage
-  const savedLanguage = localStorage.getItem('preferredLanguage');
-
-  // If a language preference is found, change the language
-  if (savedLanguage) {
-    i18n.changeLanguage(savedLanguage);
-  }
+    // Retrieve the language preference from local storage
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+  
+    // If a language preference is found, change the language
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  
+    return savedLanguage;
 }

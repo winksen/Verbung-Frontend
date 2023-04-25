@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { loadLanguageFromLocalStorage } from '../dark/LanguageHelper';
 import { useTranslation, initReactI18next, Trans } from "react-i18next";
 import PageHelmet from "../component/common/Helmet";
@@ -10,9 +10,6 @@ import Footer from "../component/footer/Footer";
 
 const PricingTable = () => {
     const { t } = useTranslation();
-    useEffect(() => {
-        loadLanguageFromLocalStorage();
-    }, []);
     
     return (
         <div className='active-dark'>

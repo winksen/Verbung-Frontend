@@ -18,7 +18,7 @@ function About(props){
                                     <div className="section-title">
                                         <h3 className="title textUpper">{t("about")}</h3>
                                         <p className="description" align="justify">{t("about_description")}</p><br /><br />
-                                        <h3 className="title textUpper">{t("about_whoAreWe")}</h3>
+                                        <h3 className="title textUpper">{t("about_who_are_we")}</h3>
                                         <p className="description" align="justify">{t("about_description2")}</p>
                                     </div>
                                 </div>
