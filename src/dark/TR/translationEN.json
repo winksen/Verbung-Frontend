@@ -38,5 +38,19 @@
     "quick_links": "Quick Links",
     "lets_talk": "Let's Talk",
     "reach_out": "Reach Out",
-    "copy_right": "Copyright © 2023 VERBUNG®. All Rights Reserved."
+    "copy_right": "Copyright © 2023 VERBUNG®. All Rights Reserved.",
+
+    "contact_reach_out": "Reach Out To Us",
+    "contact_description": "Send us an email to let us know how we can help grow your business!",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "full_name": "Full Name",
+    "location": "Location",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Submit Now",
+    "coming_soon": "Coming soon!",
+    "offices_soon": "Offices opening soon!",
+    "contact_form": "Contact Form",
+    "contact_form_description": "You can send us a quick message through this form!"
 }

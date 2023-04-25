@@ -1,6 +1,9 @@
-import React from 'react';
-import {useState} from 'react'
+import React, { useEffect } from 'react';
+import {useState} from 'react';
+import { useTranslation } from 'react-i18next';
+import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 import axios from 'axios';
+
 
 
 const Result = () => {
@@ -29,6 +32,11 @@ const INITIAL = {
     const [data, setData] = useState(INITIAL);
     const [message, setMessage] = useState(null);
     const [result, showResult ] = useState(false);
+
+    const { t } = useTranslation();
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
   
     function handleSubmit(e) {
       e.preventDefault();
@@ -60,7 +68,7 @@ const INITIAL = {
                 id="name"
                 type="text"
                 name="name"
-                placeholder="Full Name"
+                placeholder={t("full_name")}
                 value={data.name}
                 onChange={handleChange}
                 required
@@ -72,7 +80,7 @@ const INITIAL = {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("email")}
                 value={data.email}
                 onChange={handleChange}
                 required
@@ -84,7 +92,7 @@ const INITIAL = {
                 id="phone"
                 type="text"
                 name="phone"
-                placeholder="Phone Number"
+                placeholder={t("phone")}
                 value={data.phone}
                 onChange={handleChange}
                 required
@@ -96,7 +104,7 @@ const INITIAL = {
                 id="subject"
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder={t("subject")}
                 value={data.subject}
                 onChange={handleChange}
                 required
@@ -107,7 +115,7 @@ const INITIAL = {
                 <textarea className='textInputField'
                 id="message"
                 name="message"
-                placeholder="Your Message"
+                placeholder={t("message")}
                 value={data.message}
                 onChange={handleChange}
                 required
@@ -116,7 +124,7 @@ const INITIAL = {
             </div>
 
             <div className="rn-form-group">
-                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit Now</button>
+                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">{t("submit")}</button>
             </div> 
 
             <div className="rn-form-group">

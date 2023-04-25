@@ -1,19 +1,21 @@
 {
+    "language": "Langue",
+    "en": "Anglais",
+    "fr": "Français",
+
     "home": "Accueil",
     "about": "A Propos",
     "work": "Travail",
-    "our_work_title": "Notre Travail",
-    "our_work_description": "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
-    "behance": "Voir sur Behance",
-    "website": "Voir Site Web",
-    "pressbook": "Voir Livre de Presse",
+
     "in_creativity": "En Créativité",
     "in_marketing": "En Marketing",
     "in_visibility": "En Visibilité",
     "in_communication": "En Communication",
+
     "about_description": "Chez Verbung, nous travaillons dur pour comprendre vos objectifs commerciaux et numériques, afin de développer des stratégies créatives et axées sur les résultats pour vous aider à les atteindre à tout moment. Vous connaissez votre marque mieux que quiconque, c'est pourquoi nos experts écoutent attentivement vos besoins et adoptent une approche sur mesure pour mieux comprendre ce qui convainc votre public cible.",
     "about_who_are_we": "Qui Sommes-Nous",
     "about_description2": "Nous sommes plus qu'une agence de communication classique ; nous sommes une agence de créatifs et de stratèges avec des esprits brillants qui travaillent main dans la main avec chaque client pour atteindre leurs objectifs commerciaux numériques.",
+    
     "services_description": "Nous proposons des services couvrant l'ensemble du marketing mix à un large éventail de clients dans des environnements B2C et B2B.",
     "digitalmarketing": "Marketing Digital",
     "digitalmarketing_description": "Nous créons des campagnes axées sur le retour sur investissement qui permettront à votre entreprise de passer à la vitesse supérieure.",
@@ -23,14 +25,32 @@
     "webmobile_description": "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
     "pressrelation": "Relation Presse",
     "pressrelation_description": "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
-    "language": "Langue",
-    "en": "Anglais",
-    "fr": "Français",
+
+    "our_work_title": "Notre Travail",
+    "our_work_description": "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
+    "behance": "Voir sur Behance",
+    "website": "Voir Site Web",
+    "pressbook": "Voir Livre de Presse",
+
     "ready": "Prêts pour une nouvelle aventure ?",
     "work_with_us": "TRAVAILLER <br/> AVEC NOUS",
     "contact_us": "Contactez-Nous",
     "quick_links": "Liens Rapides",
     "lets_talk": "Discutons-En",
     "reach_out": "Nous Joindre",
-    "copy_right": "Copyright © 2023 VERBUNG®. Tous droits réservés."
+    "copy_right": "Copyright © 2023 VERBUNG®. Tous droits réservés.",
+
+    "contact_reach_out": "Nous Contacter",
+    "contact_description": "Envoyez-nous un courriel pour nous dire comment nous pouvons vous aider à développer votre entreprise !",
+    "phone": "Numero de Telephone",
+    "email": "Adresse E-mail",
+    "full_name": "Nom Complet",
+    "location": "Localisation",
+    "subject": "Sujet",
+    "message": "Votre Message",
+    "submit": "Soumettre",
+    "coming_soon": "Bientôt disponible !",
+    "offices_soon": "Ouverture prochaine des bureaux !",
+    "contact_form": "Formulaire de Contact",
+    "contact_form_description": "Vous pouvez nous envoyer un message rapide par le biais de ce formulaire !"
 }

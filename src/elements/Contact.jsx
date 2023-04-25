@@ -1,5 +1,7 @@
 // USED IMPORTS
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import { loadLanguageFromLocalStorage } from '../dark/LanguageHelper';
 import ScrollToTop from 'react-scroll-up';
 
 import { FiChevronUp } from "react-icons/fi";
@@ -17,16 +19,18 @@ import ContactTwo from "../elements/contact/ContactTwo";
 
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class Contact extends Component{
-    static defaultProps = {
-        center: {
-            lat: 59.95,
-            lng: 30.33
-        },
-        zoom: 11
-    };
-
-    render(){
+function Contact(props){
+    // static defaultProps = {
+    //     center: {
+    //         lat: 59.95,
+    //         lng: 30.33
+    //     },
+    //     zoom: 11
+    // };
+    const { t } = useTranslation();
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
         return(
             <div className="active-dark"> 
                 <React.Fragment>
@@ -40,8 +44,8 @@ class Contact extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="rn-page-title text-center pt--100">
-                                        <h2 className="title theme-gradient textUpper">Reach Out to Us</h2>
-                                        <p>Send us an email to let us know how we can help grow your business!</p>
+                                        <h2 className="title theme-gradient textUpper">{t("contact_reach_out")}</h2>
+                                        <p>{t("contact_description")}</p>
                                         {/* <p><HiOutlineMail /> contact@verbung.net </p> */}
                                     </div>
                                 </div>
@@ -63,8 +67,8 @@ class Contact extends Component{
                                             <FiHeadphones />
                                         </div>
                                         <div className="inner">
-                                            <h4 className="title textUpper">Phone Number</h4>
-                                            <p>Coming soon!</p>
+                                            <h4 className="title textUpper">{t("phone")}</h4>
+                                            <p>{t("coming_soon")}</p>
                                             {/* <p><a href="tel:+856 325 652 984">+856 325 652 984</a></p> */}
                                         </div>
                                     </div>
@@ -78,7 +82,7 @@ class Contact extends Component{
                                             <FiMail />
                                         </div>
                                         <div className="inner">
-                                            <h4 className="title textUpper">Email Address</h4>
+                                            <h4 className="title textUpper">{t("email")}</h4>
                                             <p><a href="mailto:contact@verbung.net">contact@verbung.net</a></p>
                                             {/* <p><a href="mailto:example@gmail.com">example@gmail.com</a></p> */}
                                         </div>
@@ -93,8 +97,8 @@ class Contact extends Component{
                                             <FiMapPin />
                                         </div>
                                         <div className="inner">
-                                            <h4 className="title textUpper">Location</h4>
-                                            <p>Offices opening soon!</p>
+                                            <h4 className="title textUpper">{t("location")}</h4>
+                                            <p>{t("offices_soon")}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,6 +145,5 @@ class Contact extends Component{
                 </React.Fragment>
             </div>
         )
-    }
 }
 export default Contact

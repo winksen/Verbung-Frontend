@@ -1,16 +1,21 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 import ContactForm from "./ContactForm";
 
-class ContactTwo extends Component {
-    render(){
+function ContactTwo(props){
+    const { t } = useTranslation();
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
         return(
             <div className="contact-form--1">
                 <div className="container">
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <h2 className="title textUpper">Contact Form</h2>
-                                <p className="description">You can send us a quick message through this form!</p>
+                                <h2 className="title textUpper">{t("contact_form")}</h2>
+                                <p className="description">{t("contact_form_description")}</p>
                             </div>
                             <div className="form-wrapper contact-form--1">
                                 <ContactForm />
@@ -25,6 +30,5 @@ class ContactTwo extends Component {
                 </div>
             </div>
         )
-    }
 }
 export default ContactTwo;

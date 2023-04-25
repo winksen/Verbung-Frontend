@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { loadLanguageFromLocalStorage } from '../dark/LanguageHelper';
-import { useTranslation, initReactI18next, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import PageHelmet from "../component/common/Helmet";
 // import Breadcrumb from "../elements/common/Breadcrumb";
 import ScrollToTop from 'react-scroll-up';
@@ -10,6 +10,9 @@ import Footer from "../component/footer/Footer";
 
 const PricingTable = () => {
     const { t } = useTranslation();
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
     
     return (
         <div className='active-dark'>

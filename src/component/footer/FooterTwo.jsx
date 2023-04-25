@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
 
 const SocialShare = [
@@ -10,6 +11,7 @@ const SocialShare = [
 ]
 
 const FooterTwo = () => {
+    const { t } = useTranslation();
     return (
         <div className="active-dark footer-style-2 ptb--30" data-black-overlay="6">
             <div className="wrapper plr--50 plr_sm--20">
@@ -35,7 +37,7 @@ const FooterTwo = () => {
                     <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                         <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
                             <div className="text">
-                                <p>Copyright © 2023 VERBUNG®. All Rights Reserved.</p>
+                                <p>{t("copy_right")}</p>
                             </div>
                         </div>
                     </div>
