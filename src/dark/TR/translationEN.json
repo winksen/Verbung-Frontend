@@ -52,5 +52,7 @@
     "coming_soon": "Coming soon!",
     "offices_soon": "Offices opening soon!",
     "contact_form": "Contact Form",
-    "contact_form_description": "You can send us a quick message through this form!"
+    "contact_form_description": "You can send us a quick message through this form!",
+    "contact_success": "Your Message has been successfully sent! We will contact you soon.",
+    "contact_error": "An Error occured, please try again later, or contact us at contact@verbung.net"
 }

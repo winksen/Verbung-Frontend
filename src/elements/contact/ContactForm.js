@@ -4,20 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 import axios from 'axios';
 
-
-
-const Result = () => {
-    return (
-        <p className="success-message">Your Message has been successfully sent! We will contact you soon.</p>
-    )
-}
-
-const Error = () => {
-    return (
-        <p className="error-message">An Error occured, please try again later, or contact us at contact@verbung.net</p>
-    )
-}
-
 const INITIAL = {
     name: "",
     email: "",
@@ -128,10 +114,10 @@ const INITIAL = {
             </div> 
 
             <div className="rn-form-group">
-                {result ? <Result /> : null}
+                {result ? <p className="success-message">{t("contact_success")}</p> : null}
             </div>
             <div className="rn-form-group">
-                {message && <Error />}
+                {message && <p className="error-message">{t("contact_error")}</p>}
             </div>
           </form>
     );
