@@ -1,10 +1,10 @@
 // USED IMPORTS
-import React, { Component } from "react";
-import Fade from 'react-reveal/Fade';
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
 
 // UNUSED IMPORTS
+// import Fade from 'react-reveal/Fade';
 
 const ServiceList = [
     {

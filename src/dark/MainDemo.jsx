@@ -1,15 +1,14 @@
 // USED IMPORTS
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
-import ReactCountryFlag from "react-country-flag";
 
-import i18n from "i18next";
+
 import './i18next';
 import { loadLanguageFromLocalStorage } from './LanguageHelper';
 import { changeLanguage  } from './LanguageHelper';
-import { useTranslation, initReactI18next, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
@@ -26,10 +25,7 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+
 
 import BeatLoader from "react-spinners/BeatLoader";
 
@@ -40,80 +36,12 @@ import BeatLoader from "react-spinners/BeatLoader";
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
 // import Fade from 'react-reveal/Fade';
+// import ReactCountryFlag from "react-country-flag";
+// import InputLabel from '@mui/material/InputLabel';
+// import MenuItem from '@mui/material/MenuItem';
+// import FormControl from '@mui/material/FormControl';
+// import Select, { SelectChangeEvent } from '@mui/material/Select';
 
-const translationsEn = {
-    home: "Home",
-    about: "About",
-    work: "Work",
-    our_work_title: "Our Work",
-    our_work_description: "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
-    behance: "View on Behance",
-    website: "View Website",
-    pressbook: "View PressBook",
-    scaleNow: "SCALE NOW.",
-    inCreativity: "In Creativity",
-    inMarketing: "In Marketing",
-    inVisibility: "In Visibility",
-    inCommunication: "In Communication",
-    about_description: "At Verbung, we work hard to understand your business and digital goals, so we can develop creative, results-driven strategies to help you achieve them at all times. You know your brand better than anyone, so our experts listen carefully to your needs and take a tailored approach to better understand what convinces your target audience.",
-    about_whoAreWe: "Who Are We",
-    about_description2: "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.",
-    services_description: "We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.",
-    digitalmarketing: "Digital Marketing",
-    digitalmarketing_description: "We build ROI centric campaigns that will take your business to the next level.",
-    visualidentity: "Visual Identity",
-    visualidentity_description: "Good graphic design has the ability to connect with your audience and reach your business goals.",
-    webmobile: "Web and Mobile",
-    webmobile_description: "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
-    pressrelation: "Press Relation",
-    pressrelation_description: "The best way to get your news in front of the journalists who matter.",
-    language: "Language",
-    en: "English",
-    fr: "French",
-    ready: "Ready for a new Adventure?",
-    work_with_us: "WORK <br/> WITH US",
-    contact_us: "Contact Us",
-    quicklinks: "Quick Links",
-    lets_talk: "Let's Talk",
-    reach_out: "Reach Out",
-  };
-  
-const translationsFr = {
-    home: "Accueil",
-    about: "A Propos",
-    work: "Travail",
-    our_work_title: "Notre Travail",
-    our_work_description: "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
-    behance: "Voir sur Behance",
-    website: "Voir Site Web",
-    pressbook: "Voir Livre de Presse",
-    scaleNow: "ECHELER MAINTENANT.",
-    inCreativity: "En Créativité",
-    inMarketing: "En Marketing",
-    inVisibility: "En Visibilité",
-    inCommunication: "En Communication",
-    about_description: "Chez Verbung, nous travaillons dur pour comprendre vos objectifs commerciaux et numériques, afin de développer des stratégies créatives et axées sur les résultats pour vous aider à les atteindre à tout moment. Vous connaissez votre marque mieux que quiconque, c'est pourquoi nos experts écoutent attentivement vos besoins et adoptent une approche sur mesure pour mieux comprendre ce qui convainc votre public cible.",
-    about_whoAreWe: "Qui Sommes-Nous",
-    about_description2: "Nous sommes plus qu'une agence de communication classique ; nous sommes une agence de créatifs et de stratèges avec des esprits brillants qui travaillent main dans la main avec chaque client pour atteindre leurs objectifs commerciaux numériques.",
-    services_description: "Nous proposons des services couvrant l'ensemble du marketing mix à un large éventail de clients dans des environnements B2C et B2B.",
-    digitalmarketing: "Marketing Digital",
-    digitalmarketing_description: "Nous créons des campagnes axées sur le retour sur investissement qui permettront à votre entreprise de passer à la vitesse supérieure.",
-    visualidentity: "Identite Visuelle",
-    visualidentity_description: "Une bonne conception graphique permet d'établir un lien avec votre public et d'atteindre vos objectifs commerciaux.",
-    webmobile: "Web et Mobile",
-    webmobile_description: "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
-    pressrelation: "Relation Presse",
-    pressrelation_description: "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
-    language: "Langue",
-    en: "Anglais",
-    fr: "Français",
-    ready: "Prêts pour une nouvelle aventure ?",
-    work_with_us: "TRAVAILLER <br/> AVEC NOUS",
-    contact_us: "Contactez-Nous",
-    quicklinks: "Liens Rapides",
-    lets_talk: "Discutons-En",
-    reach_out: "Nous Joindre",
-};
   
 // i18n.use(initReactI18next).init({
 //     resources: {

@@ -1,5 +1,5 @@
 // USED IMPORTS
-import React, { Component } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import LazyImage from "../../LazyLoader";
 

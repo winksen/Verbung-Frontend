@@ -2,16 +2,7 @@
 import React, { Component } from "react";
 import ModalVideo from 'react-modal-video';
 import ScrollToTop from 'react-scroll-up';
-import {
-    ShimmerButton,
-    ShimmerTitle,
-    ShimmerText,
-    ShimmerCircularImage,
-    ShimmerThumbnail,
-    ShimmerBadge,
-    ShimmerTableCol,
-    ShimmerTableRow,
-  } from "react-shimmer-effects";
+import { ShimmerTitle, ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 

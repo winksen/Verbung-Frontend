@@ -1,14 +1,15 @@
 // USED IMPORTS
-import React, { Component } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import TextLoop from "react-text-loop";
 import Particles from "react-tsparticles";
-import { RandomReveal } from 'react-random-reveal';
+
 
 // UNUSED IMPORTS
 // import Fade from 'react-reveal/Fade';
 // import ServiceOne from "../../elements/service/ServiceOne";
 // import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
+// import { RandomReveal } from 'react-random-reveal';
 
 const SlideList = [
     {
