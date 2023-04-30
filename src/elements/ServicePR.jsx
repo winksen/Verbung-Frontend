@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { loadLanguageFromLocalStorage } from '../dark/LanguageHelper';
+import { useTranslation } from "react-i18next";
 import PageHelmet from "../component/common/Helmet";
 import { FiCast , FiMonitor ,FiChevronUp, FiMaximize } from "react-icons/fi";
 import ScrollToTop from 'react-scroll-up';
@@ -6,8 +8,11 @@ import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 import ServicesPR from "./services/ServicesPR";
 
-class ServicePR extends Component{
-    render(){
+const ServicePR = () => {
+    const { t } = useTranslation();
+    useEffect(() => {
+        loadLanguageFromLocalStorage();
+    }, []);
         return(
             <div className="active-dark">
                 <React.Fragment>
@@ -21,9 +26,9 @@ class ServicePR extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
-                                    <h2 className="textUpper">Press Relation</h2>
-                                    <p>The best way to get your news in front of the journalists who matter.</p>
-                                    <p>Services Details Below</p>
+                                    <h2 className="textUpper">{t("pressrelation")}</h2>
+                                    <p>{t("pressrelation_description")}</p>
+                                    <p>{t("service_below")}</p>
                                     <h3 className="title theme-gradient">•</h3>
                                 </div>
                             </div>
@@ -43,8 +48,8 @@ class ServicePR extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2 className="textUpper">Other Services</h2>
-                                    <p>Check out our other services</p>
+                                    <h2 className="textUpper">{t("service_other")}</h2>
+                                    <p>{t("service_other_check")}</p>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +61,8 @@ class ServicePR extends Component{
                                             <FiCast />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title textUpper">Digital Marketing</h3>
-                                            <p>We build ROI centric campaigns that will take your business to the next level.</p>
+                                            <h3 className="title textUpper">{t("digitalmarketing")}</h3>
+                                            <p>{t("digitalmarketing_description")}</p>
                                         </div>
                                     </div>
                                 </a>
@@ -69,8 +74,8 @@ class ServicePR extends Component{
                                             <FiMaximize />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title textUpper">Visual Identity</h3>
-                                            <p>Good graphic design has the ability to connect with your audience and reach your business goals.</p>
+                                            <h3 className="title textUpper">{t("visualidentity")}</h3>
+                                            <p>{t("visualidentity_description")}</p>
                                         </div>
                                     </div>
                                 </a>
@@ -82,8 +87,8 @@ class ServicePR extends Component{
                                             <FiMonitor />
                                         </div>
                                         <div className="content">
-                                            <h3 className="title textUpper">Web &amp; Mobile</h3>
-                                            <p>Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.</p>
+                                            <h3 className="title textUpper">{t("webmobile")}</h3>
+                                            <p>{t("webmobile_description")}</p>
                                         </div>
                                     </div>
                                 </a>
@@ -107,6 +112,5 @@ class ServicePR extends Component{
             </React.Fragment>
             </div>
         )
-    }
 }
 export default ServicePR;

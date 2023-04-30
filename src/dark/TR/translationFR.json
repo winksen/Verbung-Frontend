@@ -57,5 +57,9 @@
     "contact_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
 
     "packs": "Nos Packs",
-    "request_quotation": "Demander un Devis"
+    "request_quotation": "Demander un Devis",
+
+    "service_below": "Détails des services ci-dessous",
+    "service_other": "Autres services",
+    "service_other_check": "Consultez nos autres services"
 }

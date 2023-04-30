@@ -57,5 +57,9 @@
     "contact_error": "An Error occured, please try again later, or contact us at contact@verbung.net",
 
     "packs": "Our Packs",
-    "request_quotation": "Request a Quotation"
+    "request_quotation": "Request a Quotation",
+
+    "service_below": "Services Details Below",
+    "service_other": "Other Services",
+    "service_other_check": "Check out our other services"
 }
