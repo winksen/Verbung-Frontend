@@ -28,7 +28,7 @@ const PricingTable = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="rn-page-title text-center pt--100">
-                                        <h2 className="title theme-gradient textUpper">{t("home")} Our Packs</h2><br />
+                                        <h2 className="title theme-gradient textUpper">{t("packs")}</h2><br />
                                         {/* <img src="/assets/images/illustrations/cart.png" alt="" /> */}
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title textUpper">Digital Marketing</h4>
+                                            <h4 className="title textUpper">{t("digitalmarketing")}</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 {/* <span className="subtitle">Starting from</span>
@@ -71,7 +71,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
+                                            <a className="rn-btn" href="/contact">{t("request_quotation")}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title textUpper">Visual Identity</h4>
+                                            <h4 className="title textUpper">{t("visualidentity")}</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 {/* <span className="subtitle">Starting from</span>
@@ -105,7 +105,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
+                                            <a className="rn-btn" href="/contact">{t("request_quotation")}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title textUpper">Web &amp; Mobile</h4>
+                                            <h4 className="title textUpper">{t("webmobile")}</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 {/* <span className="subtitle">Starting from</span>
@@ -139,7 +139,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
+                                            <a className="rn-btn" href="/contact">{t("request_quotation")}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@ const PricingTable = () => {
                                             <div className="pricing">
                                                 <span className="subtitle">PACK</span>
                                             </div>
-                                            <h4 className="title textUpper">Press Relation</h4>
+                                            <h4 className="title textUpper">{t("pressrelation")}</h4>
                                             <div className="pricing">
                                                 <span className="subtitle">•</span>
                                                 {/* <span className="subtitle">starting from</span>
@@ -173,7 +173,7 @@ const PricingTable = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Request a Quotation</a>
+                                            <a className="rn-btn" href="/contact">{t("request_quotation")}</a>
                                         </div>
                                     </div>
                                 </div>

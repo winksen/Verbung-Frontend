@@ -54,5 +54,8 @@
     "contact_form": "Formulaire de Contact",
     "contact_form_description": "Vous pouvez nous envoyer un message rapide par le biais de ce formulaire !",
     "contact_success": "Votre Message a été envoyé avec succès ! Nous vous contacterons bientôt.",
-    "contact_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net"
+    "contact_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
+
+    "packs": "Nos Packs",
+    "request_quotation": "Demander un Devis"
 }
