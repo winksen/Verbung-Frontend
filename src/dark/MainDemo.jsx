@@ -22,6 +22,7 @@ import ServiceTwo from "../elements/service/ServiceTwo";
 import { portfolioSlick2 } from "../page-demo/script";
 
 import { styled } from '@mui/material/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
@@ -29,6 +30,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
 
 import BeatLoader from "react-spinners/BeatLoader";
 
@@ -340,6 +343,30 @@ function MainDemo(props){
               borderRadius: 20 / 2,
             },
           }));
+
+          const useStyles = makeStyles({
+            container: {
+              marginTop: "10%",
+            },
+            formControl: {
+              minWidth: 120,
+            },
+            label: {
+              color: "darkred",
+              "&.Mui-focused": {
+                color: "darkred",
+              },
+            },
+            select: {
+              "&:after": {
+                borderBottomColor: "#ccc",
+              },
+              "& .MuiSvgIcon-root": {
+                color: "darkred",
+              },
+            },
+          });
+            
           
 
         window.addEventListener('scroll', function() {
@@ -361,7 +388,7 @@ function MainDemo(props){
             }
         }
 
-        
+        const classes = useStyles();
         return(
             <div className="active-dark">
                 {
@@ -413,6 +440,26 @@ function MainDemo(props){
                                                 <MenuItem value="fr">{t("fr")}</MenuItem>
                                                 </Select>
                                             </FormControl>
+                                            {/* <Container maxWidth="sm" className={classes.container}>
+      <Typography variant="h5">Custom Select</Typography>
+      <FormControl className={classes.formControl}>
+        <InputLabel
+          id="simple-select"
+          className={classes.label}
+        >
+          Age
+        </InputLabel>
+        <Select
+          labelId="simple-select"
+          id="demo-simple-select"
+          className={classes.select}
+        >
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
+    </Container> */}
                                             {/* <select className="rn-select title" name="language" value={selectedLanguage} onChange={handleLanguageChange}>
                                                 <option value="en">{t("en")}</option>
                                                 <option value="fr">{t("fr")}</option>
