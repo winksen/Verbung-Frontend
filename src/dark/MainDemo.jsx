@@ -25,7 +25,10 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 import BeatLoader from "react-spinners/BeatLoader";
 
@@ -37,10 +40,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 // import Typography from '@mui/material/Typography';
 // import Fade from 'react-reveal/Fade';
 // import ReactCountryFlag from "react-country-flag";
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
-// import FormControl from '@mui/material/FormControl';
-// import Select, { SelectChangeEvent } from '@mui/material/Select';
+
 
   
 // i18n.use(initReactI18next).init({
@@ -342,7 +342,6 @@ function MainDemo(props){
           }));
           
 
-
         window.addEventListener('scroll', function() {
             var value = window.scrollY;
             if (value > 50) {
@@ -361,6 +360,8 @@ function MainDemo(props){
                 }
             }
         }
+
+        
         return(
             <div className="active-dark">
                 {
@@ -398,13 +399,26 @@ function MainDemo(props){
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
                                             </FormGroup>
                                         </li>
-                                        <li><a>
-                                            <select className="rn-select title" name="language" value={selectedLanguage} onChange={handleLanguageChange}>
+                                        <li>
+                                            <FormControl variant="standard" sx={{ m: 1, minWidth: 120, color: '#ccc' }}>
+                                                <InputLabel id="demo-simple-select-standard-label">{t("language")}</InputLabel>
+                                                <Select
+                                                labelId="demo-simple-select-standard-label"
+                                                id="demo-simple-select-standard"
+                                                value={selectedLanguage}
+                                                onChange={handleLanguageChange}
+                                                label="Language"
+                                                >
+                                                <MenuItem value="en">{t("en")}</MenuItem>
+                                                <MenuItem value="fr">{t("fr")}</MenuItem>
+                                                </Select>
+                                            </FormControl>
+                                            {/* <select className="rn-select title" name="language" value={selectedLanguage} onChange={handleLanguageChange}>
                                                 <option value="en">{t("en")}</option>
                                                 <option value="fr">{t("fr")}</option>
-                                            </select>
+                                            </select> */}
                                             {/* <ReactCountryFlag countryCode="US" svg /> */}
-                                        </a></li>
+                                        </li>
                                     </Scrollspy>
                                 </nav>
                                 {/* <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
