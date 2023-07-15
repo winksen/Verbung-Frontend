@@ -136,7 +136,7 @@ class BlogDetails extends Component{
                                         {/* Para 1 */}
                                         
                                         <p align="justify">{this.state.blogs.para1}</p>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para2}/>
 
                                         {/* Title 2 */}
                                         <h3 className="textUpper">{this.state.blogs.title2}</h3>
@@ -167,7 +167,7 @@ class BlogDetails extends Component{
                                                 </ul>
                                             </div>
                                         </div>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para3}/>
 
                                         {/* Title 3 */}
                                         <h3 className="textUpper">{this.state.blogs.title3}</h3>
@@ -181,7 +181,7 @@ class BlogDetails extends Component{
                                             <span hidden={null == this.state.blogs.image3 || null == this.state.blogs.image_source3}>Image source: {this.state.blogs.image_source3}</span>
                                         </div>
                                         <br /><br />
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para4}/>
 
                                         {/* Title 4 */}
                                         <h3 className="textUpper">{this.state.blogs.title4}</h3>
@@ -212,7 +212,7 @@ class BlogDetails extends Component{
                                                 <span hidden={null == this.state.blogs.image4}>Image source: {this.state.blogs.image_source4}</span>
                                             </div>
                                         </div>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para5}/>
 
                                         {/* Title 5 */}
                                         <h3 className="textUpper">{this.state.blogs.title5}</h3>
@@ -226,7 +226,7 @@ class BlogDetails extends Component{
                                             <span hidden={null == this.state.blogs.image5 || null == this.state.blogs.image_source5}>Image source: {this.state.blogs.image_source5}</span>
                                         </div>
                                         <br /><br />
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para6}/>
 
                                         {/* Title 6 */}
                                         <h3 className="textUpper">{this.state.blogs.title6}</h3>
@@ -247,7 +247,7 @@ class BlogDetails extends Component{
                                                 <span hidden={null == this.state.blogs.image6 || null == this.state.blogs.image_source6}>Video Image source: {this.state.blogs.image_source6}</span>
                                             </div>                             
                                         </div>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para7}/>
 
                                         {/* Title 7 */}
                                         <h3 className="textUpper">{this.state.blogs.title7}</h3>
@@ -257,7 +257,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mb--0">{this.state.blogs.para7}</p>
                                         {/* Para 8 */}
                                         <p align="justify">{this.state.blogs.para8}</p>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.para8}/>
 
                                         {/* Title 8 */}
                                         <h3 className="textUpper">{this.state.blogs.title8}</h3>
@@ -267,7 +267,7 @@ class BlogDetails extends Component{
                                         <p align="justify" className="mb--0">{this.state.blogs.para9}</p>
                                         {/* Para 10 */}
                                         <p align="justify">{this.state.blogs.para10}</p>
-                                        <hr className="line"/>
+                                        <hr className="line" hidden={null == this.state.blogs.link1}/>
 
 
                                         <h3 className="textUpper" hidden={null == this.state.blogs.link1}>Links</h3>

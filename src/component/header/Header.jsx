@@ -9,6 +9,10 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
 
@@ -227,11 +231,19 @@ class Header extends Component{
                                     </FormGroup>
                                 </li>
                                 <li>
-                                    <select value={selectedLanguage} onChange={this.handleLanguageChange}>
-                                        <option value="en">{t("en")}</option>
-                                        <option value="fr">{t("fr")}</option>
-                                        {/* Add other languages as needed */}
-                                    </select>
+                                    <FormControl variant="standard" sx={{ m: 1, minWidth: 120, color: '#ccc' }}>
+                                      <InputLabel id="demo-simple-select-standard-label">{t("language")}</InputLabel>
+                                      <Select
+                                      labelId="demo-simple-select-standard-label"
+                                      id="demo-simple-select-standard"
+                                      value={selectedLanguage}
+                                      onChange={this.handleLanguageChange}
+                                      label="Language"
+                                      >
+                                      <MenuItem value="en">{t("en")}</MenuItem>
+                                      <MenuItem value="fr">{t("fr")}</MenuItem>
+                                      </Select>
+                                  </FormControl>
                                 </li>
                             </ul>
                         </nav>
