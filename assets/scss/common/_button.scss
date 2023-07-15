@@ -78,6 +78,17 @@ button {
                 color: #ffffff;
             }
         }
+        &.btn-work {
+            // background-color: #000;
+            border: 2px solid #ddd;
+            color: #fff;
+            &:hover {
+                border: 2px solid $theme-color;
+                transform: translateY(-3px);
+                color: #ffffff;
+                background: $theme-color;
+            }
+        }
     }
 }
 
