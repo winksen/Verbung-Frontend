@@ -388,6 +388,9 @@ function MainDemo(props){
             }
         }
 
+        const borderColor = '#4CBD94';
+        const hoverBorderColor = '#1C9D79';
+
         const classes = useStyles();
         return(
             <div className="active-dark">
@@ -421,6 +424,8 @@ function MainDemo(props){
                                         <li><a href="#work">{t("work")}</a></li>
                                         <li><a href="/blogs">Blog</a></li>
                                         <li></li>
+
+                                        <li></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
@@ -428,59 +433,43 @@ function MainDemo(props){
                                         </li>
                                         <li>
                                             <FormControl variant="standard" sx={{ m: 1, minWidth: 120, color: '#ccc' }}>
-                                                <InputLabel id="demo-simple-select-standard-label">{t("language")}</InputLabel>
+                                                <InputLabel className="language-selector-text" id="demo-simple-select-standard-label">{t("language")}</InputLabel>
                                                 <Select
                                                 labelId="demo-simple-select-standard-label"
                                                 id="demo-simple-select-standard"
                                                 value={selectedLanguage}
                                                 onChange={handleLanguageChange}
                                                 label="Language"
+                                                className="language-selector"
+                                                sx={{
+                                                    '&:before': {
+                                                    borderColor: borderColor,
+                                                    },
+                                                    '&:after': {
+                                                    borderColor: borderColor,
+                                                    },
+                                                    '&:hover:not(.Mui-disabled):before': {
+                                                    borderColor: hoverBorderColor,
+                                                    },
+                                                }}
                                                 >
                                                 <MenuItem value="en">{t("en")}</MenuItem>
                                                 <MenuItem value="fr">{t("fr")}</MenuItem>
                                                 </Select>
                                             </FormControl>
-                                            {/* <Container maxWidth="sm" className={classes.container}>
-      <Typography variant="h5">Custom Select</Typography>
-      <FormControl className={classes.formControl}>
-        <InputLabel
-          id="simple-select"
-          className={classes.label}
-        >
-          Age
-        </InputLabel>
-        <Select
-          labelId="simple-select"
-          id="demo-simple-select"
-          className={classes.select}
-        >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-    </Container> */}
-                                            {/* <select className="rn-select title" name="language" value={selectedLanguage} onChange={handleLanguageChange}>
-                                                <option value="en">{t("en")}</option>
-                                                <option value="fr">{t("fr")}</option>
-                                            </select> */}
-                                            {/* <ReactCountryFlag countryCode="US" svg /> */}
                                         </li>
+                                        
+
                                     </Scrollspy>
                                 </nav>
-                                {/* <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                                    <InputLabel id="language">{t("language")}</InputLabel>
-                                    <Select labelId="language" id="language" onChange={onChange} label="Language">
-                                        <MenuItem value="en">{t("en")}</MenuItem>
-                                        <MenuItem value="fr">{t("fr")}</MenuItem>
-                                    </Select>
-                                </FormControl> */}
                                 
+
                                 <div className="header-btn">
                                     <a className="rn-btn title" href="/packs">
                                         <span className="title">PACKS</span>
                                     </a>
                                 </div>
+                                        
                                 
                                 {/* Start Humberger Menu  */}
                                 <div className="humberger-menu d-block d-lg-none pl--20">

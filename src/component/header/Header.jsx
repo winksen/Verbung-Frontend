@@ -6,6 +6,7 @@ import { changeLanguage } from '../../dark/LanguageHelper';
 import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 
 import { styled } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
@@ -84,12 +85,16 @@ class Header extends Component{
             logoUrl = <img src="/assets/images/logo/logo.png" alt="Verbung" />;
         }
 
+        const borderColor = '#4CBD94';
+        const hoverBorderColor = '#1C9D79';
+
         const setDark = () => {
             localStorage.setItem("theme", "dark");
             document.documentElement.setAttribute("data-theme", "dark");
           };
           
           const setLight = () => {
+            
             localStorage.setItem("theme", "light");
             document.documentElement.setAttribute("data-theme", "light");
           };
@@ -232,13 +237,25 @@ class Header extends Component{
                                 </li>
                                 <li>
                                     <FormControl variant="standard" sx={{ m: 1, minWidth: 120, color: '#ccc' }}>
-                                      <InputLabel id="demo-simple-select-standard-label">{t("language")}</InputLabel>
+                                      <InputLabel className="language-selector-text" id="demo-simple-select-standard-label">{t("language")}</InputLabel>
                                       <Select
                                       labelId="demo-simple-select-standard-label"
                                       id="demo-simple-select-standard"
                                       value={selectedLanguage}
                                       onChange={this.handleLanguageChange}
                                       label="Language"
+                                      className="language-selector"
+                                      sx={{
+                                        '&:before': {
+                                          borderColor: borderColor,
+                                        },
+                                        '&:after': {
+                                          borderColor: borderColor,
+                                        },
+                                        '&:hover:not(.Mui-disabled):before': {
+                                          borderColor: hoverBorderColor,
+                                        },
+                                      }}
                                       >
                                       <MenuItem value="en">{t("en")}</MenuItem>
                                       <MenuItem value="fr">{t("fr")}</MenuItem>
