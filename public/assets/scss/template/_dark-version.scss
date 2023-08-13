@@ -207,6 +207,7 @@
         }
         .header-area .header-wrapper .mainmenunav ul.mainmenu {
             background: var(--backgroundLess-color);
+            border-left: 2px solid var(--second-font-color);
         }
         .header-area .header-wrapper.menu-open .close-menu span {
             color: #c6c9d8 !important;

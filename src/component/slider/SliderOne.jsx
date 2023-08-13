@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import TextLoop from "react-text-loop";
 import Particles from "react-tsparticles";
+import { IoIosArrowForward } from "react-icons/io";
 
 
 // UNUSED IMPORTS
@@ -167,6 +168,11 @@ function SliderOne(props){
                                                     />
                                                 </h3> */}
                                             </TextLoop>
+                                            <div className="header-btn">
+                                                <a className="rn-btn btn-filled" href="/contact">
+                                                    <span>Contact Us Today</span> <IoIosArrowForward />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6"></div>

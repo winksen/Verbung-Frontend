@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 
 import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
@@ -422,10 +423,7 @@ function MainDemo(props){
                                         <li><a href="#about">{t("about")}</a></li>
                                         <li><a href="#services">Services</a></li>
                                         <li><a href="#work">{t("work")}</a></li>
-                                        <li><a href="/blogs">Blog</a></li>
-                                        <li></li>
-
-                                        <li></li>
+                                        <li><a href="/blogs">Blog<IoIosArrowForward /></a></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
@@ -458,8 +456,6 @@ function MainDemo(props){
                                                 </Select>
                                             </FormControl>
                                         </li>
-                                        
-
                                     </Scrollspy>
                                 </nav>
                                 

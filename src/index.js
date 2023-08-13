@@ -14,6 +14,7 @@ import ServiceWM from "./elements/ServiceWM";
 import ServicePR from "./elements/ServicePR";
 import Contact from "./elements/Contact";
 import Blog from "./elements/Blog";
+import BlogCategory from "./elements/BlogCategory";
 import BlogDetails from "./elements/BlogDetails";
 import error404 from "./elements/error404";
 import About from "./elements/About";
@@ -78,6 +79,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/pressrelation`} component={ServicePR}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs/category/:category`} component={BlogCategory}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
                         
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
