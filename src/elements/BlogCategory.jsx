@@ -99,7 +99,7 @@ class Blog extends Component{
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
                                     <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
-                                    <p>Find our most recent blog articles below. In Category: </p>
+                                    <p>Find our most recent blog articles below. Category: {this.props.match.params.category}</p>
                                 </div>
                             </div>
                         </div>

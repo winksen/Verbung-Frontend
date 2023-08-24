@@ -226,6 +226,7 @@ function MainDemo(props){
         window.onload = () => {
             setLoading(false);
           };
+        
         // useEffect(() => {
         //     setLoading(true);
         //     setTimeout(() => {
@@ -395,13 +396,13 @@ function MainDemo(props){
         const classes = useStyles();
         return(
             <div className="active-dark">
-                {
+                {/* {
                     loading ?
                     ( <div className="loader">
                         <BeatLoader  color="#4CBD94" loading={loading} margin={10} size={30} aria-label="Loading Spinner" data-testid="loader"/>
                     </div> )
                     :
-                    (
+                    ( */}
                     <div className="active-dark">
                     <Helmet pageTitle="VERBUNG // Scale Now" />
 
@@ -556,8 +557,8 @@ function MainDemo(props){
                     </div>
                     {/* End Back To Top */}
                     </div>
-                    )
-                }
+                    {/* )
+                } */}
             </div>
 
         )

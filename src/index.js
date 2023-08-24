@@ -47,7 +47,7 @@ import * as serviceWorker from './serviceWorker';
     // import DarkPortfolioLanding from './dark/PortfolioLanding';
     // import Service from "./elements/Service";
     // import ServiceDetails from "./elements/ServiceDetails";
-    // import PortfolioDetails from "./elements/PortfolioDetails";
+    import PortfolioDetails from "./elements/PortfolioDetails";
     // import Team from "./blocks/Team";
     // import Counters from "./blocks/Counters";
     // import Testimonial from "./blocks/Testimonial";
@@ -81,6 +81,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/category/:category`} component={BlogCategory}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
                         
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
 
@@ -110,7 +111,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/creative-portfolio`} component={CreativePortfolio}/> 
                         <Route exact path={`${process.env.PUBLIC_URL}/interactive-agency`} component={InteractiveAgency}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
+                        
                         <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/counters`} component={Counters}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/testimonial`} component={Testimonial}/>
