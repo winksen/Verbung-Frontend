@@ -6,7 +6,7 @@ import { ShimmerTitle, ShimmerText, ShimmerThumbnail } from "react-shimmer-effec
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import { FiClock , FiUser, FiEdit, FiArrowLeft } from "react-icons/fi";
+import { FiClock , FiUser, FiEdit, FiArrowLeft, FiLayers } from "react-icons/fi";
 import { FiChevronUp } from "react-icons/fi";
 
 import PageHelmet from "../component/common/Helmet";
@@ -88,7 +88,8 @@ class BlogDetails extends Component{
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
                                         <li><FiClock />Created: {moment(this.state.blogs.created_at).fromNow()}</li>
                                         <li><FiEdit />Updated: {moment(this.state.blogs.updated_at).fromNow()}</li>
-                                        <li><FiUser />{this.state.blogs.writer}</li>
+                                        <li><FiUser />Writer: {this.state.blogs.writer}</li>
+                                        <li><FiLayers />Category: {this.state.blogs.category}</li>
                                         {/* <li><FiMessageCircle />15 Comments</li>
                                         <li><FiHeart />Like</li> */}
                                     </ul>
