@@ -60,7 +60,7 @@ function Footer(props){
                                             <div className="social-share-inner">
                                                 <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
                                                     {SocialShare.map((val , i) => (
-                                                        <li key={i}><a href={`${val.link}`} target="_blank" rel="noreferrer noopener">{val.Social}</a></li>
+                                                        <li key={i}><a className="footer-icons" href={`${val.link}`} target="_blank" rel="noreferrer noopener">{val.Social}</a></li>
                                                     ))}
                                                 </ul>
                                             </div> 

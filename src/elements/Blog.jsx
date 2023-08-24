@@ -32,7 +32,7 @@ class Blog extends Component{
                 </div>
                 {/* End Breadcrump Area */}
 
-                <div className="service-area ptb--80 bg_image bg_image--3" id="services">
+                <div>
                         <div className="container">
                             <BlogCategoryT column="col-lg-2 col-md-3 col-sm-3 col-4" />
                         </div>
