@@ -2,6 +2,8 @@ import React ,{ Component }from "react";
 import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 import { BiBookContent, BiAnalyse, BiAt, BiSearch, BiSearchAlt, BiUserVoice, BiMobileAlt, BiWallet } from "react-icons/bi";
 import { BiVector, BiIntersect, BiMessageEdit, BiNetworkChart, BiCaretRightCircle, BiCameraMovie, BiFile } from "react-icons/bi";
+import { IoIosArrowDown } from "react-icons/io";
+import { Link } from 'react-router-dom';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
 // import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
@@ -102,48 +104,74 @@ class BlogCategoryT extends Component{
         
         return(
             <React.Fragment>
-                <div className="row">
-                <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <h3>DIGITAL MARKETING</h3>
-                    <p>Select a Subcategory:</p>
-                </div>
+                {/* <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div className="inner text-center">
-                            <ul className="social-share rn-lg-size d-flex justify-content-between liststyle">
-                                {ServiceContentDM.map((val , i) => (
-                                    <Tooltip title={<h4 style={{ color: "white" }}>{val.title}</h4>} arrow>
-                                        <IconButton>
-                                            <li key={i}>
-                                                <a href={`blogs/category/${val.code}`}>{val.icon}</a>
-                                                {/* <p className="icon-hidden">{val.title}</p> */}
-                                            </li>
-                                        </IconButton>
-                                    </Tooltip>
-                                ))}
-                            </ul>
+                        <h3>• DIGITAL MARKETING</h3>
+                    </div>
+                    <div className="col-12">
+                        <div className="blog blog-style--1">
+                            <div className="content-text">
+                                <div className="blog-btn-cat">
+                                    <a style={{ marginBottom: '5px', backgroundColor: 'black', padding: '0 100px' }} className="rn-btn-cat" href={`/blogs/category/00`}>Digital Marketing (Parent Category)</a>
+                                </div>
+                                <div className="blog-btn-cat">
+                                    {ServiceContentDM.map((val , i) => (
+                                        <a style={{ marginBottom: '5px', backgroundColor: '#093631', }} className="rn-btn-cat" href={`/blogs/category/${val.code}`}>{val.icon} {val.title}</a>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <h3>VISUAL IDENTITY</h3>
-                    <p>Select a Subcategory:</p>
-                </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div className="inner text-center">
-                            <ul className="social-share rn-lg-size d-flex liststyle">
-                                {ServiceContentVI.map((val , i) => (
-                                    <Tooltip title={<h4 style={{ color: "white" }}>{val.title}</h4>} arrow>
-                                        <IconButton>
-                                            <li key={i}>
-                                                <a href={`blogs/category/${val.code}`}>{val.icon}</a>
-                                                {/* <p className="icon-hidden">{val.title}</p> */}
-                                            </li>
-                                        </IconButton>
-                                    </Tooltip>
-                                ))}
-                            </ul>
+                        <h3>• VISUAL IDENTITY</h3>
+                    </div>
+                    <div className="col-12">
+                        <div className="blog blog-style--1">
+                            <div className="content-text">
+                                <div className="blog-btn-cat">
+                                    <a style={{ marginBottom: '5px', backgroundColor: 'black', padding: '0 100px'}} className="rn-btn-cat" href={`/blogs/category/10`}>Visual Identity (Parent Category)</a>
+                                </div>
+                                <div className="blog-btn-cat">
+                                    {ServiceContentVI.map((val , i) => (
+                                        <a style={{ marginBottom: '5px', backgroundColor: '#093631', }} className="rn-btn-cat" href={`/blogs/category/${val.code}`}>{val.icon} {val.title}</a>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div> */}
+                <div className="header-wrapper">
+                    <div className="header-left d-flex align-items-center">
+                        <nav className="mainmenunav d-lg-block ml--50">
+                            <ul className="mainmenu">
+                                <li className="has-droupdown"><Link to="/blogs/category/00">DIGITAL MARKETING <IoIosArrowDown /></Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/blogs/category/01"><BiBookContent /> Content Marketing</Link></li>
+                                        <li><Link to="/blogs/category/02"><BiAnalyse /> Social Media Marketing</Link></li>
+                                        <li><Link to="/blogs/category/03"><BiAt /> Email Marketing</Link></li>
+                                        <li><Link to="/blogs/category/04"><BiUserVoice /> Affiliate Marketing</Link></li>
+                                        <li><Link to="/blogs/category/05"><BiSearch /> Search Engine Optimization (SEO)</Link></li>
+                                        <li><Link to="/blogs/category/06"><BiSearchAlt /> Search Engine Advertising (SEA)</Link></li>
+                                        <li><Link to="/blogs/category/07"><BiMobileAlt /> Mobile Marketing</Link></li>
+                                        <li><Link to="/blogs/category/08"><FiMonitor /> Display Advertising</Link></li>
+                                        <li><Link to="/blogs/category/09"><BiWallet /> Pay Per Click (PPC)</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/blogs/category/10">VISUAL IDENTITY <IoIosArrowDown /></Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/blogs/category/11"><BiVector /> Branding</Link></li>
+                                        <li><Link to="/blogs/category/12"><BiIntersect /> UI/UX</Link></li>
+                                        <li><Link to="/blogs/category/13"><BiMessageEdit /> Social Media Design</Link></li>
+                                        <li><Link to="/blogs/category/14"><BiNetworkChart /> Illustrations</Link></li>
+                                        <li><Link to="/blogs/category/15"><BiCaretRightCircle /> Motion Graphics</Link></li>
+                                        <li><Link to="/blogs/category/16"><BiCameraMovie /> Videography</Link></li>
+                                        <li><Link to="/blogs/category/17"><BiFile /> Stationary</Link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">

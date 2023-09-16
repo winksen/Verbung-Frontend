@@ -1,8 +1,13 @@
 import React, { Component, Fragment } from "react";
 import ReactPaginate from "react-paginate";
+
+import moment from 'moment';
 import axios from "axios";
 // import dotenv from 'dotenv';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { FiCalendar, FiMonitor } from "react-icons/fi";
+import { BiBookContent, BiAnalyse, BiAt, BiSearch, BiSearchAlt, BiUserVoice, BiMobileAlt, BiWallet } from "react-icons/bi";
+import { BiVector, BiIntersect, BiMessageEdit, BiNetworkChart, BiCaretRightCircle, BiCameraMovie, BiFile } from "react-icons/bi";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
@@ -15,6 +20,28 @@ const api = axios.create({
     baseURL: baseURL,
     headers: {'Authorization': bearer},
 })
+
+const categoryMapping = {
+    '00' : 'Digital Marketing',
+    '01' : 'Content Marketing',
+    '02' : 'Social Media Marketing',
+    '03' : 'Email Marketing',
+    '04' : 'Affiliate Marketing',
+    '05' : 'Search Engine Optimization (SEO)',
+    '06' : 'Search Engine Advertising (SEA)',
+    '07' : 'Mobile Marketing',
+    '08' : 'Display Advertising',
+    '09' : 'Pay-Per-Click (PPC)',
+    '10' : 'Visual Identity',
+    '11' : 'Branding',
+    '12' : 'UI/UX',
+    '13' : 'Social Media Design',
+    '14' : 'Illustrations',
+    '15' : 'Motion Graphics',
+    '16' : 'Videography',
+    '17' : 'Stationary',
+  };
+
 class BLogList extends Component{
     constructor () {
         super()
@@ -64,14 +91,13 @@ class BLogList extends Component{
                             <a href={`/blogs/${blog.id}`}>
                                 <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-thumbnail-default.png"; }} />
                                 {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
-                            </a>
-                            {/* <div className="content">
-                                <div className="blog-btn">
-                                    <a className="rn-btn text-white" >{blog.category}</a>
-                                </div>
-                            </div> */}
+                            </a> 
                         </div>
                         <div className="content-text">
+                            <div className="blog-btn-cat">
+                                <a className="rn-btn-cat" href={`/blogs/category/${blog.category}`}>{categoryMapping[blog.category] || 'OTHER'}</a>
+                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMMM Do, YYYY')}</a>
+                            </div>
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>
                     </div>

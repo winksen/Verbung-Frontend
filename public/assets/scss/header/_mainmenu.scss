@@ -37,7 +37,7 @@ Mainmenu Area
                 > ul {
                     &.submenu {
                         @extend %liststyle;
-                        min-width: 240px;
+                        min-width: 300px;
                         height: auto;
                         position: absolute;
                         top: 100%;

@@ -49,12 +49,49 @@ Blog Styles
     }
     .content-text {
         a{
-            font-size: 24px;
+            // font-size: 24px;
             font-weight: 500;
             line-height: 36px;
             color: var(--font-color);
         }
         padding-top: 10px;
+        .blog-btn-cat {
+            opacity: 1;
+            visibility: visible;
+            .rn-btn-cat {
+                padding: 0 20px;
+                margin-right: 5px;
+                height: 30px;
+                display: inline-block;
+                line-height: 25px;
+                border: 2px solid #4CBD94;
+                background-color: #4CBD94;
+                border-radius: 4px;
+                font-size: 10px;
+                position: relative;
+                z-index: 2;
+                color: white;
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+            }
+            .rn-btn-date {
+                padding: 0 10px;
+                margin-right: 5px;
+                height: 30px;
+                display: inline-block;
+                line-height: 25px;
+                font-size: 12px;
+                position: relative;
+                z-index: 2;
+                color: var(--font-color);
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+
+                .rn-btn-date-icon {
+                    margin-bottom: 3px;
+                }
+            }
+        }
     }
     .content-text:hover {
         color: $theme-color;
