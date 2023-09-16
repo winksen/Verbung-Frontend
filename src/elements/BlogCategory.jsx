@@ -6,14 +6,17 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import BlogCategoryT from "../elements/blog/BlogCategory";
+import BlogCategoryT from "./blog/BlogCategoryT";
+import { useParams } from 'react-router-dom';
 
 
 import ReactPaginate from "react-paginate";
+import moment from 'moment';
 import axios from "axios";
 // import dotenv from 'dotenv';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { FiCalendar, FiMonitor } from "react-icons/fi";
 import { FiClock , FiUser, FiEdit, FiArrowLeft, FiLayers } from "react-icons/fi";
 import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
@@ -47,10 +50,11 @@ const categoryMapping = {
     '17' : 'Stationary',
 };
 class Blog extends Component{
-    constructor (props) {
-        super(props)
+    constructor () {
+        super()
         this.state = {
             blogs: [],
+            category: '',
             loading: true,
             pageCount: 0,
             pageNumber: 1,
@@ -63,6 +67,15 @@ class Blog extends Component{
     componentDidMount() {
         this.fetchData();
     }
+
+    componentDidUpdate(prevProps) {
+        const { category: prevCategory } = prevProps.match.params;
+        const { category } = this.props.match.params;
+    
+        if (category !== prevCategory) {
+          this.fetchData();
+        }
+      }
     
     fetchData() {
         api.get(`/${this.props.match.params.category}?page=${this.state.pageNumber}`).then(res => {
@@ -102,6 +115,10 @@ class Blog extends Component{
                             </div> */}
                         </div>
                         <div className="content-text">
+                            <div className="blog-btn-cat">
+                                <a className="rn-btn-cat" href={`/blogs/category/${blog.category}`}>{categoryMapping[blog.category] || 'OTHER'}</a>
+                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMMM Do, YYYY')}</a>
+                            </div>
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>
                     </div>
