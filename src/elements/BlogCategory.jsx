@@ -6,6 +6,7 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
+import BlogCategoryT from "../elements/blog/BlogCategory";
 
 
 import ReactPaginate from "react-paginate";
@@ -13,6 +14,7 @@ import axios from "axios";
 // import dotenv from 'dotenv';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { FiClock , FiUser, FiEdit, FiArrowLeft, FiLayers } from "react-icons/fi";
 import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 const queryUrl = process.env.REACT_APP_QUERY_URL
@@ -24,6 +26,26 @@ const api = axios.create({
     headers: {'Authorization': bearer},
 })
 
+const categoryMapping = {
+    '00' : 'Digital Marketing',
+    '01' : 'Content Marketing',
+    '02' : 'Social Media Marketing',
+    '03' : 'Email Marketing',
+    '04' : 'Affiliate Marketing',
+    '05' : 'Search Engine Optimization (SEO)',
+    '06' : 'Search Engine Advertising (SEA)',
+    '07' : 'Mobile Marketing',
+    '08' : 'Display Advertising',
+    '09' : 'Pay-Per-Click (PPC)',
+    '10' : 'Visual Identity',
+    '11' : 'Branding',
+    '12' : 'UI/UX',
+    '13' : 'Social Media Design',
+    '14' : 'Illustrations',
+    '15' : 'Motion Graphics',
+    '16' : 'Videography',
+    '17' : 'Stationary',
+};
 class Blog extends Component{
     constructor (props) {
         super(props)
@@ -96,16 +118,30 @@ class Blog extends Component{
                 <div className="rn-page-title-area pt--120 pb--60"  data-black-overlay="6">
                     <div className="container">
                         <div className="row">
+                            <div className="col-lg-6">
+                                <div className="header-btn pt--100">
+                                    <a className="rn-btn" href="/blogs">
+                                        <span><FiArrowLeft /> Return to Blogs</span>
+                                    </a>
+                                </div>
+                            </div>
                             <div className="col-lg-12">
-                                <div className="rn-page-title text-center pt--100">
+                                <div className="rn-page-title text-center">
                                     <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
-                                    <p>Find our most recent blog articles below. Category: {this.props.match.params.category}</p>
+                                    <p>Explore our blog section, where every article is a window into our passion for sharing valuable content with our readers. Start your journey now!</p>
+                                    <p>Selected Category: <strong>{categoryMapping[this.props.match.params.category]}</strong></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* End Breadcrump Area */}
+
+                <div>
+                    <div className="container">
+                        <BlogCategoryT column="col-lg-2 col-md-3 col-sm-3 col-4" />
+                    </div>
+                </div>
 
 
                 {/* Start Blog Area */}

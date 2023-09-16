@@ -24,7 +24,8 @@ class Blog extends Component{
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
                                     <h2 className="title theme-gradient textUpper">OUR BLOG</h2>
-                                    <p>Find our most recent blog articles below. You can now filter by Category.</p>
+                                    <p>Explore our blog section, where every article is a window into our passion for sharing valuable content with our readers. Start your journey now!</p>
+                                    <p>You can now filter by Category.</p>
                                 </div>
                             </div>
                         </div>
@@ -33,10 +34,10 @@ class Blog extends Component{
                 {/* End Breadcrump Area */}
 
                 <div>
-                        <div className="container">
-                            <BlogCategoryT column="col-lg-2 col-md-3 col-sm-3 col-4" />
-                        </div>
+                    <div className="container">
+                        <BlogCategoryT column="col-lg-2 col-md-3 col-sm-3 col-4" />
                     </div>
+                </div>
 
 
                 {/* Start Blog Area */}

@@ -21,7 +21,27 @@ import axios from "axios";
 // import { useParams } from 'react-router';
 // import dotenv from 'dotenv';
 
-// dotenv.config();
+const categoryMapping = {
+    '00' : 'Digital Marketing',
+    '01' : 'Content Marketing',
+    '02' : 'Social Media Marketing',
+    '03' : 'Email Marketing',
+    '04' : 'Affiliate Marketing',
+    '05' : 'Search Engine Optimization (SEO)',
+    '06' : 'Search Engine Advertising (SEA)',
+    '07' : 'Mobile Marketing',
+    '08' : 'Display Advertising',
+    '09' : 'Pay-Per-Click (PPC)',
+    '10' : 'Visual Identity',
+    '11' : 'Branding',
+    '12' : 'UI/UX',
+    '13' : 'Social Media Design',
+    '14' : 'Illustrations',
+    '15' : 'Motion Graphics',
+    '16' : 'Videography',
+    '17' : 'Stationary',
+};
+
 const queryUrl = process.env.REACT_APP_QUERY_URL
 const baseURL = process.env.REACT_APP_BASE_URL_POSTS
 const bearer = `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`
@@ -86,10 +106,10 @@ class BlogDetails extends Component{
                                     <br />
                                     {this.state.loading ? ( <ShimmerTitle line={3} className="darkModeShimmer" /> ) : ( <h2 className="title theme-gradient textUpper">{this.state.blogs.title}</h2> )}
                                     <ul className="blog-meta d-flex justify-content-center align-items-center title">
-                                        <li><FiClock />Created: {moment(this.state.blogs.created_at).fromNow()}</li>
-                                        <li><FiEdit />Updated: {moment(this.state.blogs.updated_at).fromNow()}</li>
+                                        <li><FiClock />Created: {moment(this.state.blogs.created_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.created_at).fromNow()})</li>
+                                        {/* <li><FiEdit />Updated: {moment(this.state.blogs.updated_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.updated_at).fromNow()})</li> */}
                                         <li><FiUser />Writer: {this.state.blogs.writer}</li>
-                                        <li><FiLayers />Category: {this.state.blogs.category}</li>
+                                        <li><FiLayers />Category: {categoryMapping[this.state.blogs.category]}</li>
                                         {/* <li><FiMessageCircle />15 Comments</li>
                                         <li><FiHeart />Like</li> */}
                                     </ul>
@@ -280,7 +300,7 @@ class BlogDetails extends Component{
                                         
 
                                         <br /><br /><br /><br /><br />
-                                        <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).fromNow()}</p>
+                                        <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.updated_at).fromNow()})</p>
                                     </div>
                                     )}
                                     </div>

@@ -40,7 +40,7 @@ const categoryMapping = {
     '15' : 'Motion Graphics',
     '16' : 'Videography',
     '17' : 'Stationary',
-  };
+};
 
 class BLogList extends Component{
     constructor () {
