@@ -56,6 +56,11 @@
     "contact_success": "Votre Message a été envoyé avec succès ! Nous vous contacterons bientôt.",
     "contact_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
 
+    "subscription_form": "Abonnement a la NewsLetter",
+    "subscription_form_description": "Vous pouvez vous abonner à notre lettre d'information par le biais de ce formulaire !",
+    "subscription_success": "Votre abonnement a été enregistré avec succès ! Nous vous contacterons bientôt.",
+    "subscription_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
+
     "packs": "Nos Packs",
     "request_quotation": "Demander un Devis",
 

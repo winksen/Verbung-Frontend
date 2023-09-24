@@ -56,6 +56,11 @@
     "contact_success": "Your Message has been successfully sent! We will contact you soon.",
     "contact_error": "An Error occured, please try again later, or contact us at contact@verbung.net",
 
+    "subscription_form": "NewsLetter Subscription",
+    "subscription_form_description": "You can subscribe to our newsletter through this form!",
+    "subscription_success": "Your Subscription has been successfully saved! We will contact you soon.",
+    "subscription_error": "An Error occured, please try again later, or contact us at contact@verbung.net",
+
     "packs": "Our Packs",
     "request_quotation": "Request a Quotation",
 

@@ -18,6 +18,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
 import Footer from "../component/footer/Footer";
+import NewsLetter from "../elements/NewsLetter";
 import Helmet from "../component/common/Helmet";
 import ServiceTwo from "../elements/service/ServiceTwo";
 import { portfolioSlick2 } from "../page-demo/script";
@@ -544,6 +545,10 @@ function MainDemo(props){
                         </div>
                     </div>
                     {/* End Portfolio Area */}
+
+                    {/* Start NewsLetter Style  */}
+                    <NewsLetter />
+                    {/* End NewsLetter Style  */}
 
                     {/* Start Footer Style  */}
                     <Footer />
