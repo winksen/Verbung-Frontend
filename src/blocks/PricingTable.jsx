@@ -16,7 +16,7 @@ const PricingTable = () => {
     
     return (
         <div className='active-dark'>
-            <PageHelmet pageTitle="VERBUNG // Packs" />
+            <PageHelmet pageTitle="VERBUNG | Packs" />
 
             {/* Start Header Area  */}
             <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />

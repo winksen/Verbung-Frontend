@@ -22,7 +22,7 @@ class About extends Component{
         return(
             <div className="active-dark">
             <React.Fragment>
-                <PageHelmet pageTitle='About' />
+                <PageHelmet pageTitle='VERBUNG | About' />
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 

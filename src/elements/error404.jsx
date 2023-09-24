@@ -12,7 +12,7 @@ import Footer from "../component/footer/FooterTwo";
             <>
                 <div className="active-dark">
                     <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
-                    <PageHelmet pageTitle="VERBUNG // 404" />
+                    <PageHelmet pageTitle="VERBUNG | 404" />
                     {/* Start Page Error  */}
                     <div className="active-darkless error-page-inner bg_color--4">
                         <div className="container">

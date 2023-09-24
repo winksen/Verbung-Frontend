@@ -74,7 +74,7 @@ class BlogDetails extends Component{
         return(
             <div className="active-dark">
             <React.Fragment>
-                <PageHelmet pageTitle='VERBUNG // Blogs' />
+                <PageHelmet pageTitle='VERBUNG | Blogs' />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 
                 

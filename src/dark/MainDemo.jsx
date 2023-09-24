@@ -404,7 +404,7 @@ function MainDemo(props){
                     :
                     ( */}
                     <div className="active-dark">
-                    <Helmet pageTitle="VERBUNG // Scale Now" />
+                    <Helmet pageTitle="VERBUNG | Scale Now" />
 
                     {/* Start Header Area  */}
                     <header className="header-area formobile-menu header--fixed default-color">

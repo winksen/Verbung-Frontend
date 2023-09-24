@@ -34,7 +34,7 @@ function Contact(props){
         return(
             <div className="active-dark"> 
                 <React.Fragment>
-                    <PageHelmet pageTitle="VERBUNG // Contact" />
+                    <PageHelmet pageTitle="VERBUNG | Contact" />
 
                     <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 

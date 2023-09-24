@@ -16,7 +16,7 @@ const ServicePR = () => {
         return(
             <div className="active-dark">
                 <React.Fragment>
-                <PageHelmet pageTitle="VERBUNG // Services" />
+                <PageHelmet pageTitle="VERBUNG | Services" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Service Area */}
