@@ -119,7 +119,7 @@ const INITIAL = {
             </div>
 
             <div className="rn-form-group">
-                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">{t("submit")}</button>
+                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">{t("subscribe")}</button>
             </div> 
 
             <div className="rn-form-group">

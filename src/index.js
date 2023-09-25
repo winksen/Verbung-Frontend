@@ -82,7 +82,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/category/:category`} component={BlogCategory}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/> */}
-                        
+                               
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
 
                         {/* DEACTIVATED PAGES */}
@@ -90,6 +90,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/>           
                         <Route exact path={`${process.env.PUBLIC_URL}/home-particles`} component={HomeParticles}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/dark-portfolio-landing`} component={DarkPortfolioLanding}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>

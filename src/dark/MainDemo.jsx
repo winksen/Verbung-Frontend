@@ -4,7 +4,13 @@ import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
 
-
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemPanel,
+    AccordionItemButton,
+} from 'react-accessible-accordion';
 import './i18next';
 import { loadLanguageFromLocalStorage } from './LanguageHelper';
 import { changeLanguage  } from './LanguageHelper';
@@ -549,6 +555,126 @@ function MainDemo(props){
                     {/* Start NewsLetter Style  */}
                     <NewsLetter />
                     {/* End NewsLetter Style  */}
+
+                    {/* Start Faq Area */}
+                    <div className="pv-feaq-area bg_color--3 ptb--120">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-8 offset-lg-2">
+                                    <div className="section-title text-left pb--30">
+                                        <p>Check out our FAQ section to see if we can help.</p>
+                                        <h2 className="theme-gradient">Do you have any Questions</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-8 offset-lg-2">
+                                    <div className="faq-area">
+                                        <Accordion className="accodion-style--1" preExpanded={'0'}>
+                                            <AccordionItem >
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        What is VERBUNG ? How does it work?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>Welcome to VERBUNG, Portfolio and Corporate Multi Purpose Template Built With React JS. NO jQuery!. It works too much faster loading speed and you can works too much comfortability.VERBUNG create your website so much faster, use to use and Well Documented Codes for your customization.</p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        How can I run VERBUNG ?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>You can run VERBUNG easily.
+                                                    First You'll need to have node and npm on your machine.
+                                                    So Please open your command prompt then check your node -v and npm -v Version.
+                                                    Goes To Your your command prompt: then
+                                                    First: <strong>npm install</strong></p>
+                                                    <p>At Last: <strong>npm run start</strong>. By the following way you can be run your project easily.</p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            {/* <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        How can I change my demo page instead of splash page?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <div>
+                                                        <p>
+                                                            You can be presenting any home page instead of splash page. http://localhost:3000 you can showing any page as your you are like. First you have to go index.js page then:
+                                                        </p>
+                                                        <p>First Step (replace your choose demo page): Example: import Demo form './home/MainDemo' Instead of './home/PortfolioLanding'</p>
+                                                        <p>Example: <a className="theme-gradient" href="https://www.dropbox.com/s/ysornwsweh836wi/change-home-page.png?dl=0">https://www.dropbox.com/s/ysornwsweh836wi/change-home-page.png?dl=0</a></p>
+                                                    </div>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        How can I get the customer support?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>
+                                                        After purchasing the product  need you any support you can be share with us with sending mail to <a className="theme-gradient" href="mailto:rainbowit10@gmail.com">rainbowit10@gmail.com</a>.
+                                                    </p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        Can I get update regularly and For how long do I get updates?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>
+                                                        Yes, We will get update the VERBUNG. And you can get it any time. Next time we will comes with more feature.
+                                                        You can be get update for unlimited times. Our dedicated team works for update.
+                                                    </p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        Can I change any component as I like?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>
+                                                        Yes, You can change any component as you like. And By the way you can build your website which you are choose.
+                                                    </p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem>
+
+                                            <AccordionItem>
+                                                <AccordionItemHeading>
+                                                    <AccordionItemButton>
+                                                        Can I build a complete project with this template?
+                                                    </AccordionItemButton>
+                                                </AccordionItemHeading>
+                                                <AccordionItemPanel>
+                                                    <p>
+                                                        Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.
+                                                    </p>
+                                                </AccordionItemPanel>
+                                            </AccordionItem> */}
+                                          
+                                        </Accordion>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                     {/* Start Faq Area */}
 
                     {/* Start Footer Style  */}
                     <Footer />
