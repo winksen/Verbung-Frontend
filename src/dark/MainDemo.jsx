@@ -426,11 +426,13 @@ function MainDemo(props){
                             </div>
                             <div className="header-right">
                                 <nav className="mainmenunav d-lg-block">
-                                    <Scrollspy className="mainmenu" items={['home','about','services','work','blog']} currentClassName="is-current" offset={-200}>
+                                    <Scrollspy className="mainmenu" items={['home','about','services','work','newsletter','faq','blog']} currentClassName="is-current" offset={-200}>
                                         <li><a href="#home">{t("home")}</a></li>
                                         <li><a href="#about">{t("about")}</a></li>
                                         <li><a href="#services">Services</a></li>
                                         <li><a href="#work">{t("work")}</a></li>
+                                        <li><a href="#newsletter">NewsLetter</a></li>
+                                        <li><a href="#faq">FAQ</a></li>
                                         <li><a href="/blogs">Blog<IoIosArrowForward /></a></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
@@ -553,17 +555,19 @@ function MainDemo(props){
                     {/* End Portfolio Area */}
 
                     {/* Start NewsLetter Style  */}
-                    <NewsLetter />
+                    <div id="newsletter">
+                        <NewsLetter />
+                    </div>
                     {/* End NewsLetter Style  */}
 
                     {/* Start Faq Area */}
-                    <div className="pv-feaq-area bg_color--3 ptb--120">
+                    <div className="pv-feaq-area bg_color--3 ptb--120 active-darkless" id="faq">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="section-title text-left pb--30">
                                         <p>Check out our FAQ section to see if we can help.</p>
-                                        <h2 className="theme-gradient">Do you have any Questions</h2>
+                                        <h2 className="theme-gradient textUpper">Do you have any Questions</h2>
                                     </div>
                                 </div>
                             </div>

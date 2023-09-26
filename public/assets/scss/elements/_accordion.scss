@@ -1,3 +1,19 @@
+:root {
+    --font-color: #001e21;
+    --second-font-color: #022726;
+    --border-color: rgba(62, 66, 66, 0.25);
+    --background-color: #eee;
+    --backgroundLess-color: #ddd;
+}
+  
+[data-theme="dark"] {
+    --font-color: #fff;
+    --second-font-color: rgba(216, 216, 216, 0.75);
+    --border-color: rgba(216, 216, 216, 0.25);
+    --background-color: #001e21;
+    --backgroundLess-color: #022726;
+}
+
 .accodion-style--1{
     .accordion__item{
         border: none !important;
@@ -9,7 +25,7 @@
             margin-bottom: 5px;
             .accordion__button {
                 background: none;
-                color: #1f1f25;
+                color: var(--font-color);
                 font-size: 16px;
                 font-weight: 500;
                 position: relative;
@@ -32,7 +48,7 @@
                     bottom: 0;
                     width: 50px;
                     height: 2px;
-                    background: rgba(0,0,0,0.2);
+                    background: var(--second-font-color);
                     transition: 0.3s;
                 }
                 &::before{
@@ -50,7 +66,7 @@
             padding: 0 0 15px 0;
             margin: 0;
             font-weight: 300;
-            color: #717173;
+            color: var(--second-font-color);
             animation: fadeInUp 0.1s;
         }
         &+.accordion__item {

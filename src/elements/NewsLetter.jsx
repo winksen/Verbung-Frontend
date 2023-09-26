@@ -39,7 +39,7 @@ function NewsLetter(props){
                     {/* <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" /> */}
 
                     {/* Start Contact Page Area  */}
-                    <div className="rn-contact-page ptb--120 active-darkless">
+                    <div className="rn-contact-page ptb--120 active-dark">
                         <NewsLetterOne />
                     </div>
                     {/* End Contact Page Area  */}

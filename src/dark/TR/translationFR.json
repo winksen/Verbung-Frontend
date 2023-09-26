@@ -45,6 +45,8 @@
     "phone": "Numero de Telephone",
     "email": "Adresse E-mail",
     "full_name": "Nom Complet",
+    "first_name": "Prénom",
+    "last_name": "Nom",
     "location": "Localisation",
     "subject": "Sujet",
     "message": "Votre Message",
@@ -57,7 +59,7 @@
     "contact_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
 
     "subscription_form": "Abonnement a la NewsLetter",
-    "subscription_form_description": "Vous pouvez vous abonner à notre lettre d'information par le biais de ce formulaire !",
+    "subscription_form_description": "S'abonner à nos dernières lettres d'information et offres.",
     "subscription_success": "Votre abonnement a été enregistré avec succès ! Nous vous contacterons bientôt.",
     "subscription_error": "Une Erreur s'est produite, veuillez réessayer plus tard ou nous contacter à l'adresse suivante : contact@verbung.net",
     "subscribe": "S'abonner",

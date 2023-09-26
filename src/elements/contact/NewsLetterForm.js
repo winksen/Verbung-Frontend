@@ -5,7 +5,8 @@ import { loadLanguageFromLocalStorage } from '../../dark/LanguageHelper';
 import axios from 'axios';
 
 const INITIAL = {
-    name: "",
+    first_name: "",
+    last_name: "",
     email: "",
     cat_1: "0",
     cat_2: "0",
@@ -52,11 +53,23 @@ const INITIAL = {
           <form className="contact-form--1" onSubmit={handleSubmit}>
             <div className="rn-form-group">
                 <input className='textInputField'
-                id="name"
+                id="first_name"
                 type="text"
-                name="name"
-                placeholder={t("full_name")}
-                value={data.name}
+                name="first_name"
+                placeholder={t("first_name")}
+                value={data.first_name}
+                onChange={handleChange}
+                required
+                />
+            </div>
+
+            <div className="rn-form-group">
+                <input className='textInputField'
+                id="last_name"
+                type="text"
+                name="last_name"
+                placeholder={t("last_name")}
+                value={data.last_nameme}
                 onChange={handleChange}
                 required
                 />
@@ -72,6 +85,13 @@ const INITIAL = {
                 onChange={handleChange}
                 required
                 />
+            </div>
+
+            <div className="rn-form-group">
+              <input type="checkbox" id="switch" checked disabled required/><label for="switch">Offers</label>
+              <input type="checkbox" id="switch1" /><label for="switch1">Blog</label>
+              <input type="checkbox" id="switch2" /><label for="switch2">Events</label>
+              <input type="checkbox" id="switch3" /><label for="switch3">Hiring</label>
             </div>
 
             <div className="rn-form-group">
