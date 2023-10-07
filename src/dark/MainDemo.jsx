@@ -17,12 +17,13 @@ import { changeLanguage  } from './LanguageHelper';
 import { useTranslation } from "react-i18next";
 
 import { RiInstagramFill } from "react-icons/ri";
-import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
+import { FiChevronUp , FiX , FiMenu, FiLink2 } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 
 import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
+import Calendly from "../component/Calendly";
 import Footer from "../component/footer/Footer";
 import NewsLetter from "../elements/NewsLetter";
 import Helmet from "../component/common/Helmet";
@@ -433,7 +434,8 @@ function MainDemo(props){
                                         <li><a href="#work">{t("work")}</a></li>
                                         <li><a href="#newsletter">NewsLetter</a></li>
                                         <li><a href="#faq">FAQ</a></li>
-                                        <li><a href="/blogs">Blog<IoIosArrowForward /></a></li>
+                                        <li><a href="/blogs">Blog <FiLink2 /></a></li>
+                                        <li><a href="/booking">Booking <FiLink2 /></a></li>
                                         <li className="dark-mode-switch">
                                             <FormGroup>
                                                 <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }}  defaultChecked={defaultDark} />} label="" onChange={toggleTheme} defaultChecked={defaultDark}/>
@@ -679,6 +681,12 @@ function MainDemo(props){
                         </div>        
                     </div>
                      {/* Start Faq Area */}
+
+                     {/* Start Calendly Style  */}
+                     {/* <div className="pv-feaq-area bg_color--3 ptb--120 active-darkless" id="faq">
+                        <Calendly />
+                    </div> */}
+                    {/* End Calendly Style  */}
 
                     {/* Start Footer Style  */}
                     <Footer />

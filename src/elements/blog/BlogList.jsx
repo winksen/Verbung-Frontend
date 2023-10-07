@@ -108,7 +108,7 @@ class BLogList extends Component{
             <div>
             {this.state.loading ? (
                 <div className="darkModeShimmerGallery">
-                    <ShimmerSimpleGallery card imageHeight={300} caption className="darkModeShimmerGallery" />
+                    <ShimmerSimpleGallery card imageHeight={400} caption className="darkModeShimmerGallery" />
                 </div>
             ) : (
              <Fragment>

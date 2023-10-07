@@ -40,9 +40,10 @@ function Footer(props){
                                         <div className="footer-link">
                                             <h4 className="textUpper">{t("quick_links")}</h4>
                                             <ul className="ft-link">
+                                                <li><a href="/booking">Book A Meeting</a></li>
                                                 <li><a href="/packs">Packs</a></li>
                                                 <li><a href="/about">{t("about")}</a></li>
-                                                <li><a href="/contact">{t("lets_talk")}</a></li>
+                                                {/* <li><a href="/contact">{t("lets_talk")}</a></li> */}
                                                 <li><a href="/blogs">Blog</a></li>
                                             </ul>
                                         </div>

@@ -18,6 +18,7 @@ import BlogCategory from "./elements/BlogCategory";
 import BlogDetails from "./elements/BlogDetails";
 import error404 from "./elements/error404";
 import About from "./elements/About";
+import Calendly from "./elements/Calendly";
 
 import PricingTable from "./blocks/PricingTable";
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
@@ -81,6 +82,8 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/category/:category`} component={BlogCategory}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
+
+                        <Route exact path={`${process.env.PUBLIC_URL}/booking`} component={Calendly}/>
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/> */}
                                
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
