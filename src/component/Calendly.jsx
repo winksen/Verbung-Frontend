@@ -16,7 +16,7 @@ function CalendlyWidget() {
   }, []);
 
   return (
-    <div className="calendly-inline-widget" data-url="https://calendly.com/verbung_consulting?primary_color=4cbd94" style={{ minWidth: '320px', height: '700px' }}></div>
+    <div className="calendly-inline-widget" data-url="https://calendly.com/verbung_consulting?hide_gdpr_banner=1&primary_color=4cbd94" style={{ minWidth: '320px', height: '700px' }}></div>
   );
 }
 

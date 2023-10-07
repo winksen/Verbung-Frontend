@@ -48,6 +48,14 @@ const categoryMapping = {
     '15' : 'Motion Graphics',
     '16' : 'Videography',
     '17' : 'Stationary',
+    '20' : 'Web & Mobile',
+    '21' : 'Dev Hacks',
+    '22' : 'Programming Languages',
+    '23' : 'Frameworks',
+    '24' : 'Tools and Setups',
+    '25' : 'Website Strategies',
+    '26' : 'Monitoring',
+    '27' : 'Pipelines',
 };
 class Blog extends Component{
     constructor () {

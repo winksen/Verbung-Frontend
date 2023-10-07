@@ -2,6 +2,7 @@ import React ,{ Component }from "react";
 import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 import { BiBookContent, BiAnalyse, BiAt, BiSearch, BiSearchAlt, BiUserVoice, BiMobileAlt, BiWallet } from "react-icons/bi";
 import { BiVector, BiIntersect, BiMessageEdit, BiNetworkChart, BiCaretRightCircle, BiCameraMovie, BiFile } from "react-icons/bi";
+import { BiCodeCurly, BiCode, BiMicrochip, BiSlideshow, BiSlider, BiPulse, BiReset} from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
@@ -168,6 +169,17 @@ class BlogCategoryT extends Component{
                                         <li><Link to="/blogs/category/15"><BiCaretRightCircle /> Motion Graphics</Link></li>
                                         <li><Link to="/blogs/category/16"><BiCameraMovie /> Videography</Link></li>
                                         <li><Link to="/blogs/category/17"><BiFile /> Stationary</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/blogs/category/20">WEB & MOBILE <IoIosArrowDown /></Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/blogs/category/21"><BiCodeCurly /> Dev Hacks</Link></li>
+                                        <li><Link to="/blogs/category/22"><BiCode /> Programming Languages</Link></li>
+                                        <li><Link to="/blogs/category/23"><BiMicrochip /> Frameworks</Link></li>
+                                        <li><Link to="/blogs/category/24"><BiSlideshow /> Tools and Setups</Link></li>
+                                        <li><Link to="/blogs/category/25"><BiSlider /> Website Strategies</Link></li>
+                                        <li><Link to="/blogs/category/26"><BiPulse /> Monitoring</Link></li>
+                                        <li><Link to="/blogs/category/27"><BiReset /> Pipelines</Link></li>
                                     </ul>
                                 </li>
                             </ul>
