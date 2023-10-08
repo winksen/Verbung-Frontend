@@ -125,7 +125,7 @@ class Blog extends Component{
                         <div className="content-text">
                             <div className="blog-btn-cat">
                                 <a className="rn-btn-cat" href={`/blogs/category/${blog.category}`}>{categoryMapping[blog.category] || 'OTHER'}</a>
-                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMMM Do, YYYY')}</a>
+                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMM Do, YYYY')}</a>
                             </div>
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>

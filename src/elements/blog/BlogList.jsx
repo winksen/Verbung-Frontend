@@ -40,6 +40,14 @@ const categoryMapping = {
     '15' : 'Motion Graphics',
     '16' : 'Videography',
     '17' : 'Stationary',
+    '20' : 'Web & Mobile',
+    '21' : 'Dev Hacks',
+    '22' : 'Programming Languages',
+    '23' : 'Frameworks',
+    '24' : 'Tools and Setups',
+    '25' : 'Website Strategies',
+    '26' : 'Monitoring',
+    '27' : 'Pipelines',
 };
 
 class BLogList extends Component{
@@ -96,7 +104,7 @@ class BLogList extends Component{
                         <div className="content-text">
                             <div className="blog-btn-cat">
                                 <a className="rn-btn-cat" href={`/blogs/category/${blog.category}`}>{categoryMapping[blog.category] || 'OTHER'}</a>
-                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMMM Do, YYYY')}</a>
+                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMM Do, YYYY')}</a>
                             </div>
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>

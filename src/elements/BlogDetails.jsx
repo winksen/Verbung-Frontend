@@ -6,7 +6,7 @@ import { ShimmerTitle, ShimmerText, ShimmerThumbnail } from "react-shimmer-effec
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import { FiClock , FiUser, FiEdit, FiArrowLeft, FiLayers } from "react-icons/fi";
+import { FiClock , FiUser, FiEdit, FiArrowLeft, FiLayers, FiHash } from "react-icons/fi";
 import { FiChevronUp } from "react-icons/fi";
 
 import PageHelmet from "../component/common/Helmet";
@@ -40,6 +40,14 @@ const categoryMapping = {
     '15' : 'Motion Graphics',
     '16' : 'Videography',
     '17' : 'Stationary',
+    '20' : 'Web & Mobile',
+    '21' : 'Dev Hacks',
+    '22' : 'Programming Languages',
+    '23' : 'Frameworks',
+    '24' : 'Tools and Setups',
+    '25' : 'Website Strategies',
+    '26' : 'Monitoring',
+    '27' : 'Pipelines',
 };
 
 const queryUrl = process.env.REACT_APP_QUERY_URL
@@ -301,6 +309,7 @@ class BlogDetails extends Component{
 
                                         <br /><br /><br /><br /><br />
                                         <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.updated_at).fromNow()})</p>
+                                        <p><FiHash /> Number of Revisions: {this.state.blogs.revisions}</p>
                                     </div>
                                     )}
                                     </div>
