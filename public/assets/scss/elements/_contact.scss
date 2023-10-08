@@ -30,13 +30,14 @@ select:-webkit-autofill:focus {
 }
 
 .contact-form--1 {
+    
     label {
-        display: block;
-        margin-bottom: 0;
+        margin-bottom: 15px;
+        margin-right: 80px;
     }
 
     .textInputField {
-        display: block;
+        display: inline-block;
         width: 100%;
         padding: 0 20px;
         border: 2px solid var(--border-color);
@@ -65,7 +66,7 @@ select:-webkit-autofill:focus {
       
       label {
         cursor: pointer;
-        text-indent: 75px;
+        text-indent: 60px;
         width: 50px;
         height: 25px;
         background: grey;

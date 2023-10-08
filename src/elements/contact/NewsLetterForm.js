@@ -8,7 +8,7 @@ const INITIAL = {
     first_name: "",
     last_name: "",
     email: "",
-    cat_1: "0",
+    cat_1: "1",
     cat_2: "0",
     cat_3: "0",
     cat_4: "0"
@@ -45,8 +45,13 @@ const INITIAL = {
     }
   
     function handleChange(e) {
-      const { id, value } = e.target; //destructuring 
-      setData({...data, [id]:value})
+      const { name, value, type, checked } = e.target;
+      // Check if the input element is a checkbox
+      if (type === 'checkbox') {
+        setData({ ...data, [name]: checked ? '1' : '0' });
+      } else {
+        setData({ ...data, [name]: value });
+      }
     }
   
     return (
@@ -88,13 +93,13 @@ const INITIAL = {
             </div>
 
             <div className="rn-form-group">
-              <input type="checkbox" id="switch" checked disabled required/><label for="switch">Offers</label>
-              <input type="checkbox" id="switch1" /><label for="switch1">Blog</label>
-              <input type="checkbox" id="switch2" /><label for="switch2">Events</label>
-              <input type="checkbox" id="switch3" /><label for="switch3">Hiring</label>
+              <input type="checkbox" name="cat_1" id="cat_1" value={data.cat_1} onChange={handleChange} checked disabled required/><label for="cat_1">Offers</label>
+              <input type="checkbox" name="cat_2" id="cat_2" value={data.cat_2} onChange={handleChange} /><label for="cat_2">Blog</label>
+              <input type="checkbox" name="cat_3" id="cat_3" value={data.cat_3} onChange={handleChange} /><label for="cat_3">Events</label>
+              <input type="checkbox" name="cat_4" id="cat_4" value={data.cat_4} onChange={handleChange} /><label for="cat_4">Hiring</label>
             </div>
 
-            <div className="rn-form-group">
+            {/* <div className="rn-form-group">
                 <input className='textInputField'
                 id="cat_1"
                 type="checkbox"
@@ -136,7 +141,7 @@ const INITIAL = {
                 value={data.cat_4}
                 onChange={handleChange}
                 />
-            </div>
+            </div> */}
 
             <div className="rn-form-group">
                 <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">{t("subscribe")}</button>
