@@ -20,6 +20,8 @@ const INITIAL = {
     const [data, setData] = useState(INITIAL);
     const [subscription, setSubscription] = useState(null);
     const [result, showResult ] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
     const { t } = useTranslation();
     useEffect(() => {
@@ -29,6 +31,7 @@ const INITIAL = {
     function handleSubmit(e) {
       e.preventDefault();
   
+      setLoading(true);
       setSubscription(null);
   
       // REPLACE WITH DYNAMIC TOKEN LATER
@@ -38,10 +41,14 @@ const INITIAL = {
           setData(res.data);
           setSubscription(res.subscription);
           showResult(true);
+          setSubmitted(true);
         })
         .catch(err => {
           setSubscription(err.subscription);
         })
+        .finally(() => {
+          setLoading(false); // Set loading to false when the request is complete
+        });
     }
   
     function handleChange(e) {
@@ -52,6 +59,11 @@ const INITIAL = {
       } else {
         setData({ ...data, [name]: value });
       }
+    }
+
+    function handleReset() {
+      setSubscription(null);
+      showResult(false);
     }
   
     return (
@@ -99,53 +111,14 @@ const INITIAL = {
               <input type="checkbox" name="cat_4" id="cat_4" value={data.cat_4} onChange={handleChange} /><label for="cat_4">Hiring</label>
             </div>
 
-            {/* <div className="rn-form-group">
-                <input className='textInputField'
-                id="cat_1"
-                type="checkbox"
-                name="Category 1"
-                placeholder={t("email")}
-                value={data.cat_1}
-                onChange={handleChange}
-                />
+            <div className="rn-form-group">
+              <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe" disabled={submitted}>
+                {loading ? 'Loading...' : t('subscribe')}
+              </button>
+              {/* <button type="button" className="rn-button-style--2 btn-solid" onClick={handleReset}>
+                {t('reset')}
+              </button> */}
             </div>
-
-            <div className="rn-form-group">
-                <input className='textInputField'
-                id="cat_2"
-                type="checkbox"
-                name="Category 2"
-                placeholder={t("email")}
-                value={data.cat_2}
-                onChange={handleChange}
-                />
-            </div>
-
-            <div className="rn-form-group">
-                <input className='textInputField'
-                id="cat_3"
-                type="checkbox"
-                name="Category 3"
-                placeholder={t("email")}
-                value={data.cat_3}
-                onChange={handleChange}
-                />
-            </div>
-
-            <div className="rn-form-group">
-                <input className='textInputField'
-                id="cat_4"
-                type="checkbox"
-                name="Category 4"
-                placeholder={t("email")}
-                value={data.cat_4}
-                onChange={handleChange}
-                />
-            </div> */}
-
-            <div className="rn-form-group">
-                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">{t("subscribe")}</button>
-            </div> 
 
             <div className="rn-form-group">
                 {result ? <p className="success-message">{t("subscription_success")}</p> : null}

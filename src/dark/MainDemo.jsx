@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import Scrollspy from 'react-scrollspy';
 import ScrollToTop from 'react-scroll-up';
 
+import axios from 'axios';
+
 import {
     Accordion,
     AccordionItem,
@@ -19,6 +21,7 @@ import { useTranslation } from "react-i18next";
 import { RiInstagramFill } from "react-icons/ri";
 import { FiChevronUp , FiX , FiMenu, FiLink2 } from "react-icons/fi";
 import { FaFacebookF , FaLinkedinIn , FaTwitter, FaGlobe, FaYoutube } from "react-icons/fa";
+import { FiCast , FiMaximize , FiUsers , FiMonitor } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 
 import SliderOne from "../component/slider/SliderOne";
@@ -191,6 +194,43 @@ const PortfolioList2 = [
     },
 ]
 
+const featureList = [
+    {
+        icon:  <FiCast />,
+        title: 'DIGITAL MARKETING',
+        subtitle: ''
+    },
+    {
+        icon: <FiMaximize />,
+        title: 'VISUAL IDENTITY',
+        subtitle: ''
+    },
+    {
+        icon: <FiMonitor />,
+        title: 'WEB AND MOBILE',
+        subtitle: ''
+    },
+    {
+        icon: <FiUsers />,
+        title: 'PRESS RELATION',
+        subtitle: ''
+    },
+]
+
+const queryUrl = process.env.REACT_APP_QUERY_URL;
+const baseURL = process.env.REACT_APP_BASE_URL_QUESTIONS;
+const bearer = `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`;
+
+const api = axios.create({
+  baseURL: baseURL,
+  headers: { 'Authorization': bearer },
+});
+
+const categoryMapping = {
+  '0': 'General',
+  '1': 'Digital Marketing',
+};
+
 
 function MainDemo(props){
     // constructor(props) {
@@ -214,13 +254,23 @@ function MainDemo(props){
         setSelectedLanguage(newLanguage);
     };
     const [selectedLanguage, setSelectedLanguage] = useState('en');
+    const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
         const savedLanguage = loadLanguageFromLocalStorage();
-        if (savedLanguage) {
-        setSelectedLanguage(savedLanguage);
-        }
+        if (savedLanguage) { setSelectedLanguage(savedLanguage); }
+        fetchData();
     }, []);
+
+    const fetchData = () => {
+        api.get(`/category/0`)
+          .then((res) => {
+            setQuestions(res.data);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      };
 
     const menuTrigger = () => {
         document.querySelector('.header-wrapper').classList.toggle('menu-open')
@@ -402,6 +452,9 @@ function MainDemo(props){
         const hoverBorderColor = '#1C9D79';
 
         const classes = useStyles();
+
+        const displayQuestions = questions;
+        console.log(displayQuestions);
         return(
             <div className="active-dark">
                 {/* {
@@ -577,108 +630,46 @@ function MainDemo(props){
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="faq-area">
                                         <Accordion className="accodion-style--1" preExpanded={'0'}>
-                                            <AccordionItem >
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        What is VERBUNG ? How does it work?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>Welcome to VERBUNG, Portfolio and Corporate Multi Purpose Template Built With React JS. NO jQuery!. It works too much faster loading speed and you can works too much comfortability.VERBUNG create your website so much faster, use to use and Well Documented Codes for your customization.</p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        How can I run VERBUNG ?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>You can run VERBUNG easily.
-                                                    First You'll need to have node and npm on your machine.
-                                                    So Please open your command prompt then check your node -v and npm -v Version.
-                                                    Goes To Your your command prompt: then
-                                                    First: <strong>npm install</strong></p>
-                                                    <p>At Last: <strong>npm run start</strong>. By the following way you can be run your project easily.</p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            {/* <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        How can I change my demo page instead of splash page?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <div>
-                                                        <p>
-                                                            You can be presenting any home page instead of splash page. http://localhost:3000 you can showing any page as your you are like. First you have to go index.js page then:
-                                                        </p>
-                                                        <p>First Step (replace your choose demo page): Example: import Demo form './home/MainDemo' Instead of './home/PortfolioLanding'</p>
-                                                        <p>Example: <a className="theme-gradient" href="https://www.dropbox.com/s/ysornwsweh836wi/change-home-page.png?dl=0">https://www.dropbox.com/s/ysornwsweh836wi/change-home-page.png?dl=0</a></p>
-                                                    </div>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        How can I get the customer support?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>
-                                                        After purchasing the product  need you any support you can be share with us with sending mail to <a className="theme-gradient" href="mailto:rainbowit10@gmail.com">rainbowit10@gmail.com</a>.
-                                                    </p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        Can I get update regularly and For how long do I get updates?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>
-                                                        Yes, We will get update the VERBUNG. And you can get it any time. Next time we will comes with more feature.
-                                                        You can be get update for unlimited times. Our dedicated team works for update.
-                                                    </p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        Can I change any component as I like?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>
-                                                        Yes, You can change any component as you like. And By the way you can build your website which you are choose.
-                                                    </p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem>
-
-                                            <AccordionItem>
-                                                <AccordionItemHeading>
-                                                    <AccordionItemButton>
-                                                        Can I build a complete project with this template?
-                                                    </AccordionItemButton>
-                                                </AccordionItemHeading>
-                                                <AccordionItemPanel>
-                                                    <p>
-                                                        Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.
-                                                    </p>
-                                                </AccordionItemPanel>
-                                            </AccordionItem> */}
-                                          
+                                            {displayQuestions.map((question , index) => (
+                                                <div className="" key={index}>
+                                                    <AccordionItem >
+                                                        <AccordionItemHeading>
+                                                            <AccordionItemButton>
+                                                                {question.question}
+                                                            </AccordionItemButton>
+                                                        </AccordionItemHeading>
+                                                        <AccordionItemPanel>
+                                                            <p>{question.answer}</p>
+                                                        </AccordionItemPanel>
+                                                    </AccordionItem>
+                                                </div>
+                                            ))}
                                         </Accordion>
                                     </div>
                                 </div>
                             </div>
-                        </div>        
+
+                        </div>
+                        <br />
+                        <div className="wrapper plr--120">
+                            <div className="row">
+                                {/* Start Single Feature  */}
+                                {featureList.map((value, i) => (
+                                    <div className="col-lg-6 col-xl-3 col-md-6 col-sm-6 col-12" key={i}>
+                                        <div className="service service__style--2">
+                                            <div className="icon">
+                                                {value.icon}
+                                            </div>
+                                            <div className="content">
+                                                <h3 className="title">{value.title}</h3>
+                                                <p className="subtitle">{value.subtitle}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                                {/* End Single Feature  */}
+                            </div>
+                        </div>     
                     </div>
                      {/* Start Faq Area */}
 
