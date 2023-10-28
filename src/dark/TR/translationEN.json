@@ -16,15 +16,21 @@
     "about_who_are_we": "Who Are We",
     "about_description2": "We are more than a typical communications agency; we are an agency of creative and strategic thinkers with brilliant minds working hand in hand with each client to achieve their digital business goals.",
 
-    "services_description": "We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.",
     "digitalmarketing": "Digital Marketing",
-    "digitalmarketing_description": "We build ROI centric campaigns that will take your business to the next level.",
     "visualidentity": "Visual Identity",
-    "visualidentity_description": "Good graphic design has the ability to connect with your audience and reach your business goals.",
     "webmobile": "Web and Mobile",
-    "webmobile_description": "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
     "pressrelation": "Press Relation",
-    "pressrelation_description": "The best way to get your news in front of the journalists who matter.",
+
+    "services_description": "We offer services from across the full marketing mix to a range of clients in both B2C and B2B environments.",
+    "services_digitalmarketing_description": "We build ROI centric campaigns that will take your business to the next level.",
+    "services_visualidentity_description": "Good graphic design has the ability to connect with your audience and reach your business goals.",
+    "services_webmobile_description": "Your website is the first place your customers will look. It is, in essence, your first impression and your sales tool.",
+    "services_pressrelation_description": "The best way to get your news in front of the journalists who matter.",
+
+    "faq_digitalmarketing_description": "Frequently Asked Questions about Digital Marketing.",
+    "faq_visualidentity_description": "Frequently Asked Questions about Visual Identity.",
+    "faq_webmobile_description": "Frequently Asked Questions about Web & Mobile.",
+    "faq_pressrelation_description": "Frequently Asked Questions about Press Relation.",
 
     "our_work_title": "Our Work",
     "our_work_description": "We have a passionate team who puts their heart into what we do, so we would like to showcase you some of our work.",
@@ -69,5 +75,10 @@
 
     "service_below": "Services Details Below",
     "service_other": "Other Services",
-    "service_other_check": "Check out our other services"
+    "service_other_check": "Check out our other services",
+
+    "faq_other": "Other FAQs",
+    "faq_other_check": "Check out our other FAQs",
+    "faq_check": "Check out our FAQ section to see if we can help.",
+    "faq_check_question": "Do you have any Questions"
 }

@@ -11,25 +11,25 @@ const ServiceList = [
         icon: <FiCast />,
         title: 'digitalmarketing',
         link: '/services/digitalmarketing',
-        description: 'digitalmarketing_description'
+        description: 'services_digitalmarketing_description'
     },
     {
         icon: <FiMaximize />,
         title: 'visualidentity',
         link: '/services/visualidentity',
-        description: 'visualidentity_description'
+        description: 'services_visualidentity_description'
     },
     {
         icon: <FiMonitor />,
         title: 'webmobile',
         link: '/services/webmobile',
-        description: 'webmobile_description'
+        description: 'services_webmobile_description'
     },
     {
         icon: <FiUsers />,
         title: 'pressrelation',
         link: '/services/pressrelation',
-        description: 'pressrelation_description'
+        description: 'services_pressrelation_description'
     }
 ]
 

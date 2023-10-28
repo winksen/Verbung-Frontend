@@ -197,27 +197,27 @@ const PortfolioList2 = [
 const featureList = [
     {
         icon:  <FiCast />,
-        title: 'DIGITAL MARKETING',
+        title: 'digitalmarketing',
         link: '/faq/digitalmarketing',
-        subtitle: 'Frequently Asked Questions about Digital Marketing'
+        subtitle: 'faq_digitalmarketing_description'
     },
     {
         icon: <FiMaximize />,
-        title: 'VISUAL IDENTITY',
+        title: 'visualidentity',
         link: '/faq/visualidentity',
-        subtitle: 'Frequently Asked Questions about Visual Identity'
+        subtitle: 'faq_visualidentity_description'
     },
     {
         icon: <FiMonitor />,
-        title: 'WEB AND MOBILE',
+        title: 'webmobile',
         link: '/faq/webmobile',
-        subtitle: 'Frequently Asked Questions about Web & Mobile'
+        subtitle: 'faq_webmobile_description'
     },
     {
         icon: <FiUsers />,
-        title: 'PRESS RELATION',
+        title: 'pressrelation',
         link: '/faq/pressrelation',
-        subtitle: 'Frequently Asked Questions about Press Relation'
+        subtitle: 'faq_pressrelation_description'
     },
 ]
 
@@ -625,8 +625,8 @@ function MainDemo(props){
                             <div className="row">
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="section-title text-left pb--30">
-                                        <p>Check out our FAQ section to see if we can help.</p>
-                                        <h2 className="theme-gradient textUpper">Do you have any Questions</h2>
+                                        <p>{t("faq_check")}</p>
+                                        <h2 className="theme-gradient textUpper">{t("faq_check_question")}</h2>
                                     </div>
                                 </div>
                             </div>
@@ -666,8 +666,8 @@ function MainDemo(props){
                                                     {value.icon}
                                                 </div>
                                                 <div className="content">
-                                                    <h3 className="title">{value.title}</h3>
-                                                    <p className="subtitle">{value.subtitle}</p>
+                                                    <h3 className="title textUpper">{t(value.title)}</h3>
+                                                    <p className="subtitle">{t(value.subtitle)}</p>
                                                 </div>
                                             </div>
                                         </a>

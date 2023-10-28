@@ -192,10 +192,18 @@ class Header extends Component{
                                 </li> */}
                                 <li className="has-droupdown"><Link>Services</Link>
                                     <ul className="submenu">
-                                        <li><Link to="/services/digitalmarketing">Digital Marketing</Link></li>
-                                        <li><Link to="/services/visualidentity">Visual Identity</Link></li>
-                                        <li><Link to="/services/webmobile">Web &amp; Mobile</Link></li>
-                                        <li><Link to="/services/pressrelation">Press Relation</Link></li>
+                                        <li><Link to="/services/digitalmarketing">{t("digitalmarketing")}</Link></li>
+                                        <li><Link to="/services/visualidentity">{t("visualidentity")}</Link></li>
+                                        <li><Link to="/services/webmobile">{t("webmobile")}</Link></li>
+                                        <li><Link to="/services/pressrelation">{t("pressrelation")}</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link>FAQs</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/faq/digitalmarketing">{t("digitalmarketing")}</Link></li>
+                                        <li><Link to="/faq/visualidentity">{t("visualidentity")}</Link></li>
+                                        <li><Link to="/faq/webmobile">{t("webmobile")}</Link></li>
+                                        <li><Link to="/faq/pressrelation">{t("pressrelation")}</Link></li>
                                     </ul>
                                 </li>
                                 {/* <li><Link to="/about" >About</Link></li> */}

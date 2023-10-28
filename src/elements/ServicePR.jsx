@@ -27,7 +27,7 @@ const ServicePR = () => {
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
                                     <h2 className="textUpper">{t("pressrelation")}</h2>
-                                    <p>{t("pressrelation_description")}</p>
+                                    <p>{t("services_pressrelation_description")}</p>
                                     <p>{t("service_below")}</p>
                                     <h3 className="title theme-gradient">•</h3>
                                 </div>
@@ -62,7 +62,7 @@ const ServicePR = () => {
                                         </div>
                                         <div className="content">
                                             <h3 className="title textUpper">{t("digitalmarketing")}</h3>
-                                            <p>{t("digitalmarketing_description")}</p>
+                                            <p>{t("services_digitalmarketing_description")}</p>
                                         </div>
                                     </div>
                                 </a>
@@ -75,7 +75,7 @@ const ServicePR = () => {
                                         </div>
                                         <div className="content">
                                             <h3 className="title textUpper">{t("visualidentity")}</h3>
-                                            <p>{t("visualidentity_description")}</p>
+                                            <p>{t("services_visualidentity_description")}</p>
                                         </div>
                                     </div>
                                 </a>
@@ -88,7 +88,7 @@ const ServicePR = () => {
                                         </div>
                                         <div className="content">
                                             <h3 className="title textUpper">{t("webmobile")}</h3>
-                                            <p>{t("webmobile_description")}</p>
+                                            <p>{t("services_webmobile_description")}</p>
                                         </div>
                                     </div>
                                 </a>

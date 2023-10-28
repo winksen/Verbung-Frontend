@@ -16,15 +16,21 @@
     "about_who_are_we": "Qui Sommes-Nous",
     "about_description2": "Nous sommes plus qu'une agence de communication classique ; nous sommes une agence de créatifs et de stratèges avec des esprits brillants qui travaillent main dans la main avec chaque client pour atteindre leurs objectifs commerciaux numériques.",
     
-    "services_description": "Nous proposons des services couvrant l'ensemble du marketing mix à un large éventail de clients dans des environnements B2C et B2B.",
     "digitalmarketing": "Marketing Digital",
-    "digitalmarketing_description": "Nous créons des campagnes axées sur le retour sur investissement qui permettront à votre entreprise de passer à la vitesse supérieure.",
     "visualidentity": "Identite Visuelle",
-    "visualidentity_description": "Une bonne conception graphique permet d'établir un lien avec votre public et d'atteindre vos objectifs commerciaux.",
     "webmobile": "Web et Mobile",
-    "webmobile_description": "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
     "pressrelation": "Relation Presse",
-    "pressrelation_description": "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
+
+    "services_description": "Nous proposons des services couvrant l'ensemble du marketing mix à un large éventail de clients dans des environnements B2C et B2B.",
+    "services_digitalmarketing_description": "Nous créons des campagnes axées sur le retour sur investissement qui permettront à votre entreprise de passer à la vitesse supérieure.",
+    "services_visualidentity_description": "Une bonne conception graphique permet d'établir un lien avec votre public et d'atteindre vos objectifs commerciaux.",
+    "services_webmobile_description": "Votre site web est le premier endroit que vos clients consultent. C'est, par essence, votre première impression et votre outil de vente.",
+    "services_pressrelation_description": "La meilleure façon de présenter vos informations aux journalistes qui comptent.",
+
+    "faq_digitalmarketing_description": "Questions Fréquemment Posées sur le Marketing Digital.",
+    "faq_visualidentity_description": "Questions Fréquemment Posées sur l'Identite Visuelle.",
+    "faq_webmobile_description": "Questions Fréquemment Posées sur le Web et Mobile.",
+    "faq_pressrelation_description": "Questions Fréquemment Posées sur la Relation Press.",
 
     "our_work_title": "Notre Travail",
     "our_work_description": "Nous avons une équipe passionnée qui met tout son cœur dans ce qu'elle fait, c'est pourquoi nous aimerions vous présenter quelques-unes de nos réalisations.",
@@ -69,5 +75,10 @@
 
     "service_below": "Détails des services ci-dessous",
     "service_other": "Autres services",
-    "service_other_check": "Consultez nos autres services"
+    "service_other_check": "Consultez nos autres services",
+
+    "faq_other": "Autres FAQs",
+    "faq_other_check": "Consultez nos autres FAQs",
+    "faq_check": "Consultez notre section FAQ pour savoir si nous pouvons vous aider.",
+    "faq_check_question": "Avez-vous des questions"
 }
