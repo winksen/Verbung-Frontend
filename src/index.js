@@ -84,12 +84,15 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/booking`} component={Calendly}/>
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/> */}
+
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/blogs/faq`} component={FAQ}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blogs/faq/:category`} component={FAQCategory}/> */}
                                
                         <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
 
                         {/* DEACTIVATED PAGES */}
                         {/*
+                        <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/old`} component={DarkMainDemoOld}/>           
                         <Route exact path={`${process.env.PUBLIC_URL}/home-particles`} component={HomeParticles}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/light`} component={LightMainDemo}/>
