@@ -19,11 +19,16 @@ Blog Styles
 }
 
 .blog-style--1 {
+    padding: 10px;
+    // background-color: var(--background-color);
     position: relative;
     margin-bottom: 40px;
     @extend %transition;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
+    .border-corner {
+        border-radius: 10px;
+    }
     .thumbnail {
         a {
             display: block;
@@ -75,7 +80,7 @@ Blog Styles
                 text-transform: uppercase;
             }
             .rn-btn-date {
-                padding: 0 10px;
+                padding-left: 5px;
                 margin-right: 5px;
                 height: 30px;
                 display: inline-block;
@@ -172,5 +177,6 @@ Blog Styles
     }
 }
 
-
-
+.blog-style--1:hover {
+    background-color: var(--background-color);
+}

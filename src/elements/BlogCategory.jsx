@@ -52,10 +52,15 @@ const categoryMapping = {
     '21' : 'Dev Hacks',
     '22' : 'Programming Languages',
     '23' : 'Frameworks',
-    '24' : 'Tools and Setups',
+    '24' : 'Tools & Setups',
     '25' : 'Website Strategies',
     '26' : 'Monitoring',
     '27' : 'Pipelines',
+    '30' : 'Press Relation',
+    '31' : 'Prospecting Techniques & Strategies',
+    '32' : 'Prospecting Tools & Technology',
+    '33' : 'Networking & Relationship Building',
+    '34' : 'Case Studies & Success Stories',
 };
 class Blog extends Component{
     constructor () {
@@ -66,7 +71,7 @@ class Blog extends Component{
             loading: true,
             pageCount: 0,
             pageNumber: 1,
-            itemsPerPage: 6,
+            itemsPerPage: 9,
           };
       
           this.handlePageChange = this.handlePageChange.bind(this);
@@ -113,7 +118,7 @@ class Blog extends Component{
                     <div className="blog blog-style--1">
                         <div className="">
                             <a href={`/blogs/${blog.id}`}>
-                                <LazyLoadImage className="w-100" alt="" effect="blur" src={`${queryUrl}${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="/../assets/images/blog/blog-thumbnail-default.png"; }} />
+                                <LazyLoadImage className="w-100 border-corner" alt="" effect="blur" src={`${queryUrl}${blog.image7}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="/../assets/images/blog/blog-thumbnail-default.png"; }} />
                                 {/* <img className="w-100" src={`/assets/images/blog/blog-0${blog.imageid1}.jpg`} alt="Blog Images"/> */}
                             </a>
                             {/* <div className="content">
@@ -125,7 +130,8 @@ class Blog extends Component{
                         <div className="content-text">
                             <div className="blog-btn-cat">
                                 <a className="rn-btn-cat" href={`/blogs/category/${blog.category}`}>{categoryMapping[blog.category] || 'OTHER'}</a>
-                                <a className="rn-btn-date" ><FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMM Do, YYYY')}</a>
+                                <a className="rn-btn-date" >• {moment(blog.created_at).format('MMM Do, YYYY')}</a>
+                                {/* <a className="rn-btn-date" >• <FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMM Do, YYYY')}</a> */} 
                             </div>
                             <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>

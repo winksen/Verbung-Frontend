@@ -3,6 +3,7 @@ import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 import { BiBookContent, BiAnalyse, BiAt, BiSearch, BiSearchAlt, BiUserVoice, BiMobileAlt, BiWallet } from "react-icons/bi";
 import { BiVector, BiIntersect, BiMessageEdit, BiNetworkChart, BiCaretRightCircle, BiCameraMovie, BiFile } from "react-icons/bi";
 import { BiCodeCurly, BiCode, BiMicrochip, BiSlideshow, BiSlider, BiPulse, BiReset} from "react-icons/bi";
+import { BiCollection, BiCrosshair, BiGroup, BiMedal } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "react-icons/fa";
@@ -10,98 +11,98 @@ import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaYoutube} from "rea
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 
-const BlogCategoryDM = [
-    {
-        icon: <BiBookContent />,
-        title: 'Content Marketing',
-        code: '01',
-    },
-    {
-        icon: <BiAnalyse />,
-        title: 'Social Media Marketing',
-        code: '02',
-    },
-    { 
-        icon: <BiAt />,
-        title: 'Email Marketing',
-        code: '03',
-    },
-    {
-        icon: <BiUserVoice />,
-        title: 'Affiliate Marketing',
-        code: '04',
-    },
-    { 
-        icon: <BiSearch />,
-        title: 'Search Engine Optimization (SEO)',
-        code: '05',
-    },
-    { 
-        icon: <BiSearchAlt />,
-        title: 'Search Engine Advertising (SEA)',
-        code: '06',
-    },
-    { 
-        icon: <BiMobileAlt />,
-        title: 'Mobile Marketing',
-        code: '07',
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Display Advertising',
-        code: '08',
-    },
-    { 
-        icon: <BiWallet />,
-        title: 'Pay Per Click (PPC)',
-        code: '09',
-    },
-]
+// const BlogCategoryDM = [
+//     {
+//         icon: <BiBookContent />,
+//         title: 'Content Marketing',
+//         code: '01',
+//     },
+//     {
+//         icon: <BiAnalyse />,
+//         title: 'Social Media Marketing',
+//         code: '02',
+//     },
+//     { 
+//         icon: <BiAt />,
+//         title: 'Email Marketing',
+//         code: '03',
+//     },
+//     {
+//         icon: <BiUserVoice />,
+//         title: 'Affiliate Marketing',
+//         code: '04',
+//     },
+//     { 
+//         icon: <BiSearch />,
+//         title: 'Search Engine Optimization (SEO)',
+//         code: '05',
+//     },
+//     { 
+//         icon: <BiSearchAlt />,
+//         title: 'Search Engine Advertising (SEA)',
+//         code: '06',
+//     },
+//     { 
+//         icon: <BiMobileAlt />,
+//         title: 'Mobile Marketing',
+//         code: '07',
+//     },
+//     { 
+//         icon: <FiMonitor />,
+//         title: 'Display Advertising',
+//         code: '08',
+//     },
+//     { 
+//         icon: <BiWallet />,
+//         title: 'Pay Per Click (PPC)',
+//         code: '09',
+//     },
+// ]
 
-const BlogCategoryVI = [
-    {
-        icon: <BiVector />,
-        title: 'Branding',
-        code: '11',
-    },
-    {
-        icon: <BiIntersect />,
-        title: 'UI/UX',
-        code: '12',
-    },
-    {
-        icon: <BiMessageEdit />,
-        title: 'Social Media Design',
-        code: '13',
-    },
-    {
-        icon: <BiNetworkChart />,
-        title: 'Illustrations',
-        code: '14',
-    },
-    {
-        icon: <BiCaretRightCircle />,
-        title: 'Motion Graphics',
-        code: '15',
-    },
-    {
-        icon: <BiCameraMovie />,
-        title: 'Videography',
-        code: '16',
-    },
-    {
-        icon: <BiFile />,
-        title: 'Stationary',
-        code: '17',
-    },
-]
+// const BlogCategoryVI = [
+//     {
+//         icon: <BiVector />,
+//         title: 'Branding',
+//         code: '11',
+//     },
+//     {
+//         icon: <BiIntersect />,
+//         title: 'UI/UX',
+//         code: '12',
+//     },
+//     {
+//         icon: <BiMessageEdit />,
+//         title: 'Social Media Design',
+//         code: '13',
+//     },
+//     {
+//         icon: <BiNetworkChart />,
+//         title: 'Illustrations',
+//         code: '14',
+//     },
+//     {
+//         icon: <BiCaretRightCircle />,
+//         title: 'Motion Graphics',
+//         code: '15',
+//     },
+//     {
+//         icon: <BiCameraMovie />,
+//         title: 'Videography',
+//         code: '16',
+//     },
+//     {
+//         icon: <BiFile />,
+//         title: 'Stationary',
+//         code: '17',
+//     },
+// ]
 
 
 class BlogCategoryT extends Component{
     render(){
         const {column } = this.props;
-        const ServiceContentDM = BlogCategoryDM.slice(0 , this.props.item);
-        const ServiceContentVI = BlogCategoryVI.slice(0 , this.props.item);
+        // const ServiceContentDM = BlogCategoryDM.slice(0 , this.props.item);
+        // const ServiceContentVI = BlogCategoryVI.slice(0 , this.props.item);
         
         return(
             <React.Fragment>
@@ -176,10 +177,18 @@ class BlogCategoryT extends Component{
                                         <li><Link to="/blogs/category/21"><BiCodeCurly /> Dev Hacks</Link></li>
                                         <li><Link to="/blogs/category/22"><BiCode /> Programming Languages</Link></li>
                                         <li><Link to="/blogs/category/23"><BiMicrochip /> Frameworks</Link></li>
-                                        <li><Link to="/blogs/category/24"><BiSlideshow /> Tools and Setups</Link></li>
+                                        <li><Link to="/blogs/category/24"><BiSlideshow /> Tools & Setups</Link></li>
                                         <li><Link to="/blogs/category/25"><BiSlider /> Website Strategies</Link></li>
                                         <li><Link to="/blogs/category/26"><BiPulse /> Monitoring</Link></li>
                                         <li><Link to="/blogs/category/27"><BiReset /> Pipelines</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/blogs/category/30">PRESS RELATION <IoIosArrowDown /></Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/blogs/category/31"><BiCollection /> Prospecting Techniques & Strategies</Link></li>
+                                        <li><Link to="/blogs/category/32"><BiCrosshair /> Prospecting Tools & Technology</Link></li>
+                                        <li><Link to="/blogs/category/33"><BiGroup /> Networking & Relationship Building</Link></li>
+                                        <li><Link to="/blogs/category/34"><BiMedal /> Case Studies & Success Stories</Link></li>
                                     </ul>
                                 </li>
                             </ul>
