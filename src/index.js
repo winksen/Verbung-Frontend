@@ -12,6 +12,10 @@ import ServiceDM from "./elements/ServiceDM";
 import ServiceVI from "./elements/ServiceVI";
 import ServiceWM from "./elements/ServiceWM";
 import ServicePR from "./elements/ServicePR";
+import FaqDM from "./elements/FaqDM";
+import FaqVI from "./elements/FaqVI";
+import FaqWM from "./elements/FaqWM";
+import FaqPR from "./elements/FaqPR";
 import Contact from "./elements/Contact";
 import Blog from "./elements/Blog";
 import BlogCategory from "./elements/BlogCategory";
@@ -74,16 +78,21 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/packs`} component={PricingTable}/>
 
-                        <Route exact path={`${process.env.PUBLIC_URL}/digitalmarketing`} component={ServiceDM}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/visualidentity`} component={ServiceVI}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/webmobile`} component={ServiceWM}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/pressrelation`} component={ServicePR}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/digitalmarketing`} component={ServiceDM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/visualidentity`} component={ServiceVI}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/webmobile`} component={ServiceWM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/services/pressrelation`} component={ServicePR}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs`} component={Blog}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/category/:category`} component={BlogCategory}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/:id`} component={BlogDetails}/>
 
                         <Route exact path={`${process.env.PUBLIC_URL}/booking`} component={Calendly}/>
+
+                        <Route exact path={`${process.env.PUBLIC_URL}/faq/digitalmarketing`} component={FaqDM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/faq/visualidentity`} component={FaqVI}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/faq/webmobile`} component={FaqWM}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/faq/pressrelation`} component={FaqPR}/>
 
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/blogs/faq`} component={FAQ}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blogs/faq/:category`} component={FAQCategory}/> */}

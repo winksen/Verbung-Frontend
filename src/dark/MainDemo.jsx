@@ -198,22 +198,26 @@ const featureList = [
     {
         icon:  <FiCast />,
         title: 'DIGITAL MARKETING',
-        subtitle: ''
+        link: '/faq/digitalmarketing',
+        subtitle: 'Frequently Asked Questions about Digital Marketing'
     },
     {
         icon: <FiMaximize />,
         title: 'VISUAL IDENTITY',
-        subtitle: ''
+        link: '/faq/visualidentity',
+        subtitle: 'Frequently Asked Questions about Visual Identity'
     },
     {
         icon: <FiMonitor />,
         title: 'WEB AND MOBILE',
-        subtitle: ''
+        link: '/faq/webmobile',
+        subtitle: 'Frequently Asked Questions about Web & Mobile'
     },
     {
         icon: <FiUsers />,
         title: 'PRESS RELATION',
-        subtitle: ''
+        link: '/faq/pressrelation',
+        subtitle: 'Frequently Asked Questions about Press Relation'
     },
 ]
 
@@ -656,15 +660,17 @@ function MainDemo(props){
                                 {/* Start Single Feature  */}
                                 {featureList.map((value, i) => (
                                     <div className="col-lg-6 col-xl-3 col-md-6 col-sm-6 col-12" key={i}>
-                                        <div className="service service__style--2">
-                                            <div className="icon">
-                                                {value.icon}
+                                        <a className="text-center" href={`${value.link}`}>
+                                            <div className="service service__style--2">
+                                                <div className="icon">
+                                                    {value.icon}
+                                                </div>
+                                                <div className="content">
+                                                    <h3 className="title">{value.title}</h3>
+                                                    <p className="subtitle">{value.subtitle}</p>
+                                                </div>
                                             </div>
-                                            <div className="content">
-                                                <h3 className="title">{value.title}</h3>
-                                                <p className="subtitle">{value.subtitle}</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 ))}
                                 {/* End Single Feature  */}

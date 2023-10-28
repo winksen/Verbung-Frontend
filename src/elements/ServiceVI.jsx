@@ -55,7 +55,7 @@ const ServiceVI = () => {
                         </div>
                         <div className="row service-one-wrapper">
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/digitalmarketing">
+                                <a className="text-center" href="/services/digitalmarketing">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiCast />
@@ -68,7 +68,7 @@ const ServiceVI = () => {
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/webmobile">
+                                <a className="text-center" href="/services/webmobile">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiMonitor />
@@ -81,7 +81,7 @@ const ServiceVI = () => {
                                 </a>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <a className="text-center" href="/pressrelation">
+                                <a className="text-center" href="/services/pressrelation">
                                     <div className="service service__style--2">
                                         <div className="icon">
                                             <FiUsers />
