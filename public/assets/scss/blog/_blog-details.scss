@@ -102,7 +102,7 @@ BLog Details Styles
             }
             h3 {
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 40px;
             }
             p {
                 font-size: 18px;
@@ -127,7 +127,7 @@ BLog Details Styles
             .subtitle {
                 font-family: $oswald-font;
                 font-weight: 300;
-                font-size: 20px;
+                font-size: 25px !important;
                 margin-bottom: 10px;
                 color: var(--font-color) !important;
             }
@@ -135,7 +135,7 @@ BLog Details Styles
                 color: $theme-color;
             }
             .thumbnail {
-                margin: 0 -110px;
+                // margin: 0 -110px;
                 @media #{$sm-layout} {
                     margin: 0;
                 }

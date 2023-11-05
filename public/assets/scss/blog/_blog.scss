@@ -69,13 +69,13 @@ Blog Styles
                 height: 30px;
                 display: inline-block;
                 line-height: 25px;
-                border: 2px solid #4CBD94;
-                background-color: #4CBD94;
+                border: 2px solid #1C9D79;
+                // background-color: #4CBD94;
                 border-radius: 4px;
                 font-size: 10px;
                 position: relative;
                 z-index: 2;
-                color: white;
+                color: var(--font-color);
                 letter-spacing: 0.2px;
                 text-transform: uppercase;
             }

@@ -171,31 +171,32 @@ class BlogDetails extends Component{
                                         <h3 className="textUpper">{this.state.blogs.title2}</h3>
                                         {/* Subtitle 2 */}
                                         <p className="bold subtitle textUpper">{this.state.blogs.sub2}</p>
-                                        <div className="blog-single-list-wrapper d-flex flex-wrap">
-                                            <div className="thumbnail">
-                                                {/* Image 2 */}
-                                                <LazyLoadImage hidden={null == this.state.blogs.image2} className="w-100" alt="" effect="blur" src={`${queryUrl}${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span hidden={null == this.state.blogs.image2 || null == this.state.blogs.image_source2} >Image source: {this.state.blogs.image_source2}</span>
-                                            </div>
-                                            <div className="content">
-                                                {/* Para 2 */}
-                                                <p align="justify">{this.state.blogs.para2}</p>
-                                                {/* List Title 1 */}
-                                                <p className="bold subtitle textUpper">{this.state.blogs.list1}</p>
-                                                <ul className="list-style" hidden={null == this.state.blogs.item1}>
-                                                    <li>{this.state.blogs.item1}</li>
-                                                    <li>{this.state.blogs.item2}</li>
-                                                    <li>{this.state.blogs.item3}</li>
-                                                    <li>{this.state.blogs.item4}</li>
-                                                    <li>{this.state.blogs.item5}</li>
-                                                    <li>{this.state.blogs.item6}</li>
-                                                    <li>{this.state.blogs.item7}</li>
-                                                    <li>{this.state.blogs.item8}</li>
-                                                    <li>{this.state.blogs.item9}</li>
-                                                    <li>{this.state.blogs.item10}</li>
-                                                </ul>
-                                            </div>
+                                        {/* <div className="blog-single-list-wrapper d-flex flex-wrap"> */}
+                                        <div className="thumbnail">
+                                            {/* Image 2 */}
+                                            <LazyLoadImage hidden={null == this.state.blogs.image2} className="w-100" alt="" effect="blur" src={`${queryUrl}${this.state.blogs.image2}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                            <span hidden={null == this.state.blogs.image2 || null == this.state.blogs.image_source2} >Image source: {this.state.blogs.image_source2}</span>
                                         </div>
+                                        <div className="content">
+                                            {/* Para 2 */}
+                                            <p align="justify">{this.state.blogs.para2}</p>
+                                            {/* List Title 1 */}
+                                            <p className="bold subtitle textUpper">{this.state.blogs.list1}</p>
+                                            <ul className="list-style" hidden={null == this.state.blogs.item1}>
+                                                <li>{this.state.blogs.item1}</li>
+                                                <li>{this.state.blogs.item2}</li>
+                                                <li>{this.state.blogs.item3}</li>
+                                                <li>{this.state.blogs.item4}</li>
+                                                <li>{this.state.blogs.item5}</li>
+                                                <li>{this.state.blogs.item6}</li>
+                                                <li>{this.state.blogs.item7}</li>
+                                                <li>{this.state.blogs.item8}</li>
+                                                <li>{this.state.blogs.item9}</li>
+                                                <li>{this.state.blogs.item10}</li>
+                                            </ul>
+                                        </div>
+                                        <br />
+                                        {/* </div> */}
                                         <hr className="line" hidden={null == this.state.blogs.para3}/>
 
                                         {/* Title 3 */}
@@ -216,31 +217,31 @@ class BlogDetails extends Component{
                                         <h3 className="textUpper">{this.state.blogs.title4}</h3>
                                         {/* Subtitle 4 */}
                                         <p className="bold subtitle textUpper">{this.state.blogs.sub4}</p>
-                                        <div className="blog-single-list-wrapper d-flex flex-wrap">            
-                                            <div className="content-special">
-                                                {/* Para 4 */}
-                                                <p align="justify">{this.state.blogs.para4}</p>
-                                                {/* List Title 2 */}
-                                                <p className="bold subtitle textUpper">{this.state.blogs.list2}</p>
-                                                <ul className="list-style" hidden={null == this.state.blogs.item11}>
-                                                    <li>{this.state.blogs.item11}</li>
-                                                    <li>{this.state.blogs.item12}</li>
-                                                    <li>{this.state.blogs.item13}</li>
-                                                    <li>{this.state.blogs.item14}</li>
-                                                    <li>{this.state.blogs.item15}</li>
-                                                    <li>{this.state.blogs.item16}</li>
-                                                    <li>{this.state.blogs.item17}</li>
-                                                    <li>{this.state.blogs.item18}</li>
-                                                    <li>{this.state.blogs.item19}</li>
-                                                    <li>{this.state.blogs.item20}</li>
-                                                </ul>
-                                            </div>
-                                            <div className="thumbnail">
-                                                {/* Image 4 */}
-                                                <LazyLoadImage hidden={null == this.state.blogs.image4} className="w-100" alt="" effect="blur" src={`${queryUrl}${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
-                                                <span hidden={null == this.state.blogs.image4}>Image source: {this.state.blogs.image_source4}</span>
-                                            </div>
+                                        {/* <div className="blog-single-list-wrapper d-flex flex-wrap">             */}
+                                        <div className="content-special">
+                                            {/* Para 4 */}
+                                            <p align="justify">{this.state.blogs.para4}</p>
+                                            {/* List Title 2 */}
+                                            <p className="bold subtitle textUpper">{this.state.blogs.list2}</p>
+                                            <ul className="list-style" hidden={null == this.state.blogs.item11}>
+                                                <li>{this.state.blogs.item11}</li>
+                                                <li>{this.state.blogs.item12}</li>
+                                                <li>{this.state.blogs.item13}</li>
+                                                <li>{this.state.blogs.item14}</li>
+                                                <li>{this.state.blogs.item15}</li>
+                                                <li>{this.state.blogs.item16}</li>
+                                                <li>{this.state.blogs.item17}</li>
+                                                <li>{this.state.blogs.item18}</li>
+                                                <li>{this.state.blogs.item19}</li>
+                                                <li>{this.state.blogs.item20}</li>
+                                            </ul>
                                         </div>
+                                        <div className="thumbnail">
+                                            {/* Image 4 */}
+                                            <LazyLoadImage hidden={null == this.state.blogs.image4} className="w-100" alt="" effect="blur" src={`${queryUrl}${this.state.blogs.image4}`} onError={({ currentTarget }) => {currentTarget.onerror = null; currentTarget.src="assets/images/blog/blog-image-2-default.png"; }} />
+                                            <span hidden={null == this.state.blogs.image4}>Image source: {this.state.blogs.image_source4}</span>
+                                        </div>
+                                        {/* </div> */}
                                         <hr className="line" hidden={null == this.state.blogs.para5}/>
 
                                         {/* Title 5 */}
@@ -308,8 +309,13 @@ class BlogDetails extends Component{
                                         
 
                                         <br /><br /><br /><br /><br />
-                                        <p><FiEdit /> Last Updated: {moment(this.state.blogs.updated_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.updated_at).fromNow()})</p>
-                                        <p><FiHash /> Number of Revisions: {this.state.blogs.revisions}</p>
+                                        <p>
+                                            <FiClock /> <strong>Created:</strong> {moment(this.state.blogs.created_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.created_at).fromNow()})
+                                            <br />
+                                            <FiEdit /> <strong>Last Updated:</strong> {moment(this.state.blogs.updated_at).format('MMMM Do, YYYY')} ({moment(this.state.blogs.updated_at).fromNow()})
+                                            <br />
+                                            <FiHash /> <strong>Number of Revisions:</strong> {this.state.blogs.revisions}
+                                        </p>
                                     </div>
                                     )}
                                     </div>
