@@ -112,7 +112,7 @@ class BLogList extends Component{
                                 <a className="rn-btn-date" >• {moment(blog.created_at).format('MMM Do, YYYY')}</a>
                                 {/* <a className="rn-btn-date" >• <FiCalendar className="rn-btn-date-icon" /> {moment(blog.created_at).format('MMM Do, YYYY')}</a> */} 
                             </div>
-                            <h4 className="title textUpper"><a href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
+                            <h4 className="title"><a className="a-tite" href={`/blogs/${blog.id}`}>{blog.title}</a></h4>
                         </div>
                     </div>
                 </div>
