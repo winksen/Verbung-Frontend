@@ -183,12 +183,12 @@
         padding-top: 60px;
     }
     .thumbnail {
-        margin-top: -230px;
+        margin-top: -280px;
         @media #{$lg-layout} {
-            margin-top: 0;
+            margin-top: -350px;
         }
         @media #{$laptop-device} {
-            margin-top: -89px;
+            margin-top: -250px;
         }
         @media #{$md-layout} {
             margin-top: 0;

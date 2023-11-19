@@ -35,13 +35,25 @@ ul {
                 font-size: 14px;
                 @extend %transition;
             }
+            p {
+                display: none;
+                font-size: 15px;
+            }
             &:hover {
                 a {
                     background: $theme-color;
                     border-color: $theme-color;
+                    &.footer-icons {
+                        color: $theme-color !important;
+                    }
+                   
                     color: white;
                     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
                     transform: translateY(-3px);
+                }
+                p {
+                    display: contents;
+                    visibility: visible;
                 }
             }
         }

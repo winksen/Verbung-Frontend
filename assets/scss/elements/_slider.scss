@@ -150,7 +150,7 @@ Slider Default Style
     }
     &.slide-style-1 {
         .inner {
-            padding-top: 100px;
+            padding-top: 50px;
             @media #{$sm-layout} {
                 padding-top: 70px;
             }
@@ -911,7 +911,7 @@ Custom Animation
 
 .image-about {
     content: var(--image-id);
-    width: 100%!important;
+    // width: 100%!important;
     // filter: drop-shadow(0 25px 65px rgba(0,0,0,.20));
 }
 

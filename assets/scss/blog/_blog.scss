@@ -19,11 +19,16 @@ Blog Styles
 }
 
 .blog-style--1 {
+    padding: 10px;
+    // background-color: var(--background-color);
     position: relative;
     margin-bottom: 40px;
     @extend %transition;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
+    .border-corner {
+        border-radius: 10px;
+    }
     .thumbnail {
         a {
             display: block;
@@ -49,12 +54,49 @@ Blog Styles
     }
     .content-text {
         a{
-            font-size: 24px;
-            font-weight: 500;
+            font-size: 28px;
+            font-weight: 600;
             line-height: 36px;
             color: var(--font-color);
         }
         padding-top: 10px;
+        .blog-btn-cat {
+            opacity: 1;
+            visibility: visible;
+            .rn-btn-cat {
+                padding: 0 20px;
+                margin-right: 5px;
+                height: 30px;
+                display: inline-block;
+                line-height: 25px;
+                border: 2px solid #1C9D79;
+                // background-color: #4CBD94;
+                border-radius: 4px;
+                font-size: 10px;
+                position: relative;
+                z-index: 2;
+                color: var(--font-color);
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+            }
+            .rn-btn-date {
+                padding-left: 5px;
+                margin-right: 5px;
+                height: 30px;
+                display: inline-block;
+                line-height: 25px;
+                font-size: 12px;
+                position: relative;
+                z-index: 2;
+                color: var(--font-color);
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+
+                .rn-btn-date-icon {
+                    margin-bottom: 3px;
+                }
+            }
+        }
     }
     .content-text:hover {
         color: $theme-color;
@@ -135,5 +177,6 @@ Blog Styles
     }
 }
 
-
-
+.blog-style--1:hover {
+    background-color: var(--background-color);
+}

@@ -16,6 +16,18 @@
     --backgroundLess-color: #022726;
 }
 
+.language-selector{
+    color: var(--font-color) !important;
+
+    &:hover:not(.Mui-disabled) {
+        background-color: var(--backgroundLess-color) !important;
+    }
+}
+
+.language-selector-text{
+    color: var(--second-font-color) !important;
+}
+
 .header-area{
     &.header--transparent {
         position: absolute;
