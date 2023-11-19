@@ -68,7 +68,7 @@ function Contact(props){
                                         </div>
                                         <div className="inner">
                                             <h4 className="title textUpper">{t("phone")}</h4>
-                                            <p>{t("coming_soon")}</p>
+                                            <p><a href="tel:+212705339633">+212 7 05 33 96 33</a></p>
                                             {/* <p><a href="tel:+856 325 652 984">+856 325 652 984</a></p> */}
                                         </div>
                                     </div>
