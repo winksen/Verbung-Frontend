@@ -46,6 +46,7 @@ function Contact(props){
                                     <div className="rn-page-title text-center pt--100">
                                         <h2 className="title theme-gradient textUpper">{t("contact_reach_out")}</h2>
                                         <p>{t("contact_description")}</p>
+                                        <br/><br/>
                                         {/* <p><HiOutlineMail /> contact@verbung.net </p> */}
                                     </div>
                                 </div>
@@ -54,6 +55,14 @@ function Contact(props){
                     </div>
                     {/* End Breadcrump Area */}
 
+
+                    
+
+                    {/* Start Contact Page Area  */}
+                    <div className="rn-contact-page ptb--120 active-darkless">
+                        <ContactTwo />
+                    </div>
+                    {/* End Contact Page Area  */}
 
                     {/* Start Contact Top Area  */}
                     <div className="rn-contact-top-area ptb--60 bg_color--5">
@@ -108,12 +117,6 @@ function Contact(props){
                         </div>
                     </div>
                     {/* End Contact Top Area  */}
-
-                    {/* Start Contact Page Area  */}
-                    <div className="rn-contact-page ptb--120 active-darkless">
-                        <ContactTwo />
-                    </div>
-                    {/* End Contact Page Area  */}
 
                     {/* Start Contact Map  */}
                     {/* <div className="rn-contact-map-area position-relative">
