@@ -26,7 +26,6 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import SliderOne from "../component/slider/SliderOne";
 import About from "../component/HomeLayout/homeOne/About";
-import Calendly from "../component/Calendly";
 import Footer from "../component/footer/Footer";
 import NewsLetter from "../elements/NewsLetter";
 import Helmet from "../component/common/Helmet";
