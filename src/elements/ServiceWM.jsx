@@ -17,7 +17,7 @@ const ServiceWM = () => {
             <div className="active-dark">
                 <React.Fragment>
                 <PageHelmet pageTitle="VERBUNG | Services" />
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.webp" />
 
                 {/* Start Service Area */}
                 <br /><br /><br /><br />

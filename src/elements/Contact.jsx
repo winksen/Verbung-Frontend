@@ -36,7 +36,7 @@ function Contact(props){
                 <React.Fragment>
                     <PageHelmet pageTitle="VERBUNG | Contact" />
 
-                    <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                    <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.webp" />
 
                     {/* Start Breadcrump Area */}
                     <div className="rn-page-title-area pt--120"  data-black-overlay="6">

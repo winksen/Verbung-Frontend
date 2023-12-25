@@ -7,7 +7,7 @@
     --second-font-color: #022726;
     --background-color: #eee;
     --backgroundLess-color: #ddd;
-    --image-id: url(/assets/images/about/about-1-beta-light.png);
+    --image-id: url(/assets/images/about/about-1-beta-light.webp);
 }
   
 [data-theme="dark"] {
@@ -15,7 +15,7 @@
     --second-font-color: rgba(216, 216, 216, 0.75);
     --background-color: #001e21;
     --backgroundLess-color: #022726;
-    --image-id: url(/assets/images/about/about-1-beta-dark.png);
+    --image-id: url(/assets/images/about/about-1-beta-dark.webp);
 }
 
 @media #{$sm-layout} {

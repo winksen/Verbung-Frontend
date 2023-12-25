@@ -20,7 +20,7 @@ const FooterTwo = () => {
                         <div className="inner">
                             <div className="logo text-center text-sm-left mb_sm--20">
                                 <a href="/">
-                                    <img src="/assets/images/logo/logoFull.png" alt="Logo images"/>
+                                    <img src="/assets/images/logo/logoFull.webp" alt="Logo images"/>
                                 </a>
                             </div>
                         </div>

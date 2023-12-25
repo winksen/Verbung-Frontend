@@ -476,8 +476,8 @@ function MainDemo(props){
                             <div className="header-left">
                                 <div className="logo">
                                     <a href="/">
-                                        <img className="logo-1" src="/assets/images/logo/logo.png" alt="Verbung"/>
-                                        <img className="logo-2" src="/assets/images/logo/logoFull.png" alt="Logo Images"/>
+                                        <img className="logo-1" src="/assets/images/logo/logo.webp" alt="Verbung"/>
+                                        <img className="logo-2" src="/assets/images/logo/logoFull.webp" alt="Logo Images"/>
                                     </a>
                                 </div>
                             </div>
@@ -588,7 +588,7 @@ function MainDemo(props){
                                             <div className={`team`}>
                                                 <div className="thumbnail">
                                                     {/* <LazyLoadImage alt="Project" effect="blur" src={`/assets/images/projects/project-${value.images}.jpg`}/> */}
-                                                    <img src={`/assets/images/projects/project-${value.images}.jpg`} alt="Project"/>
+                                                    <img src={`/assets/images/projects/project-${value.images}.webp`} alt="Project"/>
                                                 </div>
                                                 <div className="content">
                                                     <h4 className="title">{value.title}</h4>

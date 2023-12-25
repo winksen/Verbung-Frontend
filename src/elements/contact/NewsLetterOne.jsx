@@ -23,7 +23,7 @@ function NewsLetterOne(props){
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
                             <div className="thumbnail mb_md--30 mb_sm--30">
-                                <img src="/assets/images/about/newsletter.png" alt="NewsLetter"/>
+                                <img src="/assets/images/about/newsletter.webp" alt="NewsLetter"/>
                             </div>
                         </div>
                     </div>
