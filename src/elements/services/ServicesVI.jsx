@@ -13,98 +13,49 @@ class Testimonial extends Component{
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/1.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI1.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/2.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI2.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/3.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI3.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/4.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI4.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/5.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI5.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/6.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI6.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/7.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/8.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/9.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/10.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/11.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/12.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/13.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/14.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/VI7.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
@@ -178,76 +129,6 @@ class Testimonial extends Component{
                                     </div>
                                     <div className="author-info">
                                         <p>Already have a well-built core website but need something that’s related to a specific campaign, audience or promotion? Our microsites are built using the same standards as our core websites and offer a great way to support marketing activities.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Brand Repositioning</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Our brand repositioning service will maximize customer relevancy and competitive distinctiveness to be owned in the mind of your target audience. This usually entails a change in the brand’s promise and personality communicating these new messages.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Logo Creation</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Your logo is the visual cornerstone of a company’s brand. We work with you to develop the ‘face’ of your company – it’s identity is visually expressed through its logo and is one of the main things that makes your business memorable.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Brand Guidelines</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>VI has a long history in developing guidelines to present your brand in a consistent and coherent way. This information typically includes: logo usage, colour palette, type specification image style, language approach and a range of marketing collateral applications.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Illustration</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Illustration plays an important role in the design process. We offer a variety of illustration styles including caricatures, cartoons, collage and line drawings. We work in many forms of media, everything from traditional hand painted watercolours, to photoshop effects.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Brand Launch Programmes</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Successfully launching a new brand is one of the toughest challenges in marketing. We help to plan expenditure, mission objectives and implementation benchmarks. In this way, your business will launch its new brand and reach the target audience in the most impactful, effective way possible.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Social Media</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Love it or hate it, social media is here to stay. We work across all social platforms and can offer one off set ups, ongoing management or support you in how to best engage customers. We work with content scheduling platforms and offer content planning.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Motion Graphics</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Our motion graphics services make it easy for you to create immersive visual experiences embedded in captivating storytelling videos.</p>
                                     </div>
                                 </div>
                             </TabPanel>

@@ -13,42 +13,49 @@ class Testimonial extends Component{
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/1.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM1.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/2.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM2.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/3.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM3.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/4.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM4.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/5.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM5.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/6.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/WM6.png" alt="Digital Marketing"/>
+                                        </div>
+                                    </div>
+                                </Tab>
+                                <Tab>
+                                    <div className="testimonial-thumbnai">
+                                        <div className="thumb">
+                                            <img src="/assets/images/service/WM7.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
@@ -102,6 +109,16 @@ class Testimonial extends Component{
                                     </div>
                                     <div className="author-info">
                                         <p>Our web analytics help you to measure, collect, analyze and report your web data for purposes of understanding and optimizing your website. Web analytics can be used as a tool for business and market research, and to assess and improve the effectiveness of a website.</p>
+                                    </div>
+                                </div>
+                            </TabPanel>
+                            <TabPanel>
+                                <div className="rn-testimonial-content text-center">
+                                    <div className="inner">
+                                        <h2 className="textUpper">Search Engine Optimisation (SEO)</h2>
+                                    </div>
+                                    <div className="author-info">
+                                        <p>A beautiful and functional website is a great tool, but if your potential customers are not able to find you with their search terms, you’ll be left behind. Vi uses industry recognised tools and processes to review, optimize and ultimately improve or maintain rankings.</p>
                                     </div>
                                 </div>
                             </TabPanel>

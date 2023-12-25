@@ -13,42 +13,28 @@ class Testimonial extends Component{
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/1.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/PR1.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/2.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/PR2.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/3.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/PR3.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/4.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/5.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/6.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/PR4.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
@@ -92,26 +78,6 @@ class Testimonial extends Component{
                                     </div>
                                     <div className="author-info">
                                         <p>You are organizing a seminar or a congress, audiovisual recording is now a major asset to take into account to increase the impact of your event. Because your events matter a lot, their coverage should be planned carefully. This is why we put at your service a team of production of the video of your event, adapted to your needs of distribution.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Institutional Film</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Originality is what sets your company apart. Promoting the image of your company, its mission, its objectives, the team and the services through an institutional film improves its visibility. In the corporate video, you can include statements from directors, testimonials from your clients, images of your company’s facilities and subtitle the video in different languages.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Commercial Film</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Announcing the release of a new product and highlighting the image of a brand means finding the right promotion that will ensure the best visibility. The video support helps the viewer to visualize the use of the product for future acquisition and promotes your company in the international market. We also offer a translation and subtitling service for better distribution of the video.</p>
                                     </div>
                                 </div>
                             </TabPanel>

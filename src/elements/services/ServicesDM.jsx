@@ -13,77 +13,63 @@ class Testimonial extends Component{
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/1.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM1.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/2.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM2.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/3.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM3.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/4.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM4.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/5.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM5.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/6.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM6.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/7.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM7.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/8.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM8.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
-                                            <img src="/assets/images/service/9.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/10.webp" alt="Digital Marketing"/>
-                                        </div>
-                                    </div>
-                                </Tab>
-                                <Tab>
-                                    <div className="testimonial-thumbnai">
-                                        <div className="thumb">
-                                            <img src="/assets/images/service/11.webp" alt="Digital Marketing"/>
+                                            <img src="/assets/images/service/DM9.png" alt="Digital Marketing"/>
                                         </div>
                                     </div>
                                 </Tab>
@@ -177,26 +163,6 @@ class Testimonial extends Component{
                                     </div>
                                     <div className="author-info">
                                         <p>Marketing is complicated. Multiple channels, competitors and audiences. We work with you to understand your market, challenge you and work out what you are trying to achieve. We’ll then develop the best fit strategy with audiences, messages and media.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Marketing Planning</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>Not sure where to start? We can help you create and deliver your marketing plan. We understand what needs to be included and how to present it in the most successful way.</p>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="rn-testimonial-content text-center">
-                                    <div className="inner">
-                                        <h2 className="textUpper">Market Research</h2>
-                                    </div>
-                                    <div className="author-info">
-                                        <p>We work closely with you to understand your target market and customers. We use a mix of quantitative and qualitative methodologies to deliver best results. We ‘go the extra mile’ in terms of analysis and recommendations.</p>
                                     </div>
                                 </div>
                             </TabPanel>
